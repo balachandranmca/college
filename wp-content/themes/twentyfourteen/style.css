@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/twentyfourteen/
 Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
-Version: 1.8
+Version: 1.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
@@ -820,7 +820,7 @@ span + .edit-link:before,
 
 .site {
 	background-color: #fff;
-	max-width: 1260px;
+	/*max-width: 1260px;*/
 	position: relative;
 }
 
@@ -1039,6 +1039,10 @@ span + .edit-link:before,
 	outline: 1px dotted;
 }
 
+.secondary-navigation .customize-partial-edit-shortcut button,
+.footer-sidebar .widget:first-child .customize-partial-edit-shortcut button {
+	left: 0;
+}
 
 /**
  * 6.0 Content
@@ -3088,6 +3092,18 @@ a.post-thumbnail:hover {
 	width: device-width;
 }
 
+/* Adjust positioning of edit shortcuts, override style in customize-preview.css */
+@media screen and (max-width:800px) {
+	body.customize-partial-edit-shortcuts-shown .site-header .site-title {
+		padding-left: 8px;
+	}
+
+	.site-header .customize-partial-edit-shortcut button {
+		top: 10px;
+	}
+}
+
+
 @media screen and (max-width: 400px) {
 	.list-view .site-content .post-thumbnail {
 		background: none;
@@ -3159,6 +3175,17 @@ a.post-thumbnail:hover {
 		border-bottom: 0;
 		margin: 0 auto 24px;
 		padding: 0 10px;
+	}
+}
+
+/* Adjust positioning of edit shortcuts, override style in customize-preview.css */
+@media screen and (max-width:320px) {
+	.site-header .customize-partial-edit-shortcut button {
+		left: -32px;
+	}
+
+	body.customize-partial-edit-shortcuts-shown .site-header .site-title {
+		padding-left: 28px;
 	}
 }
 
@@ -3718,7 +3745,7 @@ a.post-thumbnail:hover {
 		width: 29.04761904%;
 	}
 
-	.site:before {
+	/*.site:before {
 		background-color: #000;
 		content: "";
 		display: block;
@@ -3729,7 +3756,7 @@ a.post-thumbnail:hover {
 		left: 0;
 		width: 182px;
 		z-index: 2;
-	}
+	}*/
 
 	#secondary {
 		background-color: transparent;
@@ -4054,9 +4081,9 @@ a.post-thumbnail:hover {
 		margin-left: 222px;
 	}
 
-	.site:before {
+	/*.site:before {
 		width: 222px;
-	}
+	}*/
 
 	.search-box-wrapper,
 	.featured-content {

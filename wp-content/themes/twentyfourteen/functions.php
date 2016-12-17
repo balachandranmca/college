@@ -230,6 +230,11 @@ function twentyfourteen_font_url() {
  * @since Twenty Fourteen 1.0
  */
 function twentyfourteen_scripts() {
+	wp_enqueue_style( 'twentyfourteen-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( 'twentyfourteen-style' ), '20161217' );
+	wp_enqueue_script( 'twentyfourteen-jquery', get_template_directory_uri() . '/js/jquery.min.js', array( 'jquery' ), '20161217' );
+	wp_enqueue_script( 'twentyfourteen-bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20161217' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array( 'twentyfourteen-style' ), '20161217' );
+	
 	// Add Lato font, used in the main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
 
@@ -242,6 +247,8 @@ function twentyfourteen_scripts() {
 	// Load the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentyfourteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfourteen-style' ), '20131205' );
 	wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
+
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -276,6 +283,31 @@ function twentyfourteen_admin_fonts() {
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
 }
 add_action( 'admin_print_scripts-appearance_page_custom-header', 'twentyfourteen_admin_fonts' );
+
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since Twenty Fourteen 1.9
+ *
+ * @param array   $urls          URLs to print for resource hints.
+ * @param string  $relation_type The relation type the URLs are printed.
+ * @return array URLs to print for resource hints.
+ */
+function twentyfourteen_resource_hints( $urls, $relation_type ) {
+	if ( wp_style_is( 'twentyfourteen-lato', 'queue' ) && 'preconnect' === $relation_type ) {
+		if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '>=' ) ) {
+			$urls[] = array(
+				'href' => 'https://fonts.gstatic.com',
+				'crossorigin',
+			);
+		} else {
+			$urls[] = 'https://fonts.gstatic.com';
+		}
+	}
+
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'twentyfourteen_resource_hints', 10, 2 );
 
 if ( ! function_exists( 'twentyfourteen_the_attached_image' ) ) :
 /**
@@ -520,3 +552,4 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
