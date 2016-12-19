@@ -16,8 +16,8 @@ function Page_Settings() {
 	$page_options = array(
 		
         "demo_page" => "College Demo Page",
-        "college_login_page" => "College Login Page",
-
+        "college_login" => "College Login Page",		
+        "college_journal" => "College Journal Page",		
 	);
 
 	if (isset($_POST['pagesubmit'])) {

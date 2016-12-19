@@ -58,12 +58,14 @@ function post_redirect(){
     /** HOOK FOR THE DISPLAY NAME **/
     $user_ID = get_current_user_id();
     
-    $reguseronly = array(get_buzz_id('demo_page'));
+    $reguseronly = array(
+        get_buzz_id('college_journal'),
+    );
     
     $is_user_logged_in = is_user_logged_in();
     
     if (empty($is_user_logged_in) && in_array($wp_query->queried_object_id, $reguseronly)){
-        $query = get_buzz_url('college_login_page');
+        $query = get_buzz_url('college_login');
         $protocol = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
         $new_query = add_query_arg( array(
         'aft_login' => urlencode($protocol.'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])
@@ -85,7 +87,7 @@ function post_redirect(){
     /* For admin only page */
     
     $admin_only = array(
-    get_buzz_id('sample'),
+        get_buzz_id('college_journal'),
     );
     
     if ( ( in_array('journal', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $admin_only))) {

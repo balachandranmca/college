@@ -233,6 +233,7 @@ function twentyfourteen_scripts() {
 	wp_enqueue_style( 'twentyfourteen-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( 'twentyfourteen-style' ), '20161217' );
 	wp_enqueue_script( 'twentyfourteen-jquery', get_template_directory_uri() . '/js/jquery.min.js', array( 'jquery' ), '20161217' );
 	wp_enqueue_script( 'twentyfourteen-bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20161217' );
+	wp_enqueue_script( 'twentyfourteen-customjs', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), '20161217' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array( 'twentyfourteen-style' ), '20161217' );
 	
 	// Add Lato font, used in the main stylesheet.
