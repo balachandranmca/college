@@ -31,9 +31,4 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	
 
-	<!-- #masthead -->
-
-	<div id="main" class="site-main">
