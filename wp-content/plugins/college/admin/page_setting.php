@@ -17,7 +17,10 @@ function Page_Settings() {
 		
         "demo_page" => "College Demo Page",
         "college_login" => "College Login Page",		
-        "college_journal" => "College Journal Page",		
+        "college_journal" => "College Journal Page",
+        "college_about_us" => "College About us Page",
+		 "college_contact_us" => "College Contact us Page",
+
 	);
 
 	if (isset($_POST['pagesubmit'])) {
