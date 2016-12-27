@@ -12,3 +12,7 @@ include_once 'college_journal.php';
 include_once 'college_about_us.php';
 
 include_once 'college_contact_us.php';
+
+include_once 'college_slider.php';
+
+include_once 'college_slider_list.php';
