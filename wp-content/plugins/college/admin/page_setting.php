@@ -19,7 +19,9 @@ function Page_Settings() {
         "college_login" => "College Login Page",		
         "college_journal" => "College Journal Page",
         "college_about_us" => "College About us Page",
-		 "college_contact_us" => "College Contact us Page",
+		"college_contact_us" => "College Contact us Page",
+		"college_slider" => "College Home Page Silder",
+		"college_slider_list" => "College Home Page Silder List",
 
 	);
 
