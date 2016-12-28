@@ -60,6 +60,8 @@ function post_redirect(){
     
     $reguseronly = array(
         get_buzz_id('college_journal'),
+        get_buzz_id('college_slider'),
+        get_buzz_id('college_slider_list'),
     );
     
     $is_user_logged_in = is_user_logged_in();
@@ -78,6 +80,12 @@ function post_redirect(){
         header("Cache-Control: post-check=0, pre-check=0", false);
         header("Pragma: no-cache");
         header('Content-Type: text/html');
+    }
+    $nonreguseronly = array(
+        get_buzz_id('college_login'),
+    );
+    if ($is_user_logged_in && in_array($wp_query->queried_object_id, $nonreguseronly) ) {
+        wp_redirect( get_site_url() );
     }
     
     

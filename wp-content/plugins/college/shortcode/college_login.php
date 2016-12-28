@@ -7,8 +7,8 @@
 // use App\Journal;
 
 add_shortcode('COLLEGE_LOGIN', 'college_login_shortcode');
-function college_login_shortcode($atts) {
-	// echo '<pre>';print_r(Journal::all());die;	
+function college_login_shortcode($atts) {	
+	
 	ob_start();
 	include_once 'template/college_loginpage.php';
 	$template_content = ob_get_contents();
@@ -25,10 +25,14 @@ function college_login()
     $user['user_password'] = $_POST['password'];
 	$user_signon = wp_signon( $user, false );
 	if ( is_wp_error($user_signon) ){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('Wrong username or password.')));
+        echo json_encode(array('success'=>false));
     } else {
-		wp_set_current_user($user->ID);
-        echo json_encode(array('loggedin'=>true, 'message'=>__('Login successful, redirecting...')));
+		$aft_login = get_buzz_url('college_journal');
+		if($_POST['aft_login']){
+			$aft_login = urldecode($_POST['aft_login']);
+		}
+		wp_set_current_user($user_signon->ID);
+        echo json_encode(array('success'=>true, 'url'=>$aft_login, 'userid'=>$user_signon->ID));
     }
 	die;
 }
