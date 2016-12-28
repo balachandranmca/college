@@ -31,6 +31,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <div id="Validationerror" class='hide-error' role="alert">The username or password is incorrect.</div>
+                                </div>
+                                <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="text-center">
@@ -60,6 +63,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </form>
                         </div>
                     </div>
@@ -93,18 +97,36 @@ $(function() {
             data: {
                 'action':'college_login',
                 'username' : $('#username').val(),
-                'password' : $('#password').val()
-
+                'password' : $('#password').val(),
+                'aft_login' : "<?php echo $_GET['aft_login'];?>",
             },
-            success:function(data) {
-                // This outputs the result of the ajax request
-                console.log(data);
+            success:function(response) {
+                
+                var response = jQuery.parseJSON(response);
+                console.log(response);
+                if (response.success){
+                    if(response.userid){
+                        setSession();
+                    }
+                    window.location.replace(response.url);
+                }else{
+                    jQuery('#Validationerror').removeClass("hide-error");
+                }
             },
             error: function(errorThrown){
                 console.log(errorThrown);
             }
         });  
+
                 
     });
 });
+function setSession() {
+    <?php session_start(); ?>
+}
 </script>
+<style>
+.hide-error{
+    display:none;
+}
+</style>
