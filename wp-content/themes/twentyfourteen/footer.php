@@ -59,7 +59,7 @@
 <div class="copyright">
   <div class="container">
     <div class="col-md-6">
-      <p>© 2016 - All Rights Ijrest</p>
+      <p>© 2017- All Rights Ijrest</p>
     </div>
     <div class="col-md-6">
       <ul class="bottom_ul">

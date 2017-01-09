@@ -234,6 +234,20 @@ function twentyfourteen_scripts() {
 	// wp_enqueue_style( 'twentyfourteen-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( 'twentyfourteen-style' ), '20161217' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css', array( 'twentyfourteen-style' ), '20161217' );
 	wp_enqueue_script( 'twentyfourteen-appmin', get_template_directory_uri() . '/js/app.min.js', array( 'jquery' ), '20161217' );
+	// wp_enqueue_script( 'twentyfourteen-amazingslider', get_template_directory_uri() . '/js/vendor/amazingslider.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-initslider-1', get_template_directory_uri() . '/js/vendor/initslider-1.js', array( 'jquery' ), '20161218' );
+
+	// wp_enqueue_script( 'twentyfourteen-jquery.countTo', get_template_directory_uri() . '/js/vendor/jquery.countTo.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-jquery.inview.min', get_template_directory_uri() . '/js/vendor/jquery.inview.min.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-lightbox.min', get_template_directory_uri() . '/js/vendor/lightbox.min', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-smoothscroll', get_template_directory_uri() . '/js/vendor/smoothscroll.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-mousescroll', get_template_directory_uri() . '/js/vendor/mousescroll.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-respond.min', get_template_directory_uri() . '/js/vendor/respond.min.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-smoothscroll', get_template_directory_uri() . '/js/vendor/smoothscroll.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-wow.min', get_template_directory_uri() . '/js/vendor/wow.min.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-initslider-1', get_template_directory_uri() . '/js/vendor/initslider-1.js', array( 'jquery' ), '20161218' );
+	// wp_enqueue_script( 'twentyfourteen-initslider-1', get_template_directory_uri() . '/js/vendor/initslider-1.js', array( 'jquery' ), '20161218' );
 	
 	
 	// Add Lato font, used in the main stylesheet.
