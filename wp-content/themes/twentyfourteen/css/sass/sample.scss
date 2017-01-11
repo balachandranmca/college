@@ -81,21 +81,78 @@ html{margin: 0;}
 		}
 	}
 }
-// @media (max-width: 600px) {
-// 	.carousel-caption {
-// 		display: none;
-// 	}
-// }
 
-/* Note: Try to remove the following lines to see the effect of CSS positioning */ 
-h3 {
-  display: inline-block;
-  padding: 10px;
-  background: #B9121B;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+/********************************News Bar *************************/
+.newticker{
+	margin-top: 40px;
+	$color_1: #333;
+	$font_family_1: Calibri;
+
+#tick {
+	li {
+		list-style-type: none;
+		float: left;
+		padding-right: 20px;
+		position: absolute;
+		left: 0px;
+	}
+	position: relative;
+	display: block;
+	width: 5000px;
+	margin: 0;
+	content:""; display: table;
+	height: 0px;
+}
+#tick2 {
+	li {
+		list-style-type: none;
+		float: left;
+		padding-right: 20px;
+		position: absolute;
+		left: 0px;
+	}
+	position: relative;
+	display: block;
+	width: 5000px;
+	margin: 0;
+	content:""; display: table;
+	height: 0px;
+}
+#outer {
+	width: 100%;
+	height: 25px;
+	overflow: hidden;
+	background: #EEEEEE;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		font-family: $font_family_1;
+		font-size: 18px;
+		&:hover {
+			border-bottom: 2px solid #777;
+		}
+	}
 }
 
+}
+
+/********************************News Bar *************************/
+.newsbox{
+	margin-top: 40px;
+	.news-item{
+		table{border: 0;}
+		td{vertical-align: middle;border: 0;}
+		.news-content{padding-left: 15px;}
+	}
+}
+/* Note: Try to remove the following lines to see the effect of CSS positioning */ 
+// h3 {
+//   display: inline-block;
+//   padding: 10px;
+//   background: #B9121B;
+//   border-top-left-radius: 10px;
+//   border-top-right-radius: 10px;
+// }
 .full-screen {
   background-size: cover;
   background-position: center;
@@ -126,6 +183,44 @@ h3 {
 	}
 }
 
+.service-icon {
+    border: 3px solid transparent;
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    line-height: 101px;
+
+    -webkit-transform: rotate(47deg);
+       -moz-transform: rotate(47deg);
+        -ms-transform: rotate(47deg);
+         -o-transform: rotate(47deg);
+            transform: rotate(47deg);
+
+    -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+.service-item:hover .service-icon {
+    border: 3px solid #009ee3;
+    margin-bottom: 20px;
+    color: #009ee3;
+}
+
+.service-icon i {
+    -webkit-transform: rotate(-48deg);
+       -moz-transform: rotate(-48deg);
+        -ms-transform: rotate(-48deg);
+         -o-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+}
+
+.service-item h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
 
 /*****************footer*********/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);

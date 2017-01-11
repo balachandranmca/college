@@ -233,9 +233,10 @@ function twentyfourteen_scripts() {
 	
 	// wp_enqueue_style( 'twentyfourteen-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( 'twentyfourteen-style' ), '20161217' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css', array( 'twentyfourteen-style' ), '20161217' );
+	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/vendor/animate.css', array( 'twentyfourteen-style' ), '20161218' );
 	wp_enqueue_script( 'twentyfourteen-appmin', get_template_directory_uri() . '/js/app.min.js', array( 'jquery' ), '20161217' );
-	// wp_enqueue_script( 'twentyfourteen-amazingslider', get_template_directory_uri() . '/js/vendor/amazingslider.js', array( 'jquery' ), '20161218' );
-	// wp_enqueue_script( 'twentyfourteen-initslider-1', get_template_directory_uri() . '/js/vendor/initslider-1.js', array( 'jquery' ), '20161218' );
+	wp_enqueue_script( 'twentyfourteen-jquery.bootstrap.newsbox.min', get_template_directory_uri() . '/js/vendor/jquery.bootstrap.newsbox.min.js', array( 'jquery' ), '20161218' );
+	wp_enqueue_script( 'twentyfourteen-wow.min', get_template_directory_uri() . '/js/vendor/wow.min.js', array( 'jquery' ), '20161219' );
 
 	// wp_enqueue_script( 'twentyfourteen-jquery.countTo', get_template_directory_uri() . '/js/vendor/jquery.countTo.js', array( 'jquery' ), '20161218' );
 	// wp_enqueue_script( 'twentyfourteen-jquery.inview.min', get_template_directory_uri() . '/js/vendor/jquery.inview.min.js', array( 'jquery' ), '20161218' );
