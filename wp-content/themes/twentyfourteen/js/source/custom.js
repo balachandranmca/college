@@ -79,14 +79,13 @@
 
 $(document).ready(function () {
   //Variable Declarations  
-  var $item = $('.carousel .item');
+  var $item = $('.item');
   var $wHeight = $(window).height();
-
-  if ($(window).width() >= 768) {
-    $item.eq(0).addClass('active');
-    $item.height($wHeight);
-    $item.addClass('full-screen');
-  }
+  // alert($wHeight);
+  $item.eq(0).addClass('active');
+  $item.height($wHeight);
+  $item.addClass('full-screen');
+ 
   $('#myCarousel').carousel({
     interval: 4000,
     pause: "false"
