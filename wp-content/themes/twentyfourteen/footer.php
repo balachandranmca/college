@@ -9,72 +9,139 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
+		<!-- Srart Contact Us
+		=========================================== -->		
+		<section id="contact-us">
+			<div class="container">
+				<div class="row">
+					
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Get In <span class="color">Touch</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+					
+					<!-- Contact Details -->
+					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+						<h3>Contact Details</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.</p>
+						<div class="contact-details">
+							<div class="con-info clearfix">
+								<i class="fa fa-home fa-lg"></i>
+								<span>Khaja Road, Bayzid, Chittagong, Bangladesh</span>
+							</div>
+							
+							<div class="con-info clearfix">
+								<i class="fa fa-phone fa-lg"></i>
+								<span>Phone: +880-31-000-000</span>
+							</div>
+							
+							<div class="con-info clearfix">
+								<i class="fa fa-fax fa-lg"></i>
+								<span>Fax: +880-31-000-000</span>
+							</div>
+							
+							<div class="con-info clearfix">
+								<i class="fa fa-envelope fa-lg"></i>
+								<span>Email: hello@meghna.com</span>
+							</div>
+						</div>
+					</div>
+					<!-- / End Contact Details -->
+						
+					<!-- Contact Form -->
+					<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+						<form id="contact-form" method="post" action="sendmail.php" role="form">
+						
+							<div class="form-group">
+								<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+							</div>
+							
+							<div class="form-group">
+								<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+							</div>
+							
+							<div class="form-group">
+								<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+							</div>
+							
+							<div class="form-group">
+								<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
+							</div>
+							
+							<div id="mail-success" class="success">
+								Thank you. The Mailman is on His Way :)
+							</div>
+							
+							<div id="mail-fail" class="error">
+								Sorry, don't know what happened. Try later :(
+							</div>
+							
+							<div id="cf-submit">
+								<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+							</div>						
+							
+						</form>
+					</div>
+					<!-- ./End Contact Form -->
+				
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+			
+			<!-- Google Map
+			<div class="google-map wow fadeInDown" data-wow-duration="500ms">
+				<div id="map-canvas"></div>
+			</div>	/Google Map -->
+			
+		</section> <!-- end section -->
+		
+		<!-- end Contact Area
+		========================================== -->
+		
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms">
+					<div class="col-lg-12">
+						
+						<!-- Footer Social Links -->
+						<div class="social-icon">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+						<!--/. End Footer Social Links -->
 
-		</div><!-- #main -->
-
-		<!--footer start from here-->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 footerleft ">
-        <div class="logofooter"> IJRESTs</div>
-        <p>The International Journal of Research in Engineering, Science and Technologies (IJRESTs) is an online journal in English published monthly. This academic journal is an open access, peer reviewed and fully refereed international journal.</p>
-        <p><i class="fa fa-male"></i>Name: Dr. Y.R.M. Rao,B.E, (Civil)., M.E., Ph.D.,</br>
-                      Editor-in-Chief (IJRESTs),</p>
-        <p><i class="fa fa-map-pin">
-              </i> Address: PLOT #3, II FLOOR, JAWAHAR NAGAR, </br>       
-         3rd CROSS, BHOOMIANPET,</br>                              
-         PONDICHERRY -605005.</p>
-         <p><i class="fa fa-globe"></i> Phone (India) : +91-9786777229</p>
-        <p><i class="fa fa-phone"></i> Phone (India) : +91-9786777229</p>
-        <p><i class="fa fa-envelope"></i> E-mail : editor@ijrests.org</p>
-        
-      </div>
-      <div class="col-md-4 col-sm-6 paddingtop-bottom">
-        <h6 class="heading7">GENERAL LINKS</h6>
-        <ul class="footer-ul">
-          <li><a href="#"> About Us</a></li>
-          <li><a href="#">  Journals</a></li>
-          <li><a href="#"> Editorialboard</a></li>
-          <li><a href="#">  Processing Fee</a></li>
-          <li><a href="#"> Join Us</a></li>
-          <li><a href="#"> Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-6 paddingtop-bottom">
-        <h6 class="heading7">LATEST POST</h6>
-        <div class="post">
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-        </div>
-      </div>
-      <!--<div class="col-md-3 col-sm-6 paddingtop-bottom">
-        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <div class="fb-xfbml-parse-ignore">
-            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-          </div>
-        </div>
-      </div>-->
-    </div>
-  </div>
-</footer>
-<!--footer start from here-->
-
-<div class="copyright">
-  <div class="container">
-    <div class="col-md-6">
-      <p>© 2017- All Rights Ijrest</p>
-    </div>
-    <div class="col-md-6">
-      <ul class="bottom_ul">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Join us</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+						<!-- copyright -->
+						<div class="copyright text-center">
+							<a href="index.html">
+								<img src="img/logo-meghna.png" alt="Meghna" /> 
+							</a>
+							<br />
+							
+							<p>Design And Developed by <a href="#"> IJRESTs Team</a>. Copyright &copy; 2017. All Rights Reserved.</p>
+						</div>
+						<!-- /copyright -->
+						
+					</div> <!-- end col lg 12 -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</footer> <!-- end footer -->
+		
+		<!-- Back to Top
+		============================== -->
+		<a href="javascript:;" id="scrollUp">
+			<i class="fa fa-angle-up fa-2x"></i>
+		</a>
+		
+		<!-- end Footer Area
+		========================================== -->
 
 	<?php wp_footer(); ?>
 
