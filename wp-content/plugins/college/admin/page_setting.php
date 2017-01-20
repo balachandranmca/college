@@ -22,6 +22,16 @@ function Page_Settings() {
 		"college_contact_us" => "College Contact us Page",
 		"college_slider" => "College Home Page Silder",
 		"college_slider_list" => "College Home Page Silder List",
+		"college_journal_list" => "College Journal List",
+		"college_volume" => "College Volume",
+		"college_volume_list" => "College Volume List",
+		"college_issue" => "College Issue",
+		"college_issue_list" => "College Issue List",
+		"college_editor" => "College Editor",
+		"college_editor_list" => "College Editor List",
+		"college_journal_editor" => "College Journal Editor",
+		"college_journal_editor_list" => "College Journal Editor List",
+		"college_editor_board" => "College Editor Board",
 
 	);
 

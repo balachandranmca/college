@@ -73,31 +73,31 @@
     </div>
 </div>
 <script>
-$(function() {
-    $('#login-form-link').click(function(e) {
-		$("#login-form").delay(100).fadeIn(100);
- 		$("#register-form").fadeOut(100);
-		$('#register-form-link').removeClass('active');
-		$(this).addClass('active');
+jQuery(function() {
+    jQuery('#login-form-link').click(function(e) {
+		jQuery("#login-form").delay(100).fadeIn(100);
+ 		jQuery("#register-form").fadeOut(100);
+		jQuery('#register-form-link').removeClass('active');
+		jQuery(this).addClass('active');
 		e.preventDefault();
 	});
-	$('#register-form-link').click(function(e) {
-		$("#register-form").delay(100).fadeIn(100);
- 		$("#login-form").fadeOut(100);
-		$('#login-form-link').removeClass('active');
-		$(this).addClass('active');
+	jQuery('#register-form-link').click(function(e) {
+		jQuery("#register-form").delay(100).fadeIn(100);
+ 		jQuery("#login-form").fadeOut(100);
+		jQuery('#login-form-link').removeClass('active');
+		jQuery(this).addClass('active');
 		e.preventDefault();
 	});
-    $( "#login-form" ).submit(function( event ) {
+    jQuery( "#login-form" ).submit(function( event ) {
         event.preventDefault();
         var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-        $.ajax({
+        jQuery.ajax({
             url: ajaxurl,
             type: 'POST',
             data: {
                 'action':'college_login',
-                'username' : $('#username').val(),
-                'password' : $('#password').val(),
+                'username' : jQuery('#username').val(),
+                'password' : jQuery('#password').val(),
                 'aft_login' : "<?php echo $_GET['aft_login'];?>",
             },
             success:function(response) {

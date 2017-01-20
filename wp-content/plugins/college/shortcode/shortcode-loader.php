@@ -16,3 +16,25 @@ include_once 'college_contact_us.php';
 include_once 'college_slider.php';
 
 include_once 'college_slider_list.php';
+
+include_once 'college_journal_list.php';
+
+include_once 'college_volume.php';
+
+include_once 'college_volume_list.php';
+
+include_once 'college_issue.php';
+
+include_once 'college_issue_list.php';
+
+include_once 'college_call_for_paper.php';
+
+include_once 'college_editor.php';
+
+include_once 'college_editor_list.php';
+
+include_once 'college_journal_editor.php';
+
+include_once 'college_journal_editor_list.php';
+
+include_once 'college_editor_board.php';
