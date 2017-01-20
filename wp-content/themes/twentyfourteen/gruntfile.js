@@ -7,6 +7,7 @@ module.exports = function (grunt) {
         watch: {
             js: {
                 files: [
+					'gruntfile.js',
 					'js/source/**/*.js',
                 ],
                 tasks: ['clean', 'uglify']
@@ -19,7 +20,6 @@ module.exports = function (grunt) {
 				tasks: ['clean', 'sass', 'concat', 'cssmin']
 			}
 		},
-
 		// uglify to concat, minify, and make source maps		
 		uglify: {
 			dist: {
@@ -72,7 +72,7 @@ module.exports = function (grunt) {
 			dist: {
 				src: [
 					'css/style.css',
-					// 'js/app.min.js',
+					//'js/app.min.js',
 				]
 			}
 		},
