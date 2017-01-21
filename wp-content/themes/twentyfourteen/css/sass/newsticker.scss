@@ -1,0 +1,45 @@
+/********************************News Bar *************************/
+.newsbox{
+	margin-top: 40px;
+	background-color: #2b2c30;
+	.panel-heading{
+		background-color: #2b2c30 !important;
+  		padding: 0 0 20px;
+		h3 {
+			color: #6cb670;
+			font-family: Oswald !important;
+			font-weight: 700 !important;
+			margin: 0 0 10px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		p{
+			font-size: 18px;
+    		font-weight: 400;
+		}
+	}
+	.panel-body{
+		background-color: #333;
+		padding: 0;
+	}
+	.panel-footer{
+		background-color: #2b2c30 !important;
+		span{
+			color: #333;
+		}
+	}
+	.news-item{
+		border-top: 2px solid #3F4045;
+		font-weight: 400;
+		padding: 20px;
+		&:last-child {
+			border-bottom: 2px solid #3F4045;
+		}
+		&:nth-child(2n) {
+			background-color: #2F3035;
+		}
+		table{border: 0;}
+		td{vertical-align: middle;border: 0;}
+		.news-content{color: #fff;padding-left: 15px;}
+	}
+}

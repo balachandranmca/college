@@ -68,7 +68,7 @@
 
 	$.Slitslider.defaults = {
 		// transitions speed
-		speed : 800,
+		speed : 1000,
 		// if true the item's slices will also animate the opacity value
 		optOpacity : false,
 		// amount (%) to translate both slices - adjust as necessary
@@ -82,10 +82,10 @@
 		// keyboard navigation
 		keyboard : true,
 		// time between transitions
-		interval : 3000,
+		interval : 4000,
 		// callbacks
-		onBeforeChange : function( slide, idx ) { return false; },
-		onAfterChange : function( slide, idx ) { return false; }
+		onBeforeChange : function( slide, idx ) { return true; },
+		onAfterChange : function( slide, idx ) { return true; }
 	};
 
 	$.Slitslider.prototype = {

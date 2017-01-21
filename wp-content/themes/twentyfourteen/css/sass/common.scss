@@ -329,7 +329,7 @@ $border_color_1: #6cb670;
 ==================================================================*/
 
 #about{
-     padding: 70px 0;
+     padding: 70px 0 0 0;
     .icon-box {
         position: relative;
         width: 160px;
@@ -441,7 +441,6 @@ $border_color_1: #6cb670;
 	Footer section
 ==================================================================*/
 
-#footer{
     .social-icon {
     padding: 60px 0 35px;
     > ul {
@@ -526,4 +525,3 @@ $border_color_1: #6cb670;
         border: 1px solid #6cb670;
     }
     }
-}
