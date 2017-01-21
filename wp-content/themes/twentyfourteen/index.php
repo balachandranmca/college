@@ -434,7 +434,6 @@
 	<?php
 get_header();
 ?>
-		<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 		<?php
 get_footer();
 ?>
