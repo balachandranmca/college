@@ -1,11 +1,23 @@
 <form enctype="multipart/form-data" name='imageform' id="imageform" method="post">
     <div class="form-group">
-        Name : <input type="text" name="slidername" id="slidername" tabindex="1" class="form-control" placeholder="slidername" value="<?php echo $slider['slidername'];?>" required>
-        Description : <textarea rows="4" name="description" id="description"><?php echo $slider['description'];?></textarea>
+        Journal Id : <select id="journal_id">
+                        <option value="0">Select Journal...</option>
+                        <?php foreach ($journalList as $key => $journalValue) { ?>
+                            <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
+                        <?php } ?>
+                      </select><br>
+        Type : <select id="editor_type">
+                    <option value="1">Editor-in-Chief</option>
+                    <option value="2">Editors</option>
+                    <option value="2">Associate Editors</option>
+                    <option value="2">Publication In-Charge</option>
+                    
+                </select><br>
+        Personal Details : <textarea rows="4" name="personal_details" id="personal_details"><?php echo $journal_editor['personal_details'];?></textarea>
         <p>Please Choose Image: </p>
-        <img alt="Profile image" src="<?php echo $slider['image']['url'];?>" class="imageup" id="uploaded-image">
+        <img alt="Profile image" src="<?php echo $journal_editor['image']['url'];?>" class="imageup" id="uploaded-image">
         <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
-        <input type="hidden" id="sliderid" value="<?php echo $slider['id'];?>">
+        <input type="hidden" id="journal_editorid" value="<?php echo $journal_editor['id'];?>">
         <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
     </div>
     
@@ -72,13 +84,13 @@
         jQuery('#errorMsg').addClass('hide-error');
         var noerrorFlag = 1;
 
-        if(jQuery('.file-upload').val()=="" && jQuery('#sliderid').val()==""){
+        if(jQuery('.file-upload').val()=="" && jQuery('#journal_editorid').val()==""){
             noerrorFlag=0;
         }
-        if(jQuery('#slidername').val()==""){
+        if(jQuery('#journal_id').val()=="0"){
             noerrorFlag=0;
         }
-        if(jQuery('#description').val()==""){
+        if(jQuery('#personal_details').val()==""){
             noerrorFlag=0;
         }
         
@@ -86,16 +98,18 @@
             var fd = new FormData();
             var file = jQuery(document).find('input[type="file"]');
             
-            var slidername = jQuery('#slidername').val();
-            var description = jQuery('#description').val();
-            var sliderid = jQuery('#sliderid').val();
+            var personal_details = jQuery('#personal_details').val();
+            var journal_id = jQuery('#journal_id').val();
+            var editor_type = jQuery('#editor_type').val();
+            var journal_editorid = jQuery('#journal_editorid').val();
 
             var individual_file = file[0].files[0];
             fd.append("file", individual_file); 
-            fd.append("slidername", slidername); 
-            fd.append("description", description);
-            fd.append("sliderid", sliderid);
-            fd.append('action', 'college_slider');  
+            fd.append("personal_details", personal_details);            
+            fd.append("journal_id", journal_id); 
+            fd.append("type", editor_type);
+            fd.append("journal_editorid", journal_editorid);
+            fd.append('action', 'college_journal_editor');  
             
             
 
@@ -106,7 +120,7 @@
                 contentType: false,
                 processData: false,
                 success: function(response){
-                    window.location = "<?php echo get_buzz_url('college_slider_list');?>";
+                    window.location = "<?php echo get_buzz_url('college_journal_editor_list');?>";
                 }
             });
         }

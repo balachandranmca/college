@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="pull-right">
-                        <a href="<?php echo get_buzz_url('college_slider');?>"><button type="button" class="btn btn-primary">Create New</button></a>
+                        <a href="<?php echo get_buzz_url('college_journal');?>"><button type="button" class="btn btn-primary">Create New</button></a>
                     </div>
                 </div>
             </div>
@@ -13,23 +13,17 @@
                     <div class="table-responsive slider-listpage">
                         <table id="mytable" class="table table-bordred table-striped">
                             <thead>
-                                <th>Image</th>
                                 <th>Name</th>
-                                <th>Description</th>
+                                <th>ISSN NUMBER</th>
                                 <th>Edit</th>
-                                
                                 <th>Delete</th>
                             </thead>
                             <tbody>
-                            <?php foreach ($sliderList as $key => $value) { ?>
+                            <?php foreach ($journalList as $key => $value) { ?>
                                 <tr>
-                                <?php 
-                                   $image =  json_decode($value['image'],1);
-                                ?>
-                                <td><img class="slider-list-img" src="<?php echo $image['url'];?>" alt="List-img"></td>
-                                <td><?php echo $value['slidername'];?></td>
-                                <td><?php echo $value['description'];?></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="<?php echo get_buzz_url('college_slider').'?id='.$value['id'];?>"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a></p></td>
+                                <td><?php echo $value['name'];?></td>
+                                <td><?php echo $value['issn_no'];?></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="<?php echo get_buzz_url('college_journal').'?id='.$value['id'];?>"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="delete btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-id="<?php echo $value['id'];?>" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
                                 </tr>
                             <?php } ?>  
@@ -47,17 +41,17 @@
         e.preventDefault();
         var result = confirm("Are you sure to delete?");
         if(result) {
-            var sliderid = jQuery(this).attr('data-id');
+            var journalid = jQuery(this).attr('data-id');
             var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
             jQuery.ajax({
                 url: ajaxurl,
                 type: 'POST',
                 data: {
-                    'action':'college_slider_delete',
-                    'sliderid' : sliderid,
+                    'action':'college_journal_delete',
+                    'journalid' : journalid,
                 },
                 success:function(response) {
-                    window.location = "<?php echo get_buzz_url('college_slider_list');?>";
+                    window.location = "<?php echo get_buzz_url('college_journal_list');?>";
                 }
             });
         }
