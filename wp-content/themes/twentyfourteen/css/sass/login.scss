@@ -1,0 +1,15 @@
+.login-page{
+  padding: 100px;
+  .panel-login{
+      background: #2B2C30;
+      border: 1px solid #fff;
+      .panel-title{
+        text-align: center;
+        font-family: 'oswald';
+        font-size: 18px;
+      a{
+        color: #333;
+      }
+    }
+  }
+}

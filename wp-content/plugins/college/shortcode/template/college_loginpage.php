@@ -1,13 +1,13 @@
-<div class="row col-md-12">
+<div class="row col-md-12 login-page">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-login">
                 <div class="panel-heading">
                     <div class="row">
-                        <div class="col-xs-6">
+                        <div class="col-xs-6 panel-title">
                             <a href="#" class="active" id="login-form-link">Login</a>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-6 panel-title">
                             <a href="#" id="register-form-link">Register</a>
                         </div>
                     </div>
