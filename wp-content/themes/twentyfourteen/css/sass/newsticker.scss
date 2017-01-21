@@ -2,9 +2,12 @@
 .newsbox{
 	margin-top: 40px;
 	background-color: #2b2c30;
+	.panel{
+		border: 0;
+	}
 	.panel-heading{
 		background-color: #2b2c30 !important;
-  		padding: 0 0 20px;
+  		padding: 0;
 		h3 {
 			color: #6cb670;
 			font-family: Oswald !important;

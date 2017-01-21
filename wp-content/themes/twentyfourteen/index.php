@@ -75,7 +75,7 @@
 							<img src="wp-content/themes/twentyfourteen/images/civil06.jpg" alt="slider-one"/>
 							<div class="carousel-caption">
 								<div>
-									<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">
+									<!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
 									<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Welcome To IJRESTs</h2>
 									<a class="btn btn-green animated fadeInUp" href="#navigation">Get Started</a>
 								</div>
@@ -90,8 +90,8 @@
 							<img src="wp-content/themes/twentyfourteen/images/mechanilcal03.jpg" alt="slider-two"/>
 							<div class="carousel-caption">
 								<div>
-									<h2 class="heading animated fadeInDown">Highly Responsive</h2>
-									<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3>
+									<h2 class="heading animated fadeInDown">Civil Engineering</h2>
+									<h3 class="animated fadeInUp">IJRESTs expects that academicians, researchers, scholars, industrialists, </br>practicing engineers, managers, etc. </h3>
 									<a class="btn btn-green animated fadeInUp" href="#navigation">Get Started</a>
 								</div>
 							</div>
@@ -105,8 +105,8 @@
 							<img src="wp-content/themes/twentyfourteen/images/circuit01.jpg" alt="slider-three"/>
 							<div class="carousel-caption">
 								<div>
-									<h2 class="heading animated fadeInRight">One Page Parallax HTML Template</h2>
-									<h3 class="animated fadeInLeft">Clean and Professional Design</h3>
+									<h2 class="heading animated fadeInRight">Circuit Branching</h2>
+									<h3 class="animated fadeInLeft">cover the latest technological developments </br>in the field of Circuit Branches</h3>
 									<a class="btn btn-green animated fadeInUp" href="#navigation">Learn More</a>
 								</div>
 							</div>
@@ -211,7 +211,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/1.jpg" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/1.jpg" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
@@ -221,7 +221,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/2.jpg" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/2.jpg" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
@@ -231,7 +231,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/3.jpg" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/3.jpg" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
@@ -241,7 +241,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/4.jpg" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/4.jpg" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
@@ -251,7 +251,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/5.jpg" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/5.jpg" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
@@ -261,7 +261,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/6.jpg" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/6.jpg" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
@@ -271,7 +271,7 @@
                         <table cellpadding="4">
                           <tbody>
                             <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/7.png" width="100" class="img-rounded"></td>
+                              <td><img src="wp-content/themes/twentyfourteen/images/news/7.png" width="80" height="60" class="img-rounded"></td>
                               <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
                             </tr>
                           </tbody>
