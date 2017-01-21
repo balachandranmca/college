@@ -7697,5 +7697,10 @@ html {
   color: #fff;
   padding-left: 15px;
 }
+/* line 49, sass/newsticker.scss */
+.newsbox .middle-content p {
+  font-size: 17px;
+  text-align: justify;
+}
 
 /*# sourceMappingURL=style.css.map */

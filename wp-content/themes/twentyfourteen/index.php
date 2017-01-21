@@ -284,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 middle-content">
           <p>Published monthly, online, open-access and having double-blind peer reviewed, International Journal of Research in Engineering, Science and Technologies (IJRESTs) is an emerging academic journal in the field of Engineering, Technology, Sciences, Humanities and Management Studies. This journal's motive and aim is to create an awareness, re-shaping the knowledge already created and challenge the existing theories related to the field of Academic Research in any discipline in Engineering, Technology, Sciences, Humanities and Management Studies. International Journal of Research in Engineering, Science and Technologies (IJRESTs) has a primary aim to publish novel research being conducted and carried out in the domain of Engineering, Technology, Sciences, Humanities and Management Studies as a whole. It invites engineering, professors, researchers, professionals, academicians, managers and research scholars to submit their novel and conjectural ideas in the domain of Engineering, Technology, Sciences, Humanities and Management Studies in the form of research articles, book reviews, case studies, review articles and personal opinions that can benefit the Engineering, Technology, Sciences, Humanities and Management Studies researchers in general and society as a whole. As earlier stated, there is no special emphasis on just one topic but emphasis is given on all the aspects that can be covered in the domain of Engineering, Technology, Sciences, Humanities and Management Studies.</p>
         </div>
         <div class="newsbox">
