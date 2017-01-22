@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container volume-creator">
 	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 creator-content">
         <div class="well well-sm">
           <form class="form-horizontal" action="" method="post" id="volume-form">
           <fieldset>
-            <legend class="text-center">VOLUME</legend>
+            <h3 class="text-center">VOLUME</h3>
             
             <!-- Name input-->
             <div class="form-group">

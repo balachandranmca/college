@@ -7806,11 +7806,77 @@ Copyright (c) 2013 Daniel Eden
 .journal-editors-listpage .content .content-table table tbody tr:nth-child(odd) > td, .slider-listpage .content .content-table table tbody tr:nth-child(odd) > td {
   background-color: #2F3035;
 }
-
-/* line 2, sass/journal-creator.scss */
-.journal-creator .creator-content {
+/* line 55, sass/journal-list.scss */
+.journal-list .content .content-table .slider-list-img,
+.volume-list .content .content-table .slider-list-img,
+.issues_listpage .content .content-table .slider-list-img,
+.editors-listpage .content .content-table .slider-list-img,
+.journal-editors-listpage .content .content-table .slider-list-img, .slider-listpage .content .content-table .slider-list-img {
+  width: 100px;
+  height: 80px;
   margin: 0 auto;
+  display: block;
+}
+
+/* line 5, sass/journal-creator.scss */
+.journal-creator .creator-content,
+.volume-creator .creator-content,
+.issue-creator .creator-content,
+.slider-creator .creator-content {
+  margin: 50px auto;
   float: none;
+}
+/* line 8, sass/journal-creator.scss */
+.journal-creator .creator-content .well,
+.volume-creator .creator-content .well,
+.issue-creator .creator-content .well,
+.slider-creator .creator-content .well {
+  background: transparent;
+}
+/* line 11, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group .form-control,
+.volume-creator .creator-content .well .form-group .form-control,
+.issue-creator .creator-content .well .form-group .form-control,
+.slider-creator .creator-content .well .form-group .form-control {
+  background-color: transparent;
+  border: 1px solid #4e595f;
+  height: 38px;
+  border-radius: 0;
+  color: #fff;
+}
+/* line 18, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group label,
+.volume-creator .creator-content .well .form-group label,
+.issue-creator .creator-content .well .form-group label,
+.slider-creator .creator-content .well .form-group label {
+  color: #fff;
+}
+/* line 21, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
+.volume-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
+.issue-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
+.slider-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools {
+  margin-bottom: 10px;
+}
+/* line 24, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group .volume_dropdown,
+.volume-creator .creator-content .well .form-group .volume_dropdown,
+.issue-creator .creator-content .well .form-group .volume_dropdown,
+.slider-creator .creator-content .well .form-group .volume_dropdown {
+  width: 100%;
+  height: 38px;
+  color: #333;
+  padding-left: 10px;
+}
+/* line 31, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group .slider_image img,
+.volume-creator .creator-content .well .form-group .slider_image img,
+.issue-creator .creator-content .well .form-group .slider_image img,
+.slider-creator .creator-content .well .form-group .slider_image img {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

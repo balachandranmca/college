@@ -1,18 +1,44 @@
-<form enctype="multipart/form-data" name='imageform' id="imageform" method="post">
-    <div class="form-group">
-        Name : <input type="text" name="slidername" id="slidername" tabindex="1" class="form-control" placeholder="slidername" value="<?php echo $slider['slidername'];?>" required>
-        Description : <textarea rows="4" name="description" id="description"><?php echo $slider['description'];?></textarea>
-        <p>Please Choose Image: </p>
-        <img alt="Profile image" src="<?php echo $slider['image']['url'];?>" class="imageup" id="uploaded-image">
-        <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
-        <input type="hidden" id="sliderid" value="<?php echo $slider['id'];?>">
-        <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
-    </div>
-    
-    <div id="errorMsg" class='hide-error'>Please fill all fields</div>
-    
-    <input type="submit" value="Upload" name="image_upload" id="image_upload" class="btn"/>
-</form>
+<div class="container slider-creator">
+	<div class="row">
+      <div class="col-md-6 creator-content">
+        <div class="well well-sm">
+            <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
+                <fieldset>
+                    <h3 class="text-center">SLIDER</h3>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Name</label>
+                        <div class="col-md-9">
+                            <input type="text" name="slidername" id="slidername" tabindex="1" class="form-control" placeholder="slidername" value="<?php echo $slider['slidername'];?>" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Description</label>
+                        <div class="col-md-9">
+                            <textarea rows="4" name="description" id="description"><?php echo $slider['description'];?></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Please Choose Image</label>
+                        <div class="col-md-9 slider_image">
+                            <img alt="Profile image" src="<?php echo $slider['image']['url'];?>" class="imageup" id="uploaded-image">
+                            <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
+                            <input type="hidden" id="sliderid" value="<?php echo $slider['id'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12 text-right">
+                            <button type="submit" name="image_upload" id="image_upload" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                     </div>
+                </fieldset>
+                
+                <div id="errorMsg" class='hide-error'>Please fill all fields</div>
+                
+                <!--<input type="submit" class="pull-right" value="Upload" name="image_upload" id="image_upload" class="btn"/>-->
+            </form>
+      </div>
+     </div>
+</div>
 <script>
     jQuery('.file-upload').change(function (e) {
             if (isFileAPISupported()) {
