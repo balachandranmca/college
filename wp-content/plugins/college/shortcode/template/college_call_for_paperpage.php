@@ -35,7 +35,7 @@
                 </p>
               </div>
             </div>
-            <input type="button" value="Add phone number" id="add_phone_number">
+            <input type="button" value="Add" id="add_phone_number">
     
             <!-- Form actions -->
             <div class="form-group">

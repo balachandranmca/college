@@ -32,6 +32,9 @@ function Page_Settings() {
 		"college_journal_editor" => "College Journal Editor",
 		"college_journal_editor_list" => "College Journal Editor List",
 		"college_editor_board" => "College Editor Board",
+		"college_call_for_paper" => "College Call for Paper",
+		"college_general_settings" => "College General Settings",
+		"college_processing_fees" => "College Processing Fees",
 
 	);
 

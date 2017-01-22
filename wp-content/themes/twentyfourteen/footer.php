@@ -62,7 +62,7 @@
 						<div class="contact-details">
 							<div class="con-info clearfix">
 								<i class="fa fa-chevron-right fa-lg"></i>
-								<a href="#"><span>About Us</span></a>
+								<a href="<?php echo get_buzz_url('college_about_us');?>"><span>About Us</span></a>
 							</div>
 							
 							<div class="con-info clearfix">
@@ -72,17 +72,17 @@
 							
 							<div class="con-info clearfix">
 								<i class="fa fa-chevron-right fa-lg"></i>
-								<a href="#"><span>Editorialboard</span></a>
+								<a href="<?php echo get_buzz_url('college_editor');?>"><span>Editorialboard</span></a>
 							</div>
 							
 							<div class="con-info clearfix">
 								<i class="fa fa-chevron-right fa-lg"></i>
-								<a href="#"><span>Processing Fee</span></a>
+								<a href="<?php echo get_buzz_url('college_processing_fees');?>"><span>Processing Fee</span></a>
 							</div>
 
 							<div class="con-info clearfix">
 								<i class="fa fa-chevron-right fa-lg"></i>
-								<a href="#"><span>Contact</span></a>
+								<a href="<?php echo get_buzz_url('college_contact_us');?>"><span>Contact</span></a>
 							</div>
 						</div>
 					</div>
