@@ -150,3 +150,11 @@ function format_URL($urlStr){
     }
     return $urlStr;
 }
+
+function get_editor_type($id=null){
+    $editor_type[1]="Editor-in-Chief";
+    $editor_type[2]="Editors";
+    $editor_type[3]="Associate Editors";
+    $editor_type[4]="Publication In-Charge";
+    return (is_null($id)) ?  $editor_type: $editor_type[$id];
+}
