@@ -59,29 +59,7 @@
 				<!-- main nav -->
 				<nav class="collapse navbar-collapse navbar-right" role="Navigation">
 					<ul id="nav" class="nav navbar-nav">
-						<li class="current"><a href="#body">Home</a></li>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#services">Our Publications</a></li>
-						<!--<li><a href="#showcase">Manscript Submission</a></li>-->
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menuscript Submission
-							<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Guidelines to Author</a></li>
-								<li><a href="#">Paper Template</a></li>
-								<li><a href="#">Sample Paper</a></li>
-								<li><a href="#">Copyright Form</a></li>
-								<li><a href="#">Online Submission</a></li>
-								<li><a href="#">E-Certificate</a></li>
-								<li><a href="#">Withdrawal Procedure</a></li>
-								<li><a href="#">Withdrawel Form</a></li>
-							</ul>
-						</li>
-						<li><a href="#our-team">Processing Fee</a></li>
-						<li><a href="#pricing">Advertise with Us</a></li>
-						<li><a href="#blog">Join Us</a></li>
-						<li><a href="#contact-us">Contact</a></li>
-						<li><a href="#">Login</a></li>
+						<?php include_once WP_BAG_PL_SHORTCODE_TPL."college_menupage.php";?>
 					</ul>
 				</nav>
 				<!-- /main nav -->
