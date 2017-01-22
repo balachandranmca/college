@@ -1,6 +1,41 @@
-.journal-creator{
+.journal-creator,
+.volume-creator,
+.issue-creator,
+.slider-creator{
     .creator-content{
-        margin: 0 auto;
+        margin: 50px auto;
         float: none;
+        .well{
+            background: transparent;
+            .form-group{
+                .form-control {
+                    background-color: transparent;
+                    border: 1px solid #4e595f;
+                    height: 38px;
+                    border-radius: 0;
+                    color: #fff;
+                }
+                label{
+                    color: #fff;
+                }
+                #wp-journal_frontend_editor-editor-tools{
+                    margin-bottom: 10px;
+                }
+                .volume_dropdown{
+                    width: 100%;
+                    height: 38px;
+                    color: #333;
+                    padding-left: 10px;
+                }
+                .slider_image{
+                    img{
+                        width: 100px;
+                        height: 80px;
+                        margin-bottom: 20px;
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }

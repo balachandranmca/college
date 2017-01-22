@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container issue-creator">
 	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 creator-content">
         <div class="well well-sm">
           <form class="form-horizontal" action="" method="post" id="issue-form">
           <fieldset>
-            <legend class="text-center">ISSUE</legend>
+            <h3 class="text-center">ISSUE</h3>
             
             <!-- Name input-->
             <div class="form-group">
@@ -34,7 +34,7 @@
             <div class="form-group">
               <label class="col-md-3 control-label" for="name">Volume Id</label>
               <div class="col-md-9">
-                <select id="volume_id">
+                <select id="volume_id" class="volume_dropdown">
                   <option value="0">Select Volume...</option>
                   <?php foreach ($volumeList as $key => $volumeValue) { ?>
                     <option value="<?php echo $volumeValue['id'];?>"<?php if($issue['volume_id']==$volumeValue['id']){echo ' selected';}?>><?php echo $volumeValue['name'];?></option>
@@ -47,7 +47,7 @@
             <div class="form-group">
               <label class="col-md-3 control-label" for="name">Journal Id</label>
               <div class="col-md-9">
-                <select id="journal_id">
+                <select id="journal_id" class="volume_dropdown">
                   <option value="0">Select Journal...</option>
                   <?php foreach ($journalList as $key => $journalValue) { ?>
                     <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
