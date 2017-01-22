@@ -1,6 +1,6 @@
 <div>
     <div class="col-md-6">
-        <img class="slider-list-img" src="../images/rsz_1book1.png" alt="List-img">
+        <img class="slider-list-img" src="wp-content/themes/twentyfourteen/images/rsz_1book1.png" alt="List-img">
     </div>
      <div class="col-md-6">
         <h4>International Journal of Research in Engineering, Science and Technologies (IJRESTs)</h4>
