@@ -48,7 +48,7 @@
                     </button>
 					<!-- /responsive nav button -->
 					<!-- logo -->
-					<a class="navbar-brand" href="#body">
+					<a class="navbar-brand" href="<?php echo site_url();?>">
 						<h1 id="logo">
 							<!--<img src="img/logo-meghna.png" alt="Meghna" />-->
 							IJRESTs
