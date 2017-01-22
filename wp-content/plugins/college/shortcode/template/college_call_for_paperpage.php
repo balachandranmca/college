@@ -1,41 +1,40 @@
-<div class="container">
+<div class="container callfor_paperpage">
 	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 creator-content">
         <div class="well well-sm">
           <form class="form-horizontal" action="" method="post" id="volume-form">
           <fieldset>
-            <legend class="text-center">CALL FOR PAPER</legend>
-            
+            <h3 class="text-center">CALL FOR PAPER</h3>
             <!-- Name input-->
             <div class="form-group input_fields_wrap">
               <?php $i=1; ?>
               <?php foreach ($issueActiveList as $key1 => $value1) { ?>
-                <div id="phone_number_form<?php echo $i;?>">
+                <div id="phone_number_form<?php echo $i;?>" class="remove-btn">
                     <p>
                         <select class="actives">
                             <?php foreach ($issueList as $key => $value) { ?>
                                 <option value="<?php echo $value['id'];?>" <?php if($value1['id']==$value['id']){echo 'selected';}?>><?php echo $journal[$value['journal_id']].' '.$volume[$value['volume_id']].' '.$value['name'];?></option>
                             <?php } ?>
                         </select> 
-                        <input type="button" id="remove_phone_number" value="Remove">
+                        <input type="button" class="btn btn-danger btn-sm" id="remove_phone_number" value="Remove">
                     </p>
                 </div>
                 <?php $i++; ?>
               <?php } ?>
               
 
-              <div id="phone_number_form" class="hiddens">
+              <div id="phone_number_form" class="hiddens" class="remove-btn">
                 <p>
                     <select class="call_for_paper_dropdown">
                         <?php foreach ($issueList as $key => $value) { ?>
                             <option value="<?php echo $value['id'];?>"><?php echo $journal[$value['journal_id']].' '.$volume[$value['volume_id']].' '.$value['name'];?></option>
                         <?php } ?>
                     </select> 
-                    <input type="button" id="remove_phone_number" value="Remove">
+                    <input type="button" class="btn btn-danger btn-sm" id="remove_phone_number" value="Remove">
                 </p>
               </div>
             </div>
-            <input type="button" value="Add" id="add_phone_number">
+            <input type="button" class="btn btn-success btn-lg" value="Add" id="add_phone_number">
     
             <!-- Form actions -->
             <div class="form-group">
@@ -44,13 +43,12 @@
               </div>
             </div>
           </fieldset>
+          <!--<div id="errorMsg" class='hide-error'>Please fill all fields</div>-->
           </form>
         </div>
       </div>
 	</div>
 </div>
-<div id="errorMsg" class='hide-error'>Please fill all fields</div>
-
 <script>
     
     jQuery(document).ready(function() {      
