@@ -26,7 +26,7 @@
                                 <?php 
                                    $image =  json_decode($value['image'],1);
                                 ?>
-                                <td><img class="journal_editor-list-img" src="<?php echo $image['url'];?>" alt="List-img"></td>
+                                <td><img class="journal_editor-list-img slider-list-img" src="<?php echo $image['url'];?>" alt="List-img"></td>
                                 <td><?php echo $journal[$value['journal_id']];?></td>
                                 <td><?php echo $value['description'];?></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="<?php echo get_buzz_url('college_journal_editor').'?id='.$value['id'];?>"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a></p></td>

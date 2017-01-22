@@ -1,30 +1,58 @@
-<form enctype="multipart/form-data" name='imageform' id="imageform" method="post">
-    <div class="form-group">
-        Journal Id : <select id="journal_id">
-                        <option value="0">Select Journal...</option>
-                        <?php foreach ($journalList as $key => $journalValue) { ?>
-                            <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
-                        <?php } ?>
-                      </select><br>
-        Type : <select id="editor_type">
-                    <option value="1">Editor-in-Chief</option>
-                    <option value="2">Editors</option>
-                    <option value="2">Associate Editors</option>
-                    <option value="2">Publication In-Charge</option>
-                    
-                </select><br>
-        Personal Details : <textarea rows="4" name="personal_details" id="personal_details"><?php echo $journal_editor['personal_details'];?></textarea>
-        <p>Please Choose Image: </p>
-        <img alt="Profile image" src="<?php echo $journal_editor['image']['url'];?>" class="imageup" id="uploaded-image">
-        <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
-        <input type="hidden" id="journal_editorid" value="<?php echo $journal_editor['id'];?>">
-        <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
+<div class="container slider-creator">
+	<div class="row">
+      <div class="col-md-6 creator-content">
+        <div class="well well-sm">
+            <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
+                <fieldset>
+                    <h3 class="text-center">JOURNAL</h3>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="journal_Id">Journal Id</label>
+                            <div class="col-md-9">
+                                <select id="journal_id" class="dropdown">
+                                    <option value="0">Select Journal...</option>
+                                    <?php foreach ($journalList as $key => $journalValue) { ?>
+                                        <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="type">Type</label>
+                        <div class="col-md-9">
+                            <select id="editor_type" class="dropdown">
+                                <option value="1">Editor-in-Chief</option>
+                                <option value="2">Editors</option>
+                                <option value="2">Associate Editors</option>
+                                <option value="2">Publication In-Charge</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Personal Details</label>
+                        <div class="col-md-9">
+                            <textarea rows="4" name="personal_details" id="personal_details"><?php echo $journal_editor['personal_details'];?></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="please_choose_image">Please Choose Image</label>
+                        <div class="col-md-9 slider_image">
+                            <img alt="Profile image" src="<?php echo $journal_editor['image']['url'];?>" class="imageup" id="uploaded-image">
+                            <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
+                            <input type="hidden" id="journal_editorid" value="<?php echo $journal_editor['id'];?>">
+                            <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
+                        </div>
+                    </div>
+                <div id="errorMsg" class='hide-error'>Please fill all fields</div>
+                <div class="form-group">
+                    <div class="col-md-12 text-right">
+                        <input type="submit" class="btn btn-primary btn-lg" value="Upload" name="image_upload" id="image_upload" class="btn"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+       </div>
     </div>
-    
-    <div id="errorMsg" class='hide-error'>Please fill all fields</div>
-    
-    <input type="submit" value="Upload" name="image_upload" id="image_upload" class="btn"/>
-</form>
+</div>
 <script>
     jQuery('.file-upload').change(function (e) {
             if (isFileAPISupported()) {

@@ -6996,6 +6996,40 @@ Copyright (c) 2013 Daniel Eden
 .login-page .panel-login .panel-title a {
   color: #333;
 }
+/* line 17, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-control,
+.login-page .panel-login .panel-body #register-form .form-control {
+  background-color: transparent;
+  border: 1px solid #4e595f;
+  height: 38px;
+  border-radius: 0;
+  color: #fff;
+}
+/* line 23, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-control:focus,
+.login-page .panel-login .panel-body #register-form .form-control:focus {
+  box-shadow: 0 0 0;
+}
+/* line 26, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-control::-webkit-input-placeholder,
+.login-page .panel-login .panel-body #register-form .form-control::-webkit-input-placeholder {
+  color: #ddd;
+}
+/* line 29, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-control:-moz-placeholder,
+.login-page .panel-login .panel-body #register-form .form-control:-moz-placeholder {
+  color: #ddd;
+}
+/* line 32, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-control::-moz-placeholder,
+.login-page .panel-login .panel-body #register-form .form-control::-moz-placeholder {
+  color: #ddd;
+}
+/* line 35, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-control:-ms-input-placeholder,
+.login-page .panel-login .panel-body #register-form .form-control:-ms-input-placeholder {
+  color: #ddd;
+}
 
 /* Table of Content
 ==================================================
@@ -7096,7 +7130,6 @@ Copyright (c) 2013 Daniel Eden
   color: #fff;
   padding: 10px 30px;
   border-radius: 0;
-  margin-top: 15px;
   -webkit-transition: all .5s ease-in 0s;
   -moz-transition: all .5s ease-in 0s;
   -o-transition: all .5s ease-in 0s;
@@ -7818,65 +7851,128 @@ Copyright (c) 2013 Daniel Eden
   display: block;
 }
 
-/* line 5, sass/journal-creator.scss */
+/* line 6, sass/journal-creator.scss */
 .journal-creator .creator-content,
 .volume-creator .creator-content,
 .issue-creator .creator-content,
-.slider-creator .creator-content {
+.slider-creator .creator-content,
+.callfor_paperpage .creator-content {
   margin: 50px auto;
   float: none;
 }
-/* line 8, sass/journal-creator.scss */
+/* line 9, sass/journal-creator.scss */
 .journal-creator .creator-content .well,
 .volume-creator .creator-content .well,
 .issue-creator .creator-content .well,
-.slider-creator .creator-content .well {
+.slider-creator .creator-content .well,
+.callfor_paperpage .creator-content .well {
   background: transparent;
 }
-/* line 11, sass/journal-creator.scss */
+/* line 12, sass/journal-creator.scss */
 .journal-creator .creator-content .well .form-group .form-control,
 .volume-creator .creator-content .well .form-group .form-control,
 .issue-creator .creator-content .well .form-group .form-control,
-.slider-creator .creator-content .well .form-group .form-control {
+.slider-creator .creator-content .well .form-group .form-control,
+.callfor_paperpage .creator-content .well .form-group .form-control {
   background-color: transparent;
   border: 1px solid #4e595f;
   height: 38px;
   border-radius: 0;
   color: #fff;
 }
-/* line 18, sass/journal-creator.scss */
+/* line 19, sass/journal-creator.scss */
 .journal-creator .creator-content .well .form-group label,
 .volume-creator .creator-content .well .form-group label,
 .issue-creator .creator-content .well .form-group label,
-.slider-creator .creator-content .well .form-group label {
+.slider-creator .creator-content .well .form-group label,
+.callfor_paperpage .creator-content .well .form-group label {
   color: #fff;
 }
-/* line 21, sass/journal-creator.scss */
+/* line 22, sass/journal-creator.scss */
 .journal-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
 .volume-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
 .issue-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
-.slider-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools {
+.slider-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
+.callfor_paperpage .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools {
   margin-bottom: 10px;
 }
-/* line 24, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group .volume_dropdown,
+/* line 25, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group .volume_dropdown, .journal-creator .creator-content .well .form-group .dropdown,
 .volume-creator .creator-content .well .form-group .volume_dropdown,
+.volume-creator .creator-content .well .form-group .dropdown,
 .issue-creator .creator-content .well .form-group .volume_dropdown,
-.slider-creator .creator-content .well .form-group .volume_dropdown {
+.issue-creator .creator-content .well .form-group .dropdown,
+.slider-creator .creator-content .well .form-group .volume_dropdown,
+.slider-creator .creator-content .well .form-group .dropdown,
+.callfor_paperpage .creator-content .well .form-group .volume_dropdown,
+.callfor_paperpage .creator-content .well .form-group .dropdown {
   width: 100%;
   height: 38px;
   color: #333;
   padding-left: 10px;
 }
 /* line 31, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group .actives,
+.volume-creator .creator-content .well .form-group .actives,
+.issue-creator .creator-content .well .form-group .actives,
+.slider-creator .creator-content .well .form-group .actives,
+.callfor_paperpage .creator-content .well .form-group .actives {
+  width: 65%;
+  color: #333;
+  padding-left: 10px;
+  height: 41px;
+}
+/* line 38, sass/journal-creator.scss */
 .journal-creator .creator-content .well .form-group .slider_image img,
 .volume-creator .creator-content .well .form-group .slider_image img,
 .issue-creator .creator-content .well .form-group .slider_image img,
-.slider-creator .creator-content .well .form-group .slider_image img {
+.slider-creator .creator-content .well .form-group .slider_image img,
+.callfor_paperpage .creator-content .well .form-group .slider_image img {
   width: 100px;
   height: 80px;
   margin-bottom: 20px;
   display: block;
+}
+/* line 46, sass/journal-creator.scss */
+.journal-creator .creator-content .well .form-group .remove-btn input,
+.volume-creator .creator-content .well .form-group .remove-btn input,
+.issue-creator .creator-content .well .form-group .remove-btn input,
+.slider-creator .creator-content .well .form-group .remove-btn input,
+.callfor_paperpage .creator-content .well .form-group .remove-btn input {
+  margin: 0;
+}
+
+/* line 2, sass/aboutus.scss */
+.aboutus-page .slider-list-img {
+  width: 100%;
+  padding: 60px 55px 0;
+}
+/* line 6, sass/aboutus.scss */
+.aboutus-page .content {
+  padding: 60px 55px 0;
+}
+/* line 8, sass/aboutus.scss */
+.aboutus-page .content h2 {
+  margin: 0 0 15px 0;
+}
+/* line 11, sass/aboutus.scss */
+.aboutus-page .content p {
+  font-size: 17px;
+}
+
+/* line 3, sass/feespage.scss */
+.feespage .content-one h2, .feespage .content-two h2 {
+  color: #6CB670;
+}
+/* line 8, sass/feespage.scss */
+.feespage .content-two h4 {
+  text-align: center;
+}
+/* line 12, sass/feespage.scss */
+.feespage .payment-details {
+  margin: 0 auto;
+  float: none;
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
