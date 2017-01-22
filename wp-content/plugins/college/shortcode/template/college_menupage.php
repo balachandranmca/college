@@ -16,6 +16,7 @@
     <li><a href="<?php echo get_buzz_url('college_editor_list') ?>">Editors</a></li>
     <li><a href="<?php echo get_buzz_url('college_slider_list') ?>">Slider</a></li>
     <li><a href="<?php echo get_buzz_url('college_call_for_paper') ?>">Call for paper</a></li>
+    <li><a href="<?php echo get_buzz_url('college_journal_editor_list') ?>">Journal Editors</a></li>
     <li><a href="<?php echo get_buzz_url('college_general_settings') ?>">General Settings</a></li>
 <?php } else { ?>
     <li class="current"><a href="#body">Home</a></li>

@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container editors-listpage">
     <div class="row">
-        <div class="col-md-12" style="margin-top:60px;">
+        <div class="col-md-12 content">
             <div class="row" style="margin-top:20px;">
-                <div class="col-md-12">
+                <div class="col-md-12 content-table">
                     <div class="table-responsive slider-listpage">
                         <table id="mytable" class="table table-bordred table-striped">
                             <thead>

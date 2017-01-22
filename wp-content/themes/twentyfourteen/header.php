@@ -28,6 +28,10 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<!-- Oswald / Title Font -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+	<!-- Ubuntu / Body Font -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
 	<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 </head>
 <!--<link href="<?php echo get_template_directory_uri(); ?>/css/vendor/font-awesome.min.css" rel="stylesheet">-->
