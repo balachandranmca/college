@@ -10,6 +10,10 @@
  */
 ?>
 <body id="body">
+		<?php 
+			$user_ID = get_current_user_id();
+			$role = get_current_user_role($user_ID);
+			if (!in_array('administrator', $role)) { ?>
 		<!-- Srart Contact Us
 		=========================================== -->		
 		<section id="contact-us">
@@ -98,6 +102,7 @@
 			</div>	/Google Map -->
 			
 		</section> <!-- end section -->
+		<?php } ?>
 		
 		<!-- end Contact Area
 		========================================== -->

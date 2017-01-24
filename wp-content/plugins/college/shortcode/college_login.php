@@ -27,7 +27,7 @@ function college_login()
 	if ( is_wp_error($user_signon) ){
         echo json_encode(array('success'=>false));
     } else {
-		$aft_login = site_url();
+		$aft_login = get_buzz_url('college_journal');
 		if($_POST['aft_login']){
 			$aft_login = urldecode($_POST['aft_login']);
 		}
