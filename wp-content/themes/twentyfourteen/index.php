@@ -15,7 +15,16 @@
  */
 
  ?>
-
+ 
+<?php 
+    use App\Slider;
+    use App\Issue;
+    use App\Journal;
+    
+    $sliderList = Slider::all()->sortBy('id')->toArray();
+    $journalList = Journal::all()->sortBy('id')->toArray();
+    $issueActiveList = Issue::where('active', '=', 1)->get()->toArray();
+?>
 <!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
@@ -69,49 +78,22 @@
 			<div id="slitSlider" class="sl-slider-wrapper">
 				<div class="sl-slider">
 					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2"
-									data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<img src="wp-content/themes/twentyfourteen/images/civil06.jpg" alt="slider-one"/>
-							<div class="carousel-caption">
-								<div>
-									<!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
-									<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Welcome To IJRESTs</h2>
-									<a class="btn btn-green animated fadeInUp" href="#navigation">Get Started</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /single slide item -->
-					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5"
-									data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<img src="wp-content/themes/twentyfourteen/images/mechanilcal03.jpg" alt="slider-two"/>
-							<div class="carousel-caption">
-								<div>
-									<h2 class="heading animated fadeInDown">Civil Engineering</h2>
-									<h3 class="animated fadeInUp">IJRESTs expects that academicians, researchers, scholars, industrialists, </br>practicing engineers, managers, etc. </h3>
-									<a class="btn btn-green animated fadeInUp" href="#navigation">Get Started</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /single slide item -->
-					<!-- single slide item -->
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2"
-									data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<img src="wp-content/themes/twentyfourteen/images/circuit01.jpg" alt="slider-three"/>
-							<div class="carousel-caption">
-								<div>
-									<h2 class="heading animated fadeInRight">Circuit Branching</h2>
-									<h3 class="animated fadeInLeft">cover the latest technological developments </br>in the field of Circuit Branches</h3>
-									<a class="btn btn-green animated fadeInUp" href="#navigation">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
+          <?php foreach ($sliderList as $key => $value) { ?>
+            <?php $image =  json_decode($value['image'],1);?>
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2"
+                    data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <img src="<?php echo $image['url'];?>" alt="slider-one"/>
+                <div class="carousel-caption">
+                  <div>
+                    <!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
+                    <h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight"><?php echo $value['description'];?></h2>
+                    <a class="btn btn-green animated fadeInUp" href="#navigation">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php } ?>
 					<!-- /single slide item -->
 				</div>
 				<!-- /sl-slider -->
@@ -159,76 +141,18 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <ul class="demo1" style="overflow-y: hidden; height: 210px;margin: 0;">
-                      <li style="" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/1.jpg" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li style="" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/2.jpg" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li style="" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/3.jpg" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li style="display:none;" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/4.jpg" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li style="display:none;" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/5.jpg" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li style="display:none;" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/6.jpg" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li style="display:none;" class="news-item">
-                        <table cellpadding="4">
-                          <tbody>
-                            <tr>
-                              <td><img src="wp-content/themes/twentyfourteen/images/news/7.png" width="80" height="60" class="img-rounded"></td>
-                              <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
+                      <?php foreach ($issueActiveList as $key => $value) { ?>
+                          <li style="" class="news-item">
+                            <table cellpadding="4">
+                              <tbody>
+                                <tr>
+                                  <td class="news-content"><?php echo $value['name'];?><a href="#"> Read more...</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </li>
+                      <?php } ?>
+                      
                     </ul>
                   </div>
                 </div>
@@ -345,37 +269,17 @@
 					</div>
 					<!-- /section title -->
 					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-wordpress fa-5x"></i>
-							</div>
-							<h3>Civil Engineering</h3>
-							<p>ISSN 2395-6453</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-desktop fa-5x"></i>
-							</div>
-							<h3>Circuit Branches</h3>
-							<p>ISSN 2454-664X</p>
-						</div>
-					</article>
-					<!-- End Single Service Item -->
-					<!-- Single Service Item -->
-					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="service-block text-center">
-							<div class="service-icon text-center">
-								<i class="fa fa-play fa-5x"></i>
-							</div>
-							<h3>Mechanical Engineering</h3>
-							<p>ISSN 2454-5392</p>
-						</div>
-					</article>
+          <?php foreach ($journalList as $key => $value) { ?>
+              <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <div class="service-block text-center">
+                  <div class="service-icon text-center">
+                    <i class="fa fa-wordpress fa-5x"></i>
+                  </div>
+                  <h3><?php echo $value['name'];?></h3>
+                  <p><?php echo $value['issn_no'];?></p>
+                </div>
+              </article>
+          <?php } ?>
 					<!-- End Single Service Item -->
 				</div>
 				<!-- End row -->

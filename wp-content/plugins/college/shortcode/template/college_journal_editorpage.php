@@ -11,7 +11,7 @@
                                 <select id="journal_id" class="dropdown">
                                     <option value="0">Select Journal...</option>
                                     <?php foreach ($journalList as $key => $journalValue) { ?>
-                                        <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
+                                        <option value="<?php echo $journalValue['id'];?>"<?php if($journal_editor['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
                                     <?php } ?>
                                 </select>
                             </div>
@@ -20,10 +20,10 @@
                         <label class="col-md-3 control-label" for="type">Type</label>
                         <div class="col-md-9">
                             <select id="editor_type" class="dropdown">
-                                <option value="1">Editor-in-Chief</option>
-                                <option value="2">Editors</option>
-                                <option value="2">Associate Editors</option>
-                                <option value="2">Publication In-Charge</option>
+                                <?php $editor_type = get_editor_type(); ?>
+                                <?php foreach ($editor_type as $key => $value) { ?>
+                                   <option value="<?php echo $key;?>"<?php if($journal_editor['type'] == $key) { echo 'selected';}?> ><?php echo $value;?></option>
+                                <?php } ?>
                             </select>
                         </div>
                     </div>
