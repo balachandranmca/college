@@ -7708,6 +7708,10 @@ Copyright (c) 2013 Daniel Eden
   margin: -5px 0 0 15px;
 }
 /* line 54, sass/contact.scss */
+.contact_us_page #cf-submit input {
+  background: #6CB670;
+}
+/* line 58, sass/contact.scss */
 .contact_us_page .error {
   display: none;
   padding: 10px;
@@ -7716,7 +7720,7 @@ Copyright (c) 2013 Daniel Eden
   font-size: 13px;
   background-color: #FFBABA;
 }
-/* line 63, sass/contact.scss */
+/* line 67, sass/contact.scss */
 .contact_us_page .success {
   background-color: #6cb670;
   border-radius: 4px;
@@ -7911,18 +7915,7 @@ Copyright (c) 2013 Daniel Eden
   color: #333;
   padding-left: 10px;
 }
-/* line 31, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group .actives,
-.volume-creator .creator-content .well .form-group .actives,
-.issue-creator .creator-content .well .form-group .actives,
-.slider-creator .creator-content .well .form-group .actives,
-.callfor_paperpage .creator-content .well .form-group .actives {
-  width: 65%;
-  color: #333;
-  padding-left: 10px;
-  height: 41px;
-}
-/* line 38, sass/journal-creator.scss */
+/* line 32, sass/journal-creator.scss */
 .journal-creator .creator-content .well .form-group .slider_image img,
 .volume-creator .creator-content .well .form-group .slider_image img,
 .issue-creator .creator-content .well .form-group .slider_image img,
@@ -7933,13 +7926,26 @@ Copyright (c) 2013 Daniel Eden
   margin-bottom: 20px;
   display: block;
 }
-/* line 46, sass/journal-creator.scss */
+/* line 40, sass/journal-creator.scss */
 .journal-creator .creator-content .well .form-group .remove-btn input,
 .volume-creator .creator-content .well .form-group .remove-btn input,
 .issue-creator .creator-content .well .form-group .remove-btn input,
 .slider-creator .creator-content .well .form-group .remove-btn input,
 .callfor_paperpage .creator-content .well .form-group .remove-btn input {
   margin: 0;
+}
+
+/* line 48, sass/journal-creator.scss */
+.actives {
+  width: 70%;
+  color: #333;
+  padding-left: 10px;
+  height: 41px;
+}
+
+/* line 54, sass/journal-creator.scss */
+#errorMsg {
+  color: #ff0000;
 }
 
 /* line 2, sass/aboutus.scss */

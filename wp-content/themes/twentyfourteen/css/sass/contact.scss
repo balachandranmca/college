@@ -50,7 +50,11 @@
     .con-info span {
         margin: -5px 0 0 15px;
     }
-
+    #cf-submit{
+        input{
+            background: #6CB670;
+        }
+    }
     .error {
         display: none;
         padding: 10px;
