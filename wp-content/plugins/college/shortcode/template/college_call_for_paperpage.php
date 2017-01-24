@@ -2,11 +2,11 @@
 	<div class="row">
       <div class="col-md-6 creator-content">
         <div class="well well-sm">
-          <form class="form-horizontal" action="" method="post" id="volume-form">
-          <fieldset>
+          <form class="form-horizontal text-center" action="" method="post" id="volume-form">
+         
             <h3 class="text-center">CALL FOR PAPER</h3>
             <!-- Name input-->
-            <div class="form-group input_fields_wrap">
+            <div class="input_fields_wrap">
               <?php $i=1; ?>
               <?php foreach ($issueActiveList as $key1 => $value1) { ?>
                 <div id="phone_number_form<?php echo $i;?>" class="remove-btn">
@@ -33,16 +33,11 @@
                     <input type="button" class="btn btn-danger btn-sm" id="remove_phone_number" value="Remove">
                 </p>
               </div>
-            </div>
-            <input type="button" class="btn btn-success btn-lg" value="Add" id="add_phone_number">
-    
-            <!-- Form actions -->
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              <div class="app">
               </div>
+               <input type="button" class="btn btn-success btn-lg" value="Add" id="add_phone_number">
+                <input type="submit" value="submit" class="btn btn-primary btn-lg">
             </div>
-          </fieldset>
           <!--<div id="errorMsg" class='hide-error'>Please fill all fields</div>-->
           </form>
         </div>
@@ -55,12 +50,13 @@
       var phone_number_form_index=0;
       jQuery("#add_phone_number").click(function(){
           phone_number_form_index++;
-          jQuery(this).parent().before(jQuery("#phone_number_form").clone().attr("id","phone_number_form" + phone_number_form_index));
+          jQuery(this).append(".app").before(jQuery("#phone_number_form").clone().attr("id","phone_number_form" + phone_number_form_index));
           jQuery("#phone_number_form" + phone_number_form_index).css("display","inline");
           jQuery("#phone_number_form" + phone_number_form_index + " :input").each(function(){
               jQuery(this).attr("name",jQuery(this).attr("name") + phone_number_form_index);
               jQuery(this).attr("id",jQuery(this).attr("id") + phone_number_form_index);
-              jQuery(this).attr("class",'actives');
+              jQuery("select").attr("class",'actives');
+              jQuery(".hiddens input").attr("class",'btn btn-danger btn-sm');
               });
           jQuery("#remove_phone_number" + phone_number_form_index).click(function(){
               jQuery(this).closest("div").remove();

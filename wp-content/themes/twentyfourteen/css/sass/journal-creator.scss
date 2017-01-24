@@ -28,12 +28,6 @@
                     color: #333;
                     padding-left: 10px;
                 }
-                .actives{
-                    width: 65%;
-                    color: #333;
-                    padding-left: 10px;
-                    height: 41px;
-                }
                 .slider_image{
                     img{
                         width: 100px;
@@ -50,4 +44,13 @@
             }
         }
     }
+}
+.actives{
+    width: 70%;
+    color: #333;
+    padding-left: 10px;
+    height: 41px;
+}
+#errorMsg{
+    color: #ff0000;
 }
