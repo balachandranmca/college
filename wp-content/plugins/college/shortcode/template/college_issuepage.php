@@ -55,6 +55,14 @@
                 </select>
               </div>
             </div>
+
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Closed</label>
+              <div class="col-md-9">
+                <input type="radio" name="status" value="1"<?php if($issue['status']){echo ' checked';}?>> Yes<br>
+                <input type="radio" name="status" value="0"<?php if(!$issue['status']){echo ' checked';}?>> No<br>
+              </div>
+            </div>
     
             <!-- Form actions -->
             <div class="form-group">
@@ -107,6 +115,7 @@
                   'volume_id' : jQuery('#volume_id').val(),
                   'journal_id' : jQuery('#journal_id').val(),
                   'issueid' : jQuery('#issueid').val(),
+                  'status' : jQuery('input[name=status]:checked').val(),
               },
               success:function(data) {
                   window.location = "<?php echo get_buzz_url('college_issue_list');?>";

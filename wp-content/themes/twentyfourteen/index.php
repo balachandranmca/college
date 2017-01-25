@@ -23,7 +23,7 @@
     
     $sliderList = Slider::all()->sortBy('id')->toArray();
     $journalList = Journal::all()->sortBy('id')->toArray();
-    $issueActiveList = Issue::where('active', '=', 1)->get()->toArray();
+    $issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
 ?>
 <!DOCTYPE html>
 <!--[if IE 7]>

@@ -35,6 +35,7 @@ function Page_Settings() {
 		"college_call_for_paper" => "College Call for Paper",
 		"college_general_settings" => "College General Settings",
 		"college_processing_fees" => "College Processing Fees",
+		"college_journal_view" => "College Journal View",
 
 	);
 

@@ -40,3 +40,7 @@ include_once 'college_journal_editor_list.php';
 include_once 'college_editor_board.php';
 
 include_once 'college_processing_fees.php';
+
+include_once 'college_general_settings.php';
+
+include_once 'college_journal_view.php';

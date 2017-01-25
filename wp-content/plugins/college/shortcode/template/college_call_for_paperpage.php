@@ -16,7 +16,7 @@
                                 <option value="<?php echo $value['id'];?>" <?php if($value1['id']==$value['id']){echo 'selected';}?>><?php echo $journal[$value['journal_id']].' '.$volume[$value['volume_id']].' '.$value['name'];?></option>
                             <?php } ?>
                         </select> 
-                        <input type="button" class="btn btn-danger btn-sm" id="remove_phone_number" value="Remove">
+                        <input type="button" class="btn btn-danger btn-sm remove-letter-form" id="remove_phone_number" value="Remove">
                     </p>
                 </div>
                 <?php $i++; ?>
@@ -30,7 +30,7 @@
                             <option value="<?php echo $value['id'];?>"><?php echo $journal[$value['journal_id']].' '.$volume[$value['volume_id']].' '.$value['name'];?></option>
                         <?php } ?>
                     </select> 
-                    <input type="button" class="btn btn-danger btn-sm" id="remove_phone_number" value="Remove">
+                    <input type="button" class="btn btn-danger btn-sm remove-letter-form" id="remove_phone_number" value="Remove">
                 </p>
               </div>
               <div class="app">
@@ -44,27 +44,8 @@
       </div>
 	</div>
 </div>
+<script src="<?php echo WP_BAG_PL_JS.'custom.js'?>"></script>
 <script>
-    
-    jQuery(document).ready(function() {      
-      var phone_number_form_index=0;
-      jQuery("#add_phone_number").click(function(){
-          phone_number_form_index++;
-          jQuery(this).append(".app").before(jQuery("#phone_number_form").clone().attr("id","phone_number_form" + phone_number_form_index));
-          jQuery("#phone_number_form" + phone_number_form_index).css("display","inline");
-          jQuery("#phone_number_form" + phone_number_form_index + " :input").each(function(){
-              jQuery(this).attr("name",jQuery(this).attr("name") + phone_number_form_index);
-              jQuery(this).attr("id",jQuery(this).attr("id") + phone_number_form_index);
-              jQuery("select").attr("class",'actives');
-              jQuery(".hiddens input").attr("class",'btn btn-danger btn-sm');
-              });
-          jQuery("#remove_phone_number" + phone_number_form_index).click(function(){
-              jQuery(this).closest("div").remove();
-    
-          });
-        }); 
-    });
-
     jQuery( "#volume-form" ).submit(function( event ) {
         event.preventDefault();
         jQuery('#errorMsg').addClass('hide-error');
@@ -75,7 +56,7 @@
         
         if(noerrorFlag){
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-          var arr = jQuery('select.actives').map(function(){return this.value}).get()
+          var arr = jQuery('select.actives').map(function(){return this.value}).get();
           jQuery.ajax({
               url: ajaxurl,
               type: 'POST',
@@ -85,6 +66,7 @@
               },
               success:function(data) {
                   alert("Saved Successfully");
+                  location.reload();
               },
               error: function(errorThrown){
                   console.log(errorThrown);

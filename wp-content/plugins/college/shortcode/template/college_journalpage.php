@@ -34,7 +34,7 @@ $settings =   array(
             <div class="form-group">
               <label class="col-md-3 control-label" for="email">Colour</label>
               <div class="col-md-9">
-                <input class="jscolor" name='color'  class="form-control" value="<?php echo $journal['color'];?>">
+                <input class="jscolor form-control" name='color' value="<?php echo $journal['color'];?>">
               </div>
             </div>
             
