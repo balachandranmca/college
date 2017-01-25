@@ -1,4 +1,5 @@
 <?php 
+    use App\Journal;
     $is_admin = 0;
     $is_user_logged_in = is_user_logged_in();
     if($is_user_logged_in){
@@ -8,6 +9,7 @@
             $is_admin = 1;
         }
     }
+    $journalList = Journal::all()->sortBy('id')->toArray();
 ?>
 <?php if($is_admin) { ?>
     <li><a href="<?php echo get_buzz_url('college_journal_list') ?>">Journal</a></li>
@@ -35,6 +37,15 @@
             <li><a href="#">E-Certificate</a></li>
             <li><a href="#">Withdrawal Procedure</a></li>
             <li><a href="#">Withdrawel Form</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Journals
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <?php foreach ($journalList as $key => $value) { ?>
+                <li><a href="<?php echo get_buzz_url('college_journal_view').'?id='.$value['id'];?>"><?php echo $value['name'];?></a></li>
+            <?php } ?>
         </ul>
     </li>
     <li><a href="<?php echo get_buzz_url('college_processing_fees');?>">Processing Fee</a></li>
