@@ -15,14 +15,14 @@
 			$role = get_current_user_role($user_ID);
 			if (!in_array('administrator', $role)) { ?>
 		<!-- Srart Contact Us
-		=========================================== -->		
+		=========================================== -->
+		<!-- section title -->
+		<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+			<h2>Get In <span class="color">Touch</span></h2>
+			<div class="border"></div>
+		</div>
+		<!-- /section title -->		
 		<section id="contact-us">
-			<!-- section title -->
-			<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-				<h2>Get In <span class="color">Touch</span></h2>
-				<div class="border"></div>
-			</div>
-			<!-- /section title -->
 			<div class="container">
 				<div class="row">
 					<!-- Contact Details -->

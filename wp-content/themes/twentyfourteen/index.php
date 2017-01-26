@@ -136,7 +136,7 @@
             <div class="panel panel-primary">
               <div class="panel-heading"> 
 				  <span class=""></span>
-				  <h3>News Updates</h3>
+				  <h3>Call for Paper</h3>
               <div class="panel-body">
                 <div class="row">
                   <div class="col-xs-12">

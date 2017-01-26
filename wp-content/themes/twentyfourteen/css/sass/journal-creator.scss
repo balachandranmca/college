@@ -7,7 +7,8 @@
         margin: 50px auto;
         float: none;
         .well{
-            background: transparent;
+            background-color: rgba(8, 155, 228, 0.2);
+            border: 1px solid #333;
             .form-group{
                 .form-control {
                     border: 1px solid #4e595f;
@@ -16,7 +17,7 @@
                     color: #000;
                 }
                 label{
-                    color: #fff;
+                    color: #333;
                 }
                 #wp-journal_frontend_editor-editor-tools{
                     margin-bottom: 10px;

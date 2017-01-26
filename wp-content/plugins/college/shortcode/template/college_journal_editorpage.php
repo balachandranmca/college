@@ -45,7 +45,7 @@
                 <div id="errorMsg" class='hide-error'>Please fill all fields</div>
                 <div class="form-group">
                     <div class="col-md-12 text-right">
-                        <input type="submit" class="btn btn-primary btn-lg" value="Upload" name="image_upload" id="image_upload" class="btn"/>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Upload" name="image_upload" id="image_upload"/>
                     </div>
                 </div>
             </form>
