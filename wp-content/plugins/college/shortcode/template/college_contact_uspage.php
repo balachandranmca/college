@@ -16,19 +16,19 @@
                 <div class="col-md-12 box">
                     <div>
                         <h3>Address</h3>
-                        <p>Pondicherry,</br>India.</p>
+                        <p><?php echo get_option('contact_address');?></p>
                     </div>
                 </div>
                 <div class="col-md-12 box">
                     <div>
                         <h3>Mobile Number</h3>
-                        <p>+91-9786777229</p>
+                        <p><?php echo get_option('contact_mobile');?></p>
                     </div>
                 </div>
                 <div class="col-md-12 box">
                     <div>
                         <h3>Email Address</h3>
-                        <p>editor@ijrests.org</p>
+                        <p><?php echo get_option('contact_email');?></p>
                     </div>
                 </div>
             </div>

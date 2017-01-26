@@ -23,15 +23,15 @@
                     <tbody>
                         <tr>
                             <td>Indian Author (₹)</td>   
-                            <td>2000</td>
-                            <td>1000</td>
-                            <td>1000</td>
+                            <td><?php echo get_option('indian_standard');?></td>
+                            <td><?php echo get_option('indian_editor');?></td>
+                            <td><?php echo get_option('indian_student');?></td>
                         </tr>
                         <tr>
                             <td>Foriegn Author US ($)</td>   
-                            <td>75</td>
-                            <td>50</td>
-                            <td>50</td>
+                            <td><?php echo get_option('foriegn_standard');?></td>
+                            <td><?php echo get_option('foriegn_editor');?></td>
+                            <td><?php echo get_option('foriegn_student');?></td>
                         </tr>
                     </tbody>
                 </table>
@@ -60,35 +60,35 @@
                 <tbody>
                 <tr>
                     <td>Bank Name</td>
-                    <td>HDFC Bank</td>
+                    <td><?php echo get_option('bank_name');?></td>
                 </tr>
                  <tr>
                      <td>Bank Address</td>
-                     <td>100 Feet Road, Pondicherry</td>
+                     <td><?php echo get_option('bank_address');?></td>
                  </tr>
                  <tr>
                       <td>Branch Code</td>
-                     <td>000407</td>
+                     <td><?php echo get_option('bank_code ');?></td>
                  </tr>
                  <tr>
                       <td>Account Name</td>
-                     <td>International Journal of Research in Engineering, <br>Science and Technologies (IJRESTs)</td>
+                     <td><?php echo get_option('account_name');?></td>
                  </tr>
                  <tr>
                       <td>Account No</td>
-                     <td>50200013501101</td>
+                     <td><?php echo get_option('account_no');?></td>
                  </tr>
                  <tr>
                      <td>Account Type</td>
-                     <td>Current Account</td>
+                     <td><?php echo get_option('account_type');?></td>
                  </tr>
                  <tr>
                       <td>IFSC</td>
-                     <td>HDFC0000407</td>
+                     <td><?php echo get_option('ifsc');?></td>
                  </tr>
                  <tr>
                       <td>MICR Code</td>
-                     <td>605240002</td>
+                     <td><?php echo get_option('micr');?></td>
                  </tr>
                 </tbody>
             </table>

@@ -10,9 +10,8 @@ use App\Journal;
 
 add_shortcode('COLLEGE_CALL_FOR_PAPER', 'college_call_for_paper_shortcode');
 function college_call_for_paper_shortcode($atts) {
-	
-	$issueList = Issue::all()->sortBy('id')->toArray();
-	$issueActiveList = Issue::where('active', '=', 1)->get()->toArray();
+	$issueList = Issue::where('status', '=', 0)->orderBy('id','asc')->get()->toArray();
+	$issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
 	$volumeList = Volume::all()->sortBy('id')->toArray();
 	$journalList = Journal::all()->sortBy('id')->toArray();
 	foreach ($volumeList as $key => $value) {

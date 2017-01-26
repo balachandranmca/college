@@ -11,6 +11,6 @@ class Issue extends Eloquent
 
     protected $primaryId = 'id';
 
-    protected $fillable = ['issue_no', 'name', 'start_date', 'volume_id', 'journal_id'];
+    protected $fillable = ['issue_no', 'name', 'start_date', 'volume_id', 'journal_id', 'status'];
 
 }

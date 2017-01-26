@@ -21,6 +21,7 @@ define('WP_BAG_PL_DIR', dirname(plugin_basename(__FILE__)));
 define('WP_BAG_PL_PATH', plugin_dir_path(__FILE__));
 define('WP_BAG_PL_URL', plugin_dir_url(__FILE__));
 define('WP_BAG_PL_IMAGE', plugin_dir_url(__FILE__) . 'images/');
+define('WP_BAG_PL_JS', plugin_dir_url(__FILE__) . 'js/');
 
 
 

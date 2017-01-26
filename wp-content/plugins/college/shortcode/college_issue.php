@@ -42,6 +42,7 @@ function college_issue()
 		$issues['start_date'] = $_POST['date'];
 		$issues['volume_id'] = $_POST['volume_id'];
 		$issues['journal_id'] = $_POST['journal_id'];
+		$issues['status'] = $_POST['status'];
 		$data = $issue->update($issues);
 	}
 	else {
@@ -50,6 +51,7 @@ function college_issue()
 		$issue['start_date'] = $_POST['date'];
 		$issue['volume_id'] = $_POST['volume_id'];
 		$issue['journal_id'] = $_POST['journal_id'];
+		$issue['status'] = $_POST['status'];
 		$data = Issue::create($issue);
 	}
 	echo json_encode(array('success'=>$data));
