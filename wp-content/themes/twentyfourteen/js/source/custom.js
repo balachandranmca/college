@@ -4,9 +4,11 @@ jQuery(function ($) { "use strict";
 	/*	Page Preloader
 	/* ========================================================================= */
 	
-	// window.onload = function () {
-	// 	document.getElementById('loading-mask').style.display = 'none';
-	// }
+	window.onload = function (e) {
+		e.preventDefault();
+		 var nav = document.getElementById("loading-mask");
+		nav.style.display = 'none';
+	}
 	/* =========================================================================== */
 	/*	FitVids js
 	/* =========================================================================== */

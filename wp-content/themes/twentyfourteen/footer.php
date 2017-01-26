@@ -17,16 +17,14 @@
 		<!-- Srart Contact Us
 		=========================================== -->		
 		<section id="contact-us">
+			<!-- section title -->
+			<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+				<h2>Get In <span class="color">Touch</span></h2>
+				<div class="border"></div>
+			</div>
+			<!-- /section title -->
 			<div class="container">
 				<div class="row">
-					
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-						<h2>Get In <span class="color">Touch</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
 					<!-- Contact Details -->
 					<div class="contact-info col-md-8 wow fadeInUp" data-wow-duration="500ms">
 						<h3>Contact Details</h3>
