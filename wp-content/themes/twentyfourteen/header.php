@@ -37,7 +37,7 @@
 <!--<link href="<?php echo get_template_directory_uri(); ?>/css/vendor/font-awesome.min.css" rel="stylesheet">-->
 <body id="body" <?php body_class(); ?>>
 <header id="navigation" class="navbar navbar-inverse">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="navbar-header">
 					<!-- responsive nav button -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

@@ -62,10 +62,10 @@
 	<body id="body">
 		<!--
 	    Start Preloader
-	    ==================================== 
+	    ==================================== -->
 		<div id="loading-mask">
 			<div class="loading-img">
-				<img alt="Meghna Preloader" src="img/preloader.gif"  />
+				<img alt="Meghna Preloader" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/preloader.gif"  />
 			</div>
 		</div>
         <!--
@@ -88,7 +88,7 @@
                   <div>
                     <!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
                     <h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight"><?php echo $value['description'];?></h2>
-                    <a class="btn btn-green animated fadeInUp" href="#navigation">Get Started</a>
+                    <a class="btn btn-links animated fadeInUp" href="#navigation">Get Started</a>
                   </div>
                 </div>
               </div>
@@ -127,16 +127,16 @@
 				<div class="row">
 					<!-- section title -->
 					<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-						<h2>Current <span class="color">Updates</span></h2>
+						<h2>Welcome To <span class="color">IJRESTs</span></h2>
 						<div class="border"></div>
 					</div>
 					<!-- /section title -->
 					<div class="newsbox">
           <div class="col-md-3">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
               <div class="panel-heading"> 
-				  <span class="glyphicon glyphicon-list-alt"></span>
-				  <h3>News Updates</h3>
+				  <span class=""></span>
+				  <h3>Call for Paper</h3>
               <div class="panel-body">
                 <div class="row">
                   <div class="col-xs-12">
@@ -165,9 +165,9 @@
         </div>
         <div class="newsbox">
           <div class="col-md-3">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
               <div class="panel-heading"> 
-				  <span class="glyphicon glyphicon-list-alt"></span>
+				  <span class=""></span>
 					<h3> Conference/Seminar</h3>
 			  </div>
               <div class="panel-body">
