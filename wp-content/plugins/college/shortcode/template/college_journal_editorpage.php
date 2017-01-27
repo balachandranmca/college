@@ -28,18 +28,66 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="personal_details">Personal Details</label>
-                        <div class="col-md-9">
-                            <textarea rows="4" name="personal_details" id="personal_details"><?php echo $journal_editor['personal_details'];?></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label class="col-md-3 control-label" for="please_choose_image">Please Choose Image</label>
                         <div class="col-md-9 slider_image">
                             <img alt="Profile image" src="<?php echo $journal_editor['image']['url'];?>" class="imageup" id="uploaded-image">
                             <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
                             <input type="hidden" id="journal_editorid" value="<?php echo $journal_editor['id'];?>">
                             <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Name</label>
+                        <div class="col-md-9">
+                            <input type="text" id="name" value="<?php echo $journal_editor['name'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Qualification</label>
+                        <div class="col-md-9">
+                            <input type="text" id="qualification" value="<?php echo $journal_editor['qualification'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Job Nature</label>
+                        <div class="col-md-9">
+                            <input type="text" id="job_nature" value="<?php echo $journal_editor['job_nature'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Department</label>
+                        <div class="col-md-9">
+                            <input type="text" id="department" value="<?php echo $journal_editor['department'];?>">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Experience</label>
+                        <div class="col-md-9">
+                            <input type="text" id="experience" value="<?php echo $journal_editor['experience'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Place</label>
+                        <div class="col-md-9">
+                            <input type="text" id="place" value="<?php echo $journal_editor['place'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">City and Country</label>
+                        <div class="col-md-9">
+                            <input type="text" id="city_country" value="<?php echo $journal_editor['city_country'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">EmailId</label>
+                        <div class="col-md-9">
+                            <input type="text" id="emailid" value="<?php echo $journal_editor['emailid'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Mobile No</label>
+                        <div class="col-md-9">
+                            <input type="text" id="mobile_no" value="<?php echo $journal_editor['mobile_no'];?>">
                         </div>
                     </div>
                 <div id="errorMsg" class='hide-error'>Please fill all fields</div>
@@ -118,7 +166,7 @@
         if(jQuery('#journal_id').val()=="0"){
             noerrorFlag=0;
         }
-        if(jQuery('#personal_details').val()==""){
+        if(jQuery('#name').val()==""){
             noerrorFlag=0;
         }
         
@@ -133,7 +181,15 @@
 
             var individual_file = file[0].files[0];
             fd.append("file", individual_file); 
-            fd.append("personal_details", personal_details);            
+            fd.append("name", jQuery('#name').val());            
+            fd.append("qualification", jQuery('#qualification').val());            
+            fd.append("job_nature", jQuery('#job_nature').val());            
+            fd.append("experience", jQuery('#experience').val());            
+            fd.append("department", jQuery('#department').val());            
+            fd.append("place", jQuery('#place').val());            
+            fd.append("city_country", jQuery('#city_country').val());            
+            fd.append("emailid", jQuery('#emailid').val());                        
+            fd.append("mobile_no", jQuery('#mobile_no').val());                        
             fd.append("journal_id", journal_id); 
             fd.append("type", editor_type);
             fd.append("journal_editorid", journal_editorid);

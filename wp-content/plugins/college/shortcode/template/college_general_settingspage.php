@@ -1,6 +1,13 @@
-<?php $content = get_option('about_us');
+<?php $content = stripslashes(get_option('about_us'));
 $editor_id = 'aboutus_frontend_editor';
 $settings =   array(
+    'wpautop' => true, // use wpautop?
+    'media_buttons' => false, // show insert/upload button(s)
+    'textarea_name' => $editor_id, // set the textarea name to something different, square brackets [] can be used here
+);
+$home_content = stripslashes(get_option('home_page_content'));
+$home_editor_id = 'home_page_frontend_editor';
+$home_settings =   array(
     'wpautop' => true, // use wpautop?
     'media_buttons' => false, // show insert/upload button(s)
     'textarea_name' => $editor_id, // set the textarea name to something different, square brackets [] can be used here
@@ -17,6 +24,13 @@ $settings =   array(
     
             
             <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label">Home Page Main Content</label>
+              <div class="col-md-9">
+                <?php wp_editor( $home_content, $home_editor_id, $home_settings = array() ); ?>
+              </div>
+            </div>
+
             <div class="form-group">
               <label class="col-md-3 control-label">About Us</label>
               <div class="col-md-9">
@@ -177,6 +191,7 @@ $settings =   array(
               type: 'POST',
               data: {
                   'action':'college_general_settings',
+                  'home_page_content' : jQuery('#home_page_frontend_editor').val(),                  
                   'about_us' : jQuery('#aboutus_frontend_editor').val(),
                   'contact_address' : jQuery('#contact_address').val(),
                   'contact_mobile' : jQuery('#contact_mobile').val(),

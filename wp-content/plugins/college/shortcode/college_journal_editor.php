@@ -35,7 +35,15 @@ function college_journal_editor()
 		
 		$journal_editors['journal_id'] = $_POST['journal_id'];
 		$journal_editors['type'] = $_POST['type'];
-		$journal_editors['personal_details'] = $_POST['personal_details'];
+		$journal_editors['name'] = $_POST['name'];
+		$journal_editors['qualification'] = $_POST['qualification'];
+		$journal_editors['job_nature'] = $_POST['job_nature'];
+		$journal_editors['experience'] = $_POST['experience'];
+		$journal_editors['department'] = $_POST['department'];
+		$journal_editors['place'] = $_POST['place'];
+		$journal_editors['city_country'] = $_POST['city_country'];
+		$journal_editors['emailid'] = $_POST['emailid'];
+		$journal_editors['mobile_no'] = $_POST['mobile_no'];
 
 		if($_FILES['file']){
 			$image_old = json_decode($journal_editor->image,1);
@@ -60,6 +68,16 @@ function college_journal_editor()
 			$journal_editor['journal_id'] = $_POST['journal_id'];
 			$journal_editor['type'] = $_POST['type'];
 			$journal_editor['personal_details'] = $_POST['personal_details'];
+			$journal_editor['name'] = $_POST['name'];
+			$journal_editor['qualification'] = $_POST['qualification'];
+			$journal_editor['job_nature'] = $_POST['job_nature'];
+			$journal_editor['experience'] = $_POST['experience'];
+			$journal_editor['department'] = $_POST['department'];
+			$journal_editor['place'] = $_POST['place'];
+			$journal_editor['city_country'] = $_POST['city_country'];
+			$journal_editor['emailid'] = $_POST['emailid'];
+			$journal_editor['mobile_no'] = $_POST['mobile_no'];
+			
 			
 			$data = JournalEditor::create($journal_editor);
 			echo json_encode(array('success'=>'true'));

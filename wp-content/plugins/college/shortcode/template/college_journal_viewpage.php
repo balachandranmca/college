@@ -1,3 +1,4 @@
+<input type="hidden" id="journal_color" value="<?php echo $journal['color'];?>">
 <section class="journal-viewpage-header">
     <div class="container">
         <div class="header">
@@ -10,8 +11,8 @@
                 Science and Technologies (IJRESTs)</h2>
             </div>
             <div class="issn-no">
-                <p>ISSN 2395-6453 (Online)</p>
-                <h1>Civil Engineering</h1>
+                <p><?php echo $journal['issn_no']?> (Online)</p>
+                <h1><?php echo $journal['name']?></h1>
             </div>
         </div>
     </div> 
@@ -32,7 +33,7 @@
     <div class="row">
         <div class="col-md-12">
             <div>
-                <p>International Journal of Research in Engineering, Science and Technologies – Civil Engineering is a monthly journal published online, open-access and having double-blind peer reviewed.  The motive and aim is to create awareness, re-shaping the knowledge already created and challenge the existing theories related to the field of Civil Engineering. It invites academicians, scientists, research scholars, Technical consultants, construction & site engineers, students to submit their novel ideas & knowledge in the domain of Civil Engineering in the form of research articles, case studies, review articles and personal opinions that can benefit the Civil Engineering fraternity and the society as a whole.</p>
+                <?php echo $journal['des'];?>
             </div>
             <div id="tick2"></div>
         </div>
@@ -64,142 +65,25 @@
                     </tbody>
                 </table>
             </div>-->
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
+            <?php foreach ($issue as $key => $value) { ?>
+                <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="Current-Issues">
+                                <div class="service-icon">
+                                    <!--<i class="fa fa-flask"></i>-->
+                                    <p><?php echo $volume[$value['volume_id']]?></p>
+                                    <p><?php echo $value['issue_no'];?></p>
+                                    <p><?php echo $value['start_date'];?></p>
+                                </div>
+                                <div class="Current-Issues-btn text-center">
+                                    <a href="<?php echo $value['id'];?>"></a><input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="Current-Issues">
-                            <div class="service-icon">
-                                <!--<i class="fa fa-flask"></i>-->
-                                <p>Volume Name</p>
-                                <p>Volume Number</p>
-                                <p>Volume Date</p>
-                            </div>
-                            <div class="Current-Issues-btn text-center">
-                                <input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
