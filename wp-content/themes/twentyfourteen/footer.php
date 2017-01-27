@@ -100,6 +100,20 @@
 			</div>	/Google Map -->
 			
 		</section> <!-- end section -->
+		<section class="">
+			 <div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>&copy; 2017 IJRESTs.</p>
+						</div>
+						<div class="col-sm-6">
+							<p class="pull-right">Designed by <a href="#">IJRESTs</a></p>
+						</div>
+					</div>
+     			</div>
+			 </div>
+		</section>
 		<?php } ?>
 		
 		<!-- end Contact Area
