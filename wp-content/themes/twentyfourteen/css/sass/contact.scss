@@ -1,4 +1,7 @@
 .contact_us_page{
+    .title{
+        margin-bottom: 30px;
+    }
 
     .contact-info{
         .box{
@@ -6,7 +9,7 @@
             margin-bottom: 20px;
             h3{
                 text-transform: uppercase;
-                color:#6CB670;
+                color:#028fcc;
             }
         }
         p{
@@ -52,7 +55,7 @@
     }
     #cf-submit{
         input{
-            background: #6CB670;
+            background: #028fcc;
         }
     }
     .error {

@@ -23,10 +23,10 @@
 <?php } else { ?>
     <li class="current"><a href="#body">Home</a></li>
     <li><a href="<?php echo get_buzz_url('college_about_us');?>">About Us</a></li>
-    <li><a href="#services">Our Publications</a></li>
+    <!--<li><a href="#services">Our Publications</a></li>-->
     <!--<li><a href="#showcase">Manscript Submission</a></li>-->
     <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menuscript Submission
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manscript Submission
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="#">Guidelines to Author</a></li>
