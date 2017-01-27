@@ -39,7 +39,7 @@
 <script>
      jQuery(document).on('click', '.edit', function(e){
         e.preventDefault();
-        var result = 1;
+        var result = confirm("Are you sure to Verify?");
         if(result) {
             var editorid = jQuery(this).attr('data-id');
             var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";

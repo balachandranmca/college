@@ -11,6 +11,19 @@ class JournalEditor extends Eloquent
 
     protected $primaryId = 'id';
 
-    protected $fillable = ['image', 'type', 'personal_details', 'journal_id'];
+    protected $fillable = [
+                            'image',
+                            'type',
+                            'name',
+                            'qualification',
+                            'job_nature',
+                            'experience',
+                            'department',
+                            'place',
+                            'city_country',
+                            'emailid',
+                            'mobile_no',
+                            'journal_id'
+                          ];
 
 }

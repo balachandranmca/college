@@ -48,6 +48,15 @@
             <?php } ?>
         </ul>
     </li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Journals Editors
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <?php foreach ($journalList as $key => $value) { ?>
+                <li><a href="<?php echo get_buzz_url('college_editor_board').'?id='.$value['id'];?>"><?php echo $value['name'];?></a></li>
+            <?php } ?>
+        </ul>
+    </li>
     <li><a href="<?php echo get_buzz_url('college_processing_fees');?>">Processing Fee</a></li>
     <li><a href="#pricing">Advertise with Us</a></li>
     <li><a href="<?php echo get_buzz_url('college_editor');?>">Join Us</a></li>
