@@ -36,6 +36,8 @@ function Page_Settings() {
 		"college_general_settings" => "College General Settings",
 		"college_processing_fees" => "College Processing Fees",
 		"college_journal_view" => "College Journal View",
+		"college_carosel_slider" => "College Carosel Slider",
+		"college_carosel_slider_list" => "College Carosel Slider List",
 
 	);
 

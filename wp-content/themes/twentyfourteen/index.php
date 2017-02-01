@@ -264,7 +264,7 @@
 					<!-- Single Service Item -->
           <?php foreach ($journalList as $key => $value) { ?>
               <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-                <a href="www.google.com">
+                <a href="<?php echo get_buzz_url('college_journal_view').'?id='.$value['id'];?>">
                   <div class="service-block text-center">
                     <div class="service-icon text-center">
                       <i class="fa fa-wordpress fa-5x"></i>
