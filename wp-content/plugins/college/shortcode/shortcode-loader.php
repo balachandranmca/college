@@ -47,3 +47,7 @@ include_once 'college_editor_board.php';
 include_once 'college_general_settings.php';
 
 include_once 'college_journal_view.php';
+
+include_once 'college_carosel_slider.php';
+
+include_once 'college_carosel_slider_list.php';
