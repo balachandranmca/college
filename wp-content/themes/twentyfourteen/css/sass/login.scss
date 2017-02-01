@@ -1,8 +1,8 @@
 .login-page{
   padding: 100px;
   .panel-login{
-      background: #2B2C30;
-      border: 1px solid #fff;
+      background-color: #fff;
+      border: 1px solid #333;
       .panel-title{
         text-align: center;
         font-family: 'oswald';
@@ -19,7 +19,7 @@
             border: 1px solid #4e595f;
             height: 38px;
             border-radius: 0;
-            color: #fff;
+            color: #333;
             &:focus {
                 box-shadow: 0 0 0;
             }

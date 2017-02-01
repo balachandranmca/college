@@ -123,7 +123,7 @@
 		Start About Section
 		==================================== -->
 		<section id="about" class="bg-one">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<!-- section title -->
 					<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
@@ -250,13 +250,6 @@
 			<!-- End container -->
 		</section>
 		<!-- End section -->
-		<section>
-    <div class="container-fluid" id="section04">
-      <div class="row">
-        
-      </div>
-    </div>
-    </section>
 		<!-- Start Services Section
 		==================================== -->
 		<section id="services" class="bg-one">
@@ -271,13 +264,15 @@
 					<!-- Single Service Item -->
           <?php foreach ($journalList as $key => $value) { ?>
               <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-                <div class="service-block text-center">
-                  <div class="service-icon text-center">
-                    <i class="fa fa-wordpress fa-5x"></i>
+                <a href="www.google.com">
+                  <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                      <i class="fa fa-wordpress fa-5x"></i>
+                    </div>
+                    <h3><?php echo $value['name'];?></h3>
+                    <p><?php echo $value['issn_no'];?></p>
                   </div>
-                  <h3><?php echo $value['name'];?></h3>
-                  <p><?php echo $value['issn_no'];?></p>
-                </div>
+                </a>
               </article>
           <?php } ?>
 					<!-- End Single Service Item -->
@@ -287,6 +282,71 @@
 			<!-- End container -->
 		</section>
 		<!-- End section -->
+
+    <!-- Start Carousel Section
+		==================================== -->
+    <section class="carousel-section">
+      <div class="container">
+        <div class="row">
+          	<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Our <span class="color">Portfolio</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+          <div class="col-md-12 carousel-content">
+              <div id="Carousel" class="carousel slide">
+              
+              <ol class="carousel-indicators">
+                  <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#Carousel" data-slide-to="1"></li>
+                  <li data-target="#Carousel" data-slide-to="2"></li>
+              </ol>
+              
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                  
+              <div class="item active">
+                <div class="">
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
+                </div><!--.row-->
+              </div><!--.item-->
+              
+              <div class="item">
+                <div class="">
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                </div><!--.row-->
+              </div><!--.item-->
+              
+              <div class="item">
+                <div class="">
+                <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
+                </div><!--.row-->
+              </div><!--.item-->
+              
+              </div><!--.carousel-inner-->
+                <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+              </div><!--.Carousel-->
+                      
+          </div>
+        </div>
+      </div><!--.container-->
+    </section>
+
+    <!-- End Carousel section -->
+
+
+    
 
 		<?php
 get_footer();

@@ -187,43 +187,44 @@ $(window).bind("load", function () {
 
 
 jQuery(function ($) {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1500);
-        return false;
-      }
-    }
-  });
+//   $('a[href*=#]:not([href=#])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 1500);
+//         return false;
+//       }
+//     }
+//   });
 });
 
 
 jQuery(function ($) {
-  $(".demo1").bootstrapNews({
-    newsPerPage: 3,
-    autoplay: true,
-    pauseOnHover: true,
-    direction: 'down',
-    newsTickerInterval: 2000,
-    onToDo: function () {
-      //console.log(this);
-    }
-  });
-  $(".demo2").bootstrapNews({
-    newsPerPage: 4,
-    autoplay: true,
-    pauseOnHover: true,
-    direction: 'down',
-    newsTickerInterval: 2000,
-    onToDo: function () {
-      //console.log(this);
-    }
-  });
-  	$('#tick2').html($('#tick').html());
+	$(".demo1").bootstrapNews({
+		newsPerPage: 3,
+		autoplay: true,
+		pauseOnHover: true,
+		direction: 'down',
+		newsTickerInterval: 2000,
+		onToDo: function () {
+		//console.log(this);
+		}
+	});
+	$(".demo2").bootstrapNews({
+		newsPerPage: 4,
+		autoplay: true,
+		pauseOnHover: true,
+		direction: 'down',
+		newsTickerInterval: 2000,
+		onToDo: function () {
+		//console.log(this);
+		}
+	});
+  /****************************NewTicker Js *****************************************/
+	$('#tick2').html($('#tick').html());
 	var temp=0,intervalId=0;
 	$('#tick li').each(function(){
 	var offset=$(this).offset();
@@ -242,28 +243,29 @@ jQuery(function ($) {
 	$('#tick2').css({'width':temp+40,'margin-left':temp+40});
 
 	function abc(a,b) {  
-		
-		var marginLefta=(parseInt($("#"+a).css('marginLeft')));
-		var marginLeftb=(parseInt($("#"+b).css('marginLeft')));
-		if((-marginLefta<=$("#"+a).width())&&(-marginLefta<=$("#"+a).width())){
-			$("#"+a).css({'margin-left':(marginLefta-1)+'px'});
-		} else {
-			$("#"+a).css({'margin-left':temp});
-		}
-		if((-marginLeftb<=$("#"+b).width())){
-			$("#"+b).css({'margin-left':(marginLeftb-1)+'px'});
-		} else {
-			$("#"+b).css({'margin-left':temp});
-		}
+
+	var marginLefta=(parseInt($("#"+a).css('marginLeft')));
+	var marginLeftb=(parseInt($("#"+b).css('marginLeft')));
+	if((-marginLefta<=$("#"+a).width())&&(-marginLefta<=$("#"+a).width())){
+		$("#"+a).css({'margin-left':(marginLefta-1)+'px'});
+	} else {
+		$("#"+a).css({'margin-left':temp});
+	}
+	if((-marginLeftb<=$("#"+b).width())){
+		$("#"+b).css({'margin-left':(marginLeftb-1)+'px'});
+	} else {
+		$("#"+b).css({'margin-left':temp});
+	}
 	} 
 
 	function start() { intervalId = window.setInterval(function() { abc('tick','tick2'); }, 20) }
-		$(function(){
-			$('#outer').mouseenter(function() { window.clearInterval(intervalId); });
-		$('#outer').mouseleave(function() { start(); })
-			start();
+	$(function(){
+		$('#outer').mouseenter(function() { window.clearInterval(intervalId); });
+	$('#outer').mouseleave(function() { start(); })
+		start();
 	});
+	
+	 $('#Carousel').carousel({
+        interval: 4000
+    });
 });
-
-/****************************NewTicker Js *****************************************/
-

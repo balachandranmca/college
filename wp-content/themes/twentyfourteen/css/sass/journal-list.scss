@@ -20,25 +20,25 @@
             table{
                 margin: 0;
                 th{
+                    background-color: rgba(8, 155, 228, 0.2);
                     color: #333;
                     text-align: center;
                     padding: 20px;
                     text-transform: uppercase;
-                    background: #fff;
                 }
                 tbody{
                     tr{
                         text-align: center;
                         font-size: 17px;
-                        &:nth-child(1) {
-                            td{
-                                // background-color: rgba(255,255,255,.2);
-                                background-color: #2F3035;
-                            }
-                        }
-                        &:nth-child(2) {
-                            background-color: #2F3035;
-                        }
+                        // &:nth-child(1) {
+                        //     td{
+                        //         // background-color: rgba(255,255,255,.2);
+                        //         background-color: #2F3035;
+                        //     }
+                        // }
+                        // &:nth-child(2) {
+                        //     background-color: #2F3035;
+                        // }
                         td{
                             vertical-align: middle;
                             border: 1px solid;
@@ -47,9 +47,9 @@
                             text-align: left;                        
                         }
                     }
-                    tr:nth-child(odd)>td{
-                         background-color: #2F3035;
-                    }
+                    // tr:nth-child(odd)>td{
+                    //      background-color: #2F3035;
+                    // }
                 }
             }
             .slider-list-img{
