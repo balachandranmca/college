@@ -29,19 +29,12 @@ $border_color_1: #6cb670;
     font-family: $font_family_1;
     line-height: 1.5;
     color: $color_1;
-    ol {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    @media (min-width: 768px){
+        .paddoff{
+            padding: 0;
+        }    
     }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    figure {
-        margin: 0;
-    }
+    
     a {
         -webkit-transition: all .3s ease-in 0s;
         -moz-transition: all .3s ease-in 0s;
@@ -402,12 +395,12 @@ $border_color_1: #6cb670;
 
     .service-block {
         padding: 50px 20px;
-        border-left: 1px solid #4e595f;
-        border-top: 1px solid #4e595f;
+        border: 1px solid #4e595f;
         margin-bottom: 40px;
-        -webkit-box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(256, 256, 256, 0.7);
-        -moz-box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(256, 256, 256, 0.7);
-        box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(256, 256, 256, 0.7);
+        -webkit-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+        -moz-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+        box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
     }
 
     .service-icon {
@@ -549,3 +542,57 @@ $border_color_1: #6cb670;
         //     border: 1px solid $color_4;
         // }
     }
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 48px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+    background: #428bca;
+}
+
+.carousel-section{
+    @media (min-width: 768px){
+        img{
+            width: 250px;
+            height: 125px;
+        }
+        .carousel-content{
+            margin: 50px 0;
+        }
+    }
+    @media (max-width: 767px){
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+         .carousel-content{
+            margin: 20px 0;
+        }
+    }
+}
