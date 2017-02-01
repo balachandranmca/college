@@ -7,11 +7,11 @@
                         <div class="col-xs-6 panel-title">
                             <a href="#" class="active" id="login-form-link">Login</a>
                         </div>
-                        <div class="col-xs-6 panel-title">
+                        <div class="col-xs-6 panel-title seprator">
                             <a href="#" id="register-form-link">Register</a>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="hr-line">
                 </div>
                 <div class="panel-body">
                     <div class="row">

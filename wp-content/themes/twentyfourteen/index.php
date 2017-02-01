@@ -88,7 +88,7 @@
                   <div>
                     <!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
                     <h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight"><?php echo $value['description'];?></h2>
-                    <a class="btn btn-links animated fadeInUp" href="#navigation">Get Started</a>
+                    <a class="btn btn-links animated fadeInUp navigation" href="#navigation">Get Started</a>
                   </div>
                 </div>
               </div>

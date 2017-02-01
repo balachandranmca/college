@@ -1,15 +1,21 @@
 .login-page{
   padding: 100px;
   .panel-login{
-      background-color: #fff;
+      background-color: #d9edf7;
       border: 1px solid #333;
       .panel-title{
         text-align: center;
         font-family: 'oswald';
         font-size: 18px;
-      a{
-        color: #333;
-      }
+        a{
+            color: #333;
+        }
+    }
+    .seprator{
+        border-left: 2px solid #333;
+    }
+    .hr-line{
+        border-top: 1px solid #333;
     }
     .panel-body{
       #login-form,

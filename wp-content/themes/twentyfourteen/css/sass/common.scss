@@ -50,7 +50,6 @@ $border_color_1: #6cb670;
         &:hover {
             text-decoration: none;
             outline: 0;
-            color: $color_4;
         }
     }
     iframe {
@@ -222,6 +221,9 @@ $border_color_1: #6cb670;
                 height: 100%;
                 display: block;
             }
+            h2{
+                letter-spacing: 4px;
+            }
         }
         .carousel-caption {
             padding: 0;
@@ -309,10 +311,150 @@ $border_color_1: #6cb670;
     .dropdown-menu{
         li{
             a{
-                color: #000 !important;
+                // color: #000 !important;
             }
         }
     }
+}
+
+.nav li{
+    margin: 0 !important;
+}
+.nav ul {
+  list-style: none;
+  width: 100%;
+  border-bottom: 5px solid #2aacc8;
+  z-index: 888;
+}
+
+/* line 66, ../sass/style.scss */
+.nav li a {
+  display: block;
+  padding: 10px 15px;
+  color: #555;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+/* line 80, ../sass/style.scss */
+// .nav li {
+//   border-top: 5px solid #E8EBF1;
+// }
+
+/* line 83, ../sass/style.scss */
+.nav li:hover {
+  background: #fff;
+  border-top: 5px solid #2aacc8;
+}
+
+/* line 87, ../sass/style.scss */
+.nav li {
+  position: relative;
+}
+
+/* line 90, ../sass/style.scss */
+.nav li.active {
+  border-top: 5px solid #2aacc8;
+  background: #fff;
+}
+
+/* line 94, ../sass/style.scss */
+.nav > li > a.parent {
+  background: url(../images/arrow.png) no-repeat 15px 18px;
+  padding: 10px 10px 10px 30px;
+}
+
+/* line 98, ../sass/style.scss */
+.nav > li > a.parent:hover {
+  background: url(../images/arrow.png) no-repeat 15px 18px #fff;
+  padding: 10px 10px 10px 30px;
+}
+
+/* line 102, ../sass/style.scss */
+.nav > li {
+  float: left;
+  margin: 0 10px;
+}
+
+/* line 106, ../sass/style.scss */
+.nav > li > a:hover {
+  color: #2aacc8 !important;
+}
+
+/* line 109, ../sass/style.scss */
+.nav > li.hover > ul {
+  left: -1px;
+  top: 40px;
+}
+
+/* line 113, ../sass/style.scss */
+.nav li li.hover ul {
+  left: 100%;
+  -webkit-transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  transition: background .2s linear;
+}
+
+/* line 121, ../sass/style.scss */
+.nav > li > li > a {
+  font-size: 0.85em;
+  padding: 10px 20px;
+  display: block;
+  color: #555;
+  background: #fff;
+  position: relative;
+  z-index: 9999;
+  font-weight: normal;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  text-decoration: none;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+/* line 140, ../sass/style.scss */
+.nav li li {
+  border-top: none;
+}
+
+/* line 143, ../sass/style.scss */
+.nav li li:hover {
+  border-top: none;
+}
+
+/* line 146, ../sass/style.scss */
+.nav li li a {
+  text-transform: capitalize;
+  font-size: 0.85em;
+  border-bottom: 1px solid #e8ebf1;
+  border-left: 1px solid #e8ebf1;
+  border-right: 1px solid #e8ebf1;
+}
+
+/* line 153, ../sass/style.scss */
+.nav li li a:hover {
+  color: #2aacc8;
+}
+
+/* line 156, ../sass/style.scss */
+.nav > li > ul {
+  position: absolute;
+  left: -9999px;
+  padding: 0;
+  z-index: 9999;
+  background: #fff;
 }
 
 /*=================================================================
@@ -557,9 +699,9 @@ $border_color_1: #6cb670;
     border-radius: 23px 23px 23px 23px;
     margin-top: 48px;
 }
-.carousel-control.right {
-	right: -12px;
-}
+// .carousel-control.right {
+// 	right: -12px;
+// }
 /* The indicators */
 .carousel-indicators {
 	right: 50%;
@@ -594,5 +736,11 @@ $border_color_1: #6cb670;
          .carousel-content{
             margin: 20px 0;
         }
+    }
+}
+
+.viewpage-content{
+    h2{
+        text-align: center;
     }
 }
