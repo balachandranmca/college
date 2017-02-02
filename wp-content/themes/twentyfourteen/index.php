@@ -88,7 +88,7 @@
                   <div>
                     <!--<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">-->
                     <h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight"><?php echo $value['description'];?></h2>
-                    <a class="btn btn-links animated fadeInUp navigation" href="#navigation">Get Started</a>
+                    <a class="btn btn-primary animated fadeInUp navigation" href="#navigation">Go To Site</a>
                   </div>
                 </div>
               </div>
@@ -289,56 +289,11 @@
       <div class="container">
         <div class="row">
           	<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<!--<div class="title text-center wow fadeIn" data-wow-duration="500ms">
 						<h2>Our <span class="color">Portfolio</span></h2>
 						<div class="border"></div>
-					</div>
+					</div>-->
 					<!-- /section title -->
-          <div class="col-md-12 carousel-content">
-              <div id="Carousel" class="carousel slide">
-              
-              <ol class="carousel-indicators">
-                  <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#Carousel" data-slide-to="1"></li>
-                  <li data-target="#Carousel" data-slide-to="2"></li>
-              </ol>
-              
-              <!-- Carousel items -->
-              <div class="carousel-inner">
-                  
-              <div class="item active">
-                <div class="">
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/250x125" alt="Image"></a></div>
-                </div><!--.row-->
-              </div><!--.item-->
-              
-              <div class="item">
-                <div class="">
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                </div><!--.row-->
-              </div><!--.item-->
-              
-              <div class="item">
-                <div class="">
-                <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                  <div class="col-md-3 paddoff"><a href="#"><img src="http://placehold.it/188x125" alt="Image"></a></div>
-                </div><!--.row-->
-              </div><!--.item-->
-              
-              </div><!--.carousel-inner-->
-                <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
-                <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
-              </div><!--.Carousel-->
-                      
-          </div>
         </div>
       </div><!--.container-->
     </section>

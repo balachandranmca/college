@@ -22,7 +22,7 @@
     <li><a href="<?php echo get_buzz_url('college_journal_editor_list') ?>">Journal Editors</a></li>
     <li><a href="<?php echo get_buzz_url('college_general_settings') ?>">General Settings</a></li>
 <?php } else { ?>
-    <li class="current"><a href="#body">Home</a></li>
+    <li><a href="#body">Home</a></li>
     <li><a href="<?php echo get_buzz_url('college_about_us');?>">About Us</a></li>
     <!--<li><a href="#services">Our Publications</a></li>-->
     <!--<li><a href="#showcase">Manscript Submission</a></li>-->
@@ -59,7 +59,7 @@
         </ul>
     </li>
     <li><a href="<?php echo get_buzz_url('college_processing_fees');?>">Processing Fee</a></li>
-    <li><a href="#pricing">Advertise with Us</a></li>
+    <!--<li><a href="#pricing">Advertise with Us</a></li>-->
     <li><a href="<?php echo get_buzz_url('college_editor');?>">Join Us</a></li>
     <li><a href="<?php echo get_buzz_url('college_contact_us');?>">Contact</a></li>
 <?php } ?>

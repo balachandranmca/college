@@ -81,17 +81,15 @@ jQuery(function ($) { "use strict";
 		topSpacing : 0
 	});
 	
-	$('#nav').onePageNav({
-		currentClass: 'current',
-		changeHash: false,
-		scrollSpeed: 1500,
-		scrollThreshold: 0.5,
-		filter: '',
-		easing: 'easeInOutExpo'
-	});
+	// $('#nav').onePageNav({
+	// 	currentClass: 'current',
+	// 	changeHash: false,
+	// 	scrollSpeed: 1500,
+	// 	scrollThreshold: 0.5,
+	// 	filter: '',
+	// 	easing: 'easeInOutExpo'
+	// });
 	
-
-
 	/* ========================================================================= */
 	/*	Fix Slider Height
 	/* ========================================================================= */	
