@@ -22,7 +22,7 @@
     <li><a href="<?php echo get_buzz_url('college_journal_editor_list') ?>">Journal Editors</a></li>
     <li><a href="<?php echo get_buzz_url('college_general_settings') ?>">General Settings</a></li>
 <?php } else { ?>
-    <li><a href="#body">Home</a></li>
+    <li><a href="<?php echo site_url();?>">Home</a></li>
     <li><a href="<?php echo get_buzz_url('college_about_us');?>">About Us</a></li>
     <!--<li><a href="#services">Our Publications</a></li>-->
     <!--<li><a href="#showcase">Manscript Submission</a></li>-->
