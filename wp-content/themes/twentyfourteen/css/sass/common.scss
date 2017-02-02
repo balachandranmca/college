@@ -317,7 +317,7 @@ $border_color_1: #6cb670;
         }
     }
 }
-.current-active{
+.expend{
     color: #fff;
     background-color: #000;
 }
@@ -354,8 +354,9 @@ $border_color_1: #6cb670;
 
 /* line 83, ../sass/style.scss */
 .nav li:hover {
-  //background: #fff;
-//   border-top: 5px solid #2aacc8;
+  background: #fff;
+    //border-top: 5px solid #2aacc8;
+    color: #000;
 }
 
 /* line 87, ../sass/style.scss */
@@ -389,7 +390,7 @@ $border_color_1: #6cb670;
 
 /* line 106, ../sass/style.scss */
 .nav > li > a:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 /* line 109, ../sass/style.scss */
@@ -449,9 +450,9 @@ $border_color_1: #6cb670;
 }
 
 /* line 153, ../sass/style.scss */
-.nav li li a:hover {
-  color: #2aacc8;
-}
+// .nav li li a:hover {
+//   color: #2aacc8;
+// }
 
 /* line 156, ../sass/style.scss */
 .nav > li > ul {
@@ -462,6 +463,10 @@ $border_color_1: #6cb670;
   background: #fff;
 }
 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+    color: #fff !important;
+    background-color: #080808;
+}
 
 /*******************Media Queries Starts Here*************/
 @media (max-width: 1024px) {
@@ -493,7 +498,7 @@ $border_color_1: #6cb670;
 
   /* line 543, ../sass/style.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: black;
+    color: #fff;
   }
 }
 /*=================================================================
@@ -723,7 +728,7 @@ $border_color_1: #6cb670;
         //     border: 1px solid $color_4;
         // }
     }
-
+    
 .viewpage-content{
     h2{
         text-align: center;
