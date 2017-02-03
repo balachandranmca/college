@@ -496,7 +496,6 @@ $border_color_1: #6cb670;
     float: none !important;
   }
 
-  /* line 543, ../sass/style.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
   }
@@ -574,7 +573,7 @@ $border_color_1: #6cb670;
 ==================================================================*/
 
 #services {
-    padding: 70px 0 10px;
+    padding: 22px 0 10px;
     .title {
         padding-bottom: 60px;
     }
@@ -628,6 +627,15 @@ $border_color_1: #6cb670;
             float: left;
             margin: -5px 0 0 15px;
         }
+    }
+}
+
+/*=================================================================
+	Our Portfolio section
+==================================================================*/
+.carousel-section{
+    .our-portfoliosection{
+        padding-bottom: 60px;
     }
 }
 
@@ -734,3 +742,4 @@ $border_color_1: #6cb670;
         text-align: center;
     }
 }
+

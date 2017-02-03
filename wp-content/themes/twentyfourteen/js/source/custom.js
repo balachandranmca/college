@@ -76,7 +76,6 @@ jQuery(function ($) { "use strict";
 	/*	Menu item highlighting
 	/* ========================================================================= */
 
-
 	$("#navigation").sticky({
 		topSpacing : 0
 	});
@@ -266,3 +265,93 @@ jQuery(function ($) {
         interval: 4000
     });
 });
+
+(function ($) {
+    $(function () {
+        var jcarousel = $('.jcarousel');
+        var prev = $('.jcarousel-control-prev');
+        var next = $('.jcarousel-control-next');
+        var wide4 = 830;
+        var wide3 = 639;
+        var wide2 = 360;
+
+        jcarousel.on('jcarousel:reload jcarousel:create', function () {
+            var carousel = $(this),
+                width = carousel.innerWidth();
+
+            if (width >= wide4) {
+                width = width / 4;
+                
+                prev.jcarouselControl({
+                    target: '-=1'
+                });
+        
+                next.jcarouselControl({
+                    target: '+=1'
+                });
+            } else if (width >= wide3) {
+                width = width / 3;
+                
+                prev.jcarouselControl({
+                    target: '-=1'
+                });
+        
+                next.jcarouselControl({
+                    target: '+=1'
+                });
+            } else if (width >= wide2) {
+                width = width / 2;
+                
+                prev.jcarouselControl({
+                    target: '-=1'
+                });
+        
+                next.jcarouselControl({
+                interval: 3000,
+                    target: '+=1'
+                });
+            } else {
+                prev.jcarouselControl({
+                    target: '-=1'
+                });
+        
+                next.jcarouselControl({
+                    target: '+=1'
+                });
+            }
+
+            carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+        })
+        .jcarousel({
+            wrap: 'circular'
+        });
+
+        $('.jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function () {
+            $(this).addClass('active');
+        })
+            .on('jcarouselpagination:inactive', 'a', function () {
+            $(this).removeClass('active');
+        })
+            .on('click', function (e) {
+            e.preventDefault();
+        })
+        .jcarouselPagination({
+            item: function (page) {
+                return '<a href="#' + page + '">' + page + '</a>';
+            }
+        });
+
+        $(".jcarousel").swipe({
+            swipeLeft: function (event, direction, distance, duration, fingerCount) {
+                next.trigger('click');
+            },
+            swipeRight: function (event, direction, distance, duration, fingerCount) {
+                prev.trigger('click');
+            },
+            //Default is 75px+ set to 0 for demo so any distance triggers swipe
+            threshold: 30,
+            excludedElements: "label, button, input, select, textarea, .noSwipe"
+        });
+    });
+})(jQuery);
