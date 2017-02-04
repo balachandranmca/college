@@ -4,9 +4,9 @@
         <div class="well well-sm">
             <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
                 <fieldset>
-                    <h3 class="text-center">SLIDER</h3>
+                    <h3 class="text-center">PORTFOLIO SLIDER</h3>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Please Choose Image</label>
+                        <label class="col-md-3 control-label" for="name">Please Choose Carousel Image (800*531)</label>
                         <div class="col-md-9 slider_image">
                             <img alt="Profile image" src="<?php echo $carosel_slider['image']['url'];?>" class="imageup" id="uploaded-image">
                             <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">

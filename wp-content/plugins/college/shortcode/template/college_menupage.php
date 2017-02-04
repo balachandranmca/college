@@ -17,12 +17,13 @@
     <li><a href="<?php echo get_buzz_url('college_issue_list') ?>">Issue</a></li>
     <li><a href="<?php echo get_buzz_url('college_editor_list') ?>">Editors</a></li>
     <li><a href="<?php echo get_buzz_url('college_slider_list') ?>">Slider</a></li>
-    <li><a href="<?php echo get_buzz_url('college_carosel_slider_list') ?>">Carosel Slider</a></li>
+    <li><a href="<?php echo get_buzz_url('college_carosel_slider_list') ?>">Our Portfolio</a></li>
     <li><a href="<?php echo get_buzz_url('college_call_for_paper') ?>">Call for paper</a></li>
     <li><a href="<?php echo get_buzz_url('college_journal_editor_list') ?>">Journal Editors</a></li>
+    <li><a href="<?php echo get_buzz_url('college_user_listpage') ?>">User List</a></li>
     <li><a href="<?php echo get_buzz_url('college_general_settings') ?>">General Settings</a></li>
 <?php } else { ?>
-    <li class="current"><a href="#body">Home</a></li>
+    <li><a href="<?php echo site_url();?>">Home</a></li>
     <li><a href="<?php echo get_buzz_url('college_about_us');?>">About Us</a></li>
     <!--<li><a href="#services">Our Publications</a></li>-->
     <!--<li><a href="#showcase">Manscript Submission</a></li>-->
@@ -35,7 +36,6 @@
             <li><a href="#">Sample Paper</a></li>
             <li><a href="#">Copyright Form</a></li>
             <li><a href="#">Online Submission</a></li>
-            <li><a href="#">E-Certificate</a></li>
             <li><a href="#">Withdrawal Procedure</a></li>
             <li><a href="#">Withdrawel Form</a></li>
         </ul>
@@ -59,7 +59,7 @@
         </ul>
     </li>
     <li><a href="<?php echo get_buzz_url('college_processing_fees');?>">Processing Fee</a></li>
-    <li><a href="#pricing">Advertise with Us</a></li>
+    <!--<li><a href="#pricing">Advertise with Us</a></li>-->
     <li><a href="<?php echo get_buzz_url('college_editor');?>">Join Us</a></li>
     <li><a href="<?php echo get_buzz_url('college_contact_us');?>">Contact</a></li>
 <?php } ?>

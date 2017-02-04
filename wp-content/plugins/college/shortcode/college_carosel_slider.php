@@ -34,8 +34,8 @@ function college_carosel_slider()
 			$upload_overrides = array( 'test_form' => false );
 			$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
 			$carosel_sliders['image'] = json_encode($movefile);
+			$carosel_slider->update($carosel_sliders);
 		}
-		$carosel_slider->update($carosel_sliders);
 		echo json_encode(array('success'=>'true'));
 		exit;
 	}

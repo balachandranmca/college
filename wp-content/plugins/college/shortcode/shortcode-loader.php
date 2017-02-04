@@ -51,3 +51,9 @@ include_once 'college_journal_view.php';
 include_once 'college_carosel_slider.php';
 
 include_once 'college_carosel_slider_list.php';
+
+include_once 'college_guidelines_to_author.php';
+
+include_once 'college_withdrawal_procedure.php';
+
+include_once 'college_user_list.php';
