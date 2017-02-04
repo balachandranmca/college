@@ -17,10 +17,10 @@
 		<!-- Srart Contact Us
 		=========================================== -->
 		<!-- section title -->
-		<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+		<!--<div class="title text-center wow fadeIn" data-wow-duration="500ms">
 			<h2>Get In <span class="color">Touch</span></h2>
 			<div class="border"></div>
-		</div>
+		</div>-->
 		<!-- /section title -->		
 		<section id="contact-us">
 			<div class="container">

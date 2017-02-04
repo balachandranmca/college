@@ -64,11 +64,11 @@
     <!--
 	    Start Preloader
 	    ==================================== -->
-    <div id="loading-mask">
+    <section id="loading-mask">
       <div class="loading-img">
         <img alt="Meghna Preloader" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/preloader.gif" />
       </div>
-    </div>
+    </section>
     <!--
         End Preloader
         ==================================== -->
@@ -150,7 +150,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">
-                                      <?php echo $value['name'];?><a href="#"> Read more...</a></td>
+                                      <?php echo $value['name'];?></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -162,6 +162,20 @@
                     </div>
                   </div>
                 </div>
+                 <div class="subpages-sidemenubar">
+                      <div href="#" class="list-group-item active">
+                          <h4 class="list-group-item-heading">Sub Pages</h5>
+                      </div>  
+                      <a href="#" class="list-group-item">
+                          <h5 class="list-group-item-heading">Guidelines To Author</h5>
+                      </a>
+                      <a href="#" class="list-group-item" data-for=".step-2">
+                          <h5 class="list-group-item-heading">Online Submission</h5>
+                      </a>
+                      <a href="#" class="list-group-item" data-for=".step-3">
+                          <h5 class="list-group-item-heading">Withdrawal Procedure</h5>
+                      </a>
+                 </div>
               </div>
               <div class="col-md-6 middle-content">
                 <p>
@@ -184,7 +198,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -194,7 +208,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -204,7 +218,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -214,7 +228,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -224,7 +238,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -234,7 +248,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -244,7 +258,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      <a href="#">Read more...</a></td>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -254,6 +268,23 @@
                       </div>
                     </div>
                   </div>
+                  <div class="downloads-menubar">
+                      <div href="#" class="list-group-item active">
+                          <h4 class="list-group-item-heading">Downloads</h4>
+                      </div>  
+                      <a href="#" class="list-group-item">
+                          <h5 class="list-group-item-heading">Paper Template</h5>
+                      </a>
+                      <a href="#" class="list-group-item" data-for=".step-2">
+                          <h5 class="list-group-item-heading">Sample Paper</h5>
+                      </a>
+                      <a href="#" class="list-group-item" data-for=".step-3">
+                          <h5 class="list-group-item-heading">Withdrawal Form</h5>
+                      </a>
+                      <a href="#" class="list-group-item" data-for=".step-3">
+                          <h5 class="list-group-item-heading">Copyright Form</h5>
+                      </a>
+                 </div>
                 </div>
               </div>
             </div>
@@ -333,3 +364,6 @@
       <?php
 get_footer();
 ?>
+<script>
+  // jQuery("#body").addClass("login-background");
+</script>

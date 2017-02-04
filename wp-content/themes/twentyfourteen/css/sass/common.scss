@@ -327,7 +327,7 @@ $border_color_1: #6cb670;
 }
 .nav ul {
   list-style: none;
-  width: 100%;
+  width: auto;
   border-bottom: 5px solid #2aacc8;
   z-index: 888;
 }
@@ -354,9 +354,9 @@ $border_color_1: #6cb670;
 
 /* line 83, ../sass/style.scss */
 .nav li:hover {
-  background: #fff;
+  background: rgba(0, 0, 0, 0.2);
     //border-top: 5px solid #2aacc8;
-    color: #000;
+    color: #fff;
 }
 
 /* line 87, ../sass/style.scss */
@@ -390,7 +390,7 @@ $border_color_1: #6cb670;
 
 /* line 106, ../sass/style.scss */
 .nav > li > a:hover {
-  color: #000 !important;
+  color: fff !important;
 }
 
 /* line 109, ../sass/style.scss */
@@ -743,3 +743,21 @@ $border_color_1: #6cb670;
     }
 }
 
+.login-background{
+    background-image: url(https://s13.postimg.org/8xs7irifb/education2.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .loginbox{  
+        background: fff;
+        color: black;    
+        margin-top: 10%;
+        margin-bottom: 10%;
+        left: 0;
+        padding: 20px;   
+        box-shadow: 0 8px 50px -2px #000;
+        border-radius:5px;
+
+    }
+}

@@ -1,8 +1,7 @@
 .login-page{
-  padding: 100px;
   .panel-login{
-      background-color: #d9edf7;
       border: 1px solid #333;
+      margin: 0;
       .panel-title{
         text-align: center;
         font-family: 'oswald';
@@ -20,26 +19,45 @@
     .panel-body{
       #login-form,
       #register-form{
-        .form-control {
-            background-color: transparent;
-            border: 1px solid #4e595f;
-            height: 38px;
-            border-radius: 0;
-            color: #333;
-            &:focus {
-                box-shadow: 0 0 0;
-            }
-            &::-webkit-input-placeholder {
-                color: #ddd;
-            }
-            &:-moz-placeholder {
-                color: #ddd;
-            }
-            &::-moz-placeholder {
-                color: #ddd;
-            }
-            &:-ms-input-placeholder {
-                color: #ddd;
+        // .form-control {
+        //     background-color: transparent;
+        //     border: 1px solid #4e595f;
+        //     height: 38px;
+        //     border-radius: 0;
+        //     color: #333;
+        //     &:focus {
+        //         box-shadow: 0 0 0;
+        //     }
+        //     &::-webkit-input-placeholder {
+        //         color: #ddd;
+        //     }
+        //     &:-moz-placeholder {
+        //         color: #ddd;
+        //     }
+        //     &::-moz-placeholder {
+        //         color: #ddd;
+        //     }
+        //     &:-ms-input-placeholder {
+        //         color: #ddd;
+        //     }
+        // }
+        .input-group-addon{
+            background-color: rgb(50, 118, 177);
+            border-color: rgb(40, 94, 142);
+            color: rgb(255, 255, 255);
+        }
+        .form-control:focus{
+            background-color: rgb(50, 118, 177);
+            border-color: rgb(40, 94, 142);
+            color: rgb(255, 255, 255);
+        }
+        .form-signup input[type="text"],.form-signup input[type="password"] { border: 1px solid rgb(50, 118, 177); }
+        #register-submit{
+            margin-top: 20px;
+        }
+        .has-role{
+            .form-control-static{
+                cursor: pointer;
             }
         }
       }

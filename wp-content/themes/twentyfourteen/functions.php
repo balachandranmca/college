@@ -233,7 +233,7 @@ function twentyfourteen_scripts() {
 	
 	// wp_enqueue_style( 'twentyfourteen-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( 'twentyfourteen-style' ), '20161217' );
 	//wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.min.js');
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap.min.css');
+	//wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap.min.css');
 	// wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/vendor/animate.css');
 	// wp_enqueue_style( 'media-queries', get_template_directory_uri() . '/css/vendor/media-queries.css');
 	// wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/vendor/responsive.css');
@@ -241,12 +241,9 @@ function twentyfourteen_scripts() {
 	// wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/vendor/font-awesome.min.css');
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css');
 	wp_enqueue_script( 'twentyfourteen-appmin', get_template_directory_uri() . '/js/app.min.js', array( 'jquery' ), '20161217' );
-	
+	//wp_enqueue_script( 'twentyfourteen-bootstrap.min', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array( 'jquery' ), '20161218' );
 	wp_enqueue_script( 'twentyfourteen-modernizr-2.6.2.min', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array( 'jquery' ), '20161218' );
 	//wp_enqueue_script( 'twentyfourteen-jquery.bootstrap.newsbox.min', get_template_directory_uri() . '/js/vendor/jquery.bootstrap.newsbox.min.js', array( 'jquery' ), '20161218' )
-
-	
-	//wp_enqueue_script( 'twentyfourteen-bootstrap.min', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array( 'jquery' ), '20161218' );
 	wp_enqueue_script( 'twentyfourteen-jquery.jcarousel', get_template_directory_uri() . '/js/vendor/jquery.jcarousel.min.js', array( 'jquery' ), '20170202' );
 	wp_enqueue_script( 'twentyfourteen-jquery.touchSwipe', get_template_directory_uri() . '/js/vendor/jquery.touchSwipe.js', array( 'jquery' ), '20170202' );
 	wp_enqueue_script( 'twentyfourteen-jquery.slitslider', get_template_directory_uri() . '/js/vendor/jquery.slitslider.js', array( 'jquery' ), '20161218' );
@@ -263,7 +260,6 @@ function twentyfourteen_scripts() {
 	wp_enqueue_script( 'twentyfourteen-jquery.sticky', get_template_directory_uri() . '/js/vendor/jquery.sticky.js', array( 'jquery' ), '20161218' );
 	wp_enqueue_script( 'twentyfourteen-owl.carousel.min', get_template_directory_uri() . '/js/vendor/owl.carousel.min.js', array( 'jquery' ), '20161218' );
 	wp_enqueue_script( 'twentyfourteen-tweetie.min', get_template_directory_uri() . '/js/vendor/tweetie.min.js', array( 'jquery' ), '20161218' );
-	wp_enqueue_script( 'twentyfourteen-wow.min', get_template_directory_uri() . '/js/vendor/wow.min.js', array( 'jquery' ), '20161219' );
 	
 	
 	// // Add Lato font, used in the main stylesheet.

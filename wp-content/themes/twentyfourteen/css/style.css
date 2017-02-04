@@ -7095,66 +7095,58 @@ Copyright (c) 2013 Daniel Eden
 
 
 /* HEADER */
-/* line 1, sass/login.scss */
-.login-page {
-  padding: 100px;
-}
-/* line 3, sass/login.scss */
+/* line 2, sass/login.scss */
 .login-page .panel-login {
-  background-color: #d9edf7;
   border: 1px solid #333;
+  margin: 0;
 }
-/* line 6, sass/login.scss */
+/* line 5, sass/login.scss */
 .login-page .panel-login .panel-title {
   text-align: center;
   font-family: 'oswald';
   font-size: 18px;
 }
-/* line 10, sass/login.scss */
+/* line 9, sass/login.scss */
 .login-page .panel-login .panel-title a {
   color: #333;
 }
-/* line 14, sass/login.scss */
+/* line 13, sass/login.scss */
 .login-page .panel-login .seprator {
   border-left: 2px solid #333;
 }
-/* line 17, sass/login.scss */
+/* line 16, sass/login.scss */
 .login-page .panel-login .hr-line {
   border-top: 1px solid #333;
 }
-/* line 23, sass/login.scss */
-.login-page .panel-login .panel-body #login-form .form-control,
-.login-page .panel-login .panel-body #register-form .form-control {
-  background-color: transparent;
-  border: 1px solid #4e595f;
-  height: 38px;
-  border-radius: 0;
-  color: #333;
+/* line 44, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .input-group-addon,
+.login-page .panel-login .panel-body #register-form .input-group-addon {
+  background-color: #3276b1;
+  border-color: #285e8e;
+  color: white;
 }
-/* line 29, sass/login.scss */
+/* line 49, sass/login.scss */
 .login-page .panel-login .panel-body #login-form .form-control:focus,
 .login-page .panel-login .panel-body #register-form .form-control:focus {
-  box-shadow: 0 0 0;
+  background-color: #3276b1;
+  border-color: #285e8e;
+  color: white;
 }
-/* line 32, sass/login.scss */
-.login-page .panel-login .panel-body #login-form .form-control::-webkit-input-placeholder,
-.login-page .panel-login .panel-body #register-form .form-control::-webkit-input-placeholder {
-  color: #ddd;
+/* line 54, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .form-signup input[type="text"], .login-page .panel-login .panel-body #login-form .form-signup input[type="password"],
+.login-page .panel-login .panel-body #register-form .form-signup input[type="text"],
+.login-page .panel-login .panel-body #register-form .form-signup input[type="password"] {
+  border: 1px solid #3276b1;
 }
-/* line 35, sass/login.scss */
-.login-page .panel-login .panel-body #login-form .form-control:-moz-placeholder,
-.login-page .panel-login .panel-body #register-form .form-control:-moz-placeholder {
-  color: #ddd;
+/* line 55, sass/login.scss */
+.login-page .panel-login .panel-body #login-form #register-submit,
+.login-page .panel-login .panel-body #register-form #register-submit {
+  margin-top: 20px;
 }
-/* line 38, sass/login.scss */
-.login-page .panel-login .panel-body #login-form .form-control::-moz-placeholder,
-.login-page .panel-login .panel-body #register-form .form-control::-moz-placeholder {
-  color: #ddd;
-}
-/* line 41, sass/login.scss */
-.login-page .panel-login .panel-body #login-form .form-control:-ms-input-placeholder,
-.login-page .panel-login .panel-body #register-form .form-control:-ms-input-placeholder {
-  color: #ddd;
+/* line 59, sass/login.scss */
+.login-page .panel-login .panel-body #login-form .has-role .form-control-static,
+.login-page .panel-login .panel-body #register-form .has-role .form-control-static {
+  cursor: pointer;
 }
 
 /* Table of Content
@@ -7475,7 +7467,7 @@ Copyright (c) 2013 Daniel Eden
 /* line 328, sass/common.scss */
 .nav ul {
   list-style: none;
-  width: 100%;
+  width: auto;
   border-bottom: 5px solid #2aacc8;
   z-index: 888;
 }
@@ -7500,8 +7492,8 @@ Copyright (c) 2013 Daniel Eden
 /* line 83, ../sass/style.scss */
 /* line 356, sass/common.scss */
 .nav li:hover {
-  background: #fff;
-  color: #000;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 /* line 87, ../sass/style.scss */
@@ -7541,7 +7533,7 @@ Copyright (c) 2013 Daniel Eden
 /* line 106, ../sass/style.scss */
 /* line 392, sass/common.scss */
 .nav > li > a:hover {
-  color: #000 !important;
+  color: fff !important;
 }
 
 /* line 109, ../sass/style.scss */
@@ -7924,6 +7916,25 @@ Copyright (c) 2013 Daniel Eden
   text-align: center;
 }
 
+/* line 746, sass/common.scss */
+.login-background {
+  background-image: url(https://s13.postimg.org/8xs7irifb/education2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* line 752, sass/common.scss */
+.login-background .loginbox {
+  background: fff;
+  color: black;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  left: 0;
+  padding: 20px;
+  box-shadow: 0 8px 50px -2px #000;
+  border-radius: 5px;
+}
+
 /********************************News Bar *************************/
 /* line 2, sass/newsticker.scss */
 .newsbox {
@@ -8000,6 +8011,18 @@ Copyright (c) 2013 Daniel Eden
 .newsbox .demo1, .newsbox .demo2 {
   list-style: none;
   padding: 0;
+}
+/* line 69, sass/newsticker.scss */
+.newsbox .subpages-sidemenubar .list-group-item.active,
+.newsbox .downloads-menubar .list-group-item.active {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* line 73, sass/newsticker.scss */
+.newsbox .subpages-sidemenubar .list-group-item.active .list-group-item-heading,
+.newsbox .downloads-menubar .list-group-item.active .list-group-item-heading {
+  margin: 5px;
 }
 
 /* line 2, sass/contact.scss */

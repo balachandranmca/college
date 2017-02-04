@@ -64,4 +64,15 @@
 		list-style: none;
 		padding: 0;
 	}
+	.subpages-sidemenubar,
+	.downloads-menubar{
+		.list-group-item.active{
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			.list-group-item-heading{
+				margin: 5px;
+			}
+		}
+	}
 }
