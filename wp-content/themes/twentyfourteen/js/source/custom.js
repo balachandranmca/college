@@ -345,7 +345,7 @@ jQuery(function ($) { "use strict";
 		.jcarousel({
 			wrap: 'circular'
 		}).jcarouselAutoscroll({
-			interval: 1000,
+			interval: 2000,
 			target: '+=1',
 		});
 

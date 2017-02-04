@@ -40,6 +40,7 @@ function Page_Settings() {
 		"college_carosel_slider_list" => "College Carosel Slider List",
 		"college_withdrawal_procedure" => "College Withdrawal Procedure",
 		"college_guidelines_author" => "College Guidelines to Author",
+		"college_user_list" => "College User List",
 		
 	);
 

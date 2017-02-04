@@ -312,7 +312,7 @@
                   <div class="service-icon text-center">
                     <i class="fa fa-wordpress fa-5x"></i>
                   </div>
-                  <h3>
+                  <h3 style="color: #<?php echo $value['color'];?>;">
                     <?php echo $value['name'];?>
                   </h3>
                   <p>

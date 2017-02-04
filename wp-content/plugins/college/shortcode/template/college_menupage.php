@@ -20,6 +20,7 @@
     <li><a href="<?php echo get_buzz_url('college_carosel_slider_list') ?>">Our Portfolio</a></li>
     <li><a href="<?php echo get_buzz_url('college_call_for_paper') ?>">Call for paper</a></li>
     <li><a href="<?php echo get_buzz_url('college_journal_editor_list') ?>">Journal Editors</a></li>
+    <li><a href="<?php echo get_buzz_url('college_user_listpage') ?>">User List</a></li>
     <li><a href="<?php echo get_buzz_url('college_general_settings') ?>">General Settings</a></li>
 <?php } else { ?>
     <li><a href="<?php echo site_url();?>">Home</a></li>
