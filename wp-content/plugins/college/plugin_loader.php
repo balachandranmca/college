@@ -26,3 +26,7 @@ include_once 'lib/general_functions.php';
 add_role('journal', 'Journal', array('read' => true, 'level_0' => true));
 
 add_role('editor', 'Editor', array('read' => true, 'level_0' => true));
+
+add_role('user', 'User', array('read' => true, 'level_0' => true));
+
+add_role('author', 'Author', array('read' => true, 'level_0' => true));

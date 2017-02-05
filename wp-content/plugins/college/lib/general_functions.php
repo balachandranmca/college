@@ -111,7 +111,7 @@ function post_redirect(){
         get_buzz_id('college_document'),
     );
     
-    if ( ( in_array('journal', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $admin_only))) {
+    if ( ( in_array('author', $role) || in_array('user', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $admin_only))) {
         wp_redirect( site_url() );
         exit();
     }

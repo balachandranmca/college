@@ -150,7 +150,7 @@
                                 <tbody>
                                   <tr>
                                     <td class="news-content">
-                                      <?php echo $value['name'];?></td>
+                                      <?php echo $value['name'] ." ".$value['start_date'];?></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -162,20 +162,25 @@
                     </div>
                   </div>
                 </div>
-                 <div class="subpages-sidemenubar">
-                      <div href="#" class="list-group-item active">
-                          <h4 class="list-group-item-heading">Sub Pages</h5>
-                      </div>  
-                      <a href="#" class="list-group-item">
-                          <h5 class="list-group-item-heading">Guidelines To Author</h5>
-                      </a>
-                      <a href="#" class="list-group-item" data-for=".step-2">
-                          <h5 class="list-group-item-heading">Online Submission</h5>
-                      </a>
-                      <a href="#" class="list-group-item" data-for=".step-3">
-                          <h5 class="list-group-item-heading">Withdrawal Procedure</h5>
-                      </a>
-                 </div>
+                <?php 
+                $user_ID = get_current_user_id();
+                $role= get_current_user_role($user_ID);
+                if (in_array('author', $role)) { ?>
+                    <div class="subpages-sidemenubar">
+                          <div href="#" class="list-group-item active">
+                              <h4 class="list-group-item-heading">Sub Pages</h5>
+                          </div>  
+                          <a href="#" class="list-group-item">
+                              <h5 class="list-group-item-heading">Guidelines To Author</h5>
+                          </a>
+                          <a href="#" class="list-group-item" data-for=".step-2">
+                              <h5 class="list-group-item-heading">Online Submission</h5>
+                          </a>
+                          <a href="#" class="list-group-item" data-for=".step-3">
+                              <h5 class="list-group-item-heading">Withdrawal Procedure</h5>
+                          </a>
+                    </div>
+                <?php } ?>
               </div>
               <div class="col-md-6 middle-content">
                 <p>
