@@ -43,9 +43,9 @@
 <script>
     jQuery(document).on('click', '.user_status', function(e){
         var user_status = jQuery(this).val();
-        var message = "Are you disable this user ?"
+        var message = "Are you enable this user ?"
         if(user_status=="1"){
-            message = "Are you enable this user ?";
+            message = "Are you disable this user ?";
         }
         var result = confirm(message);
         if(result) {
@@ -63,6 +63,9 @@
                     window.location = "<?php echo get_buzz_url('college_user_list');?>";
                 }
             });
+        }
+        else{
+           return false;
         }
     });
 </script>

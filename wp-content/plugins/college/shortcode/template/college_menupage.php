@@ -41,14 +41,14 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manscript Submission
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="#">Guidelines to Author</a></li>
+            <li><a href="<?php echo get_buzz_url('college_guidelines_author') ?>">Guidelines to Author</a></li>
             <li><a href="#">Paper Template</a></li>
             <li><a href="#">Sample Paper</a></li>
             <li><a href="#">Copyright Form</a></li>
             <?php if(!is_user_logged_in()){ ?> 
                 <li><a href="<?php echo get_buzz_url('college_login') ?>">Online Submission</a></li>
             <?php } ?>
-            <li><a href="#">Withdrawal Procedure</a></li>
+            <li><a href="<?php echo get_buzz_url('college_withdrawal_procedure') ?>">Withdrawal Procedure</a></li>
             <li><a href="#">Withdrawel Form</a></li>
         </ul>
     </li>
