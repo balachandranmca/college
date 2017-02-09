@@ -55,29 +55,29 @@
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                            <input type="text" name="username" id="uname" tabindex="1" class="form-control" placeholder="Username" value="" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
-                                            <input type="phone" name="phone no" id="phoneno" tabindex="1" class="form-control" placeholder="Phone no" value="">
+                                            <input type="number" name="phone no" id="phoneno" tabindex="1" class="form-control" placeholder="Phone no" value="" required min="1">
                                         </div>
                                     </div>
                                     <div class="form-inline required">
                                         <div class="form-group has-role">
                                             <label class="input-group">
                                                 <span class="input-group-addon">
-                                                    <input type="radio" name="test" value="0" />
+                                                    <input type="radio" name="user_role" value="user" checked/>
                                                 </span>
                                                 <div class="form-control form-control-static">
-                                                    Select User
+                                                    User
                                                 </div>
                                                 <span class="glyphicon form-control-feedback "></span>
                                             </label>
@@ -85,10 +85,10 @@
                                         <div class="form-group has-role">
                                             <label class="input-group">
                                                 <span class="input-group-addon">
-                                                    <input type="radio" name="test" value="1" />
+                                                    <input type="radio" name="user_role" value="author" />
                                                 </span>
                                                 <div class="form-control form-control-static">
-                                                    Select Author
+                                                    Author
                                                 </div>
                                                 <span class="glyphicon form-control-feedback "></span>
                                             </label>
@@ -148,8 +148,39 @@ jQuery(function() {
                         setSession();
                     }
                     window.location.replace(response.url);
+                }else if(response.disable){
+                    jQuery('#Validationerror').removeClass("hide-error").html('Sorry! Your Account has been disabled.Please contact Admin');
                 }else{
-                    jQuery('#Validationerror').removeClass("hide-error");
+                    jQuery('#Validationerror').removeClass("hide-error").html('The username or password is incorrect.');
+                }
+            },
+            error: function(errorThrown){
+                console.log(errorThrown);
+            }
+        });  
+
+                
+    });
+    jQuery( "#register-form" ).submit(function( event ) {
+        event.preventDefault();
+        var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+        jQuery.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: {
+                'action':'college_registration',
+                'username' : jQuery('#uname').val(),
+                'email' : jQuery('#email').val(),
+                'phoneno' : jQuery('#phoneno').val(),
+                'role' : jQuery('input[name=user_role]:checked', '#register-form').val()
+            },
+            success:function(response) {
+                var response = jQuery.parseJSON(response);
+                if (response.success){
+                    alert("Successfully Registered. New Password sent to your Registerd Email");
+                    window.location.replace(response.url);
+                }else if(response){
+                    alert("Already UserEmail Exist !!!");
                 }
             },
             error: function(errorThrown){
