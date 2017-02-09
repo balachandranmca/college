@@ -42,7 +42,7 @@ function Page_Settings() {
 		"college_withdrawal_procedure" => "College Withdrawal Procedure",
 		"college_guidelines_author" => "College Guidelines to Author",
 		"college_user_list" => "College User List",
-
+		"college_jounal_issues_pages" => "College Journal Issues Pages",
 	);
 
 	if (isset($_POST['pagesubmit'])) {
