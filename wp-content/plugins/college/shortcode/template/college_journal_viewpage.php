@@ -77,7 +77,7 @@
                                     <p><?php echo $value['start_date'];?></p>
                                 </div>
                                 <div class="Current-Issues-btn text-center">
-                                    <a href="<?php echo $value['id'];?>"></a><input type="submit" class="text-center btn btn-success btn-lg" value="View" name="" id=""/>
+                                    <a href="<?php echo get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];?>"><input type="button" class="text-center btn btn-success btn-lg" value="View" name="" id=""/></a>
                                 </div>
                             </div>
                         </div>

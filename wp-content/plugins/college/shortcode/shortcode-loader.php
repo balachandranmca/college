@@ -59,3 +59,7 @@ include_once 'college_withdrawal_procedure.php';
 include_once 'college_user_list.php';
 
 include_once 'college_jounal_issues_pages.php';
+
+include_once 'college_journal_issue_publish.php';
+
+include_once 'college_journal_issue_publish_list.php';
