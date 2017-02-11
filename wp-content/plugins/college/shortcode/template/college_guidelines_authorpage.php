@@ -18,6 +18,95 @@
             <h4>Instructions at a Glance</h4>
         </div>
     </div>
+    <div class="row glance-tables">
+        <div class="col-md-4">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Description</th>
+                    <th>Specifications</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paper Size</td>
+                        <td>A4</td>
+                    </tr>
+                    <tr>
+                        <td>Margins</td>
+                        <td>1” all four sides	</td>
+                    </tr>
+                    <tr>
+                        <td>Orientation</td>
+                        <td>Portrait</td>
+                    </tr>
+                    <tr>
+                        <td>Text</td>
+                        <td>Arial</td>
+                    </tr><tr>
+                        <td>Title</td>
+                        <td>24- Bold</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Description</th>
+                    <th>Specifications</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abstract</td>
+                        <td>250 words, 9 - Bold</td>
+                    </tr>
+                    <tr>
+                        <td>Keywords</td>
+                        <td>7 - Max. 7 nos.</td>
+                    </tr>
+                    <tr>
+                        <td>All Main Headlines</td>
+                        <td>10-Arial-ALL CAPITAL- BOLD</td>
+                    </tr>
+                    <tr>
+                        <td>Sub Headlines</td>
+                        <td>10-Capitalize First Letter of each word</td>
+                    </tr><tr>
+                        <td>Tables & Figures</td>
+                        <td>Arrange in the text where they appears</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Description</th>
+                    <th>Specifications</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>References</td>
+                        <td>Show with numerical in square bracket in the text</td>
+                    </tr>
+                    <tr>
+                        <td>References</td>
+                        <td>List at the end in the order as appears in the text.</td>
+                    </tr>
+                    <tr>
+                        <td>Author’s Biography</td>
+                        <td>8 with color photograph</td>
+                    </tr>
+                    <tr>
+                        <td>Paper Length</td>
+                        <td>Max. of 10 typed pages</td>
+                    </tr><tr>
+                        <td>Authors Name</td>
+                        <td>12- Italic Bold</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+    </div>
 </div>
 <!-- /Sub Heading -->
 

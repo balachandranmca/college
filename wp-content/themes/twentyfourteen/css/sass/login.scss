@@ -19,28 +19,7 @@
     .panel-body{
       #login-form,
       #register-form{
-        // .form-control {
-        //     background-color: transparent;
-        //     border: 1px solid #4e595f;
-        //     height: 38px;
-        //     border-radius: 0;
-        //     color: #333;
-        //     &:focus {
-        //         box-shadow: 0 0 0;
-        //     }
-        //     &::-webkit-input-placeholder {
-        //         color: #ddd;
-        //     }
-        //     &:-moz-placeholder {
-        //         color: #ddd;
-        //     }
-        //     &::-moz-placeholder {
-        //         color: #ddd;
-        //     }
-        //     &:-ms-input-placeholder {
-        //         color: #ddd;
-        //     }
-        // }
+          padding: 20px;
         .input-group-addon{
             background-color: rgb(50, 118, 177);
             border-color: rgb(40, 94, 142);
