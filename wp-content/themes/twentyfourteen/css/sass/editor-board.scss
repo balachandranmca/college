@@ -6,6 +6,9 @@
         margin-top: 25px;
         letter-spacing: 1px;
         h2,h4{margin: 0;color: #fff;}
+        @media(max-width:767px){
+            margin: 15px;
+        }
     }
     .glance-tables{
         margin-top: 30px;

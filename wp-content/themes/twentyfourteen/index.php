@@ -298,38 +298,44 @@
           <!-- End container -->
       </section>
       <!-- End section -->
+      <section>
+        <div class="row">
+          <!-- section title -->
+              <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                <h2>Our <span class="color">Publications</span></h2>
+                <div class="border"></div>
+              </div>
+              <!-- /section title -->
+        </div>
+      </section>
       <!-- Start Services Section
 		==================================== -->
       <section id="services" class="bg-one">
-        <div class="container">
-          <div class="row">
-            <!-- section title -->
-            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-              <h2>Our <span class="color">Publications</span></h2>
-              <div class="border"></div>
-            </div>
-            <!-- /section title -->
-            <!-- Single Service Item -->
-            <?php foreach ($journalList as $key => $value) { ?>
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-              <a href="<?php echo get_buzz_url('college_journal_view').'?id='.$value['id'];?>">
-                <div class="service-block text-center">
-                  <div class="service-icon text-center">
-                    <i class="fa fa-wordpress fa-5x"></i>
+        <div class="service-pattern">
+          <div class="container">
+            <div class="row">
+              <!-- Single Service Item -->
+              <?php foreach ($journalList as $key => $value) { ?>
+              <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+                <a href="<?php echo get_buzz_url('college_journal_view').'?id='.$value['id'];?>">
+                  <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                      <i class="fa fa-wordpress fa-5x"></i>
+                    </div>
+                    <h3 style="color: #<?php echo $value['color'];?>;">
+                      <?php echo $value['name'];?>
+                    </h3>
+                    <p>
+                      <?php echo $value['issn_no'];?>
+                    </p>
                   </div>
-                  <h3 style="color: #<?php echo $value['color'];?>;">
-                    <?php echo $value['name'];?>
-                  </h3>
-                  <p>
-                    <?php echo $value['issn_no'];?>
-                  </p>
-                </div>
-              </a>
-            </article>
-            <?php } ?>
-            <!-- End Single Service Item -->
+                </a>
+              </article>
+              <?php } ?>
+              <!-- End Single Service Item -->
+            </div>
+            <!-- End row -->
           </div>
-          <!-- End row -->
         </div>
         <!-- End container -->
       </section>
