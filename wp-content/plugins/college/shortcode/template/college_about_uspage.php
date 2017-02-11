@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-6 content">
             <h2>International Journal of Research in Engineering, Science and Technologies (IJRESTs)</h2>
-            <?php echo get_option('about_us');?>
+            <p class="subcontent"><?php echo get_option('about_us');?></p>
         </div>
     </div>
 </section>
