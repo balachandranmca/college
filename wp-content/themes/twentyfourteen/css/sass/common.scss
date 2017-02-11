@@ -45,7 +45,6 @@ $border_color_1: #6cb670;
         &:focus {
             text-decoration: none;
             outline: 0;
-            color: $color_3;
         }
         &:hover {
             text-decoration: none;
@@ -442,28 +441,23 @@ $border_color_1: #6cb670;
 
 /*******************Media Queries Starts Here*************/
 @media (max-width: 1024px) {
-  /* line 496, ../sass/style.scss */
   .nav li a {
     margin: 0 5px;
   }
 
-  /* line 512, ../sass/style.scss */
   .nav > li.hover > ul {
     left: 4px;
   }
 
-  /* line 524, ../sass/style.scss */
   ul.comment-list .desc {
     width: 89%;
   }
 }
 @media (max-width: 767px) {
-  /* line 537, ../sass/style.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #088dfe !important;
+    background-color: #fff !important;
+    color: #000 !important;
   }
-
-  /* line 540, ../sass/style.scss */
   .nav > li {
     float: none !important;
   }
@@ -545,7 +539,14 @@ $border_color_1: #6cb670;
 ==================================================================*/
 
 #services {
-    padding: 22px 0 10px;
+    background: rgba(0,0,0,.8);
+    //background: url(../images/banner-bg.png) no-repeat;
+    //background-size: cover;
+    margin-top: 25px;
+   .service-pattern{
+       background: rgba(0,0,0,.5) url(../images/pattern.png);
+       padding-top: 40px;
+   } 
     .title {
         padding-bottom: 60px;
     }

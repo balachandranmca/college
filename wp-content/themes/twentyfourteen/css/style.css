@@ -6373,61 +6373,60 @@ Copyright (c) 2013 Daniel Eden
 #body a:focus {
   text-decoration: none;
   outline: 0;
-  color: #028fcc;
 }
-/* line 50, sass/common.scss */
+/* line 49, sass/common.scss */
 #body a:hover {
   text-decoration: none;
   outline: 0;
 }
-/* line 55, sass/common.scss */
+/* line 54, sass/common.scss */
 #body iframe {
   border: 0;
 }
-/* line 58, sass/common.scss */
+/* line 57, sass/common.scss */
 #body h1 {
   font-family: oswald;
   font-weight: 400;
 }
-/* line 62, sass/common.scss */
+/* line 61, sass/common.scss */
 #body h2 {
   font-family: oswald;
   font-weight: 400;
 }
-/* line 66, sass/common.scss */
+/* line 65, sass/common.scss */
 #body h3 {
   font-family: oswald;
   font-weight: 400;
 }
-/* line 70, sass/common.scss */
+/* line 69, sass/common.scss */
 #body h4 {
   font-family: oswald;
   font-weight: 400;
 }
-/* line 74, sass/common.scss */
+/* line 73, sass/common.scss */
 #body h5 {
   font-family: oswald;
   font-weight: 400;
 }
-/* line 78, sass/common.scss */
+/* line 77, sass/common.scss */
 #body h6 {
   font-family: oswald;
   font-weight: 400;
 }
-/* line 82, sass/common.scss */
+/* line 81, sass/common.scss */
 #body .kill-margin-bottom {
   margin-bottom: 0 !important;
 }
-/* line 86, sass/common.scss */
+/* line 85, sass/common.scss */
 #body .btn:focus {
   color: #000;
   outline: 0;
 }
-/* line 91, sass/common.scss */
+/* line 90, sass/common.scss */
 #body .btn:active:focus {
   outline: 0;
 }
-/* line 96, sass/common.scss */
+/* line 95, sass/common.scss */
 #body .btn-links {
   font-size: 14px;
   font-weight: 600;
@@ -6435,32 +6434,32 @@ Copyright (c) 2013 Daniel Eden
   border: 1px solid #6e6d6c;
   border-radius: 4px;
 }
-/* line 103, sass/common.scss */
+/* line 102, sass/common.scss */
 #body .btn-links:focus {
   background-color: #027db3;
   color: #fff;
 }
-/* line 107, sass/common.scss */
+/* line 106, sass/common.scss */
 #body .btn-links:hover {
   background-color: #027db3;
   color: #fff;
 }
-/* line 112, sass/common.scss */
+/* line 111, sass/common.scss */
 #body .btn-transparent {
   border: 1px solid #4e595f;
 }
-/* line 114, sass/common.scss */
+/* line 113, sass/common.scss */
 #body .btn-transparent:focus {
   background-color: transparent;
   border-color: #6cb670;
 }
-/* line 118, sass/common.scss */
+/* line 117, sass/common.scss */
 #body .btn-transparent:hover {
   background-color: #6cb670;
   border: 1px solid transparent;
   color: #fff;
 }
-/* line 124, sass/common.scss */
+/* line 123, sass/common.scss */
 #body #loading-mask {
   background: #333439;
   height: 100%;
@@ -6473,7 +6472,7 @@ Copyright (c) 2013 Daniel Eden
   width: 100%;
   z-index: 999999999;
 }
-/* line 136, sass/common.scss */
+/* line 135, sass/common.scss */
 #body .loading-img {
   height: 100%;
   left: 0;
@@ -6481,7 +6480,7 @@ Copyright (c) 2013 Daniel Eden
   top: 50%;
   width: 100%;
 }
-/* line 143, sass/common.scss */
+/* line 142, sass/common.scss */
 #body .border {
   border-top: 1px solid #333;
   height: 1px;
@@ -6489,7 +6488,7 @@ Copyright (c) 2013 Daniel Eden
   position: relative;
   width: 35%;
 }
-/* line 149, sass/common.scss */
+/* line 148, sass/common.scss */
 #body .border:before {
   background-color: #333;
   border: 1px ridge #fff;
@@ -6501,15 +6500,15 @@ Copyright (c) 2013 Daniel Eden
   top: -5px;
   width: 40px;
 }
-/* line 161, sass/common.scss */
+/* line 160, sass/common.scss */
 #body .color {
   color: #028fcc;
 }
-/* line 164, sass/common.scss */
+/* line 163, sass/common.scss */
 #body .sub-title {
   padding: 0 0 50px;
 }
-/* line 166, sass/common.scss */
+/* line 165, sass/common.scss */
 #body .sub-title > h3 {
   border-left: 3px solid #ddd;
   border-right: 3px solid #ddd;
@@ -6517,7 +6516,7 @@ Copyright (c) 2013 Daniel Eden
   padding: 5px 25px;
   text-transform: uppercase;
 }
-/* line 175, sass/common.scss */
+/* line 174, sass/common.scss */
 #body .btn.active:focus {
   outline: 0;
 }
@@ -6525,21 +6524,21 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Home Slider
 ==================================================================*/
-/* line 185, sass/common.scss */
+/* line 184, sass/common.scss */
 #home {
   position: relative;
 }
-/* line 189, sass/common.scss */
+/* line 188, sass/common.scss */
 #home #slitSlider .sl-slide-inner img {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 194, sass/common.scss */
+/* line 193, sass/common.scss */
 #home #slitSlider .sl-slide-inner h2 {
   letter-spacing: 4px;
 }
-/* line 198, sass/common.scss */
+/* line 197, sass/common.scss */
 #home #slitSlider .carousel-caption {
   padding: 0;
   display: table;
@@ -6551,16 +6550,16 @@ Copyright (c) 2013 Daniel Eden
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 208, sass/common.scss */
+/* line 207, sass/common.scss */
 #home #slitSlider .carousel-caption a {
   font-size: 18px;
 }
-/* line 211, sass/common.scss */
+/* line 210, sass/common.scss */
 #home #slitSlider .carousel-caption > div {
   vertical-align: middle;
   display: table-cell;
 }
-/* line 215, sass/common.scss */
+/* line 214, sass/common.scss */
 #home #slitSlider .carousel-caption h2 {
   color: #fff;
   font-family: Oswald, sans-serif;
@@ -6569,7 +6568,7 @@ Copyright (c) 2013 Daniel Eden
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-/* line 223, sass/common.scss */
+/* line 222, sass/common.scss */
 #home #slitSlider .carousel-caption h3 {
   color: #fff;
   font-family: Oswald, sans-serif;
@@ -6581,7 +6580,7 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Navigation
 ==================================================================*/
-/* line 237, sass/common.scss */
+/* line 236, sass/common.scss */
 .navbar-inverse {
   background-color: #028fcc;
   width: 100%;
@@ -6589,36 +6588,36 @@ Copyright (c) 2013 Daniel Eden
   border: 0 none;
 }
 @media (min-width: 1200px) {
-  /* line 237, sass/common.scss */
+  /* line 236, sass/common.scss */
   .navbar-inverse {
     height: 70px;
   }
 }
 
-/* line 247, sass/common.scss */
+/* line 246, sass/common.scss */
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
 
-/* line 252, sass/common.scss */
+/* line 251, sass/common.scss */
 .navbar-brand {
   height: auto;
   padding: 0;
 }
-/* line 255, sass/common.scss */
+/* line 254, sass/common.scss */
 .navbar-brand h1 {
   margin: 0;
   letter-spacing: 2px;
   color: #fff;
   padding: 15px;
 }
-/* line 261, sass/common.scss */
+/* line 260, sass/common.scss */
 .navbar-brand .navbar-collapse {
   margin-top: 8px;
 }
 
-/* line 265, sass/common.scss */
+/* line 264, sass/common.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
   font-size: 14px;
@@ -6629,24 +6628,24 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: background .5s ease-in-out 0s;
   transition: background .5s ease-in-out 0s;
 }
-/* line 275, sass/common.scss */
+/* line 274, sass/common.scss */
 .navbar-inverse .navbar-nav > li.current > a {
   color: #fff;
   background-color: #000;
 }
 
-/* line 292, sass/common.scss */
+/* line 291, sass/common.scss */
 .expend {
   color: #fff;
   background-color: #000;
 }
 
-/* line 297, sass/common.scss */
+/* line 296, sass/common.scss */
 .nav li {
   margin: 0 !important;
 }
 
-/* line 300, sass/common.scss */
+/* line 299, sass/common.scss */
 .nav ul {
   list-style: none;
   width: auto;
@@ -6655,7 +6654,7 @@ Copyright (c) 2013 Daniel Eden
 }
 
 /* line 66, ../sass/style.scss */
-/* line 308, sass/common.scss */
+/* line 307, sass/common.scss */
 .nav li a {
   display: block;
   padding: 10px 15px;
@@ -6672,61 +6671,61 @@ Copyright (c) 2013 Daniel Eden
 
 /* line 80, ../sass/style.scss */
 /* line 83, ../sass/style.scss */
-/* line 328, sass/common.scss */
+/* line 327, sass/common.scss */
 .nav li:hover {
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
 }
 
 /* line 87, ../sass/style.scss */
-/* line 335, sass/common.scss */
+/* line 334, sass/common.scss */
 .nav li {
   position: relative;
 }
 
 /* line 90, ../sass/style.scss */
-/* line 340, sass/common.scss */
+/* line 339, sass/common.scss */
 .nav li.active {
   border-top: 5px solid #2aacc8;
   background: #fff;
 }
 
 /* line 94, ../sass/style.scss */
-/* line 346, sass/common.scss */
+/* line 345, sass/common.scss */
 .nav > li > a.parent {
   background: url(../images/arrow.png) no-repeat 15px 18px;
   padding: 10px 10px 10px 30px;
 }
 
 /* line 98, ../sass/style.scss */
-/* line 352, sass/common.scss */
+/* line 351, sass/common.scss */
 .nav > li > a.parent:hover {
   background: url(../images/arrow.png) no-repeat 15px 18px #fff;
   padding: 10px 10px 10px 30px;
 }
 
 /* line 102, ../sass/style.scss */
-/* line 358, sass/common.scss */
+/* line 357, sass/common.scss */
 .nav > li {
   float: left;
   margin: 0 10px;
 }
 
 /* line 106, ../sass/style.scss */
-/* line 364, sass/common.scss */
+/* line 363, sass/common.scss */
 .nav > li > a:hover {
   color: fff !important;
 }
 
 /* line 109, ../sass/style.scss */
-/* line 369, sass/common.scss */
+/* line 368, sass/common.scss */
 .nav > li.hover > ul {
   left: -1px;
   top: 40px;
 }
 
 /* line 113, ../sass/style.scss */
-/* line 375, sass/common.scss */
+/* line 374, sass/common.scss */
 .nav li li.hover ul {
   left: 100%;
   -webkit-transition: background .2s linear;
@@ -6737,7 +6736,7 @@ Copyright (c) 2013 Daniel Eden
 }
 
 /* line 121, ../sass/style.scss */
-/* line 385, sass/common.scss */
+/* line 384, sass/common.scss */
 .nav > li > li > a {
   font-size: 0.85em;
   padding: 10px 20px;
@@ -6759,19 +6758,19 @@ Copyright (c) 2013 Daniel Eden
 }
 
 /* line 140, ../sass/style.scss */
-/* line 406, sass/common.scss */
+/* line 405, sass/common.scss */
 .nav li li {
   border-top: none;
 }
 
 /* line 143, ../sass/style.scss */
-/* line 411, sass/common.scss */
+/* line 410, sass/common.scss */
 .nav li li:hover {
   border-top: none;
 }
 
 /* line 146, ../sass/style.scss */
-/* line 416, sass/common.scss */
+/* line 415, sass/common.scss */
 .nav li li a {
   text-transform: capitalize;
   font-size: 0.85em;
@@ -6782,7 +6781,7 @@ Copyright (c) 2013 Daniel Eden
 
 /* line 153, ../sass/style.scss */
 /* line 156, ../sass/style.scss */
-/* line 430, sass/common.scss */
+/* line 429, sass/common.scss */
 .nav > li > ul {
   position: absolute;
   left: -9999px;
@@ -6791,7 +6790,7 @@ Copyright (c) 2013 Daniel Eden
   background: #fff;
 }
 
-/* line 438, sass/common.scss */
+/* line 437, sass/common.scss */
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
   color: #fff !important;
   background-color: transparent;
@@ -6799,38 +6798,34 @@ Copyright (c) 2013 Daniel Eden
 
 /*******************Media Queries Starts Here*************/
 @media (max-width: 1024px) {
-  /* line 496, ../sass/style.scss */
-  /* line 446, sass/common.scss */
+  /* line 444, sass/common.scss */
   .nav li a {
     margin: 0 5px;
   }
 
-  /* line 512, ../sass/style.scss */
-  /* line 451, sass/common.scss */
+  /* line 448, sass/common.scss */
   .nav > li.hover > ul {
     left: 4px;
   }
 
-  /* line 524, ../sass/style.scss */
-  /* line 456, sass/common.scss */
+  /* line 452, sass/common.scss */
   ul.comment-list .desc {
     width: 89%;
   }
 }
 @media (max-width: 767px) {
-  /* line 537, ../sass/style.scss */
-  /* line 462, sass/common.scss */
+  /* line 457, sass/common.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #088dfe !important;
+    background-color: #fff !important;
+    color: #000 !important;
   }
 
-  /* line 540, ../sass/style.scss */
-  /* line 467, sass/common.scss */
+  /* line 461, sass/common.scss */
   .nav > li {
     float: none !important;
   }
 
-  /* line 471, sass/common.scss */
+  /* line 465, sass/common.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
   }
@@ -6838,15 +6833,15 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	About us section
 ==================================================================*/
-/* line 479, sass/common.scss */
+/* line 473, sass/common.scss */
 #about {
   padding: 20px 0 0 0;
 }
-/* line 481, sass/common.scss */
+/* line 475, sass/common.scss */
 #about h2 {
   letter-spacing: 2px;
 }
-/* line 482, sass/common.scss */
+/* line 476, sass/common.scss */
 #about .icon-box {
   position: relative;
   width: 160px;
@@ -6870,7 +6865,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition-property: transform;
   transition-property: transform;
 }
-/* line 504, sass/common.scss */
+/* line 498, sass/common.scss */
 #about .icon-box:hover {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -6878,7 +6873,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-/* line 511, sass/common.scss */
+/* line 505, sass/common.scss */
 #about .icon-box:before, #about .icon-box:after {
   content: "";
   position: absolute;
@@ -6893,19 +6888,19 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
 }
-/* line 525, sass/common.scss */
+/* line 519, sass/common.scss */
 #about .icon-box:before {
   top: -56.5685px;
   border-top: solid 4.2426px #ddd;
   border-right: solid 4.2426px #ddd;
 }
-/* line 530, sass/common.scss */
+/* line 524, sass/common.scss */
 #about .icon-box:after {
   bottom: -56.5685px;
   border-bottom: solid 4.2426px #ddd;
   border-left: solid 4.2426px #ddd;
 }
-/* line 537, sass/common.scss */
+/* line 531, sass/common.scss */
 #about .title h2 {
   color: #333;
 }
@@ -6913,15 +6908,21 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Services section
 ==================================================================*/
-/* line 547, sass/common.scss */
+/* line 541, sass/common.scss */
 #services {
-  padding: 22px 0 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 25px;
 }
-/* line 549, sass/common.scss */
+/* line 546, sass/common.scss */
+#services .service-pattern {
+  background: rgba(0, 0, 0, 0.5) url(../images/pattern.png);
+  padding-top: 40px;
+}
+/* line 550, sass/common.scss */
 #services .title {
   padding-bottom: 60px;
 }
-/* line 553, sass/common.scss */
+/* line 554, sass/common.scss */
 #services .service-block {
   padding: 50px 20px;
   border: 1px solid #4e595f;
@@ -6931,15 +6932,15 @@ Copyright (c) 2013 Daniel Eden
   box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
   border-radius: 10px;
 }
-/* line 563, sass/common.scss */
+/* line 564, sass/common.scss */
 #services .service-icon {
   margin-bottom: 40px;
 }
-/* line 567, sass/common.scss */
+/* line 568, sass/common.scss */
 #services .service-block h3 {
   text-transform: uppercase;
 }
-/* line 571, sass/common.scss */
+/* line 572, sass/common.scss */
 #services .title h2 {
   color: #333;
 }
@@ -6947,33 +6948,33 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Contact
 ==================================================================*/
-/* line 581, sass/common.scss */
+/* line 582, sass/common.scss */
 #contact-us {
   margin-top: 60px;
   padding: 70px 0 0;
   background: #027db3;
 }
-/* line 585, sass/common.scss */
+/* line 586, sass/common.scss */
 #contact-us .row {
   color: #fff;
 }
-/* line 587, sass/common.scss */
+/* line 588, sass/common.scss */
 #contact-us .row a {
   color: #fff;
 }
-/* line 589, sass/common.scss */
+/* line 590, sass/common.scss */
 #contact-us .contact-info p {
   margin-bottom: 25px;
 }
-/* line 593, sass/common.scss */
+/* line 594, sass/common.scss */
 #contact-us .con-info {
   margin-bottom: 20px;
 }
-/* line 595, sass/common.scss */
+/* line 596, sass/common.scss */
 #contact-us .con-info i {
   float: left;
 }
-/* line 598, sass/common.scss */
+/* line 599, sass/common.scss */
 #contact-us .con-info span {
   float: left;
   margin: -5px 0 0 15px;
@@ -6982,7 +6983,7 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Our Portfolio section
 ==================================================================*/
-/* line 609, sass/common.scss */
+/* line 610, sass/common.scss */
 .carousel-section .our-portfoliosection {
   padding-bottom: 60px;
 }
@@ -6990,20 +6991,20 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Footer section
 ==================================================================*/
-/* line 618, sass/common.scss */
+/* line 619, sass/common.scss */
 .social-icon {
   padding: 60px 0 35px;
 }
-/* line 620, sass/common.scss */
+/* line 621, sass/common.scss */
 .social-icon > ul {
   text-align: center;
 }
-/* line 622, sass/common.scss */
+/* line 623, sass/common.scss */
 .social-icon > ul > li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 625, sass/common.scss */
+/* line 626, sass/common.scss */
 .social-icon > ul > li > a {
   background-color: #26292e;
   display: block;
@@ -7019,7 +7020,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all 400ms ease-out 0s;
   transition: all 400ms ease-out 0s;
 }
-/* line 639, sass/common.scss */
+/* line 640, sass/common.scss */
 .social-icon > ul > li > a > i {
   color: #55606a;
   display: inline-block;
@@ -7038,7 +7039,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all 400ms ease-out 0s;
   transition: all 400ms ease-out 0s;
 }
-/* line 658, sass/common.scss */
+/* line 659, sass/common.scss */
 .social-icon > ul > li:hover a {
   background-color: #6CB670;
   -webkit-transform: rotateY(0deg);
@@ -7047,7 +7048,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 665, sass/common.scss */
+/* line 666, sass/common.scss */
 .social-icon > ul > li:hover a i {
   color: #fff;
   opacity: 1;
@@ -7059,28 +7060,28 @@ Copyright (c) 2013 Daniel Eden
   transform: rotateY(0deg);
 }
 
-/* line 680, sass/common.scss */
+/* line 681, sass/common.scss */
 .copyright {
   padding: 20px 0;
   color: #fff;
 }
-/* line 683, sass/common.scss */
+/* line 684, sass/common.scss */
 .copyright > img {
   margin-bottom: 15px;
 }
 
-/* line 687, sass/common.scss */
+/* line 688, sass/common.scss */
 .footer-bottom {
   background-color: #fff;
   padding: 20px 0 10px;
 }
 
-/* line 692, sass/common.scss */
+/* line 693, sass/common.scss */
 .footer-bottom a:hover {
   text-decoration: underline;
 }
 
-/* line 696, sass/common.scss */
+/* line 697, sass/common.scss */
 #scrollUp {
   border: 1px solid #fff;
   background-color: #027db3;
@@ -7093,19 +7094,19 @@ Copyright (c) 2013 Daniel Eden
   z-index: 600;
 }
 
-/* line 713, sass/common.scss */
+/* line 714, sass/common.scss */
 .viewpage-content h2 {
   text-align: center;
 }
 
-/* line 718, sass/common.scss */
+/* line 719, sass/common.scss */
 .login-background {
   background-image: url(https://s13.postimg.org/8xs7irifb/education2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-/* line 724, sass/common.scss */
+/* line 725, sass/common.scss */
 .login-background .loginbox {
   background: fff;
   color: black;
@@ -7318,10 +7319,9 @@ Copyright (c) 2013 Daniel Eden
 .issues_listpage .content .content-table,
 .editors-listpage .content .content-table,
 .journal-editors-listpage .content .content-table, .slider-listpage .content .content-table {
-  border: 1px solid;
   padding: 0;
 }
-/* line 17, sass/journal-list.scss */
+/* line 16, sass/journal-list.scss */
 .journal-list .content .content-table .slider-listpage,
 .volume-list .content .content-table .slider-listpage,
 .issues_listpage .content .content-table .slider-listpage,
@@ -7329,7 +7329,15 @@ Copyright (c) 2013 Daniel Eden
 .journal-editors-listpage .content .content-table .slider-listpage, .slider-listpage .content .content-table .slider-listpage {
   margin: 0;
 }
-/* line 20, sass/journal-list.scss */
+/* line 19, sass/journal-list.scss */
+.journal-list .content .content-table .table-responsive,
+.volume-list .content .content-table .table-responsive,
+.issues_listpage .content .content-table .table-responsive,
+.editors-listpage .content .content-table .table-responsive,
+.journal-editors-listpage .content .content-table .table-responsive, .slider-listpage .content .content-table .table-responsive {
+  width: 100%;
+}
+/* line 23, sass/journal-list.scss */
 .journal-list .content .content-table table,
 .volume-list .content .content-table table,
 .issues_listpage .content .content-table table,
@@ -7337,7 +7345,7 @@ Copyright (c) 2013 Daniel Eden
 .journal-editors-listpage .content .content-table table, .slider-listpage .content .content-table table {
   margin: 0;
 }
-/* line 22, sass/journal-list.scss */
+/* line 25, sass/journal-list.scss */
 .journal-list .content .content-table table th,
 .volume-list .content .content-table table th,
 .issues_listpage .content .content-table table th,
@@ -7349,7 +7357,7 @@ Copyright (c) 2013 Daniel Eden
   padding: 20px;
   text-transform: uppercase;
 }
-/* line 30, sass/journal-list.scss */
+/* line 33, sass/journal-list.scss */
 .journal-list .content .content-table table tbody tr,
 .volume-list .content .content-table table tbody tr,
 .issues_listpage .content .content-table table tbody tr,
@@ -7358,7 +7366,7 @@ Copyright (c) 2013 Daniel Eden
   text-align: center;
   font-size: 17px;
 }
-/* line 42, sass/journal-list.scss */
+/* line 45, sass/journal-list.scss */
 .journal-list .content .content-table table tbody tr td,
 .volume-list .content .content-table table tbody tr td,
 .issues_listpage .content .content-table table tbody tr td,
@@ -7367,7 +7375,7 @@ Copyright (c) 2013 Daniel Eden
   vertical-align: middle;
   border: 1px solid;
 }
-/* line 46, sass/journal-list.scss */
+/* line 49, sass/journal-list.scss */
 .journal-list .content .content-table table tbody tr td:nth-child(1),
 .volume-list .content .content-table table tbody tr td:nth-child(1),
 .issues_listpage .content .content-table table tbody tr td:nth-child(1),
@@ -7375,7 +7383,7 @@ Copyright (c) 2013 Daniel Eden
 .journal-editors-listpage .content .content-table table tbody tr td:nth-child(1), .slider-listpage .content .content-table table tbody tr td:nth-child(1) {
   text-align: left;
 }
-/* line 55, sass/journal-list.scss */
+/* line 58, sass/journal-list.scss */
 .journal-list .content .content-table .slider-list-img,
 .volume-list .content .content-table .slider-list-img,
 .issues_listpage .content .content-table .slider-list-img,
@@ -7526,11 +7534,17 @@ Copyright (c) 2013 Daniel Eden
   margin: 0;
   color: #fff;
 }
-/* line 10, sass/editor-board.scss */
+@media (max-width: 767px) {
+  /* line 2, sass/editor-board.scss */
+  .sub-heading .header {
+    margin: 15px;
+  }
+}
+/* line 13, sass/editor-board.scss */
 .sub-heading .glance-tables {
   margin-top: 30px;
 }
-/* line 13, sass/editor-board.scss */
+/* line 16, sass/editor-board.scss */
 .sub-heading .glance-tables .table-bordered th {
   font-weight: normal;
   text-align: center;
@@ -7538,34 +7552,34 @@ Copyright (c) 2013 Daniel Eden
   letter-spacing: 1px;
   color: #fff;
 }
-/* line 20, sass/editor-board.scss */
+/* line 23, sass/editor-board.scss */
 .sub-heading .glance-tables .table-bordered th:nth-child(1) {
   background-color: brown;
 }
-/* line 23, sass/editor-board.scss */
+/* line 26, sass/editor-board.scss */
 .sub-heading .glance-tables .table-bordered th:nth-child(2) {
   background-color: #333;
 }
 
 /* Team
 ---------------------------------*/
-/* line 38, sass/editor-board.scss */
+/* line 41, sass/editor-board.scss */
 .editorial-board .team-leader-block {
   display: inline-block;
 }
-/* line 41, sass/editor-board.scss */
+/* line 44, sass/editor-board.scss */
 .editorial-board .team-leader-box {
   margin-top: 40px;
   overflow: hidden;
   text-align: center;
   display: inline-block;
 }
-/* line 48, sass/editor-board.scss */
+/* line 51, sass/editor-board.scss */
 .editorial-board .team-leader-box span {
   margin-bottom: 24px;
   display: block;
 }
-/* line 56, sass/editor-board.scss */
+/* line 59, sass/editor-board.scss */
 .editorial-board .team-leader {
   width: auto;
   height: auto;
@@ -7574,22 +7588,22 @@ Copyright (c) 2013 Daniel Eden
   box-shadow: 0px 0px 0px 7px rgba(241, 241, 241, 0.8);
   margin: 7px 7px 25px 7px;
 }
-/* line 64, sass/editor-board.scss */
+/* line 67, sass/editor-board.scss */
 .editorial-board .team-leader:hover .team-leader-shadow {
   box-shadow: inset 0px 0px 0px 148px rgba(17, 17, 17, 0.8);
 }
-/* line 67, sass/editor-board.scss */
+/* line 70, sass/editor-board.scss */
 .editorial-board .team-leader:hover ul {
   display: block;
   opacity: 1;
 }
-/* line 72, sass/editor-board.scss */
+/* line 75, sass/editor-board.scss */
 .editorial-board .team-leader img {
   display: block;
   border-radius: 50%;
   width: 180px;
 }
-/* line 77, sass/editor-board.scss */
+/* line 80, sass/editor-board.scss */
 .editorial-board .team-leader ul {
   display: block;
   opacity: 0;
@@ -7607,12 +7621,12 @@ Copyright (c) 2013 Daniel Eden
   -moz-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
 }
-/* line 93, sass/editor-board.scss */
+/* line 96, sass/editor-board.scss */
 .editorial-board .team-leader ul li {
   display: inline;
   margin: 0 11px;
 }
-/* line 96, sass/editor-board.scss */
+/* line 99, sass/editor-board.scss */
 .editorial-board .team-leader ul li a {
   font-family: "FontAwesome";
   display: inline-block;
@@ -7622,31 +7636,31 @@ Copyright (c) 2013 Daniel Eden
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 104, sass/editor-board.scss */
+/* line 107, sass/editor-board.scss */
 .editorial-board .team-leader ul li a:hover {
   text-decoration: none;
 }
-/* line 107, sass/editor-board.scss */
+/* line 110, sass/editor-board.scss */
 .editorial-board .team-leader ul li a:focus {
   text-decoration: none;
 }
-/* line 112, sass/editor-board.scss */
+/* line 115, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-twitter:hover {
   color: #55acee;
 }
-/* line 117, sass/editor-board.scss */
+/* line 120, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-facebook:hover {
   color: #3b5998;
 }
-/* line 122, sass/editor-board.scss */
+/* line 125, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-pinterest:hover {
   color: #cb2026;
 }
-/* line 127, sass/editor-board.scss */
+/* line 130, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-google-plus:hover {
   color: #dd4b39;
 }
-/* line 134, sass/editor-board.scss */
+/* line 137, sass/editor-board.scss */
 .editorial-board .team-leader-shadow {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -7658,23 +7672,23 @@ Copyright (c) 2013 Daniel Eden
   z-index: 10;
   border-radius: 50%;
 }
-/* line 144, sass/editor-board.scss */
+/* line 147, sass/editor-board.scss */
 .editorial-board .team-leader-shadow a {
   display: block;
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 153, sass/editor-board.scss */
+  /* line 156, sass/editor-board.scss */
   .editorial-board .team-leader-box:nth-of-type(3n) {
     margin: 0 auto;
   }
 }
-/* line 155, sass/editor-board.scss */
+/* line 158, sass/editor-board.scss */
 .editorial-board .cheif-editor {
   text-align: center;
 }
-/* line 157, sass/editor-board.scss */
+/* line 160, sass/editor-board.scss */
 .editorial-board .cheif-editor .Profile-details {
   text-align: left;
   transform: translate(30px, 40px);
@@ -7684,18 +7698,18 @@ Copyright (c) 2013 Daniel Eden
   font-size: 17px;
 }
 
-/* line 168, sass/editor-board.scss */
+/* line 171, sass/editor-board.scss */
 .editors-civil .team-container .col-sm-4 {
   padding: 60px 15px 0 15px;
 }
-/* line 171, sass/editor-board.scss */
+/* line 174, sass/editor-board.scss */
 .editors-civil .team-container .team-member {
   max-width: 245px;
   margin: auto;
   position: relative;
   overflow: hidden;
 }
-/* line 179, sass/editor-board.scss */
+/* line 182, sass/editor-board.scss */
 .editors-civil .team-container figcaption {
   padding: 10px;
   text-align: left;
@@ -7706,30 +7720,30 @@ Copyright (c) 2013 Daniel Eden
   border-top-color: transparent;
   margin: 0;
 }
-/* line 189, sass/editor-board.scss */
+/* line 192, sass/editor-board.scss */
 .editors-civil .team-container figcaption h4 {
   font-size: 22px;
   font-weight: 700;
   padding-top: 20px;
 }
-/* line 194, sass/editor-board.scss */
+/* line 197, sass/editor-board.scss */
 .editors-civil .team-container .member-name {
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
 }
-/* line 199, sass/editor-board.scss */
+/* line 202, sass/editor-board.scss */
 .editors-civil .team-container figcaption p {
   font-size: 1.125em;
 }
-/* line 202, sass/editor-board.scss */
+/* line 205, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons {
   display: inline-block;
   margin: auto;
   text-align: center;
   width: 100%;
 }
-/* line 209, sass/editor-board.scss */
+/* line 212, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container,
 .editors-civil .team-member .social-btn-container .social-btn-box {
   -webkit-transition: all .25s;
@@ -7738,69 +7752,69 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 218, sass/editor-board.scss */
+/* line 221, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container {
   position: absolute;
   top: 0px;
   margin: 0 auto;
   left: 0;
 }
-/* line 224, sass/editor-board.scss */
+/* line 227, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 227, sass/editor-board.scss */
+/* line 230, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .team-socail-btn {
   overflow: hidden;
   position: relative;
   width: 245px;
   height: 230px;
 }
-/* line 233, sass/editor-board.scss */
+/* line 236, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .social-btn-box {
   position: absolute;
 }
-/* line 237, sass/editor-board.scss */
+/* line 240, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .facebook-btn-container {
   bottom: 220px;
   right: 230px;
 }
-/* line 241, sass/editor-board.scss */
+/* line 244, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .twitter-btn-container {
   bottom: 220px;
   left: 230px;
 }
-/* line 245, sass/editor-board.scss */
+/* line 248, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .linkedin-btn-container {
   top: 220px;
   right: 230px;
 }
-/* line 249, sass/editor-board.scss */
+/* line 252, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .github-btn-container {
   top: 220px;
   left: 230px;
 }
-/* line 254, sass/editor-board.scss */
+/* line 257, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .facebook-btn-container {
   bottom: 115px;
   right: 122px;
 }
-/* line 258, sass/editor-board.scss */
+/* line 261, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .twitter-btn-container {
   bottom: 115px;
   left: 122px;
 }
-/* line 262, sass/editor-board.scss */
+/* line 265, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .linkedin-btn-container {
   top: 115px;
   right: 122px;
 }
-/* line 266, sass/editor-board.scss */
+/* line 269, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .github-btn-container {
   top: 115px;
   left: 122px;
 }
-/* line 270, sass/editor-board.scss */
+/* line 273, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons a {
   color: #fff;
   width: 24px;
@@ -7809,7 +7823,7 @@ Copyright (c) 2013 Daniel Eden
   font-size: 24px;
   text-align: center;
 }
-/* line 278, sass/editor-board.scss */
+/* line 281, sass/editor-board.scss */
 .editors-civil .team-container .team-member figure,
 .editors-civil .team-container .team-member figcaption,
 .editors-civil .team-container .team-member img,
@@ -7820,30 +7834,30 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 289, sass/editor-board.scss */
+/* line 292, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figure {
   background-color: #3498db;
   color: #fff;
 }
-/* line 293, sass/editor-board.scss */
+/* line 296, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figcaption {
   border-color: #3498db;
   color: #fff;
 }
-/* line 298, sass/editor-board.scss */
+/* line 301, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover .social-buttons {
   top: 90px;
 }
 
 /* 2.2 - Social Button
 ------------------------------------------ */
-/* line 304, sass/editor-board.scss */
+/* line 307, sass/editor-board.scss */
 .social-btn-container {
   text-align: center;
   margin: 50px auto 0 auto;
 }
 
-/* line 308, sass/editor-board.scss */
+/* line 311, sass/editor-board.scss */
 .social-btn-container .social-btn-box {
   display: inline-block;
   width: 60px;
@@ -7864,7 +7878,7 @@ Copyright (c) 2013 Daniel Eden
   overflow: hidden;
 }
 
-/* line 331, sass/editor-board.scss */
+/* line 334, sass/editor-board.scss */
 .social-btn-container .social-btn-box a {
   color: #fff;
   font-size: 26px;
@@ -7882,7 +7896,7 @@ Copyright (c) 2013 Daniel Eden
   transform: rotate(-45deg);
 }
 
-/* line 348, sass/editor-board.scss */
+/* line 351, sass/editor-board.scss */
 .social-btn-box,
 .social-btn-box a {
   -webkit-transition: all .25s;
@@ -7892,48 +7906,48 @@ Copyright (c) 2013 Daniel Eden
   transition: all .25s;
 }
 
-/* line 357, sass/editor-board.scss */
+/* line 360, sass/editor-board.scss */
 .social-btn-box:hover {
   border-color: transparent;
 }
 
-/* line 360, sass/editor-board.scss */
+/* line 363, sass/editor-board.scss */
 .social-btn-box .facebook-btn:hover {
   background: #3B5998;
   color: #fff;
 }
 
-/* line 364, sass/editor-board.scss */
+/* line 367, sass/editor-board.scss */
 .social-btn-box .twitter-btn:hover {
   background: #55ACEE;
   color: #fff;
 }
 
-/* line 368, sass/editor-board.scss */
+/* line 371, sass/editor-board.scss */
 .social-btn-box .linkedin-btn:hover {
   background: #0077b5;
   color: #fff;
 }
 
-/* line 372, sass/editor-board.scss */
+/* line 375, sass/editor-board.scss */
 .social-btn-box .google-plus-btn:hover {
   background: #db514f;
   color: #fff;
 }
 
-/* line 376, sass/editor-board.scss */
+/* line 379, sass/editor-board.scss */
 .social-btn-box .youtube-btn:hover {
   background: #cc181e;
   color: #fff;
 }
 
-/* line 380, sass/editor-board.scss */
+/* line 383, sass/editor-board.scss */
 .social-btn-box .github-btn:hover {
   background: #2b2e30;
   color: #fff;
 }
 
-/* line 384, sass/editor-board.scss */
+/* line 387, sass/editor-board.scss */
 .social-btn-box .a:hover {
   background: #3498db;
   color: #fff;

@@ -12,10 +12,13 @@
             padding: 0;
         }
         .content-table{
-            border: 1px solid;
             padding: 0;
             .slider-listpage{
                 margin: 0;            
+            }
+            .table-responsive{
+                //border: 1px solid;
+                width: 100%;
             }
             table{
                 margin: 0;
