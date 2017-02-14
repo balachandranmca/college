@@ -43,6 +43,8 @@ function Page_Settings() {
 		"college_guidelines_author" => "College Guidelines to Author",
 		"college_user_list" => "College User List",
 		"college_jounal_issues_pages" => "College Journal Issues Pages",
+		"college_jounal_issues_publish" => "College Journal Issues Publish",
+		"college_jounal_issues_publish_list" => "College Journal Issues Publish List",
 	);
 
 	if (isset($_POST['pagesubmit'])) {

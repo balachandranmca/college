@@ -37,5 +37,16 @@ function college_issue_delete()
 	exit;
 }
 
+add_action('wp_ajax_college_issue_publish', 'college_issue_publish');
+
+function college_issue_publish()
+{
+	$issue = Issue::where('id', $_POST['issueid']);
+	$issues['published'] = 1;
+	$issue->update($issues);
+	echo json_encode(array('success'=>'true'));
+	exit;
+}
+
 
 

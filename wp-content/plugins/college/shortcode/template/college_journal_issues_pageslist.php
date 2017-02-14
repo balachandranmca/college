@@ -21,398 +21,60 @@
 <section class="journal-issuespages">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
+            <?php foreach ($journal_issue_publish as $key => $value) { ?>
+                <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
+                    <div class="panel panel-primary">
+                        <div class="cnrflash">
+                            <div class="cnrflash-inner">
+                                <span class="cnrflash-label">ISSUE</br>
+                                    DETAILS</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                CURRENT ISSUES</h3>
                         </div>
-                        <table class="table">
-                            <tr>
+                        <div class="panel-body">
+                            <div class="the-price">
+                                <h4>PAPER TITLE</h4>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <?php echo $value['paper_title'];?>
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <h4>AUTHOR</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <?php echo $value['author'];?>
+                                    </td>
+                                </tr>
+                                <tr class="active">
                                 <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
+                                        <h4>PAGE NUMBER</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <?php echo $value['page_no'];?>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <?php $pdf_file = json_decode($value['pdf_file'],true);
+                        
+                        ?>
+                        <div class="panel-footer">
+                            <a href="<?php echo $pdf_file['url'];?>" class="btn btn-danger" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                <div class="panel panel-primary">
-                    <div class="cnrflash">
-                        <div class="cnrflash-inner">
-                            <span class="cnrflash-label">ISSUE</br>
-                                DETAILS</span>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            CURRENT ISSUES</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h4>PAPER TITLE</h4>
-                        </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    Assessment of Shoreline Changes Induced by Artificial Structures using End Point Rate
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    <h4>AUTHOR</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Dr.Annadurai.R & Poornima.K.V
-                                </td>
-                            </tr>
-                            <tr class="active">
-                               <td>
-                                    <h4>PAGE NUMBER</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    01-04
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <a href="#" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
