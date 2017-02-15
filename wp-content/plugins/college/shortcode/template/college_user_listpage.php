@@ -1,13 +1,6 @@
 <div class="container journal-editors-listpage">
     <div class="row">
         <div class="col-md-12 content">
-            <div class="row">
-                <div class="col-md-12 create-new-btn">
-                    <div class="pull-right">
-                        <a href="<?php echo get_buzz_url('college_journal_editor');?>"><button type="button" class="btn btn-primary">Create New</button></a>
-                    </div>
-                </div>
-            </div>
             <div class="row" style="margin-top:20px;">
                 <div class="col-md-12 content-table">
                     <div class="table-responsive journal_editor-listpage">
