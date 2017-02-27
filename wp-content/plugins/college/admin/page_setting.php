@@ -45,6 +45,11 @@ function Page_Settings() {
 		"college_jounal_issues_pages" => "College Journal Issues Pages",
 		"college_jounal_issues_publish" => "College Journal Issues Publish",
 		"college_jounal_issues_publish_list" => "College Journal Issues Publish List",
+		"college_reviewer" => "College Reviewer",
+		"college_reviewer_list" => "College Reviewer List",
+		"college_author_issue_paper" => "College Author Issue Paper",
+		"college_author_paper_list" => "College Author Paper List",
+		"college_author_paper" => "College Author Paper",
 	);
 
 	if (isset($_POST['pagesubmit'])) {

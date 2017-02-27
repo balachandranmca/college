@@ -68,6 +68,11 @@ function post_redirect(){
         get_buzz_id('college_carosel_slider'),
         get_buzz_id('college_carosel_slider_list'),
         get_buzz_id('college_document'),
+        get_buzz_id('college_author_paper'),
+        get_buzz_id('college_author_paper_list'),
+        get_buzz_id('college_author_issue_paper'),
+        get_buzz_id('college_reviewer_list'),
+        get_buzz_id('college_reviewer'),
     );
     
     $is_user_logged_in = is_user_logged_in();
