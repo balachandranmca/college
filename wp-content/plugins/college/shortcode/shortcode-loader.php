@@ -65,3 +65,9 @@ include_once 'college_journal_issue_publish.php';
 include_once 'college_journal_issue_publish_list.php';
 
 include_once 'college_document.php';
+
+include_once 'college_reviewer.php';
+
+include_once 'college_author_issue_paper.php';
+
+include_once 'college_author_paper.php';

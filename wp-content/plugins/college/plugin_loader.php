@@ -30,3 +30,5 @@ add_role('editor', 'Editor', array('read' => true, 'level_0' => true));
 add_role('user', 'User', array('read' => true, 'level_0' => true));
 
 add_role('author', 'Author', array('read' => true, 'level_0' => true));
+
+add_role('reviewer', 'Reviewer', array('read' => true, 'level_0' => true));
