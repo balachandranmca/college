@@ -279,15 +279,6 @@ $border_color_1: #6cb670;
 //     color: $color_3;
 //   }
 }
-.dropdown{
-    .dropdown-menu{
-        li{
-            a{
-                // color: #000 !important;
-            }
-        }
-    }
-}
 .expend{
     color: #fff;
     background-color: #000;
@@ -303,7 +294,6 @@ $border_color_1: #6cb670;
   z-index: 888;
 }
 
-/* line 66, ../sass/style.scss */
 .nav li a {
   display: block;
   padding: 10px 15px;
@@ -318,59 +308,45 @@ $border_color_1: #6cb670;
   text-decoration: none;
 }
 
-/* line 80, ../sass/style.scss */
-// .nav li {
-//   border-top: 5px solid #E8EBF1;
-// }
-
-/* line 83, ../sass/style.scss */
 .nav li:hover {
   background: rgba(0, 0, 0, 0.2);
     //border-top: 5px solid #2aacc8;
     color: #fff;
 }
 
-/* line 87, ../sass/style.scss */
 .nav li {
   position: relative;
 }
 
-/* line 90, ../sass/style.scss */
-.nav li.active {
-  border-top: 5px solid #2aacc8;
-  background: #fff;
-}
+// .nav li.active {
+//   border-top: 5px solid #2aacc8;
+//   background: #fff;
+// }
 
-/* line 94, ../sass/style.scss */
 .nav > li > a.parent {
   background: url(../images/arrow.png) no-repeat 15px 18px;
   padding: 10px 10px 10px 30px;
 }
 
-/* line 98, ../sass/style.scss */
 .nav > li > a.parent:hover {
   background: url(../images/arrow.png) no-repeat 15px 18px #fff;
   padding: 10px 10px 10px 30px;
 }
 
-/* line 102, ../sass/style.scss */
 .nav > li {
   float: left;
   margin: 0 10px;
 }
 
-/* line 106, ../sass/style.scss */
 .nav > li > a:hover {
   color: fff !important;
 }
 
-/* line 109, ../sass/style.scss */
 .nav > li.hover > ul {
   left: -1px;
   top: 40px;
 }
 
-/* line 113, ../sass/style.scss */
 .nav li li.hover ul {
   left: 100%;
   -webkit-transition: background .2s linear;
@@ -380,7 +356,6 @@ $border_color_1: #6cb670;
   transition: background .2s linear;
 }
 
-/* line 121, ../sass/style.scss */
 .nav > li > li > a {
   font-size: 0.85em;
   padding: 10px 20px;
@@ -401,31 +376,14 @@ $border_color_1: #6cb670;
   text-transform: lowercase;
 }
 
-/* line 140, ../sass/style.scss */
 .nav li li {
   border-top: none;
 }
 
-/* line 143, ../sass/style.scss */
 .nav li li:hover {
   border-top: none;
 }
 
-/* line 146, ../sass/style.scss */
-.nav li li a {
-  text-transform: capitalize;
-  font-size: 0.85em;
-  border-bottom: 1px solid #e8ebf1;
-  border-left: 1px solid #e8ebf1;
-  border-right: 1px solid #e8ebf1;
-}
-
-/* line 153, ../sass/style.scss */
-// .nav li li a:hover {
-//   color: #2aacc8;
-// }
-
-/* line 156, ../sass/style.scss */
 .nav > li > ul {
   position: absolute;
   left: -9999px;
@@ -464,6 +422,9 @@ $border_color_1: #6cb670;
 
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
+  }
+  .navbar-toggle{
+     margin-top:20px !important;
   }
 }
 /*=================================================================
@@ -733,4 +694,140 @@ $border_color_1: #6cb670;
         border-radius:5px;
 
     }
+}
+
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    left: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+/* put toggle bars on the left :: not using button */
+#navigation .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/* icon bar prettyup - optional */
+#navigation .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+#navigation .navbar-toggle.slide-active .icon-bar {
+    background: orange
+}
+.navbar-header {
+    position: relative
+}
+// /* un fix the navbar when active so that all the menu items are accessible */
+// .navbar.navbar-fixed-top.slide-active {
+//     position: relative
+// }
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) { 
+	#navigation .container {
+	    margin: 0;
+	    padding: 0!important;
+	}
+	#navigation .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+	#navigation .navbar.slide-active {
+	    position: absolute;
+	    width: 80%;
+	    top: -1px;
+	    z-index: 1000;
+	}
+	#navigation #slidemenu {
+	    background: #f7f7f7;
+	    left: -100%;
+	    width: 80%;
+	    min-width: 0;
+	    position: absolute;
+	    padding-left: 0;
+	    z-index: 2;
+	    top: 0;
+	    margin: 0;
+	}
+	#navigation #slidemenu .navbar-nav {
+	    min-width: 0;
+	    width: 100%;
+	    margin: 0;
+	}
+	#navigation #slidemenu .navbar-nav .dropdown-menu li a {
+	    min-width: 0;
+	    width: 80%;
+	    white-space: normal;
+	}
+	#navigation {
+	    border-top: 0
+	}
+	#navigation.navbar-inverse #slidemenu {
+	    background: #333
+	}
+	/* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+	#navigation #navbar-height-col {
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+	    width: 80%;
+	    left: -80%;
+	    background: #eee;
+	}
+	#navigation.navbar-inverse #navbar-height-col {
+	    background: #333;
+	    z-index: 1;
+	    border: 0;
+	}
+	#navigation .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	    /*fast clearfixer*/
+	}
+	#navigation .navbar-form .form-control {
+	    text-align: center
+	}
+	#navigation .navbar-form .btn {
+	    width: 100%
+	}
+}
+@media (min-width:768px) {
+    .nav li li a {
+        text-transform: capitalize;
+        font-size: 0.85em;
+        border-bottom: 1px solid #e8ebf1;
+        border-left: 1px solid #e8ebf1;
+        border-right: 1px solid #e8ebf1;
+    } 
+	#page-content {
+	    left: 0!important
+	}
+	.navbar.navbar-fixed-top.slide-active {
+	    position: fixed
+	}
+	.navbar-header {
+	    left: 0!important
+	}
 }
