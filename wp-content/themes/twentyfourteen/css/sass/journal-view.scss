@@ -1,26 +1,28 @@
 .journal-viewpage-header{
-    margin: 30px 0;
+    margin: 50px 0;
+    .header{
+        padding: 5px;
+    }
     .header-img{
-        display: inline-block;
+        text-align: center;
+        background: #faf7a0;
         img{
             width: 100px; 
         }
     }
     .title,.issn-no{
-        display: inline-block;
         vertical-align: middle;
+        padding: 0;
     }
-    @media(min-width: 768px) and (max-width: 991px){
-        .header{background: #203CFF;}
+
+    @media(max-width: 767px){
+        .row{margin: 0;}
         .header-img{
-            width: 20%;
-            text-align: center;
-            background: #faf7a0;
             padding: 24px;
-            margin: 5px;
+            margin: 0 auto;
+            display: block;
         }
         .title{
-            width: 44%;
             p{
                 text-align: center;
                 font-size: 25px;
@@ -39,36 +41,71 @@
             }
         }
         .issn-no{
-            width: 33%;
             background: #fff;
             padding: 15px;
+            margin: 0px;
             p{
                 text-align: center;
                 font-size: 19px;
                 font-family: fantasy;
                 margin: 0;
-                color: #203CFF;
             }
             h1{
                 font-size: 28px;
                 text-align: center;
                 margin: 0;
                 font-family: fantasy !important;
-                color: #203CFF;
+            }
+        }
+    }
+
+    @media(min-width: 768px) and (max-width: 991px){
+        .header-img{
+            background: #faf7a0;
+            padding: 9px;
+        }
+        .title{
+            padding: 12px;
+            p{
+                text-align: center;
+                font-size: 25px;
+                margin: 0;
+                font-family: cursive;
+                color: #fff;
+            }
+            h2{
+                font-size: 14px;
+                font-weight: 700 !important;
+                color: #fff;
+                line-height: 27px;
+                text-align: center;
+                margin: 0;
+                font-family: initial !important;
+            }
+        }
+        .issn-no{
+            background: #fff;
+            padding: 0;
+            p{
+                text-align: center;
+                font-size: 19px;
+                font-family: fantasy;
+                margin: 0;
+            }
+            h1{
+                font-size: 28px;
+                text-align: center;
+                margin: 0;
+                font-family: fantasy !important;
             }
         }
     } 
-    @media(min-width: 992px){
-        .header{background: #203CFF;}
+
+    @media(min-width: 992px) and (max-width: 1199px) {
         .header-img{
-            width: 14%;
-            text-align: center;
-            background: #faf7a0;
-            padding: 24px;
-            margin: 5px;
+            padding: 39px;
         }
         .title{
-            width: 60%;
             p{
                 text-align: center;
                 font-size: 30px;
@@ -87,7 +124,6 @@
             }
         }
         .issn-no{
-            width: 24%;
             background: #fff;
             padding: 15px;
             p{
@@ -95,14 +131,51 @@
                 font-size: 20px;
                 font-family: fantasy;
                 margin: 0;
-                color: #203CFF;
             }
             h1{
                 font-size: 40px;
                 text-align: center;
                 margin: 0;
                 font-family: fantasy !important;
-                color: #203CFF;
+            }
+        }
+    }
+    @media(min-width: 1200px){
+        .header-img{
+            padding: 24px;
+        }
+        .title{
+            p{
+                text-align: center;
+                font-size: 30px;
+                margin: 0;
+                font-family: cursive;
+                color: #fff;
+            }
+            h2{
+                font-size: 28px;
+                font-weight: 700 !important;
+                color: #fff;
+                line-height: 40px;
+                text-align: center;
+                margin: 0;
+                font-family: initial !important;
+            }
+        }
+        .issn-no{
+            background: #fff;
+            padding: 15px;
+            p{
+                text-align: center;
+                font-size: 20px;
+                font-family: fantasy;
+                margin: 0;
+            }
+            h1{
+                font-size: 40px;
+                text-align: center;
+                margin: 0;
+                font-family: fantasy !important;
             }
         }
     }
@@ -131,7 +204,6 @@
         }
     }
 }
-
 .newsticker{
     #tick {
         li {

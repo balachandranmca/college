@@ -1,24 +1,27 @@
 <input type="hidden" id="journal_color" value="<?php echo $journal['color'];?>">
 <section class="journal-viewpage-header">
     <div class="container">
-        <div class="header">
-            <div class="header-img">
-                <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/header-logo.png"/>
-            </div>
-            <div class="title">
-                <p>Deepam Publication's</p>
-                <h2>International Jounernal of Research in Engineering,</br>
-                Science and Technologies (IJRESTs)</h2>
-            </div>
-            <div class="issn-no">
-                <p><?php echo $journal['issn_no']?> (Online)</p>
-                <h1><?php echo $journal['name']?></h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 header" style="background: #<?php echo $journal['color'];?>;">
+                    <div class="col-xs-12 col-sm-2 col-md-2 header-img">
+                        <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/header-logo.png"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 title">
+                        <p>Deepam Publication's</p>
+                        <h2>International Jounernal of Research in Engineering,</br>
+                        Science and Technologies (IJRESTs)</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 issn-no">
+                        <p style="color: #<?php echo $journal['color'];?>;"><?php echo $journal['issn_no']?> (Online)</p>
+                        <h1 style="color: #<?php echo $journal['color'];?>;"><?php echo $journal['name']?></h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div> 
 </section>
 
-<section class="container newsticker">
+<!--<section class="container newsticker">
     <div class="row">
         <div class="col-md-10" id="outer">
             <div id ="tick">
@@ -27,7 +30,7 @@
             <div id="tick2"></div>
         </div>
     </div>
-</section>
+</section>-->
 
 <section class="container viewpage-content">
     <div class="row">

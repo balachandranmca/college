@@ -58,9 +58,11 @@
 				</div>
 				<!-- main nav -->
 				<nav class="collapse navbar-collapse navbar-right" role="Navigation">
-					<ul id="nav" class="nav navbar-nav">
-						<?php include_once WP_BAG_PL_SHORTCODE_TPL."college_menupage.php";?>
-					</ul>
+					<div id="slidemenu">
+						<ul id="nav" class="nav navbar-nav">
+							<?php include_once WP_BAG_PL_SHORTCODE_TPL."college_menupage.php";?>
+						</ul>
+					</div>
 				</nav>
 				<!-- /main nav -->
 			</div>
