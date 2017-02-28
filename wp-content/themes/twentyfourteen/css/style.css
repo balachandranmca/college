@@ -7630,6 +7630,14 @@ body.slide-active {
   color: #ff0000;
 }
 
+/* line 57, sass/journal-creator.scss */
+.slider-creator {
+  padding: 33px;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
 /* line 2, sass/aboutus.scss */
 .aboutus-page .slider-list-img {
   width: 100%;

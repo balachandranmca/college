@@ -1,43 +1,44 @@
 <div class="container slider-creator">
 	<div class="row">
-        <div class="col-md-6 creator-content">
-            <div class="well well-sm">
-                <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
-                    <h3 class="text-center">EDITOR</h3>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Name</label>
-                         <div class="col-md-9">
+         <div class="col-md-4">
+            <img src="https://cdn1.iconfinder.com/data/icons/softwaredemo/PNG/256x256/Pencil3.png" class="img-responsive center-block" alt="">
+        </div><!--.col -->
+        <div class="col-md-6">
+            <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
+                <h3 class="text-center">JOIN US EDITOR</h3>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Name</label>
+                        <div class="col-md-9">
                             <input type="text" name="editorname" id="editorname" tabindex="1" class="form-control" placeholder="Name" required>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Phone No</label>
-                         <div class="col-md-9">
-                            <input type="text" name="phone_no" id="phone_no" tabindex="1" class="form-control" placeholder="Phone No"  required>
-                    </div>
-                     </div>
-                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Email Id</label>
-                         <div class="col-md-9">
-                            <input type="text" name="email_id" id="email_id" tabindex="1" class="form-control" placeholder="Email Id" required>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Phone No</label>
+                        <div class="col-md-9">
+                          <input type="text" name="phone_no" id="phone_no" tabindex="1" class="form-control" placeholder="Phone No"  required>
                         </div>
-                     </div>
-                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Please Choose File</label>
-                         <div class="col-md-9">
-                            <input class='file-upload' type="file" name="images" id="files" placeholder="Please choose your image">
-                            <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
-                        </div>
-                     </div>
-                    <div id="errorMsg" class="hide-error text-center">Please fill all fields</div>
-                    <div class="form-group">
-                        <div class="col-md-12 text-right">
-                             <!--<input type="submit" value="Upload" name="editor_upload" id="editor_upload" class="btn"/>-->
-                             <button type="submit" name="editor_upload" id="editor_upload" class="btn btn-primary btn-lg">Submit</button>
-                        </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Email Id</label>
+                    <div class="col-md-9">
+                        <input type="text" name="email_id" id="email_id" tabindex="1" class="form-control" placeholder="Email Id" required>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Please Choose File</label>
+                    <div class="col-md-9">
+                        <input class='file-upload' type="file" name="images" id="files" placeholder="Please choose your image">
+                        <span id='file_validation_msg' class="hide-error">Invalid file extension</span>
+                        </div>
+                </div>
+                <div id="errorMsg" class="hide-error text-center">Please fill all fields</div>
+                <div class="form-group">
+                    <div class="col-md-12 text-right">
+                            <!--<input type="submit" value="Upload" name="editor_upload" id="editor_upload" class="btn"/>-->
+                            <button type="submit" name="editor_upload" id="editor_upload" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -93,6 +94,7 @@
             jQuery('#errorMsg').removeClass('hide-error');
         }
     });
+    jQuery('body').css('background-color', '#333');
 </script>
 <style>
 .hide-error{
