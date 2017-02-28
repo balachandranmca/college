@@ -6883,37 +6883,27 @@ Copyright (c) 2013 Daniel Eden
 ==================================================================*/
 /* line 502, sass/common.scss */
 #services {
-  background: rgba(0, 0, 0, 0.8);
   margin-top: 25px;
 }
-/* line 507, sass/common.scss */
-#services .service-pattern {
-  background: rgba(0, 0, 0, 0.5) url(../images/pattern.png);
-  padding-top: 40px;
-}
-/* line 511, sass/common.scss */
+/* line 504, sass/common.scss */
 #services .title {
   padding-bottom: 60px;
 }
-/* line 515, sass/common.scss */
+/* line 507, sass/common.scss */
 #services .service-block {
   padding: 50px 20px;
-  border: 1px solid #4e595f;
   margin-bottom: 40px;
-  -webkit-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
-  -moz-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
-  box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  border-radius: 50px;
 }
-/* line 525, sass/common.scss */
+/* line 512, sass/common.scss */
 #services .service-icon {
   margin-bottom: 40px;
 }
-/* line 529, sass/common.scss */
+/* line 516, sass/common.scss */
 #services .service-block h3 {
   text-transform: uppercase;
 }
-/* line 533, sass/common.scss */
+/* line 520, sass/common.scss */
 #services .title h2 {
   color: #333;
 }
@@ -6921,33 +6911,33 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Contact
 ==================================================================*/
-/* line 543, sass/common.scss */
+/* line 530, sass/common.scss */
 #contact-us {
   margin-top: 60px;
   padding: 70px 0 0;
   background: #027db3;
 }
-/* line 547, sass/common.scss */
+/* line 534, sass/common.scss */
 #contact-us .row {
   color: #fff;
 }
-/* line 549, sass/common.scss */
+/* line 536, sass/common.scss */
 #contact-us .row a {
   color: #fff;
 }
-/* line 551, sass/common.scss */
+/* line 538, sass/common.scss */
 #contact-us .contact-info p {
   margin-bottom: 25px;
 }
-/* line 555, sass/common.scss */
+/* line 542, sass/common.scss */
 #contact-us .con-info {
   margin-bottom: 20px;
 }
-/* line 557, sass/common.scss */
+/* line 544, sass/common.scss */
 #contact-us .con-info i {
   float: left;
 }
-/* line 560, sass/common.scss */
+/* line 547, sass/common.scss */
 #contact-us .con-info span {
   float: left;
   margin: -5px 0 0 15px;
@@ -6956,7 +6946,7 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Our Portfolio section
 ==================================================================*/
-/* line 571, sass/common.scss */
+/* line 558, sass/common.scss */
 .carousel-section .our-portfoliosection {
   padding-bottom: 60px;
 }
@@ -6964,20 +6954,20 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Footer section
 ==================================================================*/
-/* line 580, sass/common.scss */
+/* line 567, sass/common.scss */
 .social-icon {
   padding: 60px 0 35px;
 }
-/* line 582, sass/common.scss */
+/* line 569, sass/common.scss */
 .social-icon > ul {
   text-align: center;
 }
-/* line 584, sass/common.scss */
+/* line 571, sass/common.scss */
 .social-icon > ul > li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 587, sass/common.scss */
+/* line 574, sass/common.scss */
 .social-icon > ul > li > a {
   background-color: #26292e;
   display: block;
@@ -6993,7 +6983,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all 400ms ease-out 0s;
   transition: all 400ms ease-out 0s;
 }
-/* line 601, sass/common.scss */
+/* line 588, sass/common.scss */
 .social-icon > ul > li > a > i {
   color: #55606a;
   display: inline-block;
@@ -7012,7 +7002,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all 400ms ease-out 0s;
   transition: all 400ms ease-out 0s;
 }
-/* line 620, sass/common.scss */
+/* line 607, sass/common.scss */
 .social-icon > ul > li:hover a {
   background-color: #6CB670;
   -webkit-transform: rotateY(0deg);
@@ -7021,7 +7011,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 627, sass/common.scss */
+/* line 614, sass/common.scss */
 .social-icon > ul > li:hover a i {
   color: #fff;
   opacity: 1;
@@ -7033,28 +7023,28 @@ Copyright (c) 2013 Daniel Eden
   transform: rotateY(0deg);
 }
 
-/* line 642, sass/common.scss */
+/* line 629, sass/common.scss */
 .copyright {
   padding: 20px 0;
   color: #fff;
 }
-/* line 645, sass/common.scss */
+/* line 632, sass/common.scss */
 .copyright > img {
   margin-bottom: 15px;
 }
 
-/* line 649, sass/common.scss */
+/* line 636, sass/common.scss */
 .footer-bottom {
   background-color: #fff;
   padding: 20px 0 10px;
 }
 
-/* line 654, sass/common.scss */
+/* line 641, sass/common.scss */
 .footer-bottom a:hover {
   text-decoration: underline;
 }
 
-/* line 658, sass/common.scss */
+/* line 645, sass/common.scss */
 #scrollUp {
   border: 1px solid #fff;
   background-color: #027db3;
@@ -7067,19 +7057,19 @@ Copyright (c) 2013 Daniel Eden
   z-index: 600;
 }
 
-/* line 675, sass/common.scss */
+/* line 662, sass/common.scss */
 .viewpage-content h2 {
   text-align: center;
 }
 
-/* line 680, sass/common.scss */
+/* line 667, sass/common.scss */
 .login-background {
   background-image: url(https://s13.postimg.org/8xs7irifb/education2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-/* line 686, sass/common.scss */
+/* line 673, sass/common.scss */
 .login-background .loginbox {
   background: fff;
   color: black;
@@ -7092,32 +7082,32 @@ Copyright (c) 2013 Daniel Eden
 }
 
 /* adjust body when menu is open */
-/* line 700, sass/common.scss */
+/* line 687, sass/common.scss */
 body.slide-active {
   overflow-x: hidden;
 }
 
 /*first child of #page-content so it doesn't shift around*/
-/* line 704, sass/common.scss */
+/* line 691, sass/common.scss */
 .no-margin-top {
   margin-top: 0px !important;
 }
 
 /*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
-/* line 708, sass/common.scss */
+/* line 695, sass/common.scss */
 #page-content {
   position: relative;
   padding-top: 70px;
   left: 0;
 }
 
-/* line 713, sass/common.scss */
+/* line 700, sass/common.scss */
 #page-content.slide-active {
   padding-top: 0;
 }
 
 /* put toggle bars on the left :: not using button */
-/* line 717, sass/common.scss */
+/* line 704, sass/common.scss */
 #navigation .navbar-toggle {
   cursor: pointer;
   position: relative;
@@ -7131,7 +7121,7 @@ body.slide-active {
 }
 
 /* icon bar prettyup - optional */
-/* line 729, sass/common.scss */
+/* line 716, sass/common.scss */
 #navigation .navbar-toggle > .icon-bar {
   width: 100%;
   display: block;
@@ -7139,31 +7129,31 @@ body.slide-active {
   margin: 5px 0 0 0;
 }
 
-/* line 735, sass/common.scss */
+/* line 722, sass/common.scss */
 #navigation .navbar-toggle.slide-active .icon-bar {
   background: orange;
 }
 
-/* line 738, sass/common.scss */
+/* line 725, sass/common.scss */
 .navbar-header {
   position: relative;
 }
 
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 @media (max-width: 767px) {
-  /* line 747, sass/common.scss */
+  /* line 734, sass/common.scss */
   #navigation .container {
     margin: 0;
     padding: 0 !important;
   }
 
-  /* line 751, sass/common.scss */
+  /* line 738, sass/common.scss */
   #navigation .navbar-header {
     margin: 0 auto;
     padding: 0 15px;
   }
 
-  /* line 755, sass/common.scss */
+  /* line 742, sass/common.scss */
   #navigation .navbar.slide-active {
     position: absolute;
     width: 80%;
@@ -7171,7 +7161,7 @@ body.slide-active {
     z-index: 1000;
   }
 
-  /* line 761, sass/common.scss */
+  /* line 748, sass/common.scss */
   #navigation #slidemenu {
     background: #f7f7f7;
     left: -100%;
@@ -7184,32 +7174,32 @@ body.slide-active {
     margin: 0;
   }
 
-  /* line 772, sass/common.scss */
+  /* line 759, sass/common.scss */
   #navigation #slidemenu .navbar-nav {
     min-width: 0;
     width: 100%;
     margin: 0;
   }
 
-  /* line 777, sass/common.scss */
+  /* line 764, sass/common.scss */
   #navigation #slidemenu .navbar-nav .dropdown-menu li a {
     min-width: 0;
     width: 80%;
     white-space: normal;
   }
 
-  /* line 782, sass/common.scss */
+  /* line 769, sass/common.scss */
   #navigation {
     border-top: 0;
   }
 
-  /* line 785, sass/common.scss */
+  /* line 772, sass/common.scss */
   #navigation.navbar-inverse #slidemenu {
     background: #333;
   }
 
   /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
-  /* line 789, sass/common.scss */
+  /* line 776, sass/common.scss */
   #navigation #navbar-height-col {
     position: fixed;
     top: 0;
@@ -7219,14 +7209,14 @@ body.slide-active {
     background: #eee;
   }
 
-  /* line 797, sass/common.scss */
+  /* line 784, sass/common.scss */
   #navigation.navbar-inverse #navbar-height-col {
     background: #333;
     z-index: 1;
     border: 0;
   }
 
-  /* line 802, sass/common.scss */
+  /* line 789, sass/common.scss */
   #navigation .navbar-form {
     width: 100%;
     margin: 8px 0;
@@ -7235,18 +7225,18 @@ body.slide-active {
     /*fast clearfixer*/
   }
 
-  /* line 809, sass/common.scss */
+  /* line 796, sass/common.scss */
   #navigation .navbar-form .form-control {
     text-align: center;
   }
 
-  /* line 812, sass/common.scss */
+  /* line 799, sass/common.scss */
   #navigation .navbar-form .btn {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 817, sass/common.scss */
+  /* line 804, sass/common.scss */
   .nav li li a {
     text-transform: capitalize;
     font-size: 0.85em;
@@ -7255,17 +7245,17 @@ body.slide-active {
     border-right: 1px solid #e8ebf1;
   }
 
-  /* line 824, sass/common.scss */
+  /* line 811, sass/common.scss */
   #page-content {
     left: 0 !important;
   }
 
-  /* line 827, sass/common.scss */
+  /* line 814, sass/common.scss */
   .navbar.navbar-fixed-top.slide-active {
     position: fixed;
   }
 
-  /* line 830, sass/common.scss */
+  /* line 817, sass/common.scss */
   .navbar-header {
     left: 0 !important;
   }

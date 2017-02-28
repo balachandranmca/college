@@ -500,28 +500,15 @@ $border_color_1: #6cb670;
 ==================================================================*/
 
 #services {
-    background: rgba(0,0,0,.8);
-    //background: url(../images/banner-bg.png) no-repeat;
-    //background-size: cover;
     margin-top: 25px;
-   .service-pattern{
-       background: rgba(0,0,0,.5) url(../images/pattern.png);
-       padding-top: 40px;
-   } 
     .title {
         padding-bottom: 60px;
     }
-
     .service-block {
         padding: 50px 20px;
-        border: 1px solid #4e595f;
         margin-bottom: 40px;
-        -webkit-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
-        -moz-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
-        box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
-        border-radius: 10px;
+        border-radius: 50px;
     }
-
     .service-icon {
         margin-bottom: 40px;
     }
