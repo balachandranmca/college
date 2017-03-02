@@ -71,3 +71,5 @@ include_once 'college_reviewer.php';
 include_once 'college_author_issue_paper.php';
 
 include_once 'college_author_paper.php';
+
+include_once 'college_author_issue_paperlist.php';

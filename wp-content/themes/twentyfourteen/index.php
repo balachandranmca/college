@@ -374,6 +374,7 @@
         <!--.container-->
       </section>
       <!-- End Carousel section -->
+      <?php dynamic_sidebar( 'sidebar-1' ); ?>
       <?php
 get_footer();
 ?>
