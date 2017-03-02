@@ -5,13 +5,18 @@
  */
 
 use App\AuthorIssuePaper;
+use App\AuthorIssuePaperReviewer;
 use App\Issue;
 
 
 add_shortcode('COLLEGE_AUTHOR_PAPER', 'college_author_paper_shortcode');
 function college_author_paper_shortcode($atts) {
+	$user_role = get_current_user_role(get_current_user_id());
+	$user_role = $user_role[0];
 	$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
 	$author_paper = $author_paper[0];
+	$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $_GET['id'])->get()->toArray();
+	
 	$reviewer1 = $reviewer2 = $reviewer3 = '';
 	if($author_paper['reviewer_new']){
 		$reviewer_new = json_decode($author_paper['reviewer_new'],1);
@@ -50,19 +55,64 @@ function college_author_paper()
 {
 		/* Create New One */
 		if($_POST['status'] == 'recieved'){
-			$reviewer1 = (int)$_POST['reviewer1'];
-			$reviewer2 = (int)$_POST['reviewer2'];
-			$reviewer3 = (int)$_POST['reviewer3'];
-			
-			if($reviewer2 && $reviewer2 != $reviewer1){
-				
+
+			if((int)$_POST['reviewer1'])
+				$reviewer[] = (int)$_POST['reviewer1'];
+			if((int)$_POST['reviewer2'])
+				$reviewer[] = (int)$_POST['reviewer2'];
+			if((int)$_POST['reviewer3'])
+				$reviewer[] = (int)$_POST['reviewer3'];
+			$reviewer = array_unique($reviewer);
+			foreach ($reviewer as $key => $value) {
+				$authorIssuePaperReviewer['author_issue_paper_id'] = $_POST['paper_id'];
+				$authorIssuePaperReviewer['user_id'] = $value;
+				AuthorIssuePaperReviewer::create($authorIssuePaperReviewer);
 			}
+			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
+			$authorIssuePapers['status'] = 'review';
+			$data = $authorIssuePaper->update($authorIssuePapers);
+			echo json_encode(array('success'=>'true'));
+			exit;
+		} else {
+			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
+			$authorIssuePapers['status'] = $_POST['status'];
+			$authorIssuePapers['comment'] = $_POST['comment'];
+			$data = $authorIssuePaper->update($authorIssuePapers);
+			echo json_encode(array('success'=>'true'));
+			exit;
 		}
-		$author_paper['status'] = 'recieved';
-		$data = AuthorIssuePaper::create($author_issue_paper);
-		echo json_encode(array('success'=>'true'));
-		exit;
-		
 }
+add_action('wp_ajax_college_author_paper_reviewer', 'college_author_paper_reviewer');
+
+function college_author_paper_reviewer()
+{
+	$reviewer_id 	= get_current_user_id();
+	$comment 		= $_POST['comment'];
+	$status 		= $_POST['status'];
+	$paper_id 		= $_POST['paper_id'];
+	$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $paper_id)->where('user_id', $reviewer_id);
+	$authorIssuePaperReviewers['status'] 	= $status;
+	$authorIssuePaperReviewers['comment'] 	= $comment;
+	$data = $authorIssuePaperReviewer->update($authorIssuePaperReviewers);
+	echo json_encode(array('success'=>'true'));
+	exit;
+}
+
+add_action('wp_ajax_college_author_paper_resubmit', 'college_author_paper_resubmit');
+
+function college_author_paper_resubmit()
+{
+	$reviewer_id 	= get_current_user_id();
+	$comment 		= $_POST['comment'];
+	$status 		= $_POST['status'];
+	$paper_id 		= $_POST['paper_id'];
+	$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $paper_id)->where('user_id', $reviewer_id);
+	$authorIssuePaperReviewers['status'] 	= $status;
+	$authorIssuePaperReviewers['comment'] 	= $comment;
+	$data = $authorIssuePaperReviewer->update($authorIssuePaperReviewers);
+	echo json_encode(array('success'=>'true'));
+	exit;
+}
+
 
 
