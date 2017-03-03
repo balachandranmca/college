@@ -7666,9 +7666,43 @@ body.slide-active {
 }
 /* line 12, sass/feespage.scss */
 .feespage .payment-details {
-  margin: 0 auto;
-  float: none;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+/* line 16, sass/feespage.scss */
+.feespage .widget_currency_converter div {
+  width: 250px !important;
+  border-radius: 10px;
+  font-size: 20px;
+}
+/* line 21, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vlabel {
+  font-size: 15px !important;
+  color: #000000 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Oswald !important;
+}
+/* line 28, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vtextarea {
+  height: 30px;
+  border-radius: 5px;
+  padding-right: 10px;
+  border: 1px solid #000;
+}
+/* line 34, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .VselectBox {
+  height: 30px !important;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+/* line 39, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vtextarea {
+  resize: none;
+  color: #000 !important;
+}
+/* line 44, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vmsg_1 a {
+  font-size: 15px !important;
 }
 
 /* line 2, sass/editor-board.scss */
@@ -10021,6 +10055,27 @@ body.slide-active {
   font-weight: bold;
   text-align: center;
   letter-spacing: 2px;
+}
+
+/* line 2, sass/plugins-css.scss */
+#visitor-counter .visitor-counter-heading {
+  font-family: Oswald !important;
+  text-align: center;
+}
+/* line 6, sass/plugins-css.scss */
+#visitor-counter .visitor-counter-content {
+  border: 3px solid #333;
+  width: 52%;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+/* line 11, sass/plugins-css.scss */
+#visitor-counter .visitor-counter-content p {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px;
+  font-family: oswald;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

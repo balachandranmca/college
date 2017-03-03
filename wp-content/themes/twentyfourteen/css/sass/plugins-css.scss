@@ -1,0 +1,19 @@
+#visitor-counter{
+    .visitor-counter-heading{
+        font-family: Oswald !important;
+        text-align: center;
+    }
+    .visitor-counter-content{
+        border: 3px solid #333;
+        width: 52%;
+        margin: 0 auto;
+        border-radius: 30px;
+        p{
+            display: inline-block;
+            padding: 15px;
+            margin: 5px;
+            font-family: oswald;
+            letter-spacing: 1px;
+        }
+    }
+}
