@@ -16,8 +16,12 @@ $home_settings =   array(
 
 <div class="container journal-creator">
 	<div class="row">
+    <div class="col-md-3">
+        <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/settings.png" class="hidden-xs img-responsive center-block" alt="">
+        
+      </div><!--.col -->
       <div class="col-md-8 creator-content">
-        <div class="well well-sm">
+        <div class="">
           <form class="form-horizontal" action="" method="post" id="journal-form">
           <fieldset>
             <h3 class="text-center">General Settings</h3>
@@ -221,10 +225,9 @@ $home_settings =   array(
         }
         else{
           jQuery('#errorMsg').removeClass('hide-error');
-          
-        }
-                
+        }      
     });
+    jQuery('body').css('background-color', '#333');
 </script>
 <style>
   .hide-error{

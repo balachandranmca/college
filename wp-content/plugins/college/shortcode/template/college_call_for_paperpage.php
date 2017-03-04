@@ -1,7 +1,10 @@
 <div class="container callfor_paperpage">
 	<div class="row">
+    <div class="col-md-3">
+        <img src="https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/256/call-group.png" class="img-responsive center-block" alt="">
+    </div><!--.col -->
       <div class="col-md-6 creator-content">
-        <div class="well well-sm">
+        <div class="">
           <form class="form-horizontal text-center" action="" method="post" id="volume-form">
          
             <h3 class="text-center">CALL FOR PAPER</h3>
@@ -79,6 +82,7 @@
         }
                 
     });
+     jQuery('body').css('background-color', '#333');
 </script>
 <style>
   .hiddens {

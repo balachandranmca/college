@@ -1,10 +1,13 @@
 <div class="container volume-creator">
 	<div class="row">
-      <div class="col-md-6 creator-content">
-        <div class="well well-sm">
+    <div class="col-md-3">
+        <img src="http://old.usc.ac.ir/IPPWebV1C035/TemplateFileFolder/11-14-2012/OriginalFolder/41696399-28e8-46df-b787-593085660346_library01.png" class="img-responsive center-block" alt="">
+    </div><!--.col -->
+      <div class="col-md-9 creator-content">
+        <div class="">
           <form class="form-horizontal" action="" method="post" id="volume-form">
           <fieldset>
-            <h3 class="text-center">VOLUME</h3>
+            <h3 class="text-center">CREATE VOLUME</h3>
             
             <!-- Name input-->
             <div class="form-group">
@@ -64,6 +67,7 @@
         }
                 
     });
+    jQuery('body').css('background-color', '#333');
 </script>
 <style>
   .hide-error{

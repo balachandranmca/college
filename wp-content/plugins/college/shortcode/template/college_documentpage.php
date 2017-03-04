@@ -1,7 +1,10 @@
 <div class="container slider-creator">
 	<div class="row">
+      <div class="col-md-3">
+        <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/settings1.png" class="hidden-xs img-responsive center-block" alt="">
+      </div><!--.col -->
       <div class="col-md-6 creator-content">
-        <div class="well well-sm">
+        <div class="">
             <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
                 <fieldset>
                     <h3 class="text-center">GENERAL DOCUMENT SETTING</h3>
@@ -86,10 +89,7 @@
             fd.append("withdraw", withdraw);
             fd.append("samplepaper", samplepaper);
             fd.append("papertemplates", papertemplates);
-            fd.append('action', 'college_document');  
-            
-            
-
+            fd.append('action', 'college_document'); 
             jQuery.ajax({
                 type: 'POST',
                 url: "<?php echo admin_url('admin-ajax.php'); ?>",
@@ -102,6 +102,7 @@
                 }
             });
         });
+        jQuery('body').css('background-color', '#333');
 </script>
 <style>
 .hide-error{
