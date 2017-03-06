@@ -1,7 +1,10 @@
 <div class="container slider-creator">
 	<div class="row">
+      <div class="col-md-3">
+        <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/portfolio.png" class="img-responsive center-block" alt="">
+      </div><!--.col -->
       <div class="col-md-6 creator-content">
-        <div class="well well-sm">
+        <div class="">
             <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
                 <fieldset>
                     <h3 class="text-center">PORTFOLIO SLIDER</h3>
@@ -118,6 +121,7 @@
             jQuery('#errorMsg').removeClass('hide-error');
         }
     });
+    jQuery('body').css('background-color', '#333');
 </script>
 <style>
 .hide-error{

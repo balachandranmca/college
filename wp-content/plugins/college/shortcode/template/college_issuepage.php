@@ -1,7 +1,10 @@
 <div class="container issue-creator">
 	<div class="row">
-      <div class="col-md-6 creator-content">
-        <div class="well well-sm">
+    <div class="col-md-3">
+        <img src="http://www.air-watch.com/global-assets/images/aw_warning_icon.png" class="img-responsive center-block" alt="">
+    </div><!--.col -->
+      <div class="col-md-9 creator-content">
+        <div class="">
           <form class="form-horizontal" action="" method="post" id="issue-form">
           <fieldset>
             <h3 class="text-center">ISSUE</h3>
@@ -131,6 +134,7 @@
         }
                 
     });
+     jQuery('body').css('background-color', '#333');
 </script>
 <style>
   .hide-error{

@@ -7430,191 +7430,103 @@ body.slide-active {
 }
 
 /* line 1, sass/journal-list.scss */
-.journal-list,
-.volume-list,
-.issues_listpage,
-.editors-listpage,
-.journal-editors-listpage, .slider-listpage {
-  margin-top: 50px;
+.slider-listpagetable, .journal-listpagetable, .volume-listpagetable, .issue-listpagetable, .editors-listpagetable,
+.journalpublish-listpagetable, .caroselslider-listpage, .journal-editors-listpage, .user-listpagetable {
+  margin-top: 70px;
+  /*
+  used to vertically center elements, may need modification if you're not using default sizes.
+  */
 }
-@media (max-width: 767px) {
-  /* line 1, sass/journal-list.scss */
-  .journal-list,
-  .volume-list,
-  .issues_listpage,
-  .editors-listpage,
-  .journal-editors-listpage, .slider-listpage {
-    width: 90%;
-  }
-}
-/* line 11, sass/journal-list.scss */
-.journal-list .content .create-new-btn,
-.volume-list .content .create-new-btn,
-.issues_listpage .content .create-new-btn,
-.editors-listpage .content .create-new-btn,
-.journal-editors-listpage .content .create-new-btn, .slider-listpage .content .create-new-btn {
+/* line 4, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body, .journal-listpagetable .panel-table .panel-body, .volume-listpagetable .panel-table .panel-body, .issue-listpagetable .panel-table .panel-body, .editors-listpagetable .panel-table .panel-body,
+.journalpublish-listpagetable .panel-table .panel-body, .caroselslider-listpage .panel-table .panel-body, .journal-editors-listpage .panel-table .panel-body, .user-listpagetable .panel-table .panel-body {
   padding: 0;
+  overflow: auto;
 }
-/* line 14, sass/journal-list.scss */
-.journal-list .content .content-table,
-.volume-list .content .content-table,
-.issues_listpage .content .content-table,
-.editors-listpage .content .content-table,
-.journal-editors-listpage .content .content-table, .slider-listpage .content .content-table {
-  padding: 0;
+/* line 8, sass/journal-list.scss */
+.slider-listpagetable .table-responsive, .journal-listpagetable .table-responsive, .volume-listpagetable .table-responsive, .issue-listpagetable .table-responsive, .editors-listpagetable .table-responsive,
+.journalpublish-listpagetable .table-responsive, .caroselslider-listpage .table-responsive, .journal-editors-listpage .table-responsive, .user-listpagetable .table-responsive {
+  max-height: 300px;
 }
-/* line 16, sass/journal-list.scss */
-.journal-list .content .content-table .slider-listpage,
-.volume-list .content .content-table .slider-listpage,
-.issues_listpage .content .content-table .slider-listpage,
-.editors-listpage .content .content-table .slider-listpage,
-.journal-editors-listpage .content .content-table .slider-listpage, .slider-listpage .content .content-table .slider-listpage {
+/* line 10, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body .table-bordered, .journal-listpagetable .panel-table .panel-body .table-bordered, .volume-listpagetable .panel-table .panel-body .table-bordered, .issue-listpagetable .panel-table .panel-body .table-bordered, .editors-listpagetable .panel-table .panel-body .table-bordered,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered, .caroselslider-listpage .panel-table .panel-body .table-bordered, .journal-editors-listpage .panel-table .panel-body .table-bordered, .user-listpagetable .panel-table .panel-body .table-bordered {
+  border-style: none;
   margin: 0;
 }
-/* line 19, sass/journal-list.scss */
-.journal-list .content .content-table .table-responsive,
-.volume-list .content .content-table .table-responsive,
-.issues_listpage .content .content-table .table-responsive,
-.editors-listpage .content .content-table .table-responsive,
-.journal-editors-listpage .content .content-table .table-responsive, .slider-listpage .content .content-table .table-responsive {
-  width: 100%;
+/* line 15, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .journal-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .volume-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .issue-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .editors-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .caroselslider-listpage .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .journal-editors-listpage .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type, .user-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type {
+  text-align: center;
+  width: 100px;
 }
-/* line 23, sass/journal-list.scss */
-.journal-list .content .content-table table,
-.volume-list .content .content-table table,
-.issues_listpage .content .content-table table,
-.editors-listpage .content .content-table table,
-.journal-editors-listpage .content .content-table table, .slider-listpage .content .content-table table {
-  margin: 0;
+/* line 20, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.slider-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .journal-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.journal-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .volume-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.volume-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .issue-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.issue-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .editors-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.editors-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .caroselslider-listpage .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.caroselslider-listpage .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .journal-editors-listpage .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.journal-editors-listpage .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type, .user-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.user-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type {
+  border-right: 0px;
 }
 /* line 25, sass/journal-list.scss */
-.journal-list .content .content-table table th,
-.volume-list .content .content-table table th,
-.issues_listpage .content .content-table table th,
-.editors-listpage .content .content-table table th,
-.journal-editors-listpage .content .content-table table th, .slider-listpage .content .content-table table th {
-  background-color: rgba(8, 155, 228, 0.2);
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  text-transform: uppercase;
+.slider-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.slider-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .journal-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.journal-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .volume-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.volume-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .issue-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.issue-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .editors-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.editors-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .caroselslider-listpage .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.caroselslider-listpage .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .journal-editors-listpage .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.journal-editors-listpage .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type, .user-listpagetable .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.user-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type {
+  border-left: 0px;
 }
-/* line 33, sass/journal-list.scss */
-.journal-list .content .content-table table tbody tr,
-.volume-list .content .content-table table tbody tr,
-.issues_listpage .content .content-table table tbody tr,
-.editors-listpage .content .content-table table tbody tr,
-.journal-editors-listpage .content .content-table table tbody tr, .slider-listpage .content .content-table table tbody tr {
-  text-align: center;
-  font-size: 17px;
+/* line 30, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .journal-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .volume-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .issue-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .editors-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .caroselslider-listpage .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .journal-editors-listpage .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td, .user-listpagetable .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td {
+  border-bottom: 0px;
+}
+/* line 34, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .journal-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .volume-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .issue-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .editors-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .caroselslider-listpage .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .journal-editors-listpage .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th, .user-listpagetable .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th {
+  border-top: 0px;
+}
+/* line 38, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-footer .pagination, .journal-listpagetable .panel-table .panel-footer .pagination, .volume-listpagetable .panel-table .panel-footer .pagination, .issue-listpagetable .panel-table .panel-footer .pagination, .editors-listpagetable .panel-table .panel-footer .pagination,
+.journalpublish-listpagetable .panel-table .panel-footer .pagination, .caroselslider-listpage .panel-table .panel-footer .pagination, .journal-editors-listpage .panel-table .panel-footer .pagination, .user-listpagetable .panel-table .panel-footer .pagination {
+  margin: 0;
 }
 /* line 45, sass/journal-list.scss */
-.journal-list .content .content-table table tbody tr td,
-.volume-list .content .content-table table tbody tr td,
-.issues_listpage .content .content-table table tbody tr td,
-.editors-listpage .content .content-table table tbody tr td,
-.journal-editors-listpage .content .content-table table tbody tr td, .slider-listpage .content .content-table table tbody tr td {
-  vertical-align: middle;
-  border: 1px solid;
+.slider-listpagetable .panel-table .panel-footer .col, .journal-listpagetable .panel-table .panel-footer .col, .volume-listpagetable .panel-table .panel-footer .col, .issue-listpagetable .panel-table .panel-footer .col, .editors-listpagetable .panel-table .panel-footer .col,
+.journalpublish-listpagetable .panel-table .panel-footer .col, .caroselslider-listpage .panel-table .panel-footer .col, .journal-editors-listpage .panel-table .panel-footer .col, .user-listpagetable .panel-table .panel-footer .col {
+  line-height: 34px;
+  height: 34px;
 }
-/* line 49, sass/journal-list.scss */
-.journal-list .content .content-table table tbody tr td:nth-child(1),
-.volume-list .content .content-table table tbody tr td:nth-child(1),
-.issues_listpage .content .content-table table tbody tr td:nth-child(1),
-.editors-listpage .content .content-table table tbody tr td:nth-child(1),
-.journal-editors-listpage .content .content-table table tbody tr td:nth-child(1), .slider-listpage .content .content-table table tbody tr td:nth-child(1) {
-  text-align: left;
+/* line 50, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-heading .col h3, .journal-listpagetable .panel-table .panel-heading .col h3, .volume-listpagetable .panel-table .panel-heading .col h3, .issue-listpagetable .panel-table .panel-heading .col h3, .editors-listpagetable .panel-table .panel-heading .col h3,
+.journalpublish-listpagetable .panel-table .panel-heading .col h3, .caroselslider-listpage .panel-table .panel-heading .col h3, .journal-editors-listpage .panel-table .panel-heading .col h3, .user-listpagetable .panel-table .panel-heading .col h3 {
+  line-height: 30px;
+  height: 30px;
+}
+/* line 55, sass/journal-list.scss */
+.slider-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td, .journal-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td, .volume-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td, .issue-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td, .editors-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td,
+.journalpublish-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td, .caroselslider-listpage .panel-table .panel-body .table-bordered > tbody > tr > td, .journal-editors-listpage .panel-table .panel-body .table-bordered > tbody > tr > td, .user-listpagetable .panel-table .panel-body .table-bordered > tbody > tr > td {
+  line-height: 34px;
 }
 /* line 58, sass/journal-list.scss */
-.journal-list .content .content-table .slider-list-img,
-.volume-list .content .content-table .slider-list-img,
-.issues_listpage .content .content-table .slider-list-img,
-.editors-listpage .content .content-table .slider-list-img,
-.journal-editors-listpage .content .content-table .slider-list-img, .slider-listpage .content .content-table .slider-list-img {
+.slider-listpagetable .slider-list-img, .journal-listpagetable .slider-list-img, .volume-listpagetable .slider-list-img, .issue-listpagetable .slider-list-img, .editors-listpagetable .slider-list-img,
+.journalpublish-listpagetable .slider-list-img, .caroselslider-listpage .slider-list-img, .journal-editors-listpage .slider-list-img, .user-listpagetable .slider-list-img {
   width: 100px;
   height: 80px;
   margin: 0 auto;
   display: block;
-}
-
-/* line 6, sass/journal-creator.scss */
-.journal-creator .creator-content,
-.volume-creator .creator-content,
-.issue-creator .creator-content,
-.slider-creator .creator-content,
-.callfor_paperpage .creator-content {
-  margin: 50px auto;
-  float: none;
-}
-/* line 9, sass/journal-creator.scss */
-.journal-creator .creator-content .well,
-.volume-creator .creator-content .well,
-.issue-creator .creator-content .well,
-.slider-creator .creator-content .well,
-.callfor_paperpage .creator-content .well {
-  background-color: rgba(8, 155, 228, 0.2);
-  border: 1px solid #333;
-}
-/* line 13, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group .form-control,
-.volume-creator .creator-content .well .form-group .form-control,
-.issue-creator .creator-content .well .form-group .form-control,
-.slider-creator .creator-content .well .form-group .form-control,
-.callfor_paperpage .creator-content .well .form-group .form-control {
-  border: 1px solid #4e595f;
-  height: 38px;
-  border-radius: 0;
-  color: #000;
-}
-/* line 19, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group label,
-.volume-creator .creator-content .well .form-group label,
-.issue-creator .creator-content .well .form-group label,
-.slider-creator .creator-content .well .form-group label,
-.callfor_paperpage .creator-content .well .form-group label {
-  color: #333;
-}
-/* line 22, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
-.volume-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
-.issue-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
-.slider-creator .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools,
-.callfor_paperpage .creator-content .well .form-group #wp-journal_frontend_editor-editor-tools {
-  margin-bottom: 10px;
-}
-/* line 25, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group .volume_dropdown, .journal-creator .creator-content .well .form-group .dropdown,
-.volume-creator .creator-content .well .form-group .volume_dropdown,
-.volume-creator .creator-content .well .form-group .dropdown,
-.issue-creator .creator-content .well .form-group .volume_dropdown,
-.issue-creator .creator-content .well .form-group .dropdown,
-.slider-creator .creator-content .well .form-group .volume_dropdown,
-.slider-creator .creator-content .well .form-group .dropdown,
-.callfor_paperpage .creator-content .well .form-group .volume_dropdown,
-.callfor_paperpage .creator-content .well .form-group .dropdown {
-  width: 100%;
-  height: 38px;
-  color: #333;
-  padding-left: 10px;
-}
-/* line 32, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group .slider_image img,
-.volume-creator .creator-content .well .form-group .slider_image img,
-.issue-creator .creator-content .well .form-group .slider_image img,
-.slider-creator .creator-content .well .form-group .slider_image img,
-.callfor_paperpage .creator-content .well .form-group .slider_image img {
-  width: 100px;
-  height: 80px;
-  margin-bottom: 20px;
-  display: block;
-}
-/* line 40, sass/journal-creator.scss */
-.journal-creator .creator-content .well .form-group .remove-btn input,
-.volume-creator .creator-content .well .form-group .remove-btn input,
-.issue-creator .creator-content .well .form-group .remove-btn input,
-.slider-creator .creator-content .well .form-group .remove-btn input,
-.callfor_paperpage .creator-content .well .form-group .remove-btn input {
-  margin: 0;
 }
 
 /* line 48, sass/journal-creator.scss */
@@ -7631,11 +7543,21 @@ body.slide-active {
 }
 
 /* line 57, sass/journal-creator.scss */
-.slider-creator {
+.journal-creator, .slider-creator, .volume-creator, .issue-creator, .callfor_paperpage {
   padding: 33px;
   background-color: #fff;
   margin: 50px auto;
   border-radius: 15px;
+}
+/* line 63, sass/journal-creator.scss */
+.journal-creator .wp-core-ui .wp-editor-container, .slider-creator .wp-core-ui .wp-editor-container, .volume-creator .wp-core-ui .wp-editor-container, .issue-creator .wp-core-ui .wp-editor-container, .callfor_paperpage .wp-core-ui .wp-editor-container {
+  margin-top: 10px;
+}
+/* line 65, sass/journal-creator.scss */
+.journal-creator .wp-core-ui .wp-editor-container .mce-tinymce.mce-container, .slider-creator .wp-core-ui .wp-editor-container .mce-tinymce.mce-container, .volume-creator .wp-core-ui .wp-editor-container .mce-tinymce.mce-container, .issue-creator .wp-core-ui .wp-editor-container .mce-tinymce.mce-container, .callfor_paperpage .wp-core-ui .wp-editor-container .mce-tinymce.mce-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0;
 }
 
 /* line 2, sass/aboutus.scss */
@@ -7666,9 +7588,43 @@ body.slide-active {
 }
 /* line 12, sass/feespage.scss */
 .feespage .payment-details {
-  margin: 0 auto;
-  float: none;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+/* line 16, sass/feespage.scss */
+.feespage .widget_currency_converter div {
+  width: 250px !important;
+  border-radius: 10px;
+  font-size: 20px;
+}
+/* line 21, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vlabel {
+  font-size: 15px !important;
+  color: #000000 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Oswald !important;
+}
+/* line 28, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vtextarea {
+  height: 30px;
+  border-radius: 5px;
+  padding-right: 10px;
+  border: 1px solid #000;
+}
+/* line 34, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .VselectBox {
+  height: 30px !important;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+/* line 39, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vtextarea {
+  resize: none;
+  color: #000 !important;
+}
+/* line 44, sass/feespage.scss */
+.feespage .widget_currency_converter div .VmainContainer .Vmsg_1 a {
+  font-size: 15px !important;
 }
 
 /* line 2, sass/editor-board.scss */
@@ -10021,6 +9977,27 @@ body.slide-active {
   font-weight: bold;
   text-align: center;
   letter-spacing: 2px;
+}
+
+/* line 2, sass/plugins-css.scss */
+#visitor-counter .visitor-counter-heading {
+  font-family: Oswald !important;
+  text-align: center;
+}
+/* line 6, sass/plugins-css.scss */
+#visitor-counter .visitor-counter-content {
+  border: 3px solid #333;
+  width: 52%;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+/* line 11, sass/plugins-css.scss */
+#visitor-counter .visitor-counter-content p {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px;
+  font-family: oswald;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

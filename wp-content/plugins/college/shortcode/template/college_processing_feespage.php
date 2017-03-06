@@ -55,6 +55,9 @@
     </div>
     <div class="container">
         <div class="row">
+        <div class="col-md-4">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </div>
          <div class="col-md-8 payment-details">            
             <table class="table table-bordered">
                 <tbody>

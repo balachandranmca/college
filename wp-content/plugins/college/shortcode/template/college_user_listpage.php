@@ -1,34 +1,55 @@
-<div class="container journal-editors-listpage">
+<div class="container user-listpagetable">
     <div class="row">
-        <div class="col-md-12 content">
-            <div class="row" style="margin-top:20px;">
-                <div class="col-md-12 content-table">
-                    <div class="table-responsive journal_editor-listpage">
-                        <table id="mytable" class="table table-bordred table-striped">
-                            <thead>
-                                <th>Name</th>
-                                <th>Phone No</th>
-                                <th>Email</th>
-                                <th>Role</th>
-                                <th>Status</th>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($users as $key => $user) { ?>
-                                <tr>
-                                    <td><?php echo $user->data->user_nicename;?></td>
-                                    <td><?php echo get_usermeta( $user->ID, 'phone_no', true ); ?></td>
-                                    <td><?php echo $user->data->user_email;?></td>
-                                    <td><?php echo $user->roles[0];?></td>
-                                   
-                                    <td><input type="radio" data-id="<?php echo $user->ID;?>" class = "user_status" name="status<?php echo $user->ID;?>" value="0" <?php if(get_usermeta( $user->ID, 'is_disable', true ) == "0"){echo " checked";}?>> Enabled<br>
-                                        <input type="radio" data-id="<?php echo $user->ID;?>" class = "user_status" name="status<?php echo $user->ID;?>" value="1"<?php if(get_usermeta( $user->ID, 'is_disable', true ) == "1"){echo " checked";}?>> Disabled<br></td>                               
-                                </tr>
-                                <?php }  ?>
-                            </tbody>
-                        </table>
-                            <div class="clearfix"></div>                
-                    </div>
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">Users List</h3>
+                  </div>
                 </div>
+              </div>
+              <div class="panel-body table-responsive">
+                <table class="table table-striped table-bordered table-list" id="myTable">
+                  <thead>
+                    <tr>
+                       <th>Name</th>
+                        <th>Phone No</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>   
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <?php foreach ($users as $key => $user) { ?>
+                    <tr>
+                        <td><?php echo $user->data->user_nicename;?></td>
+                        <td><?php echo get_usermeta( $user->ID, 'phone_no', true ); ?></td>
+                        <td><?php echo $user->data->user_email;?></td>
+                        <td><?php echo $user->roles[0];?></td>
+                        
+                        <td><input type="radio" data-id="<?php echo $user->ID;?>" class = "user_status" name="status<?php echo $user->ID;?>" value="0" <?php if(get_usermeta( $user->ID, 'is_disable', true ) == "0"){echo " checked";}?>> Enabled<br>
+                            <input type="radio" data-id="<?php echo $user->ID;?>" class = "user_status" name="status<?php echo $user->ID;?>" value="1"<?php if(get_usermeta( $user->ID, 'is_disable', true ) == "1"){echo " checked";}?>> Disabled<br></td>                               
+                    </tr>
+                    <?php }  ?> 
+                  </tbody>
+                </table>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+                  
+                  <div class="col col-xs-4">
+                  </div>
+                  <div class="col col-xs-8">
+                    <ul class="pagination hidden-xs pull-right" id="myPager">
+                    </ul>
+                    <ul class="pagination visible-xs pull-right">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>

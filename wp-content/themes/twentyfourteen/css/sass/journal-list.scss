@@ -1,66 +1,64 @@
-.journal-list,
-.volume-list,
-.issues_listpage,
-.editors-listpage,
-.journal-editors-listpage,.slider-listpage{
-    margin-top: 50px;
-    @media (max-width: 767px){
-        width: 90%;
+.slider-listpagetable,.journal-listpagetable,.volume-listpagetable,.issue-listpagetable,.editors-listpagetable,
+.journalpublish-listpagetable,.caroselslider-listpage,.journal-editors-listpage,.user-listpagetable{
+    margin-top: 70px;
+    .panel-table .panel-body{
+        padding:0;
+        overflow: auto;
     }
-    .content{
-        .create-new-btn{
-            padding: 0;
-        }
-        .content-table{
-            padding: 0;
-            .slider-listpage{
-                margin: 0;            
-            }
-            .table-responsive{
-                //border: 1px solid;
-                width: 100%;
-            }
-            table{
-                margin: 0;
-                th{
-                    background-color: rgba(8, 155, 228, 0.2);
-                    color: #333;
-                    text-align: center;
-                    padding: 20px;
-                    text-transform: uppercase;
-                }
-                tbody{
-                    tr{
-                        text-align: center;
-                        font-size: 17px;
-                        // &:nth-child(1) {
-                        //     td{
-                        //         // background-color: rgba(255,255,255,.2);
-                        //         background-color: #2F3035;
-                        //     }
-                        // }
-                        // &:nth-child(2) {
-                        //     background-color: #2F3035;
-                        // }
-                        td{
-                            vertical-align: middle;
-                            border: 1px solid;
-                        }
-                        td:nth-child(1){
-                            text-align: left;                        
-                        }
-                    }
-                    // tr:nth-child(odd)>td{
-                    //      background-color: #2F3035;
-                    // }
-                }
-            }
-            .slider-list-img{
-                width: 100px;
-                height: 80px;
-                margin: 0 auto;
-                display: block;
-            }
-        }
+    .table-responsive {max-height: 300px;}
+
+    .panel-table .panel-body .table-bordered{
+        border-style: none;
+        margin:0;
+    }
+
+    .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type {
+        text-align:center;
+        width: 100px;
+    }
+
+    .panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+    .panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type {
+        border-right: 0px;
+    }
+
+    .panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+    .panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type {
+        border-left: 0px;
+    }
+
+    .panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td{
+        border-bottom: 0px;
+    }
+
+    .panel-table .panel-body .table-bordered > thead > tr:first-of-type > th{
+        border-top: 0px;
+    }
+
+    .panel-table .panel-footer .pagination{
+        margin:0; 
+    }
+
+    /*
+    used to vertically center elements, may need modification if you're not using default sizes.
+    */
+    .panel-table .panel-footer .col{
+        line-height: 34px;
+        height: 34px;
+    }
+
+    .panel-table .panel-heading .col h3{
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .panel-table .panel-body .table-bordered > tbody > tr > td{
+        line-height: 34px;
+    }
+    .slider-list-img{
+        width: 100px;
+        height: 80px;
+        margin: 0 auto;
+        display: block;
     }
 }
