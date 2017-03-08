@@ -6,6 +6,9 @@
                     <div class="table-responsive slider-listpage">
                         <table id="mytable" class="table table-bordred table-striped">
                             <thead>
+                                <?php if($user_role == "administrator"){ ?>
+                                    <th>User Name</th>
+                                <?php } ?>
                                 <th>Issue</th>
                                 <th>Status</th>
                                 <th>Details</th>
@@ -13,6 +16,9 @@
                             <tbody>
                             <?php foreach ($authorPaperList as $key => $value) { ?>
                                 <tr>
+                                <?php if($user_role == "administrator"){ ?>
+                                    <td><?php echo $user[$value['user_id']];?></td>
+                                <?php } ?>
                                 <?php if($user_role=="reviewer") { ?>
                                     <td><?php echo $issue[$value['author_issue_paper_id']];?></td>
                                     <td><?php echo $value['status'];?></td>

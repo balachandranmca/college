@@ -116,7 +116,17 @@ function post_redirect(){
         get_buzz_id('college_document'),
     );
     
-    if ( ( in_array('author', $role) || in_array('user', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $admin_only))) {
+    if ( ( in_array('author', $role) || in_array('reviewer', $role) || in_array('user', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $admin_only))) {
+        wp_redirect( site_url() );
+        exit();
+    }
+    /* For admin only page */
+    
+    $author_only = array(
+        get_buzz_id('college_author_issue_paper'),
+    );
+    
+    if ( ( in_array('administrator', $role) || in_array('reviewer', $role)  || in_array('user', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $author_only))) {
         wp_redirect( site_url() );
         exit();
     }

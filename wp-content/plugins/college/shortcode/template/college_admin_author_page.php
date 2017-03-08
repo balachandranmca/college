@@ -86,6 +86,7 @@ if($author_paper['status'] == 'recieved') { ?>
                         <option value="reject"<?php if($author_paper['status']=="reject"){echo " selected";}?>>Reject</option>
                         
                         <option value="modify"<?php  if($author_paper['status']=="modify"){echo " selected";}?>>Modify Suggest</option>
+                        <option value="resubmitted"<?php if($author_paper['status']=="resubmitted"){echo " selected";}?>>Author Resubmitted</option>
                         <option value="paid"<?php  if($author_paper['status']=="paid"){echo " selected";}?>>Payment Paid</option>
                         <option value="published"<?php  if($author_paper['status']=="published"){echo " selected";}?>>Published</option>
                     </select>
@@ -146,7 +147,7 @@ if($author_paper['status'] == 'recieved') { ?>
                 contentType: false,
                 processData: false,
                 success: function(response){
-                    // window.location = "<?php echo get_buzz_url('college_carosel_slider_list');?>";
+                    window.location = "<?php echo get_buzz_url('college_author_paper_list');?>";
                 }
             });
         }

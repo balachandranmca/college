@@ -7,6 +7,8 @@
 use App\AuthorIssuePaper;
 use App\AuthorIssuePaperReviewer;
 use App\Issue;
+use App\Journal;
+use App\Volume;
 
 
 add_shortcode('COLLEGE_AUTHOR_PAPER', 'college_author_paper_shortcode');
@@ -14,7 +16,11 @@ function college_author_paper_shortcode($atts) {
 	$user_role = get_current_user_role(get_current_user_id());
 	$user_role = $user_role[0];
 	$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
+	$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
 	$author_paper = $author_paper[0];
+	$issue = Issue::where('id', '=', $author_paper['issue_id'])->get()->toArray();
+	$journalName = Journal::where('id', '=', $issue[0]['journal_id'])->value('name');
+	$volumeName = Volume::where('id', '=', $issue[0]['volume_id'])->value('name');
 	$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $_GET['id'])->get()->toArray();
 	
 	$reviewer1 = $reviewer2 = $reviewer3 = '';
@@ -41,6 +47,11 @@ function college_author_paper_shortcode($atts) {
 	}
 	$args = array('role__in' => array('reviewer'));
 	$users = get_users( $args );
+	$args = array('role__in' => array('author'));
+	$author_users = get_users( $args );
+	foreach ($author_users as $key) {
+		$author_user[$key->ID] = $key->data->user_nicename.'-->'.$key->data->user_login;
+	}
 	$issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
 	ob_start();
 	include_once 'template/college_author_paperpage.php';
@@ -54,6 +65,7 @@ add_action('wp_ajax_college_author_paper', 'college_author_paper');
 function college_author_paper()
 {
 		/* Create New One */
+		
 		if($_POST['status'] == 'recieved'){
 
 			if((int)$_POST['reviewer1'])
@@ -63,6 +75,7 @@ function college_author_paper()
 			if((int)$_POST['reviewer3'])
 				$reviewer[] = (int)$_POST['reviewer3'];
 			$reviewer = array_unique($reviewer);
+			
 			foreach ($reviewer as $key => $value) {
 				$authorIssuePaperReviewer['author_issue_paper_id'] = $_POST['paper_id'];
 				$authorIssuePaperReviewer['user_id'] = $value;
@@ -85,22 +98,6 @@ function college_author_paper()
 add_action('wp_ajax_college_author_paper_reviewer', 'college_author_paper_reviewer');
 
 function college_author_paper_reviewer()
-{
-	$reviewer_id 	= get_current_user_id();
-	$comment 		= $_POST['comment'];
-	$status 		= $_POST['status'];
-	$paper_id 		= $_POST['paper_id'];
-	$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $paper_id)->where('user_id', $reviewer_id);
-	$authorIssuePaperReviewers['status'] 	= $status;
-	$authorIssuePaperReviewers['comment'] 	= $comment;
-	$data = $authorIssuePaperReviewer->update($authorIssuePaperReviewers);
-	echo json_encode(array('success'=>'true'));
-	exit;
-}
-
-add_action('wp_ajax_college_author_paper_resubmit', 'college_author_paper_resubmit');
-
-function college_author_paper_resubmit()
 {
 	$reviewer_id 	= get_current_user_id();
 	$comment 		= $_POST['comment'];
