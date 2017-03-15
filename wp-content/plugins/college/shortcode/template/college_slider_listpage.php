@@ -1,4 +1,4 @@
-<div class="container slider-listpagetable">
+<div class="container demo slider-listpagetable">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default panel-table">
@@ -9,12 +9,11 @@
                   </div>
                   <div class="col col-xs-6 text-right">
                     <a href="<?php echo get_buzz_url('college_slider');?>"><button type="button" class="btn btn-primary">Create New</button></a>
-                    <!--<button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>-->
                   </div>
                 </div>
               </div>
               <div class="panel-body table-responsive">
-                <table class="table table-striped table-bordered table-list">
+                <table class="datatable  table table-striped table-bordered table-list" id="myTable">
                   <thead>
                     <tr>
                         <th>Image</th>
@@ -35,25 +34,18 @@
                             <td><?php echo $value['description'];?></td>
                             <td style="vertical-align: middle;"><p data-placement="top" data-toggle="tooltip" title="Edit"><a href="<?php echo get_buzz_url('college_slider').'?id='.$value['id'];?>"><button class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></a></p></td> 
                             <td style="vertical-align: middle;"><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="delete btn btn-danger" data-title="Delete" data-toggle="modal" data-id="<?php echo $value['id'];?>" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                        <?php } ?>
                         </tbody>
-                        <?php } ?> 
+                        <tfoot>
+                          <tr>
+                              <th>Slider Creator Image</th>
+                              <th>Slider Creator Name</th>
+                              <th>Slider Creator Description</th> 
+                              <th>Slider Creator Edit</th>
+                              <th>Slider Creator Delete</th>  
+                          </tr>
+                        </tfoot> 
                 </table>
-            
-              </div>
-              <div class="panel-footer">
-                <div class="row">
-                  
-                  <div class="col col-xs-4">
-                  </div>
-                  <div class="col col-xs-8">
-                    <ul class="pagination hidden-xs pull-right" id="myPager">
-                    </ul>
-                    <ul class="pagination visible-xs pull-right">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
         </div>
