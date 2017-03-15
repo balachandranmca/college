@@ -359,7 +359,7 @@
                   <ul>
                   <?php foreach ($carosel_sliderList as $key => $value) { ?>
                     <?php $image =  json_decode($value['image'],1);?>
-                    <li style="height: 193px;">
+                    <li style="min-height: 193px;">
                       <img src="<?php echo $image['url'];?>" alt="Image 1">
                     </li>
                   <?php } ?>

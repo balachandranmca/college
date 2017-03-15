@@ -1,4 +1,4 @@
-<div class="container issue-listpagetable">
+<div class="container demo issue-listpagetable">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default panel-table">
@@ -13,7 +13,7 @@
                 </div>
               </div>
               <div class="panel-body table-responsive">
-                <table class="table table-striped table-bordered table-list" id="myTable">
+                <table class="datatable  table table-striped table-bordered table-list" id="myTable">
                   <thead>
                     <tr>
                         <th>Issue No</th>
@@ -46,22 +46,19 @@
                         </tr>
                         <?php } ?>  
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Issue No</th>
+                            <th>Issue Name</th>
+                            <th>Issue olume</th>
+                            <th>Issue Journal</th>
+                            <th>Issue Uploaded Paper</th>
+                            <th>Issue Publish</th>
+                            <th>Issue Edit</th>
+                            <th>Issue Delete</th>
+                        </tr>
+                    </tfoot>
                 </table>
-              </div>
-              <div class="panel-footer">
-                <div class="row">
-                  
-                  <div class="col col-xs-4">
-                  </div>
-                  <div class="col col-xs-8">
-                    <ul class="pagination hidden-xs pull-right" id="myPager">
-                    </ul>
-                    <ul class="pagination visible-xs pull-right">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<div class="container volume-listpagetable">
+<div class="container demo volume-listpagetable">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default panel-table">
@@ -13,7 +13,7 @@
                 </div>
               </div>
               <div class="panel-body table-responsive">
-                <table class="table table-striped table-bordered table-list" id="myTable">
+                <table class="datatable  table table-striped table-bordered table-list" id="myTable">
                   <thead>
                     <tr>
                         <th>Name</th>
@@ -30,22 +30,14 @@
                             </tr>
                         <?php } ?>  
                   </tbody>
+                  <tfoot>
+                    <tr>
+                        <th>Volume Name</th>
+                        <th>Volume Edit</th>
+                        <th>Volume Delete</th>
+                    </tr>
+                </tfoot>
                 </table>
-              </div>
-              <div class="panel-footer">
-                <div class="row">
-                  
-                  <div class="col col-xs-4">
-                  </div>
-                  <div class="col col-xs-8">
-                    <ul class="pagination hidden-xs pull-right" id="myPager">
-                    </ul>
-                    <ul class="pagination visible-xs pull-right">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
         </div>

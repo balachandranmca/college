@@ -13,7 +13,7 @@
                 </div>
               </div>
               <div class="panel-body table-responsive">
-                <table class="table table-striped table-bordered table-list" id="myTable">
+                <table class="table table-striped table-bordered table-list">
                   <thead>
                     <tr>
                         <th>Image</th>
@@ -34,21 +34,6 @@
                     <?php } ?>   
                   </tbody>
                 </table>
-              </div>
-              <div class="panel-footer">
-                <div class="row">
-                  
-                  <div class="col col-xs-4">
-                  </div>
-                  <div class="col col-xs-8">
-                    <ul class="pagination hidden-xs pull-right" id="myPager">
-                    </ul>
-                    <ul class="pagination visible-xs pull-right">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
         </div>
