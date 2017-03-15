@@ -1,3 +1,4 @@
+<?php if(($author_paper['status'] == 'review') || $author_paper['status'] == 'resubmitted') { ?>
 <div class="form-group">
     <label class="col-md-3 control-label" for="name">Status</label>
     <div class="col-md-9 slider_image">
@@ -21,6 +22,21 @@
                             <button type="submit" name="author_paper" id="author_paper" class="btn btn-primary btn-lg">Submit</button>
                         </div>
                      </div>
+<?php } ?>
+<?php if(($authorIssuePaperReviewer) && ($author_paper['status'] != 'resubmitted')) { ?>
+    <div class="form-group">
+        <label class="col-md-3 control-label" for="name">Status</label>
+        <div class="col-md-9">
+                <td><label class="col-md-9 control-label" for="name"><?php echo $authorIssuePaperReviewer['status'];?></label></td>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label" for="name">Comment</label>
+        <div class="col-md-9">
+                <td><label class="col-md-9 control-label" for="name"><?php echo $authorIssuePaperReviewer['comment'];?></label></td>
+        </div>
+    </div>
+<?php } ?>
                 </fieldset>
                 
                 <div id="errorMsg" class='hide-error'>Please fill all fields</div>
