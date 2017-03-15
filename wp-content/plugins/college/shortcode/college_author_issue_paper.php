@@ -12,6 +12,10 @@ add_shortcode('COLLEGE_AUTHOR_ISSUE_PAPER', 'college_author_issue_paper_shortcod
 function college_author_issue_paper_shortcode($atts) {
 	$args = array('role__in' => array('reviewer'));
 	$users = get_users( $args );
+	$author_paper = AuthorIssuePaper::where('user_id', '=', get_current_user_id())->select('issue_id')->get()->toArray();
+	foreach ($author_paper as $key) {
+		$author_papers[] = $key['issue_id'];
+	}
 	$issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
 	ob_start();
 	include_once 'template/college_author_issue_paperpage.php';
@@ -60,6 +64,30 @@ function college_author_issue_paper()
 		}
 		echo json_encode(array('success'=>'false'));
 		exit;
+}
+
+add_action('wp_ajax_college_author_paper_resubmitted', 'college_author_paper_resubmitted');
+
+function college_author_paper_resubmitted()
+{
+	$author_id 	= get_current_user_id();
+	$paper_id 	= $_POST['paper_id'];
+	
+	$uploadedfile = $_FILES['paper_template'];
+	$uploaded_copyright_file = $_FILES['copyright'];
+	$upload_overrides = array( 'test_form' => false );
+	
+	$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+	if ( $movefile && ! isset( $movefile['error'] )) {
+		$authorIssuePaperReviewer = AuthorIssuePaper::where('id', $paper_id);
+
+		$author_issue_paper['paper'] = json_encode($movefile);
+		$author_issue_paper['status'] = 'resubmitted';
+		$data = $authorIssuePaperReviewer->update($author_issue_paper);
+		echo json_encode(array('success'=>'true'));
+		exit;
+	}
+	echo json_encode(array('success'=>'false'));exit;
 }
 
 

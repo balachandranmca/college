@@ -11,7 +11,9 @@
                             <select class="call_for_paper_dropdown">
                                 <option value="0">Please Select ..</option>
                                 <?php foreach ($issueActiveList as $key => $value) { ?>
-                                    <option value="<?php echo $value['id'];?>"><?php echo $value['name'] ." ".$value['start_date'];?></option>
+                                    <?php if(!in_array($value['id'], $author_papers)) { ?>
+                                        <option value="<?php echo $value['id'];?>"><?php echo $value['name'] ." ".$value['start_date'];?></option>
+                                    <?php } ?>
                                 <?php } ?>
                             </select> 
                         </div>
@@ -185,7 +187,7 @@
                 contentType: false,
                 processData: false,
                 success: function(response){
-                    // window.location = "<?php echo get_buzz_url('college_carosel_slider_list');?>";
+                    window.location = "<?php echo get_buzz_url('college_author_paper_list');?>";
                 }
             });
         }

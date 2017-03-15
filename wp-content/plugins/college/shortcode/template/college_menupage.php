@@ -1,6 +1,6 @@
 <?php 
     use App\Journal;
-    $is_user = $is_author = $is_admin = 0;
+    $is_user = $is_author = $is_admin = $is_reviewer = 0;
     $is_user_logged_in = is_user_logged_in();
     if($is_user_logged_in){
         $user_ID = get_current_user_id();
@@ -13,6 +13,9 @@
         }
         elseif (in_array('author', $role)) {
             $is_author = 1;
+        }
+        elseif (in_array('reviewer', $role)) {
+            $is_reviewer = 1;
         }
         
     }
@@ -30,6 +33,7 @@
             <li<?php if($page_id == get_buzz_id('college_call_for_paper')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_call_for_paper') ?>">Call for paper</a></li>
         </ul>
     </li>
+    <li<?php if($page_id == get_buzz_id('college_author_paper_list') || $page_id == get_buzz_id('college_author_paper')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_author_paper_list');?>">Author Paper</a></li>
     <li<?php if($page_id == get_buzz_id('college_editor_list')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_editor_list') ?>">Editors</a></li>
     <li<?php if($page_id == get_buzz_id('college_slider_list') || $page_id == get_buzz_id('college_slider')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_slider_list') ?>">Slider</a></li>
     <li<?php if($page_id == get_buzz_id('college_carosel_slider_list') || $page_id == get_buzz_id('college_carosel_slider')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_carosel_slider_list') ?>">Carosel Slider</a></li>
@@ -43,8 +47,15 @@
     <li><a href="<?php echo site_url();?>">Home</a></li>
     <?php } ?>
     <li<?php if($page_id == get_buzz_id('college_about_us')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_about_us');?>">About Us</a></li>
+    <?php if($is_reviewer) { ?>
+        <li<?php if($page_id == get_buzz_id('college_author_paper_list') || $page_id == get_buzz_id('college_author_paper')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_author_paper_list');?>">Author Paper</a></li>
+    <?php } ?>
     <!--<li><a href="#services">Our Publications</a></li>-->
     <!--<li><a href="#showcase">Manscript Submission</a></li>-->
+    <?php if($is_author) { ?>
+        <li<?php if($page_id == get_buzz_id('college_author_paper_list')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_author_paper_list');?>">My Paper</a></li>
+        <li<?php if($page_id == get_buzz_id('college_author_issue_paper')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_author_issue_paper');?>">Paper Upload</a></li>
+    <?php } ?>
     <?php if(! $is_author) { ?>
     <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manscript Submission
@@ -62,6 +73,7 @@
         </ul>
     </li>
     <?php } ?>
+    
     <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Journals
         <span class="caret"></span></a>
