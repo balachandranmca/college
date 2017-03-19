@@ -1,12 +1,12 @@
-<?php if(($author_paper['status'] == 'review') || $author_paper['status'] == 'resubmitted') { ?>
+
 <div class="form-group">
     <label class="col-md-3 control-label" for="name">Status</label>
     <div class="col-md-9 slider_image">
         <select id="status">
             <option value="0">Please Select</option>
-            <option value="accept">Accept</option>
-            <option value="reject">Reject</option>
-            <option value="modify">Modify Suggest</option>
+            <option value="accept"<?php if($authorIssuePaperReviewer['status']=='accept') echo ' selected';?>>Accept</option>
+            <option value="reject"<?php if($authorIssuePaperReviewer['status']=='reject') echo ' selected';?>>Reject</option>
+            <option value="modify"<?php if($authorIssuePaperReviewer['status']=='modify') echo ' selected';?>>Modify Suggest</option>
         </select>
     </div>
 </div>
@@ -14,29 +14,16 @@
 <div class="form-group">
     <label class="col-md-3 control-label" for="name">Comment</label>
     <div class="col-md-9">
-            <td><textarea id="comment"><?php echo $comment;?></textarea></td>
+            <td><textarea id="comment"><?php echo $authorIssuePaperReviewer['comment'];?></textarea></td>
     </div>
 </div>
+<?php if(($author_paper['status'] == 'review') || $author_paper['status'] == 'resubmitted') { ?>
     <div class="form-group">
                         <div class="col-md-12 text-right">
                             <button type="submit" name="author_paper" id="author_paper" class="btn btn-primary btn-lg">Submit</button>
                         </div>
                      </div>
-<?php } ?>
-<?php if(($authorIssuePaperReviewer) && ($author_paper['status'] != 'resubmitted')) { ?>
-    <div class="form-group">
-        <label class="col-md-3 control-label" for="name">Status</label>
-        <div class="col-md-9">
-                <td><label class="col-md-9 control-label" for="name"><?php echo $authorIssuePaperReviewer['status'];?></label></td>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-md-3 control-label" for="name">Comment</label>
-        <div class="col-md-9">
-                <td><label class="col-md-9 control-label" for="name"><?php echo $authorIssuePaperReviewer['comment'];?></label></td>
-        </div>
-    </div>
-<?php } ?>
+<?php }?>
                 </fieldset>
                 
                 <div id="errorMsg" class='hide-error'>Please fill all fields</div>

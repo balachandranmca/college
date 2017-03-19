@@ -6,7 +6,7 @@
 </div>
 <div class="form-group">
     <label class="col-md-3 control-label" for="name">History</label>
-    <?php $statusDate = ['recievedDate', 'acceptDate', 'rejectDate', 'modifyDate', 'resubmittedDate', 'transactionSubmittedDate', 'paidDate', 'publishedDate'];
+    <?php $statusDate = ['reviewDate', 'recievedDate', 'acceptDate', 'rejectDate', 'modifyDate', 'resubmittedDate', 'transactionSubmittedDate', 'paidDate', 'publishedDate'];
     foreach ($statusDate as $key => $value) { ?>
         <div class="col-md-9 slider_image">
             <?php if($author_paper[$value]) { ?>
