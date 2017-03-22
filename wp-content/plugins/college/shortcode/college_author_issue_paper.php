@@ -57,6 +57,9 @@ function college_author_issue_paper()
 			$author_issue_paper['reviewer_new'] = json_encode($new_reviewer);
 		}
 		$author_issue_paper['status'] = 'recieved';
+		$date = date('Y-m-d H:i:s');
+		$statusDate = 'recievedDate';
+		$author_issue_paper[$statusDate] = $date;
 		if ( $movefile && ! isset( $movefile['error'] ) && $move_copyright_file && ! isset( $move_copyright_file['error'] ) ) {
 			$data = AuthorIssuePaper::create($author_issue_paper);
 			echo json_encode(array('success'=>'true'));
@@ -74,7 +77,6 @@ function college_author_paper_resubmitted()
 	$paper_id 	= $_POST['paper_id'];
 	
 	$uploadedfile = $_FILES['paper_template'];
-	$uploaded_copyright_file = $_FILES['copyright'];
 	$upload_overrides = array( 'test_form' => false );
 	
 	$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
@@ -83,6 +85,37 @@ function college_author_paper_resubmitted()
 
 		$author_issue_paper['paper'] = json_encode($movefile);
 		$author_issue_paper['status'] = 'resubmitted';
+		$date = date('Y-m-d H:i:s');
+		$statusDate = 'resubmittedDate';
+		$author_issue_paper[$statusDate] = $date;
+		$data = $authorIssuePaperReviewer->update($author_issue_paper);
+		echo json_encode(array('success'=>'true'));
+		exit;
+	}
+	echo json_encode(array('success'=>'false'));exit;
+}
+
+add_action('wp_ajax_college_author_paper_tn_submitted', 'college_author_paper_tn_submitted');
+
+function college_author_paper_tn_submitted()
+{
+	$author_id 	= get_current_user_id();
+	$paper_id 	= $_POST['paper_id'];
+	$tn_no 	= $_POST['tn_no'];
+	
+	$uploadedfile = $_FILES['tn_photo'];
+	$upload_overrides = array( 'test_form' => false );
+	
+	$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+	if ( $movefile && ! isset( $movefile['error'] )) {
+		$authorIssuePaperReviewer = AuthorIssuePaper::where('id', $paper_id);
+
+		$author_issue_paper['tn_photo'] = json_encode($movefile);
+		$author_issue_paper['status'] = 'transactionSubmitted';
+		$author_issue_paper['tn_no'] = $tn_no;
+		$date = date('Y-m-d H:i:s');
+		$statusDate = 'transactionSubmittedDate';
+		$author_issue_paper[$statusDate] = $date;
 		$data = $authorIssuePaperReviewer->update($author_issue_paper);
 		echo json_encode(array('success'=>'true'));
 		exit;

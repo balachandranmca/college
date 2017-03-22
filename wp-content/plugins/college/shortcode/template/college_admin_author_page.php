@@ -87,11 +87,33 @@ if($author_paper['status'] == 'recieved') { ?>
                         
                         <option value="modify"<?php  if($author_paper['status']=="modify"){echo " selected";}?>>Modify Suggest</option>
                         <option value="resubmitted"<?php if($author_paper['status']=="resubmitted"){echo " selected";}?>>Author Resubmitted</option>
+                        <option value="transactionSubmitted"<?php if($author_paper['status']=="transactionSubmitted"){echo " selected";}?>>Author Transaction Submitted</option>
                         <option value="paid"<?php  if($author_paper['status']=="paid"){echo " selected";}?>>Payment Paid</option>
                         <option value="published"<?php  if($author_paper['status']=="published"){echo " selected";}?>>Published</option>
                     </select>
                 </div>
             </div>
+            <?php if($author_paper['status']=="transactionSubmitted"){ ?>
+                <?php if($author_paper['tn_no']) { ?>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Transaction No</label>
+                        <div class="col-md-9">
+                            <td><label class="col-md-9 control-label" for="name">	<?php echo $author_paper['tn_no'];?></label></td>
+                        </div>
+                    </div>
+                <?php } ?>
+                <?php if($author_paper['tn_photo']) { ?>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Transaction Photo</label>
+                        <div class="col-md-9">
+                            <td><?php 
+                            $tn_photo =  json_decode($author_paper['tn_photo'],1);
+                            ?>
+                            <img src="<?php echo $tn_photo['url'];?>"></td>
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
             <div class="form-group">
                 <label class="col-md-3 control-label" for="name">Comment</label>
                 <div class="col-md-9">

@@ -53,6 +53,10 @@ function college_author_paper_shortcode($atts) {
 		$author_user[$key->ID] = $key->data->user_nicename.'-->'.$key->data->user_login;
 	}
 	$issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
+	if($user_role == "reviewer"){
+		$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $_GET['id'])->where('user_id', get_current_user_id())->get()->toArray();
+		$authorIssuePaperReviewer = $authorIssuePaperReviewer[0];
+	}
 	ob_start();
 	include_once 'template/college_author_paperpage.php';
 	$template_content = ob_get_contents();
@@ -83,12 +87,18 @@ function college_author_paper()
 			}
 			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
 			$authorIssuePapers['status'] = 'review';
+			$date = date('Y-m-d H:i:s');
+			$statusDate = 'reviewDate';
+			$authorIssuePapers[$statusDate] = $date;
 			$data = $authorIssuePaper->update($authorIssuePapers);
 			echo json_encode(array('success'=>'true'));
 			exit;
 		} else {
 			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
 			$authorIssuePapers['status'] = $_POST['status'];
+			$date = date('Y-m-d H:i:s');
+			$statusDate = $_POST['status'].'Date';
+			$authorIssuePapers[$statusDate] = $date;
 			$authorIssuePapers['comment'] = $_POST['comment'];
 			$data = $authorIssuePaper->update($authorIssuePapers);
 			echo json_encode(array('success'=>'true'));

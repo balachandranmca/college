@@ -38,7 +38,7 @@
 
 							<div class="con-info clearfix">
 								<i class="fa fa-home fa-lg"></i>
-								<span>Address: PLOT #3, II FLOOR, JAWAHAR NAGAR, </br>3rd CROSS, BHOOMIANPET,</br>PONDICHERRY -605005.</span>
+								<span>Address: <?php echo get_option('contact_address');?></span>
 							</div>
 
 							<div class="con-info clearfix">
@@ -48,12 +48,12 @@
 							
 							<div class="con-info clearfix">
 								<i class="fa fa-phone fa-lg"></i>
-								<span>Mobile:  +91-9786777229</span>
+								<span>Mobile:  <?php echo get_option('contact_mobile');?></span>
 							</div>
 							
 							<div class="con-info clearfix">
 								<i class="fa fa-envelope fa-lg"></i>
-								<span>Email:  editor@ijrests.org</span>
+								<span>Email:  <?php echo get_option('contact_email');?></span>
 							</div>
 						</div>
 					</div>
