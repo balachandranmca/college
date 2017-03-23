@@ -80,10 +80,31 @@
                                     <p><?php echo $value['start_date'];?></p>
                                 </div>
                                 <div class="Current-Issues-btn text-center">
-                                    <a href="<?php echo get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];?>"><input type="button" class="text-center btn btn-success btn-lg" value="View" name="" id=""/></a>
+                                    <!--<a href="<?php echo get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];?>"></a>-->
+                                    <input type="button" class="text-center btn btn-success btn-lg" data-toggle="modal" data-target="#issuemodal" value="View" name="" id=""/>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="issuemodal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Issues List</h4>
+                        </div>
+                        <div class="modal-body">
+                        <p>Issues</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    
                     </div>
                 </div>
             <?php } ?>

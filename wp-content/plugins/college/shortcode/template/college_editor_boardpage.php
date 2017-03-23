@@ -151,7 +151,7 @@
                                     <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
                                                         <a href="#" class="github-btn">
-                                                            <i class="fa fa-github-alt"></i>
+                                                            <i class="fa fa-google-plus"></i>
                                                         </a><!-- /.github-btn -->
                                                     </span>
                                     <!-- /.social-btn-box -->
