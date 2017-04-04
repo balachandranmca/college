@@ -23,7 +23,11 @@ class JournalEditor extends Eloquent
                             'city_country',
                             'emailid',
                             'mobile_no',
-                            'journal_id'
+                            'journal_id',
+                            'fb_url',
+                            'tw_url',
+                            'gp_url',
+                            'ln_url'
                           ];
 
 }

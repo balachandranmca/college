@@ -33,6 +33,15 @@ function college_author_issue_paper_list_shortcode($atts) {
 			
 		}
 		$authorPaperList = AuthorIssuePaperReviewer::where('user_id', $user_id)->get()->toArray();
+		if(isset($_GET['key'])){
+			if($_GET['key'] == 'reviewed'){
+				$authorPaperList = AuthorIssuePaperReviewer::where('user_id', $user_id)->whereNotNull('status')->get()->toArray();
+			}
+			if($_GET['key'] == 'assigned'){
+				$authorPaperList = AuthorIssuePaperReviewer::where('user_id', $user_id)->whereNull('status')->get()->toArray();
+			}		
+		}
+		
 	}	
 	elseif ($user_role == "author") {
 		$authorPaperList = AuthorIssuePaper::where('user_id', $user_id)->get()->toArray();

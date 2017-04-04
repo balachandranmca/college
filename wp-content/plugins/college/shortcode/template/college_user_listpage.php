@@ -33,15 +33,6 @@
                     </tr>
                     <?php }  ?> 
                   </tbody>
-                  <tfoot>
-                        <tr>
-                            <th>Users List Name</th>
-                            <th>Users List Phone No</th>
-                            <th>Users List Email</th>
-                            <th>Users List Role</th>
-                            <th>Users List Status</th>  
-                        </tr>
-                  </tfoot>
                 </table>
               </div>
             </div>

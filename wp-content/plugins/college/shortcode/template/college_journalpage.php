@@ -49,7 +49,20 @@ $settings =   array(
                 <?php wp_editor( $content, $editor_id, $settings = array() ); ?>
               </div>
             </div>
-    
+            
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="name">Please Choose Image (600*600)</label>
+                <div class="col-md-9 slider_image">
+                    <img alt="Profile image" src="<?php echo $journal['images']['url'];?>" class="imageup" id="uploaded-image">
+                    <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">
+                </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Impact Number</label>
+              <div class="col-md-9">
+                <input id="impact_no" name="issn_no" type="text" placeholder="Impact Number" class="form-control" value="<?php echo $journal['impact_no'];?>">
+              </div>
+            </div>
             <!-- Form actions -->
             <div class="form-group">
               <div class="col-md-12 text-right">
@@ -67,7 +80,59 @@ $settings =   array(
 <script src="<?php echo WP_BAG_PL_URL?>js/jscolor.js"></script>
 
 <script>
-    
+    jQuery('.file-upload').change(function (e) {
+            if (isFileAPISupported()) {
+                var F = this.files;
+                if (F && F[0])
+                    for (var i = 0; i < F.length; i++)
+                        readImage(F[i]);
+            }else{
+                jQuery('#uploaded-image').attr('src', "../images/default.png");
+            }
+            
+    });
+    function isFileAPISupported() {
+            if (window.File && window.FileReader && window.FileList && window.Blob)
+                return true;
+            else
+                return false;
+        }
+        
+        function readImage(file) {
+
+            var reader = new FileReader();
+            var image = new Image();
+
+            reader.readAsDataURL(file);
+            reader.onload = function (_file) {
+                jQuery('#file_validation_msg').addClass('hide-error');
+                image.src = _file.target.result; // url.createObjectURL(file);
+                image.onload = function () {
+                    var w = this.width,
+                    h = this.height,
+                    t = file.type,
+                    // ext only: // file.type.split('/')[1],
+                    name = file.name,
+                    s = ~~(file.size / 1024) + 'KB';
+                    
+                    if(t.indexOf("image")!= -1){
+                        jQuery('#uploaded-image').removeClass('imageup');
+                        jQuery('#uploaded-image').attr('src', _file.target.result);
+                        jQuery('.file_chooser div').text(name);
+                    }else{
+                        jQuery('#file_validation_msg').removeClass('hide-error');
+                        jQuery('.file-upload').wrap('<form>').parent('form').trigger('reset');
+                        jQuery('.file-upload').unwrap();
+                    }				
+                };
+            };
+            image.onerror = function () {
+                jQuery('#file_validation_msg').removeClass('hide-error');
+                jQuery('.file-upload').wrap('<form>').parent('form').trigger('reset');
+                jQuery('.file-upload').unwrap();
+            };
+
+        }
 
     jQuery( "#journal-form" ).submit(function( event ) {
         tinyMCE.triggerSave();
@@ -83,26 +148,36 @@ $settings =   array(
         if(jQuery('#journal_frontend_editor').val()==""){
             noerrorFlag=0;
         }
+        if(jQuery('#impact_no').val()==""){
+            noerrorFlag=0;
+        }
+        if((jQuery('#images').val()=="") && (jQuery('#journalid').val()="")){
+            noerrorFlag=0;
+        }
         if(noerrorFlag){
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+          var fd = new FormData();
+          var file = jQuery(document).find('input[type="file"]');
+          var individual_file = file[0].files[0];
+          fd.append("images", individual_file); 
+          fd.append("impact_no", jQuery('#impact_no').val()); 
+          fd.append("name", jQuery('#name').val());
+          fd.append("issn_no", jQuery('#issn_no').val());
+          fd.append("color", jQuery('.jscolor').val());
+          fd.append("desc", jQuery('#journal_frontend_editor').val());
+          fd.append("journalid", jQuery('#journalid').val());
+          fd.append('action', 'college_journal');             
+
           jQuery.ajax({
-              url: ajaxurl,
               type: 'POST',
-              data: {
-                  'action':'college_journal',
-                  'name' : jQuery('#name').val(),
-                  'issn_no' : jQuery('#issn_no').val(),
-                  'color' : jQuery('.jscolor').val(),
-                  'desc' : jQuery('#journal_frontend_editor').val(),
-                  'journalid' : jQuery('#journalid').val(),
-              },
-              success:function(data) {
+              url: "<?php echo admin_url('admin-ajax.php'); ?>",
+              data: fd,
+              contentType: false,
+              processData: false,
+              success: function(response){
                   window.location = "<?php echo get_buzz_url('college_journal_list');?>";
-              },
-              error: function(errorThrown){
-                  console.log(errorThrown);
               }
-          });  
+          });
         }
         else{
           jQuery('#errorMsg').removeClass('hide-error');

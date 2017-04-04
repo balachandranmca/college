@@ -11,6 +11,6 @@ class Journal extends Eloquent
 
     protected $primaryId = 'id';
 
-    protected $fillable = ['name', 'issn_no', 'color', 'des'];
+    protected $fillable = ['name', 'issn_no', 'color', 'des', 'images', 'impact_no'];
 
 }

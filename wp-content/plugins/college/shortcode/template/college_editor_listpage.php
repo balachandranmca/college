@@ -14,6 +14,7 @@
                   <thead>
                     <tr>
                         <th>Name</th>
+                        <th>Photo</th>
                         <th>Phone No</th>
                         <th>Email Id</th>
                         <th>File</th>
@@ -24,8 +25,11 @@
                     <?php foreach ($editorList as $key => $value) { ?>
                                 <tr>
                                 <td><?php echo $value['name'];?></td>
+                                <?php $photo =  json_decode($value['photo'],1); ?>
+                                <td><img src="<?php echo $photo['url'];?>"></td>
                                 <td><?php echo $value['phone_no'];?></td>
                                 <td><?php echo $value['email_id'];?></td>
+                                
                                 <?php $files =  json_decode($value['files'],1); ?>
                                 <td><a href="<?php echo $files['url'];?>" download>Download the File</a></td>
                                 <?php if($value['is_verified']){ ?>
