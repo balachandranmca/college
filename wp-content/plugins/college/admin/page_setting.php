@@ -50,6 +50,7 @@ function Page_Settings() {
 		"college_author_issue_paper" => "College Author Issue Paper",
 		"college_author_paper_list" => "College Author Paper List",
 		"college_author_paper" => "College Author Paper",
+		"college_reviewer_dashboard" => "College Reviewer Dashboard",
 	);
 
 	if (isset($_POST['pagesubmit'])) {

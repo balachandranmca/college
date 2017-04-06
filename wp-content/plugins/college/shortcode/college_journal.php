@@ -11,6 +11,7 @@ function college_journal_shortcode($atts) {
 	if(isset($_GET['id'])){
 		$journal = Journal::where('id', $_GET['id'])->get()->toArray();
 		$journal = $journal[0];
+		$journal['images'] = json_decode($journal['images'], 1);
 	}
 	ob_start();
 	include_once 'template/college_journalpage.php';
@@ -25,18 +26,34 @@ function college_journal()
 {
 	if($_POST['journalid']) {
 		$journal = Journal::where('id', $_POST['journalid']);
-		$journals['name'] =  $_POST['name'];
-		$journals['issn_no'] = $_POST['issn_no'];
-		$journals['color'] = $_POST['color'];
-		$journals['des'] = stripslashes($_POST['desc']);
-		$journal->update($journals);
+		if($_FILES['images']){
+			$image_old = json_decode($journal->images,1);
+			unlink( $image_old['file'] );
+			$uploadedfile = $_FILES['images'];
+			$upload_overrides = array( 'test_form' => false );
+			$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+			$journals['images'] = json_encode($movefile);
+			$journals['name'] =  $_POST['name'];
+			$journals['issn_no'] = $_POST['issn_no'];
+			$journals['color'] = $_POST['color'];
+			$journals['impact_no'] = $_POST['impact_no'];
+			$journals['des'] = stripslashes($_POST['desc']);
+			$journal->update($journals);
+		}
 	}
 	else {
-		$journal['name'] = $_POST['name'];
-		$journal['issn_no'] = $_POST['issn_no'];
-		$journal['color'] = $_POST['color'];
-		$journal['des'] = stripslashes($_POST['desc']);
-		$data = Journal::create($journal);
+		$uploadedfile = $_FILES['images'];
+		$upload_overrides = array( 'test_form' => false );
+		$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+		$journal['images'] = json_encode($movefile);
+		if ( $movefile && ! isset( $movefile['error'] ) ) {
+			$journal['name'] = $_POST['name'];
+			$journal['issn_no'] = $_POST['issn_no'];
+			$journal['color'] = $_POST['color'];
+			$journal['des'] = stripslashes($_POST['desc']);
+			$journal['impact_no'] = $_POST['impact_no'];
+			$data = Journal::create($journal);
+		}
 	}
 	echo json_encode(array('success'=>$data));
 	die;

@@ -93,6 +93,30 @@
                             <input type="text" id="mobile_no" value="<?php echo $journal_editor['mobile_no'];?>">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Facebook Url</label>
+                        <div class="col-md-9">
+                            <input type="text" id="fb_url" value="<?php echo $journal_editor['fb_url'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Twitter Url</label>
+                        <div class="col-md-9">
+                            <input type="text" id="tw_url" value="<?php echo $journal_editor['tw_url'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Google Plus Url</label>
+                        <div class="col-md-9">
+                            <input type="text" id="gp_url" value="<?php echo $journal_editor['gp_url'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">LinkedIn Url</label>
+                        <div class="col-md-9">
+                            <input type="text" id="ln_url" value="<?php echo $journal_editor['ln_url'];?>">
+                        </div>
+                    </div>
                 <div id="errorMsg" class='hide-error'>Please fill all fields</div>
                 <div class="form-group">
                     <div class="col-md-12 text-right">
@@ -196,6 +220,10 @@
             fd.append("journal_id", journal_id); 
             fd.append("type", editor_type);
             fd.append("journal_editorid", journal_editorid);
+            fd.append('fb_url', jQuery('#fb_url').val());
+            fd.append('tw_url', jQuery('#tw_url').val());
+            fd.append('gp_url', jQuery('#gp_url').val());
+            fd.append('ln_url', jQuery('#ln_url').val());
             fd.append('action', 'college_journal_editor');  
             
             

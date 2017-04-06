@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Paper Template</label>
+                        <label class="col-md-3 control-label" for="name">Upload Paper</label>
                         <div class="col-md-9 slider_image">
                             <input class='file-upload' type="file" name="paper_template" id="paper_template" required>
                         </div>
@@ -28,49 +28,6 @@
                         <label class="col-md-3 control-label" for="name">Copyright Form</label>
                         <div class="col-md-9 slider_image">
                             <input class='file-upload' type="file" name="copyright" id="copyright" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Type of Reviewer</label>
-                        <div class="col-md-9 slider_image">
-                            <span id="existing" style="margin-right:10px; cursor: pointer;">Existing </span><span id="new" style="margin-right:10px; cursor: pointer;">  New</span>
-                        </div>
-                    </div>
-                    <div id="existing_reviewer">
-                        <div class="form-group">
-                            <label class="col-md-3 control-label" for="name">Reviewer 1</label>
-                            <div class="col-md-9 slider_image">
-                                <select id="reviewer1">
-                                    <option value="0">Please Select ..</option>
-                                    <?php foreach ($users as $key => $user) { ?>
-                                        <option value="<?php echo $user->ID;?>"><?php echo $user->data->user_nicename."--->".$user->data->user_email;?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-3 control-label" for="name">Reviewer 2</label>
-                            <div class="col-md-9 slider_image">
-                                <select id="reviewer2">
-                                    <option value="0">Please Select ..</option>
-                                    <?php foreach ($users as $key => $user) { ?>
-                                        <option value="<?php echo $user->ID;?>"><?php echo $user->data->user_nicename."--->".$user->data->user_email;?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-3 control-label" for="name">Reviewer 3</label>
-                            <div class="col-md-9 slider_image">
-                                <select id="reviewer3">
-                                    <option value="0">Please Select ..</option>
-                                    <?php foreach ($users as $key => $user) { ?>
-                                        <option value="<?php echo $user->ID;?>"><?php echo $user->data->user_nicename."--->".$user->data->user_email;?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div id="new_reviewer">
@@ -124,19 +81,13 @@
      </div>
 </div>
 <script>
-    jQuery(document).ready(function(e){
-        jQuery('#existing_reviewer').show();
-        jQuery('#new_reviewer').hide();
-        jQuery(document).on('click', '#existing', function(e){
-            e.preventDefault();
-            jQuery('#existing_reviewer').show();
-            jQuery('#new_reviewer').hide();
-        });
-        jQuery(document).on('click', '#new', function(e){
-            e.preventDefault();
-            jQuery('#existing_reviewer').hide();
-            jQuery('#new_reviewer').show();
-        });
+    jQuery('.file-upload').on( 'change', function() {
+        myfile= jQuery( this ).val();
+        var ext = myfile.split('.').pop();
+        if(ext!="docx" && ext!="doc"){
+            alert("Invalid File Format");
+            jQuery( this ).val('');
+        } 
     });
     jQuery(document).on('click', '#author_paper_upload', function(e){
         e.preventDefault();
@@ -145,6 +96,7 @@
         if(jQuery('#paper_template').val()=="" || jQuery('#copyright').val()==""){
             noerrorFlag=0;
         }
+        noerrorFlag=0;
         if(jQuery('.call_for_paper_dropdown').val()=="0"){
             noerrorFlag=0;
         }
@@ -159,22 +111,15 @@
             fd.append("issue_id", jQuery('.call_for_paper_dropdown').val());
             fd.append("paper_template", paper_template); 
             fd.append("copyright", copyright);
-            if(jQuery('#reviewer1').val()!=0 || jQuery('#reviewer2').val()!=0 || jQuery('#reviewer3').val()!=0){
-                fd.append("reviewer1", jQuery('#reviewer1').val());
-                fd.append("reviewer2", jQuery('#reviewer2').val());
-                fd.append("reviewer3", jQuery('#reviewer3').val());
-            }
-            else{
-                fd.append("reviewer1_name", jQuery('#reviewer1_name').val());
-                fd.append("reviewer1_phno", jQuery('#reviewer1_phno').val());
-                fd.append("reviewer1_email", jQuery('#reviewer1_email').val());
-                fd.append("reviewer2_name", jQuery('#reviewer2_name').val());
-                fd.append("reviewer2_phno", jQuery('#reviewer2_phno').val());
-                fd.append("reviewer2_email", jQuery('#reviewer2_email').val());
-                fd.append("reviewer3_name", jQuery('#reviewer3_name').val());
-                fd.append("reviewer3_phno", jQuery('#reviewer3_phno').val());
-                fd.append("reviewer3_email", jQuery('#reviewer3_email').val());
-            }
+            fd.append("reviewer1_name", jQuery('#reviewer1_name').val());
+            fd.append("reviewer1_phno", jQuery('#reviewer1_phno').val());
+            fd.append("reviewer1_email", jQuery('#reviewer1_email').val());
+            fd.append("reviewer2_name", jQuery('#reviewer2_name').val());
+            fd.append("reviewer2_phno", jQuery('#reviewer2_phno').val());
+            fd.append("reviewer2_email", jQuery('#reviewer2_email').val());
+            fd.append("reviewer3_name", jQuery('#reviewer3_name').val());
+            fd.append("reviewer3_phno", jQuery('#reviewer3_phno').val());
+            fd.append("reviewer3_email", jQuery('#reviewer3_email').val());
             fd.append("author_issue_paperid", jQuery('#author_issue_paperid').val());            
             fd.append('action', 'college_author_issue_paper');  
             

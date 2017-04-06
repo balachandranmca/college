@@ -44,6 +44,10 @@ function college_journal_editor()
 		$journal_editors['city_country'] = $_POST['city_country'];
 		$journal_editors['emailid'] = $_POST['emailid'];
 		$journal_editors['mobile_no'] = $_POST['mobile_no'];
+		$journal_editors['fb_url'] = $_POST['fb_url'];
+		$journal_editors['tw_url'] = $_POST['tw_url'];
+		$journal_editors['gp_url'] = $_POST['gp_url'];
+		$journal_editors['ln_url'] = $_POST['ln_url'];
 
 		if($_FILES['file']){
 			$image_old = json_decode($journal_editor->image,1);
@@ -77,6 +81,10 @@ function college_journal_editor()
 			$journal_editor['city_country'] = $_POST['city_country'];
 			$journal_editor['emailid'] = $_POST['emailid'];
 			$journal_editor['mobile_no'] = $_POST['mobile_no'];
+			$journal_editor['fb_url'] = $_POST['fb_url'];
+			$journal_editor['tw_url'] = $_POST['tw_url'];
+			$journal_editor['gp_url'] = $_POST['gp_url'];
+			$journal_editor['ln_url'] = $_POST['ln_url'];
 			
 			
 			$data = JournalEditor::create($journal_editor);
