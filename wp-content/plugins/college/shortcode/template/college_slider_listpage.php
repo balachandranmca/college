@@ -36,15 +36,6 @@
                             <td style="vertical-align: middle;"><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="delete btn btn-danger" data-title="Delete" data-toggle="modal" data-id="<?php echo $value['id'];?>" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
                         <?php } ?>
                         </tbody>
-                        <tfoot>
-                          <tr>
-                              <th>Slider Creator Image</th>
-                              <th>Slider Creator Name</th>
-                              <th>Slider Creator Description</th> 
-                              <th>Slider Creator Edit</th>
-                              <th>Slider Creator Delete</th>  
-                          </tr>
-                        </tfoot> 
                 </table>
               </div>
             </div>

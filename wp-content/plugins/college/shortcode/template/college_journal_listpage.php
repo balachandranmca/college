@@ -32,14 +32,6 @@
                             </tr>
                         <?php } ?>
                     </tbody>
-					<tfoot>
-						<tr>
-							<th>Journal Name</th>
-							<th>Journal No</th>
-							<th>Journal Edit</th>
-							<th>Journal Delete</th>
-						</tr>
-					</tfoot>
                 </table>
               </div>
             </div>

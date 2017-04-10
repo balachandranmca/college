@@ -37,15 +37,6 @@
                                 </tr>
                             <?php } ?>  
                   </tbody>
-                  <tfoot>
-                        <tr>
-                            <th>Journal Editor Image</th>
-                            <th>Journal Editor Name</th>
-                            <th>Journal Editor Type</th>
-                            <th>Journal Editor Edit</th>
-                            <th>Journal Editor Delete</th>
-                        </tr>
-                  </tfoot>
                 </table>
               </div>
             </div>

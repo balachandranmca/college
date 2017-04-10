@@ -40,15 +40,6 @@
                                 </tr>
                             <?php } ?> 
                   </tbody>
-                  <tfoot>
-                        <tr>
-                            <th>Editor Name</th>
-                            <th>Editor Phone No</th>
-                            <th>Editor Email Id</th>
-                            <th>Editor File</th>
-                            <th>Editor Verify</th> 
-                        </tr>
-                  </tfoot>
                 </table>
               </div>
             </div>
