@@ -46,18 +46,6 @@
                         </tr>
                         <?php } ?>  
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Issue No</th>
-                            <th>Issue Name</th>
-                            <th>Issue olume</th>
-                            <th>Issue Journal</th>
-                            <th>Issue Uploaded Paper</th>
-                            <th>Issue Publish</th>
-                            <th>Issue Edit</th>
-                            <th>Issue Delete</th>
-                        </tr>
-                    </tfoot>
                 </table>
               </div>
             </div>

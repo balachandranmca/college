@@ -6566,9 +6566,8 @@ Copyright (c) 2013 Daniel Eden
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 40px;
-  text-transform: uppercase;
 }
-/* line 222, sass/common.scss */
+/* line 221, sass/common.scss */
 #home #slitSlider .carousel-caption h3 {
   color: #fff;
   font-family: Oswald, sans-serif;
@@ -6580,7 +6579,7 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Navigation
 ==================================================================*/
-/* line 236, sass/common.scss */
+/* line 235, sass/common.scss */
 .navbar-inverse {
   background-color: #028fcc;
   width: 100%;
@@ -6588,36 +6587,36 @@ Copyright (c) 2013 Daniel Eden
   border: 0 none;
 }
 @media (min-width: 1200px) {
-  /* line 236, sass/common.scss */
+  /* line 235, sass/common.scss */
   .navbar-inverse {
     height: 70px;
   }
 }
 
-/* line 246, sass/common.scss */
+/* line 245, sass/common.scss */
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
 
-/* line 251, sass/common.scss */
+/* line 250, sass/common.scss */
 .navbar-brand {
   height: auto;
   padding: 0;
 }
-/* line 254, sass/common.scss */
+/* line 253, sass/common.scss */
 .navbar-brand h1 {
   margin: 0;
   letter-spacing: 2px;
   color: #fff;
   padding: 15px;
 }
-/* line 260, sass/common.scss */
+/* line 259, sass/common.scss */
 .navbar-brand .navbar-collapse {
   margin-top: 8px;
 }
 
-/* line 264, sass/common.scss */
+/* line 263, sass/common.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
   font-size: 14px;
@@ -6628,24 +6627,24 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: background .5s ease-in-out 0s;
   transition: background .5s ease-in-out 0s;
 }
-/* line 274, sass/common.scss */
+/* line 273, sass/common.scss */
 .navbar-inverse .navbar-nav > li.current > a {
   color: #fff;
   background-color: #000;
 }
 
-/* line 282, sass/common.scss */
+/* line 281, sass/common.scss */
 .expend {
   color: #fff;
   background-color: #000;
 }
 
-/* line 287, sass/common.scss */
+/* line 286, sass/common.scss */
 .nav li {
   margin: 0 !important;
 }
 
-/* line 290, sass/common.scss */
+/* line 289, sass/common.scss */
 .nav ul {
   list-style: none;
   width: auto;
@@ -6653,7 +6652,7 @@ Copyright (c) 2013 Daniel Eden
   z-index: 888;
 }
 
-/* line 297, sass/common.scss */
+/* line 296, sass/common.scss */
 .nav li a {
   display: block;
   padding: 10px 15px;
@@ -6668,47 +6667,47 @@ Copyright (c) 2013 Daniel Eden
   text-decoration: none;
 }
 
-/* line 311, sass/common.scss */
+/* line 310, sass/common.scss */
 .nav li:hover {
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
 }
 
-/* line 317, sass/common.scss */
+/* line 316, sass/common.scss */
 .nav li {
   position: relative;
 }
 
-/* line 326, sass/common.scss */
+/* line 325, sass/common.scss */
 .nav > li > a.parent {
   background: url(../images/arrow.png) no-repeat 15px 18px;
   padding: 10px 10px 10px 30px;
 }
 
-/* line 331, sass/common.scss */
+/* line 330, sass/common.scss */
 .nav > li > a.parent:hover {
   background: url(../images/arrow.png) no-repeat 15px 18px #fff;
   padding: 10px 10px 10px 30px;
 }
 
-/* line 336, sass/common.scss */
+/* line 335, sass/common.scss */
 .nav > li {
   float: left;
   margin: 0 10px;
 }
 
-/* line 341, sass/common.scss */
+/* line 340, sass/common.scss */
 .nav > li > a:hover {
   color: fff !important;
 }
 
-/* line 345, sass/common.scss */
+/* line 344, sass/common.scss */
 .nav > li.hover > ul {
   left: -1px;
   top: 40px;
 }
 
-/* line 350, sass/common.scss */
+/* line 349, sass/common.scss */
 .nav li li.hover ul {
   left: 100%;
   -webkit-transition: background .2s linear;
@@ -6718,7 +6717,7 @@ Copyright (c) 2013 Daniel Eden
   transition: background .2s linear;
 }
 
-/* line 359, sass/common.scss */
+/* line 358, sass/common.scss */
 .nav > li > li > a {
   font-size: 0.85em;
   padding: 10px 20px;
@@ -6739,17 +6738,17 @@ Copyright (c) 2013 Daniel Eden
   text-transform: lowercase;
 }
 
-/* line 379, sass/common.scss */
+/* line 378, sass/common.scss */
 .nav li li {
   border-top: none;
 }
 
-/* line 383, sass/common.scss */
+/* line 382, sass/common.scss */
 .nav li li:hover {
   border-top: none;
 }
 
-/* line 387, sass/common.scss */
+/* line 386, sass/common.scss */
 .nav > li > ul {
   position: absolute;
   left: -9999px;
@@ -6758,7 +6757,7 @@ Copyright (c) 2013 Daniel Eden
   background: #fff;
 }
 
-/* line 395, sass/common.scss */
+/* line 394, sass/common.scss */
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
   color: #fff !important;
   background-color: transparent;
@@ -6766,39 +6765,39 @@ Copyright (c) 2013 Daniel Eden
 
 /*******************Media Queries Starts Here*************/
 @media (max-width: 1024px) {
-  /* line 402, sass/common.scss */
+  /* line 401, sass/common.scss */
   .nav li a {
     margin: 0 5px;
   }
 
-  /* line 406, sass/common.scss */
+  /* line 405, sass/common.scss */
   .nav > li.hover > ul {
     left: 4px;
   }
 
-  /* line 410, sass/common.scss */
+  /* line 409, sass/common.scss */
   ul.comment-list .desc {
     width: 89%;
   }
 }
 @media (max-width: 767px) {
-  /* line 415, sass/common.scss */
+  /* line 414, sass/common.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
     background-color: #fff !important;
     color: #000 !important;
   }
 
-  /* line 419, sass/common.scss */
+  /* line 418, sass/common.scss */
   .nav > li {
     float: none !important;
   }
 
-  /* line 423, sass/common.scss */
+  /* line 422, sass/common.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
   }
 
-  /* line 426, sass/common.scss */
+  /* line 425, sass/common.scss */
   .navbar-toggle {
     margin-top: 20px !important;
   }
@@ -6806,15 +6805,15 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	About us section
 ==================================================================*/
-/* line 434, sass/common.scss */
+/* line 433, sass/common.scss */
 #about {
   padding: 20px 0 0 0;
 }
-/* line 436, sass/common.scss */
+/* line 435, sass/common.scss */
 #about h2 {
   letter-spacing: 2px;
 }
-/* line 437, sass/common.scss */
+/* line 436, sass/common.scss */
 #about .icon-box {
   position: relative;
   width: 160px;
@@ -6838,7 +6837,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition-property: transform;
   transition-property: transform;
 }
-/* line 459, sass/common.scss */
+/* line 458, sass/common.scss */
 #about .icon-box:hover {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -6846,7 +6845,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-/* line 466, sass/common.scss */
+/* line 465, sass/common.scss */
 #about .icon-box:before, #about .icon-box:after {
   content: "";
   position: absolute;
@@ -6861,19 +6860,19 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
 }
-/* line 480, sass/common.scss */
+/* line 479, sass/common.scss */
 #about .icon-box:before {
   top: -56.5685px;
   border-top: solid 4.2426px #ddd;
   border-right: solid 4.2426px #ddd;
 }
-/* line 485, sass/common.scss */
+/* line 484, sass/common.scss */
 #about .icon-box:after {
   bottom: -56.5685px;
   border-bottom: solid 4.2426px #ddd;
   border-left: solid 4.2426px #ddd;
 }
-/* line 492, sass/common.scss */
+/* line 491, sass/common.scss */
 #about .title h2 {
   color: #333;
 }
@@ -6881,29 +6880,29 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Services section
 ==================================================================*/
-/* line 502, sass/common.scss */
+/* line 501, sass/common.scss */
 #services {
   margin-top: 25px;
 }
-/* line 504, sass/common.scss */
+/* line 503, sass/common.scss */
 #services .title {
   padding-bottom: 60px;
 }
-/* line 507, sass/common.scss */
+/* line 506, sass/common.scss */
 #services .service-block {
   padding: 50px 20px;
   margin-bottom: 40px;
   border-radius: 50px;
 }
-/* line 512, sass/common.scss */
+/* line 511, sass/common.scss */
 #services .service-icon {
   margin-bottom: 40px;
 }
-/* line 516, sass/common.scss */
+/* line 515, sass/common.scss */
 #services .service-block h3 {
   text-transform: uppercase;
 }
-/* line 520, sass/common.scss */
+/* line 519, sass/common.scss */
 #services .title h2 {
   color: #333;
 }
@@ -6911,33 +6910,33 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Contact
 ==================================================================*/
-/* line 530, sass/common.scss */
+/* line 529, sass/common.scss */
 #contact-us {
   margin-top: 60px;
   padding: 70px 0 0;
   background: #027db3;
 }
-/* line 534, sass/common.scss */
+/* line 533, sass/common.scss */
 #contact-us .row {
   color: #fff;
 }
-/* line 536, sass/common.scss */
+/* line 535, sass/common.scss */
 #contact-us .row a {
   color: #fff;
 }
-/* line 538, sass/common.scss */
+/* line 537, sass/common.scss */
 #contact-us .contact-info p {
   margin-bottom: 25px;
 }
-/* line 542, sass/common.scss */
+/* line 541, sass/common.scss */
 #contact-us .con-info {
   margin-bottom: 20px;
 }
-/* line 544, sass/common.scss */
+/* line 543, sass/common.scss */
 #contact-us .con-info i {
   float: left;
 }
-/* line 547, sass/common.scss */
+/* line 546, sass/common.scss */
 #contact-us .con-info span {
   float: left;
   margin: -5px 0 0 15px;
@@ -6946,7 +6945,7 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Our Portfolio section
 ==================================================================*/
-/* line 558, sass/common.scss */
+/* line 557, sass/common.scss */
 .carousel-section .our-portfoliosection {
   padding-bottom: 60px;
 }
@@ -6954,20 +6953,20 @@ Copyright (c) 2013 Daniel Eden
 /*=================================================================
 	Footer section
 ==================================================================*/
-/* line 567, sass/common.scss */
+/* line 566, sass/common.scss */
 .social-icon {
   padding: 60px 0 35px;
 }
-/* line 569, sass/common.scss */
+/* line 568, sass/common.scss */
 .social-icon > ul {
   text-align: center;
 }
-/* line 571, sass/common.scss */
+/* line 570, sass/common.scss */
 .social-icon > ul > li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 574, sass/common.scss */
+/* line 573, sass/common.scss */
 .social-icon > ul > li > a {
   background-color: #26292e;
   display: block;
@@ -6983,7 +6982,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all 400ms ease-out 0s;
   transition: all 400ms ease-out 0s;
 }
-/* line 588, sass/common.scss */
+/* line 587, sass/common.scss */
 .social-icon > ul > li > a > i {
   color: #55606a;
   display: inline-block;
@@ -7002,7 +7001,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transition: all 400ms ease-out 0s;
   transition: all 400ms ease-out 0s;
 }
-/* line 607, sass/common.scss */
+/* line 606, sass/common.scss */
 .social-icon > ul > li:hover a {
   background-color: #6CB670;
   -webkit-transform: rotateY(0deg);
@@ -7011,7 +7010,7 @@ Copyright (c) 2013 Daniel Eden
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 614, sass/common.scss */
+/* line 613, sass/common.scss */
 .social-icon > ul > li:hover a i {
   color: #fff;
   opacity: 1;
@@ -7023,28 +7022,28 @@ Copyright (c) 2013 Daniel Eden
   transform: rotateY(0deg);
 }
 
-/* line 629, sass/common.scss */
+/* line 628, sass/common.scss */
 .copyright {
   padding: 20px 0;
   color: #fff;
 }
-/* line 632, sass/common.scss */
+/* line 631, sass/common.scss */
 .copyright > img {
   margin-bottom: 15px;
 }
 
-/* line 636, sass/common.scss */
+/* line 635, sass/common.scss */
 .footer-bottom {
   background-color: #fff;
   padding: 20px 0 10px;
 }
 
-/* line 641, sass/common.scss */
+/* line 640, sass/common.scss */
 .footer-bottom a:hover {
   text-decoration: underline;
 }
 
-/* line 645, sass/common.scss */
+/* line 644, sass/common.scss */
 #scrollUp {
   border: 1px solid #fff;
   background-color: #027db3;
@@ -7057,19 +7056,19 @@ Copyright (c) 2013 Daniel Eden
   z-index: 600;
 }
 
-/* line 662, sass/common.scss */
+/* line 661, sass/common.scss */
 .viewpage-content h2 {
   text-align: center;
 }
 
-/* line 667, sass/common.scss */
+/* line 666, sass/common.scss */
 .login-background {
   background-image: url(https://s13.postimg.org/8xs7irifb/education2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-/* line 673, sass/common.scss */
+/* line 672, sass/common.scss */
 .login-background .loginbox {
   background: fff;
   color: black;
@@ -7082,32 +7081,32 @@ Copyright (c) 2013 Daniel Eden
 }
 
 /* adjust body when menu is open */
-/* line 687, sass/common.scss */
+/* line 686, sass/common.scss */
 body.slide-active {
   overflow-x: hidden;
 }
 
 /*first child of #page-content so it doesn't shift around*/
-/* line 691, sass/common.scss */
+/* line 690, sass/common.scss */
 .no-margin-top {
   margin-top: 0px !important;
 }
 
 /*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
-/* line 695, sass/common.scss */
+/* line 694, sass/common.scss */
 #page-content {
   position: relative;
   padding-top: 70px;
   left: 0;
 }
 
-/* line 700, sass/common.scss */
+/* line 699, sass/common.scss */
 #page-content.slide-active {
   padding-top: 0;
 }
 
 /* put toggle bars on the left :: not using button */
-/* line 704, sass/common.scss */
+/* line 703, sass/common.scss */
 #navigation .navbar-toggle {
   cursor: pointer;
   position: relative;
@@ -7121,7 +7120,7 @@ body.slide-active {
 }
 
 /* icon bar prettyup - optional */
-/* line 716, sass/common.scss */
+/* line 715, sass/common.scss */
 #navigation .navbar-toggle > .icon-bar {
   width: 100%;
   display: block;
@@ -7129,31 +7128,31 @@ body.slide-active {
   margin: 5px 0 0 0;
 }
 
-/* line 722, sass/common.scss */
+/* line 721, sass/common.scss */
 #navigation .navbar-toggle.slide-active .icon-bar {
   background: orange;
 }
 
-/* line 725, sass/common.scss */
+/* line 724, sass/common.scss */
 .navbar-header {
   position: relative;
 }
 
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 @media (max-width: 767px) {
-  /* line 734, sass/common.scss */
+  /* line 733, sass/common.scss */
   #navigation .container {
     margin: 0;
     padding: 0 !important;
   }
 
-  /* line 738, sass/common.scss */
+  /* line 737, sass/common.scss */
   #navigation .navbar-header {
     margin: 0 auto;
     padding: 0 15px;
   }
 
-  /* line 742, sass/common.scss */
+  /* line 741, sass/common.scss */
   #navigation .navbar.slide-active {
     position: absolute;
     width: 80%;
@@ -7161,7 +7160,7 @@ body.slide-active {
     z-index: 1000;
   }
 
-  /* line 748, sass/common.scss */
+  /* line 747, sass/common.scss */
   #navigation #slidemenu {
     background: #f7f7f7;
     left: -100%;
@@ -7174,32 +7173,32 @@ body.slide-active {
     margin: 0;
   }
 
-  /* line 759, sass/common.scss */
+  /* line 758, sass/common.scss */
   #navigation #slidemenu .navbar-nav {
     min-width: 0;
     width: 100%;
     margin: 0;
   }
 
-  /* line 764, sass/common.scss */
+  /* line 763, sass/common.scss */
   #navigation #slidemenu .navbar-nav .dropdown-menu li a {
     min-width: 0;
     width: 80%;
     white-space: normal;
   }
 
-  /* line 769, sass/common.scss */
+  /* line 768, sass/common.scss */
   #navigation {
     border-top: 0;
   }
 
-  /* line 772, sass/common.scss */
+  /* line 771, sass/common.scss */
   #navigation.navbar-inverse #slidemenu {
     background: #333;
   }
 
   /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
-  /* line 776, sass/common.scss */
+  /* line 775, sass/common.scss */
   #navigation #navbar-height-col {
     position: fixed;
     top: 0;
@@ -7209,14 +7208,14 @@ body.slide-active {
     background: #eee;
   }
 
-  /* line 784, sass/common.scss */
+  /* line 783, sass/common.scss */
   #navigation.navbar-inverse #navbar-height-col {
     background: #333;
     z-index: 1;
     border: 0;
   }
 
-  /* line 789, sass/common.scss */
+  /* line 788, sass/common.scss */
   #navigation .navbar-form {
     width: 100%;
     margin: 8px 0;
@@ -7225,18 +7224,18 @@ body.slide-active {
     /*fast clearfixer*/
   }
 
-  /* line 796, sass/common.scss */
+  /* line 795, sass/common.scss */
   #navigation .navbar-form .form-control {
     text-align: center;
   }
 
-  /* line 799, sass/common.scss */
+  /* line 798, sass/common.scss */
   #navigation .navbar-form .btn {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 804, sass/common.scss */
+  /* line 803, sass/common.scss */
   .nav li li a {
     text-transform: capitalize;
     font-size: 0.85em;
@@ -7245,17 +7244,17 @@ body.slide-active {
     border-right: 1px solid #e8ebf1;
   }
 
-  /* line 811, sass/common.scss */
+  /* line 810, sass/common.scss */
   #page-content {
     left: 0 !important;
   }
 
-  /* line 814, sass/common.scss */
+  /* line 813, sass/common.scss */
   .navbar.navbar-fixed-top.slide-active {
     position: fixed;
   }
 
-  /* line 817, sass/common.scss */
+  /* line 816, sass/common.scss */
   .navbar-header {
     left: 0 !important;
   }
@@ -8290,35 +8289,39 @@ div.DTFC_LeftFootWrapper table {
   margin: 50px 0;
 }
 /* line 3, sass/journal-view.scss */
+.journal-viewpage-header .issueno {
+  margin-top: 10px;
+}
+/* line 4, sass/journal-view.scss */
 .journal-viewpage-header .header {
   padding: 5px;
 }
-/* line 6, sass/journal-view.scss */
+/* line 7, sass/journal-view.scss */
 .journal-viewpage-header .header-img {
   text-align: center;
   background: #faf7a0;
 }
-/* line 9, sass/journal-view.scss */
+/* line 10, sass/journal-view.scss */
 .journal-viewpage-header .header-img img {
   width: 100px;
 }
-/* line 13, sass/journal-view.scss */
+/* line 14, sass/journal-view.scss */
 .journal-viewpage-header .title, .journal-viewpage-header .issn-no {
   vertical-align: middle;
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 19, sass/journal-view.scss */
+  /* line 20, sass/journal-view.scss */
   .journal-viewpage-header .row {
     margin: 0;
   }
-  /* line 20, sass/journal-view.scss */
+  /* line 21, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     padding: 24px;
     margin: 0 auto;
     display: block;
   }
-  /* line 26, sass/journal-view.scss */
+  /* line 27, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 25px;
@@ -8326,7 +8329,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 33, sass/journal-view.scss */
+  /* line 34, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 14px;
     font-weight: 700 !important;
@@ -8336,20 +8339,20 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 43, sass/journal-view.scss */
+  /* line 44, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 15px;
     margin: 0px;
   }
-  /* line 47, sass/journal-view.scss */
+  /* line 48, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 19px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 53, sass/journal-view.scss */
+  /* line 54, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 28px;
     text-align: center;
@@ -8358,16 +8361,16 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 63, sass/journal-view.scss */
+  /* line 64, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     background: #faf7a0;
     padding: 14px;
   }
-  /* line 67, sass/journal-view.scss */
+  /* line 68, sass/journal-view.scss */
   .journal-viewpage-header .title {
     padding: 12px;
   }
-  /* line 69, sass/journal-view.scss */
+  /* line 70, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 25px;
@@ -8375,7 +8378,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 76, sass/journal-view.scss */
+  /* line 77, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 14px;
     font-weight: 700 !important;
@@ -8385,19 +8388,19 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 86, sass/journal-view.scss */
+  /* line 87, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 0;
   }
-  /* line 89, sass/journal-view.scss */
+  /* line 90, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 19px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 95, sass/journal-view.scss */
+  /* line 96, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 28px;
     text-align: center;
@@ -8406,11 +8409,11 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 105, sass/journal-view.scss */
+  /* line 106, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     padding: 37px;
   }
-  /* line 109, sass/journal-view.scss */
+  /* line 110, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 30px;
@@ -8418,7 +8421,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 116, sass/journal-view.scss */
+  /* line 117, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 28px;
     font-weight: 700 !important;
@@ -8428,19 +8431,19 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 126, sass/journal-view.scss */
+  /* line 127, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 22px;
   }
-  /* line 129, sass/journal-view.scss */
+  /* line 130, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 20px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 135, sass/journal-view.scss */
+  /* line 136, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 40px;
     text-align: center;
@@ -8449,11 +8452,11 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 @media (min-width: 1200px) {
-  /* line 144, sass/journal-view.scss */
+  /* line 145, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     padding: 30px;
   }
-  /* line 148, sass/journal-view.scss */
+  /* line 149, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 30px;
@@ -8461,7 +8464,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 155, sass/journal-view.scss */
+  /* line 156, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 28px;
     font-weight: 700 !important;
@@ -8471,19 +8474,19 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 165, sass/journal-view.scss */
+  /* line 166, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 15px;
   }
-  /* line 168, sass/journal-view.scss */
+  /* line 169, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 20px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 174, sass/journal-view.scss */
+  /* line 175, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 40px;
     text-align: center;
@@ -8492,20 +8495,20 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 
-/* line 184, sass/journal-view.scss */
+/* line 185, sass/journal-view.scss */
 .journal-view-table .table-content {
   margin: 0 auto;
   float: none;
 }
-/* line 188, sass/journal-view.scss */
+/* line 189, sass/journal-view.scss */
 .journal-view-table .box {
   padding: 20px;
 }
-/* line 190, sass/journal-view.scss */
+/* line 191, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues {
   border: 1px solid #333;
 }
-/* line 192, sass/journal-view.scss */
+/* line 193, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues .service-icon {
   background-color: #333439;
   color: #fff;
@@ -8515,12 +8518,12 @@ div.DTFC_LeftFootWrapper table {
   transition: background-color 0.2s ease;
   text-align: center;
 }
-/* line 201, sass/journal-view.scss */
+/* line 202, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues .Current-Issues-btn {
   padding: 15px;
 }
 
-/* line 208, sass/journal-view.scss */
+/* line 209, sass/journal-view.scss */
 .newsticker #tick {
   position: relative;
   display: block;
@@ -8530,7 +8533,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 209, sass/journal-view.scss */
+/* line 210, sass/journal-view.scss */
 .newsticker #tick li {
   list-style-type: none;
   float: right;
@@ -8538,7 +8541,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 224, sass/journal-view.scss */
+/* line 225, sass/journal-view.scss */
 .newsticker #tick2 {
   position: relative;
   display: block;
@@ -8548,7 +8551,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 225, sass/journal-view.scss */
+/* line 226, sass/journal-view.scss */
 .newsticker #tick2 li {
   list-style-type: none;
   float: right;
@@ -8556,7 +8559,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 240, sass/journal-view.scss */
+/* line 241, sass/journal-view.scss */
 .newsticker #outer {
   width: 600px;
   height: 25px;
@@ -8565,14 +8568,14 @@ div.DTFC_LeftFootWrapper table {
   margin: 0 auto;
   float: none;
 }
-/* line 247, sass/journal-view.scss */
+/* line 248, sass/journal-view.scss */
 .newsticker #outer a {
   text-decoration: none;
   color: #ff0000;
   font-family: Calibri;
   font-size: 18px;
 }
-/* line 252, sass/journal-view.scss */
+/* line 253, sass/journal-view.scss */
 .newsticker #outer a:hover {
   border-bottom: 2px solid #777;
 }

@@ -3,8 +3,8 @@
       <div class="col-md-3">
         <img src="https://www.macupdate.com/images/icons256/8382.png" class="img-responsive center-block" alt="">
       </div><!--.col -->
-      <div class="col-md-6 creator-content">
-        <div class="">
+      <div class="col-md-9 creator-content">
+        <div>
             <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
                 <fieldset>
                     <h3 class="text-center">SLIDER</h3>

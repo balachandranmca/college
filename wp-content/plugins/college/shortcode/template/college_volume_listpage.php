@@ -30,13 +30,6 @@
                             </tr>
                         <?php } ?>  
                   </tbody>
-                  <tfoot>
-                    <tr>
-                        <th>Volume Name</th>
-                        <th>Volume Edit</th>
-                        <th>Volume Delete</th>
-                    </tr>
-                </tfoot>
                 </table>
               </div>
             </div>
