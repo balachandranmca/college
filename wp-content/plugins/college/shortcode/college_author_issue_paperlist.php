@@ -25,6 +25,9 @@ function college_author_issue_paper_list_shortcode($atts) {
 	}
 	if($user_role == "administrator"){
 		$authorPaperList = AuthorIssuePaper::latest()->get()->toArray();
+		if(isset($_GET['key'])){
+			$authorPaperList = AuthorIssuePaper::where('status',$_GET['key'])->get()->toArray();
+		}
 	}
 	elseif ($user_role == "reviewer") {
 		$fullList = AuthorIssuePaper::latest()->get()->toArray();
