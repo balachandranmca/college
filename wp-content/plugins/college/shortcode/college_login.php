@@ -32,6 +32,13 @@ function college_login()
         echo json_encode(array('success'=>false));
     } else {
 		$aft_login = get_buzz_url('college_journal');
+		$role= get_current_user_role($user_signon->ID);
+		if(in_array('administrator', $role)){
+            $aft_login = get_buzz_url('college_admin_dashboard');
+        }
+		if (in_array('reviewer', $role)) {
+            $aft_login = get_buzz_url('college_reviewer_dashboard');
+        }
 		if($_POST['aft_login']){
 			$aft_login = urldecode($_POST['aft_login']);
 		}

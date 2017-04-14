@@ -23,6 +23,7 @@
 ?>
 <?php $page_id = get_the_ID(); ?>
 <?php if($is_admin) { ?>
+    <li<?php if($page_id == get_buzz_id('college_admin_dashboard')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_admin_dashboard') ?>">Dashboard</a></li>
     <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Journals
         <span class="caret"></span></a>
@@ -33,10 +34,16 @@
             <li<?php if($page_id == get_buzz_id('college_call_for_paper')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_call_for_paper') ?>">Call for paper</a></li>
         </ul>
     </li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sliders
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li<?php if($page_id == get_buzz_id('college_slider_list') || $page_id == get_buzz_id('college_slider')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_slider_list') ?>">Slider</a></li>
+            <li<?php if($page_id == get_buzz_id('college_carosel_slider_list') || $page_id == get_buzz_id('college_carosel_slider')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_carosel_slider_list') ?>">Portfolio Slider</a></li>
+        </ul>
+    </li>
     <li<?php if($page_id == get_buzz_id('college_author_paper_list') || $page_id == get_buzz_id('college_author_paper')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_author_paper_list');?>">Author Paper</a></li>
     <li<?php if($page_id == get_buzz_id('college_editor_list')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_editor_list') ?>">Editors</a></li>
-    <li<?php if($page_id == get_buzz_id('college_slider_list') || $page_id == get_buzz_id('college_slider')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_slider_list') ?>">Slider</a></li>
-    <li<?php if($page_id == get_buzz_id('college_carosel_slider_list') || $page_id == get_buzz_id('college_carosel_slider')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_carosel_slider_list') ?>">Portfolio Slider</a></li>
     <li<?php if($page_id == get_buzz_id('college_journal_editor_list') || $page_id == get_buzz_id('college_journal_editor')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_journal_editor_list') ?>">Journal Editors</a></li>
     <li<?php if($page_id == get_buzz_id('college_reviewer')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_reviewer') ?>">Reviewer</a></li>
     <li<?php if($page_id == get_buzz_id('college_user_list')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_user_list') ?>">User List</a></li>
@@ -45,6 +52,9 @@
 <?php } else { ?>
     <?php if(!is_user_logged_in()){ ?>
     <li><a href="<?php echo site_url();?>">Home</a></li>
+    <?php } ?>
+    <?php if($is_reviewer) { ?>
+        <li<?php if($page_id == get_buzz_id('college_reviewer_dashboard')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_reviewer_dashboard');?>">Dashboard</a></li>
     <?php } ?>
     <li<?php if($page_id == get_buzz_id('college_about_us')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_about_us');?>">About Us</a></li>
     <?php if($is_reviewer) { ?>

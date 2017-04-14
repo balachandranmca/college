@@ -13,6 +13,7 @@ function college_journal_view_shortcode($atts) {
 	if(isset($_GET['id'])){
 		$journal = Journal::where('id', $_GET['id'])->get()->toArray();
 		$journal = $journal[0];
+		$journal['images'] = json_decode($journal['images'], 1);
 		$issue = Issue::where('status', '=', 1)->where('published', '=', 1)->where('journal_id', $_GET['id'])->get()->toArray();
 		$volumeList = Volume::all()->sortBy('id')->toArray();
 		foreach ($volumeList as $key => $value) {
