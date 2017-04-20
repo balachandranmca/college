@@ -17,17 +17,17 @@
                     </div>
                 </div>
             </div>
-            <p data-toggle="modal" data-target="#issue_no_modal" id="" class="issueno btn btn-primary pull-right">Issue No - <span>5032154</span></p>
+            <p data-toggle="modal" data-target="#issue_no_modal" id="" class="issueno btn btn-primary pull-right">Impact No - <span><?php echo $journal['impact_no'];?></span></p>
             <div class="modal fade" id="issue_no_modal" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Issues No Details</h4>
+                        <h4 class="modal-title">Impact Details</h4>
                         </div>
                         <div class="modal-body">
-                         <img width="100%" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/issue_no.jpg"/>
+                         <img width="100%" src="<?php echo $journal['images']['url']?>"/>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -86,6 +86,7 @@
                     </tbody>
                 </table>
             </div>-->
+            <?php $i=1; ?>
             <?php foreach ($issue as $key => $value) { ?>
                 <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
                     <div class="row">
@@ -94,38 +95,45 @@
                                 <div class="service-icon">
                                     <!--<i class="fa fa-flask"></i>-->
                                     <p><?php echo $volume[$value['volume_id']]?></p>
-                                    <p><?php echo $value['issue_no'];?></p>
-                                    <p><?php echo $value['start_date'];?></p>
+                                    <?php 
+                                    $volumeIssues[$value['volume_id']][$i]['issue_no'] = $value['issue_no'];
+                                    $volumeIssues[$value['volume_id']][$i]['start_date'] = $value['start_date'];
+                                    $volumeIssues[$value['volume_id']][$i]['url'] = get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];
+                                    ?>
                                 </div>
                                 <div class="Current-Issues-btn text-center">
                                     <!--<a href="<?php echo get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];?>"></a>-->
-                                    <input type="button" class="text-center btn btn-success btn-lg" data-toggle="modal" data-target="#issuemodal" value="View" name="" id=""/>
+                                    <input type="button" class="text-center btn btn-success btn-lg" data-toggle="modal" data-target="#issuemodal<?php echo $value['volume_id'];?>" value="View" name="" id=""/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <?php $i++; } ?>
                 <!-- Modal -->
-                <div class="modal fade" id="issuemodal" role="dialog">
-                    <div class="modal-dialog">
-                    
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Issues List</h4>
+                <?php foreach ($volumeIssues as $issues) { ?>
+                    <div class="modal fade" id="issuemodal<?php echo key($issues);?>" role="dialog">
+                        <div class="modal-dialog">
+                        
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Issues List</h4>
+                            </div>
+                            <div class="modal-body">
+                            <?php foreach ($issues as $key) { ?>
+                               <p><?php echo $key['issue_no'];?> - <?php echo $key['start_date'];?> - <?php echo $key['url'];?></p>
+                            <?php } ?>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                        <p>Issues</p>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        
                         </div>
                     </div>
-                    
-                    </div>
-                </div>
-            <?php } ?>
+                <?php } ?>
         </div>
     </div>
 </section>

@@ -99,7 +99,6 @@
         if(jQuery('#paper_template').val()=="" || jQuery('#copyright').val()==""){
             noerrorFlag=0;
         }
-        //noerrorFlag=0;
         if(jQuery('.call_for_paper_dropdown').val()=="0"){
             noerrorFlag=0;
         }
