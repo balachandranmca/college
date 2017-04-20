@@ -1,7 +1,10 @@
 <div class="container slider-creator">
 	<div class="row">
-      <div class="col-md-6 creator-content">
-        <div class="well well-sm">
+     <div class="col-md-3">
+        <img src="https://www.macupdate.com/images/icons256/8382.png" class="img-responsive center-block" alt="">
+      </div>
+      <div class="col-md-9 creator-content">
+        <div>
             <form class="form-horizontal" enctype="multipart/form-data" name='authorform' id="authorform" method="post">
                 <fieldset>
                     <h3 class="text-center">AUTHOR PAPER</h3>
@@ -96,7 +99,7 @@
         if(jQuery('#paper_template').val()=="" || jQuery('#copyright').val()==""){
             noerrorFlag=0;
         }
-        noerrorFlag=0;
+        //noerrorFlag=0;
         if(jQuery('.call_for_paper_dropdown').val()=="0"){
             noerrorFlag=0;
         }
@@ -140,6 +143,7 @@
             jQuery('#errorMsg').removeClass('hide-error');
         }
     });
+    jQuery('body').css('background-color', '#333');
 </script>
 <style>
 .hide-error{
