@@ -10274,4 +10274,16 @@ div.DTFC_LeftFootWrapper table {
   float: none;
 }
 
+/* line 3, sass/paper-status.scss */
+.paperstatuspage .slider-listpage span {
+  margin: 12px;
+}
+/* line 6, sass/paper-status.scss */
+.paperstatuspage .slider-listpage span.active-status {
+  background: #ff0000;
+  padding: 7px;
+  color: #fff;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */

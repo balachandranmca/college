@@ -1,0 +1,13 @@
+.paperstatuspage{
+    .slider-listpage{
+        span{
+            margin: 12px;
+        }
+        span.active-status{
+            background: #ff0000;
+            padding: 7px;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+}
