@@ -8524,8 +8524,15 @@ div.DTFC_LeftFootWrapper table {
 .journal-view-table .box .Current-Issues .Current-Issues-btn {
   padding: 15px;
 }
+/* line 208, sass/journal-view.scss */
+.journal-view-table .issues-listmodal .list-block {
+  border: 1px solid #333;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
 
-/* line 209, sass/journal-view.scss */
+/* line 217, sass/journal-view.scss */
 .newsticker #tick {
   position: relative;
   display: block;
@@ -8535,7 +8542,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 210, sass/journal-view.scss */
+/* line 218, sass/journal-view.scss */
 .newsticker #tick li {
   list-style-type: none;
   float: right;
@@ -8543,7 +8550,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 225, sass/journal-view.scss */
+/* line 233, sass/journal-view.scss */
 .newsticker #tick2 {
   position: relative;
   display: block;
@@ -8553,7 +8560,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 226, sass/journal-view.scss */
+/* line 234, sass/journal-view.scss */
 .newsticker #tick2 li {
   list-style-type: none;
   float: right;
@@ -8561,7 +8568,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 241, sass/journal-view.scss */
+/* line 249, sass/journal-view.scss */
 .newsticker #outer {
   width: 600px;
   height: 25px;
@@ -8570,14 +8577,14 @@ div.DTFC_LeftFootWrapper table {
   margin: 0 auto;
   float: none;
 }
-/* line 248, sass/journal-view.scss */
+/* line 256, sass/journal-view.scss */
 .newsticker #outer a {
   text-decoration: none;
   color: #ff0000;
   font-family: Calibri;
   font-size: 18px;
 }
-/* line 253, sass/journal-view.scss */
+/* line 261, sass/journal-view.scss */
 .newsticker #outer a:hover {
   border-bottom: 2px solid #777;
 }
@@ -10284,6 +10291,17 @@ div.DTFC_LeftFootWrapper table {
   padding: 7px;
   color: #fff;
   border-radius: 5px;
+}
+
+/* line 15, sass/paper-status.scss */
+.resize-none {
+  resize: none;
+}
+
+/***********************General Css for disable resizing textarea for all pages************************/
+/* line 20, sass/paper-status.scss */
+textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=style.css.map */

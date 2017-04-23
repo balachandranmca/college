@@ -111,10 +111,10 @@
                     </div>
                 </div>
                 <?php $i++; } ?>
-                <!-- Modal -->
-                
+                <!-- Modal -->          
                 <?php foreach ($volumeIssues as $key => $issues) { ?>
                     <div class="modal fade" id="issuemodal<?php echo $key;?>" role="dialog">
+
                         <div class="modal-dialog">
                         
                         <!-- Modal content-->
@@ -125,7 +125,11 @@
                             </div>
                             <div class="modal-body">
                             <?php foreach ($issues as $key) { ?>
-                               <p><?php echo $key['issue_no'];?> - <?php echo $key['start_date'];?> - <?php echo $key['url'];?></p>
+                                <div class="row list-block">
+                                    <div class="col-xs-1 col-sm-1 col-md-3"><?php echo $key['issue_no'];?></div>
+                                    <div class="col-xs-1 col-sm-1 col-md-3"><?php echo $key['start_date'];?></div>
+                                    <div class="col-xs-1 col-sm-1 col-md-6"><a href="<?php echo $key['url'];?>" class="btn btn-primary btn-large">Go To Issue</a></div>
+                                </div>
                             <?php } ?>
                             </div>
                             <div class="modal-footer">
