@@ -57,7 +57,7 @@
 					<!-- /logo -->
 				</div>
 				<!-- main nav -->
-				<nav class="collapse navbar-collapse navbar-right" role="Navigation">
+				<nav class="collapse navbar-collapse navbar-right" role="Navigation" style="padding: 0;">
 					<div id="slidemenu">
 						<ul id="nav" class="nav navbar-nav">
 							<?php include_once WP_BAG_PL_SHORTCODE_TPL."college_menupage.php";?>

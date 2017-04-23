@@ -1,4 +1,4 @@
-<div class="container issues_listpage">
+<div class="container issues_listpage paperstatuspage">
     <div class="row">
         <div class="col-md-12 content">
             <div class="row" style="margin-top:20px;">
@@ -8,7 +8,7 @@
                             <thead>
                                 <th>User Name</th>
                                 <th>Issue</th>
-                                <th>Status</th>
+                                <th>Status(Highlighted)</th>
                             </thead>
                             <tbody>
                             <?php foreach ($authorPaperList as $key => $value) { ?>
