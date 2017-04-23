@@ -33,10 +33,10 @@
                 <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=recieved" class="btn btn-default btn-lg" role="button"><span><?php echo $accept;?></span> <br/>Newly Recieved Paper</a>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
-                <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=accept" class="btn btn-primary btn-lg" role="button"><span><?php echo $accept;?></span> <br/>Accepted Paper</a>
+                <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=accept" class="btn btn-success btn-lg" role="button"><span><?php echo $accept;?></span> <br/>Accepted Paper</a>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
-               <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=reject" class="btn btn-success btn-lg" role="button"><span><?php echo $reject;?></span> <br/> Rejected Paper</a>
+               <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=reject" class="btn btn-danger btn-lg" role="button"><span><?php echo $reject;?></span> <br/> Rejected Paper</a>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
                 <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=modify" class="btn btn-info btn-lg" role="button"><span><?php echo $modify;?></span> <br/>Modified Paper</a>
@@ -47,7 +47,7 @@
                 <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=resubmitted" class="btn btn-warning btn-lg" role="button"><span><?php echo $resubmitted;?></span> <br/>Resubmitted Paper</a>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
-                <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=transactionSubmitted" class="btn btn-danger btn-lg" role="button"><span><?php echo $transactionSubmitted;?></span> <br/>Transaction Submitted Paper</a>
+                <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=transactionSubmitted" class="btn btn-primary btn-lg" role="button"><span><?php echo $transactionSubmitted;?></span> <br/>Transaction Submitted Paper</a>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
                 <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=paid" class="btn btn-magick btn-lg" role="button"><span><?php echo $paid;?></span> <br/>Paid Paper</a>

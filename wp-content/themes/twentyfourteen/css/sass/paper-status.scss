@@ -2,12 +2,27 @@
     .slider-listpage{
         span{
             margin: 12px;
+            padding: 5px;
+            border-radius: 5px;
         }
         span.active-status{
             background: #ff0000;
             padding: 7px;
             color: #fff;
             border-radius: 5px;
+        }
+        .btn-default{
+            background: #e6e6e6;
+        }
+        .btn-magick {
+            color: #fff;
+            background-color: #bb39d7;
+            border-color: #9a00cd;
+        }
+        .btn-pressure{
+            color: #fff;
+            background: #333;
+            border: 1px solid #333;
         }
     }
 }

@@ -10284,22 +10284,40 @@ div.DTFC_LeftFootWrapper table {
 /* line 3, sass/paper-status.scss */
 .paperstatuspage .slider-listpage span {
   margin: 12px;
+  padding: 5px;
+  border-radius: 5px;
 }
-/* line 6, sass/paper-status.scss */
+/* line 8, sass/paper-status.scss */
 .paperstatuspage .slider-listpage span.active-status {
   background: #ff0000;
   padding: 7px;
   color: #fff;
   border-radius: 5px;
 }
+/* line 14, sass/paper-status.scss */
+.paperstatuspage .slider-listpage .btn-default {
+  background: #e6e6e6;
+}
+/* line 17, sass/paper-status.scss */
+.paperstatuspage .slider-listpage .btn-magick {
+  color: #fff;
+  background-color: #bb39d7;
+  border-color: #9a00cd;
+}
+/* line 22, sass/paper-status.scss */
+.paperstatuspage .slider-listpage .btn-pressure {
+  color: #fff;
+  background: #333;
+  border: 1px solid #333;
+}
 
-/* line 15, sass/paper-status.scss */
+/* line 30, sass/paper-status.scss */
 .resize-none {
   resize: none;
 }
 
 /***********************General Css for disable resizing textarea for all pages************************/
-/* line 20, sass/paper-status.scss */
+/* line 35, sass/paper-status.scss */
 textarea {
   resize: none;
 }
