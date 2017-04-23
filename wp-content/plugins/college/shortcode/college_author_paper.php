@@ -50,7 +50,7 @@ function college_author_paper_shortcode($atts) {
 	$args = array('role__in' => array('author'));
 	$author_users = get_users( $args );
 	foreach ($author_users as $key) {
-		$author_user[$key->ID] = $key->data->user_nicename.'-->'.$key->data->user_login;
+		$author_user[$key->ID] = $key->data->user_nicename.' &nbsp;&nbsp; --->  &nbsp;&nbsp; '.$key->data->user_login;
 	}
 	$issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
 	if($user_role == "reviewer"){

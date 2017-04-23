@@ -13,7 +13,12 @@
                                 <th>Status</th>
                                 <th>Details</th>
                             </thead>
+                        
                             <tbody>
+                            <?php if(!count($authorPaperList)) {?> 
+                                <tr><td colspan="4" align="center"> No rows found</td></tr>
+                            <?php } ?>
+                            
                             <?php foreach ($authorPaperList as $key => $value) { ?>
                                 <tr>
                                 <?php if($user_role == "administrator"){ ?>

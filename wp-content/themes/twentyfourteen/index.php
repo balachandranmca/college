@@ -189,7 +189,7 @@
               </div>
               <div class="newsbox">
                 <div class="col-md-3">
-                  <div class="panel panel-primary">
+                  <div class="panel panel-primary hide">
                     <div class="panel-heading">
                       <span class=""></span>
                       <h3> Conference/Seminar</h3>

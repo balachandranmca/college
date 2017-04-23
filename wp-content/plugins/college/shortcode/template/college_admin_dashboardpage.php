@@ -30,7 +30,7 @@
     <div class="row admin-dashboard">
         <div class="col-xs-12 col-md-12">
             <div class="col-xs-12 col-sm-3 col-md-3">
-                <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=recieved" class="btn btn-default btn-lg" role="button"><span><?php echo $accept;?></span> <br/>Newly Recieved Paper</a>
+                <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=recieved" class="btn btn-default btn-lg" role="button"><span><?php echo $recieved;?></span> <br/>Newly Recieved Paper</a>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3">
                 <a href="<?php echo get_buzz_url('college_author_paper_list')?>?key=accept" class="btn btn-primary btn-lg" role="button"><span><?php echo $accept;?></span> <br/>Accepted Paper</a>
