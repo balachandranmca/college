@@ -10274,7 +10274,14 @@ div.DTFC_LeftFootWrapper table {
   background: #333;
   border: 1px solid #333;
 }
-/* line 29, sass/dashboard.scss */
+/* line 28, sass/dashboard.scss */
+.admin-dashboard-block .admin-dashboard .btn-review,
+.reviewer-dashboardblock .admin-dashboard .btn-review {
+  background: #6f9810;
+  color: #fff;
+  border: 1px solie #6f9810;
+}
+/* line 34, sass/dashboard.scss */
 .admin-dashboard-block .text-center,
 .reviewer-dashboardblock .text-center {
   margin: 0 auto;
@@ -10310,16 +10317,24 @@ div.DTFC_LeftFootWrapper table {
   background: #333;
   border: 1px solid #333;
 }
+/* line 27, sass/paper-status.scss */
+.paperstatuspage .slider-listpage .btn-review {
+  background: #6f9810;
+  color: #fff;
+  border: 1px solie #6f9810;
+}
 
-/* line 30, sass/paper-status.scss */
+/* line 35, sass/paper-status.scss */
 .resize-none {
   resize: none;
 }
 
 /***********************General Css for disable resizing textarea for all pages************************/
-/* line 35, sass/paper-status.scss */
+/* line 40, sass/paper-status.scss */
 textarea {
   resize: none;
+  width: 300px;
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
