@@ -76,6 +76,14 @@
      </div>
 </div>
 <script>
+    jQuery('.file-upload').on( 'change', function() {
+        myfile= jQuery( this ).val();
+        var ext = myfile.split('.').pop();
+        if(ext!="docx" && ext!="doc" && ext!="pdf"){
+            alert("Invalid File Format");
+            jQuery( this ).val('');
+        } 
+    });
     jQuery(document).on('click', '#document_upload', function(e){
         e.preventDefault();
             var fd = new FormData();
