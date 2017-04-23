@@ -10298,4 +10298,10 @@ div.DTFC_LeftFootWrapper table {
   resize: none;
 }
 
+/***********************General Css for disable resizing textarea for all pages************************/
+/* line 20, sass/paper-status.scss */
+textarea {
+  resize: none;
+}
+
 /*# sourceMappingURL=style.css.map */

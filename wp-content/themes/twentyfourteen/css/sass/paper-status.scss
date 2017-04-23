@@ -15,3 +15,8 @@
 .resize-none{
     resize: none;
 }
+
+/***********************General Css for disable resizing textarea for all pages************************/
+textarea {
+    resize: none;
+}
