@@ -25,8 +25,8 @@
                                     <td><?php echo $user[$value['user_id']];?></td>
                                 <?php } ?>
                                 <?php if($user_role=="reviewer") { ?>
-                                    <td><?php echo $issue[$value['author_issue_paper_id']];?></td>
-                                    <td><?php echo $value['status'];?></td>
+                                    <td><?php $issue_ids = $authorIssuePaper[$value['author_issue_paper_id']];echo $issue[$issue_ids];?></td>
+                                    <td><?php echo $value['status']==''?'---':$value['status'];?></td>
                                     <?php $issue_ids = $value['author_issue_paper_id']; ?>
                                 <?php } else { ?>
                                     <td><?php echo $issue[$value['issue_id']];?></td>
