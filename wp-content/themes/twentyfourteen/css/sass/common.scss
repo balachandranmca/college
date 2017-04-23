@@ -29,6 +29,7 @@ $border_color_1: #6cb670;
     font-family: $font_family_1;
     line-height: 1.5;
     color: $color_1;
+    overflow-x: hidden;
     @media (min-width: 768px){
         .paddoff{
             padding: 0;
