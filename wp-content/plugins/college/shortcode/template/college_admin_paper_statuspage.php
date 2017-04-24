@@ -1,16 +1,24 @@
-<div class="container issues_listpage paperstatuspage">
+<div class="container issues_listpage paperstatuspage  demo journal-listpagetable">
     <div class="row">
-        <div class="col-md-12 content">
-            <div class="row" style="margin-top:20px;">
-                <div class="col-md-12 content-table">
-                    <div class="table-responsive slider-listpage">
-                        <table id="mytable" class="table table-bordred table-striped">
-                            <thead>
-                                <th>User Name</th>
-                                <th>Issue</th>
-                                <th>Status(Highlighted)</th>
-                            </thead>
-                            <tbody>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">Paper Status</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body table-responsive">
+                 <table class="datatable  table table-striped table-bordered table-list">
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Issue</th>
+                            <th>Status(Highlighted)</th>
+                        </tr> 
+                    </thead>
+                        <tbody>
                             <?php foreach ($authorPaperList as $key => $value) { ?>
                                 <tr>
                                     <td><?php echo $user[$value['user_id']];?></td>
@@ -18,11 +26,9 @@
                                     <td><span class="<?php if($value['status']=="recieved"){echo 'btn-default';}?>">New </span><span class="<?php if($value['status']=="accept"){echo 'btn-success';}?>">Accept </span><span class="<?php if($value['status']=="reject"){echo 'btn-danger';}?>">Reject </span><span class="<?php if($value['status']=="modify"){echo 'btn-info';}?>">Modify </span><span class="<?php if($value['status']=="resubmitted"){echo 'btn-warning';}?>">Resubmitted </span><span class="<?php if($value['status']=="transactionSubmitted"){echo 'btn-primary';}?>">Transaction Submitted </span><span class="<?php if($value['status']=="paid"){echo 'btn-magick';}?>">Paid </span><span class="<?php if($value['status']=="published"){echo 'btn-pressure';}?>">Published</span><span class="<?php if($value['status']=="reviewed"){echo 'btn-review';}?>">Review</span></td>
                                 </tr>
                             <?php } ?>  
-                            </tbody>
-                        </table>
-                            <div class="clearfix"></div>                
-                    </div>
-                </div>
+                        </tbody>
+                </table>
+              </div>
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@
                 </div>
               </div>
               <div class="panel-body table-responsive">
-                <table class="datatable  table table-striped table-bordered table-list" id="myTable">
+                <table class="datatable  table table-striped table-bordered table-list">
                   <thead>
                     <tr>
                         <th>Name</th>

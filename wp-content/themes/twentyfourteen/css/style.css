@@ -10288,49 +10288,49 @@ div.DTFC_LeftFootWrapper table {
   float: none;
 }
 
-/* line 3, sass/paper-status.scss */
-.paperstatuspage .slider-listpage span {
+/* line 2, sass/paper-status.scss */
+.paperstatuspage span {
   margin: 12px;
   padding: 5px;
   border-radius: 5px;
 }
-/* line 8, sass/paper-status.scss */
-.paperstatuspage .slider-listpage span.active-status {
+/* line 7, sass/paper-status.scss */
+.paperstatuspage span.active-status {
   background: #ff0000;
   padding: 7px;
   color: #fff;
   border-radius: 5px;
 }
-/* line 14, sass/paper-status.scss */
-.paperstatuspage .slider-listpage .btn-default {
+/* line 13, sass/paper-status.scss */
+.paperstatuspage .btn-default {
   background: #e6e6e6;
 }
-/* line 17, sass/paper-status.scss */
-.paperstatuspage .slider-listpage .btn-magick {
+/* line 16, sass/paper-status.scss */
+.paperstatuspage .btn-magick {
   color: #fff;
   background-color: #bb39d7;
   border-color: #9a00cd;
 }
-/* line 22, sass/paper-status.scss */
-.paperstatuspage .slider-listpage .btn-pressure {
+/* line 21, sass/paper-status.scss */
+.paperstatuspage .btn-pressure {
   color: #fff;
   background: #333;
   border: 1px solid #333;
 }
-/* line 27, sass/paper-status.scss */
-.paperstatuspage .slider-listpage .btn-review {
+/* line 26, sass/paper-status.scss */
+.paperstatuspage .btn-review {
   background: #6f9810;
   color: #fff;
   border: 1px solie #6f9810;
 }
 
-/* line 35, sass/paper-status.scss */
+/* line 33, sass/paper-status.scss */
 .resize-none {
   resize: none;
 }
 
 /***********************General Css for disable resizing textarea for all pages************************/
-/* line 40, sass/paper-status.scss */
+/* line 38, sass/paper-status.scss */
 textarea {
   resize: none;
   width: 300px;
