@@ -10337,4 +10337,72 @@ textarea {
   height: 150px;
 }
 
+/* line 1, sass/certificate.scss */
+.certificate-header {
+  background: url(../img/certificate.png) no-repeat;
+  margin: 25px 60px 0;
+  background-size: cover;
+  height: 821px;
+}
+/* line 6, sass/certificate.scss */
+.certificate-header .certificate-block {
+  margin: 126px 64px;
+}
+/* line 9, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img {
+  text-align: center;
+}
+/* line 11, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .img-block {
+  display: inline-block;
+}
+/* line 13, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .img-block img {
+  width: 100px;
+  height: 100px;
+}
+/* line 18, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .issn-no {
+  display: inline-block;
+  float: right;
+  transform: translate(10px, 29px);
+}
+/* line 24, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title {
+  text-align: center;
+}
+/* line 26, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title .sub-title {
+  font-family: cursive;
+  font-size: 22px;
+  color: #ffa500;
+  font-weight: bold;
+  padding: 0 !important;
+}
+/* line 33, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title h2 {
+  margin: 0;
+  font-family: fantasy !important;
+  color: #333;
+}
+/* line 40, sass/certificate.scss */
+.certificate-header .certificate-block .header .certificate-title h2 {
+  text-align: center;
+  color: #a94442;
+}
+/* line 46, sass/certificate.scss */
+.certificate-header .certificate-block .header .certificate-content .contents {
+  line-height: 40px;
+  font-family: monospace !important;
+  font-size: 20px;
+}
+/* line 53, sass/certificate.scss */
+.certificate-header .certificate-block .header .footer-content .address {
+  float: left;
+}
+/* line 56, sass/certificate.scss */
+.certificate-header .certificate-block .header .footer-content .author {
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -53,6 +53,7 @@ function Page_Settings() {
 		"college_reviewer_dashboard" => "College Reviewer Dashboard",
 		"college_admin_dashboard" => "College Admin Dashboard",
 		"college_admin_paper_status" => "College Admin Paper Status",
+		"college_certificate" => "College_Certificate"
 	);
 
 	if (isset($_POST['pagesubmit'])) {
