@@ -10399,8 +10399,10 @@ textarea {
 /* line 53, sass/certificate.scss */
 .certificate-header .certificate-block .header .footer-content .address {
   float: left;
+  color: #2196F3;
+  font-family: cursive;
 }
-/* line 56, sass/certificate.scss */
+/* line 58, sass/certificate.scss */
 .certificate-header .certificate-block .header .footer-content .author {
   float: right;
 }
