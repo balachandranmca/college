@@ -5,11 +5,17 @@
  */
 
 use App\JournalIssuePublish;
+use App\Issue;
+use App\Journal;
 
 add_shortcode('COLLEGE_JOURNAL_ISSUES_PAGES', 'college_journal_issues_pages_shortcode');
 function college_journal_issues_pages_shortcode($atts) {	
 	ob_start();
 	$journal_issue_publish = JournalIssuePublish::where('issue_id', $_GET["issue_id"])->get()->toArray();
+	$issue = Issue::where('id', $_GET['issue_id'])->get()->toArray();
+	$issue = $issue[0];
+	$journal = Journal::where('id', $issue['journal_id'])->get()->toArray();
+	$journal = $journal[0];
 	include_once 'template/college_journal_issues_pageslist.php';
 	$template_content = ob_get_contents();
 	ob_end_clean();

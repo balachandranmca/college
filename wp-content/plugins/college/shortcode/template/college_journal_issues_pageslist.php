@@ -1,5 +1,5 @@
 <input type="hidden" id="journal_color" value="<?php echo $journal['color'];?>">
-<!--<section class="journal-viewpage-header">
+<section class="journal-viewpage-header">
     <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12 header" style="background: #<?php echo $journal['color'];?>;">
             <div class="col-xs-12 col-sm-2 col-md-2 header-img">
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div> 
-</section>-->
+</section>
 
 <section class="journal-issuespages">
     <div class="container">

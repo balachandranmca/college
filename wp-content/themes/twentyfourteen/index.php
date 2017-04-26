@@ -25,6 +25,22 @@
     $journalList = Journal::all()->sortBy('id')->toArray();
     $issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
     $carosel_sliderList = CaroselSlider::all()->sortBy('id')->toArray();
+    $withdraw = get_option('withdraw');
+    if($withdraw){
+        $with_draw = json_decode($withdraw, 1); 
+    }
+    $samplepaper = get_option('samplepaper');
+    if($samplepaper){
+        $sample_paper = json_decode($samplepaper, 1);
+    }
+    $papertemplates = get_option('papertemplates');
+    if($papertemplates){
+        $paper_templates = json_decode($papertemplates, 1);
+    }
+    $copyright = get_option('copyright');
+    if($copyright){
+        $copy_right = json_decode($copyright, 1);
+    }
 ?>
   <!DOCTYPE html>
   <!--[if IE 7]>
@@ -189,7 +205,7 @@
               </div>
               <div class="newsbox">
                 <div class="col-md-3">
-                  <div class="panel panel-primary">
+                  <div class="panel panel-primary hide">
                     <div class="panel-heading">
                       <span class=""></span>
                       <h3> Conference/Seminar</h3>
@@ -274,19 +290,19 @@
                     </div>
                   </div>
                   <div class="downloads-menubar">
-                      <div href="#" class="list-group-item active">
+                      <div class="list-group-item active">
                           <h4 class="list-group-item-heading">Downloads</h4>
                       </div>  
-                      <a href="#" class="list-group-item">
+                      <a href="<?php echo $paper_templates['url'];?>" class="list-group-item" download>
                           <h5 class="list-group-item-heading">Paper Template</h5>
                       </a>
-                      <a href="#" class="list-group-item" data-for=".step-2">
+                      <a href="<?php echo $sample_paper['url'];?>" class="list-group-item" data-for=".step-2" download>
                           <h5 class="list-group-item-heading">Sample Paper</h5>
                       </a>
-                      <a href="#" class="list-group-item" data-for=".step-3">
+                      <a href="<?php echo $with_draw['url'];?>" class="list-group-item" data-for=".step-3" download>
                           <h5 class="list-group-item-heading">Withdrawal Form</h5>
                       </a>
-                      <a href="#" class="list-group-item" data-for=".step-3">
+                      <a href="<?php echo $copy_right['url'];?>" class="list-group-item" data-for=".step-3" download>
                           <h5 class="list-group-item-heading">Copyright Form</h5>
                       </a>
                  </div>

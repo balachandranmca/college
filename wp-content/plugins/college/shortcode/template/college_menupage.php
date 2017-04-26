@@ -1,4 +1,20 @@
 <?php 
+    $withdraw = get_option('withdraw');
+    if($withdraw){
+        $with_draw = json_decode($withdraw, 1); 
+    }
+    $samplepaper = get_option('samplepaper');
+    if($samplepaper){
+        $sample_paper = json_decode($samplepaper, 1);
+    }
+    $papertemplates = get_option('papertemplates');
+    if($papertemplates){
+        $paper_templates = json_decode($papertemplates, 1);
+    }
+    $copyright = get_option('copyright');
+    if($copyright){
+        $copy_right = json_decode($copyright, 1);
+    }
     use App\Journal;
     $is_user = $is_author = $is_admin = $is_reviewer = 0;
     $is_user_logged_in = is_user_logged_in();
@@ -72,14 +88,14 @@
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="<?php echo get_buzz_url('college_guidelines_author') ?>">Guidelines to Author</a></li>
-            <li><a href="#">Paper Template</a></li>
-            <li><a href="#">Sample Paper</a></li>
-            <li><a href="#">Copyright Form</a></li>
+            <li><a href="<?php echo $paper_templates['url'];?>" download>Paper Template</a></li>
+            <li><a href="<?php echo $sample_paper['url'];?>" download>Sample Paper</a></li>
+            <li><a href="<?php echo $copy_right['url'];?>" download>Copyright Form</a></li>
             <?php if(!is_user_logged_in()){ ?> 
                 <li><a href="<?php echo get_buzz_url('college_login') ?>">Online Submission</a></li>
             <?php } ?>
             <li><a href="<?php echo get_buzz_url('college_withdrawal_procedure') ?>">Withdrawal Procedure</a></li>
-            <li><a href="#">Withdrawel Form</a></li>
+            <li><a href="<?php echo $copy_right['url'];?>" download>Withdrawel Form</a></li>
         </ul>
     </li>
     <?php } ?>

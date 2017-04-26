@@ -33,6 +33,9 @@
                             <input class='file-upload' type="file" name="copyright" id="copyright" required>
                         </div>
                     </div>
+                    <br/>
+                    <h4>Suggested Reviewers</h4>
+                    <hr/>
                     <div id="new_reviewer">
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="name">Reviewer 1</label>

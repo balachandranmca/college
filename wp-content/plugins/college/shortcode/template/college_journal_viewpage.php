@@ -96,6 +96,7 @@
                                     <!--<i class="fa fa-flask"></i>-->
                                     <p><?php echo $volume[$value['volume_id']]?></p>
                                     <?php 
+                                    $volumeids[$i] = $value['volume_id'];
                                     $volumeIssues[$value['volume_id']][$i]['issue_no'] = $value['issue_no'];
                                     $volumeIssues[$value['volume_id']][$i]['start_date'] = $value['start_date'];
                                     $volumeIssues[$value['volume_id']][$i]['url'] = get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];
@@ -110,9 +111,10 @@
                     </div>
                 </div>
                 <?php $i++; } ?>
-                <!-- Modal -->
-                <?php foreach ($volumeIssues as $issues) { ?>
-                    <div class="modal fade issues-listmodal" id="issuemodal<?php echo key($issues);?>" role="dialog">
+                <!-- Modal -->          
+                <?php foreach ($volumeIssues as $key => $issues) { ?>
+                    <div class="modal fade" id="issuemodal<?php echo $key;?>" role="dialog">
+
                         <div class="modal-dialog">
                         
                         <!-- Modal content-->
