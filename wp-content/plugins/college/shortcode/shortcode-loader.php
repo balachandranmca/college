@@ -81,3 +81,7 @@ include_once 'college_admin_dashboard.php';
 include_once 'college_admin_paper_status.php';
 
 include_once 'college_certificate.php';
+
+include_once 'college_feedback.php';
+
+include_once 'college_advertise_us.php';

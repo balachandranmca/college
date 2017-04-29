@@ -4,7 +4,7 @@
             <div class="panel panel-default panel-table">
               <div class="panel-heading">
                 <div class="row">
-                  <div class="col col-xs-6">
+                  <div class="col col-xs-12 col-sm-12 col-md-12">
                     <h3 class="panel-title">Paper Status</h3>
                   </div>
                 </div>
@@ -28,7 +28,9 @@
                             <?php } ?>  
                         </tbody>
                 </table>
-              </div>
+                <div class="clearfix"></div>
+             </div>
+                </div>
             </div>
         </div>
     </div>
