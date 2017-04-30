@@ -10471,4 +10471,23 @@ textarea {
   margin-left: 2px;
 }
 
+/* line 1, sass/editorpage.scss */
+.college_editorpage {
+  padding: 33px;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+/* line 6, sass/editorpage.scss */
+.college_editorpage .title {
+  margin-bottom: 30px;
+}
+/* line 10, sass/editorpage.scss */
+.college_editorpage .form-group .form-control {
+  background-color: transparent;
+  border: 1px solid #4e595f;
+  height: 38px;
+  border-radius: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
