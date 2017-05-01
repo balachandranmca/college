@@ -102,7 +102,7 @@
                 contentType: false,
                 processData: false,
                 success: function(response){
-                    // window.location = "<?php echo site_url();?>";
+                    window.location = "<?php echo site_url();?>";
                 }
             });
         }
