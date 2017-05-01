@@ -1,11 +1,16 @@
 <section class="aboutus-page">
     <div class="row">
         <div class="col-md-6">
-            <img class="slider-list-img" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/images/rsz_1book1.png" alt="List-img">
+        <?php
+            $about_us_image = get_option('about_us_image');
+            if($about_us_image){
+                $about_us_image = json_decode($about_us_image, 1); ?>
+                <img class="slider-list-img" src="<?php echo $about_us_image['url'];?>"/>
+            <?php } ?>
         </div>
         <div class="col-md-6 content">
             <h2>International Journal of Research in Engineering, Science and Technologies (IJRESTs)</h2>
-            <p class="subcontent"><?php echo get_option('about_us');?></p>
+            <p class="subcontent"><?php echo stripslashes(get_option('about_us'));?></p>
         </div>
     </div>
 </section>
