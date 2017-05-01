@@ -176,6 +176,7 @@ $font_family_1: 'FontAwesome';
         margin:auto;
         position:relative;
         overflow:hidden;
+        border: 1px solid #333;
     }
 
 
@@ -188,6 +189,8 @@ $font_family_1: 'FontAwesome';
         border:1px solid #fff;
         border-top-color:transparent;
         margin:0;
+        overflow: auto;
+        word-wrap: break-word;
     }
     .team-container figcaption h4{
         font-size:22px;

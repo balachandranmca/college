@@ -7261,6 +7261,31 @@ body.slide-active {
     left: 0 !important;
   }
 }
+/***********************************Loader Overylay While Page Loading ***********************************/
+/* line 824, sass/common.scss */
+#loader-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 836, sass/common.scss */
+#loader-overlay #loader-loading {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -28px 0 0 -25px;
+}
+
 /********************************News Bar *************************/
 /* line 2, sass/newsticker.scss */
 .newsbox {
@@ -8039,8 +8064,9 @@ div.DTFC_LeftFootWrapper table {
   margin: auto;
   position: relative;
   overflow: hidden;
+  border: 1px solid #333;
 }
-/* line 182, sass/editor-board.scss */
+/* line 183, sass/editor-board.scss */
 .editors-civil .team-container figcaption {
   padding: 10px;
   text-align: left;
@@ -8050,31 +8076,33 @@ div.DTFC_LeftFootWrapper table {
   border: 1px solid #fff;
   border-top-color: transparent;
   margin: 0;
+  overflow: auto;
+  word-wrap: break-word;
 }
-/* line 192, sass/editor-board.scss */
+/* line 195, sass/editor-board.scss */
 .editors-civil .team-container figcaption h4 {
   font-size: 22px;
   font-weight: 700;
   padding-top: 20px;
 }
-/* line 197, sass/editor-board.scss */
+/* line 200, sass/editor-board.scss */
 .editors-civil .team-container .member-name {
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
 }
-/* line 202, sass/editor-board.scss */
+/* line 205, sass/editor-board.scss */
 .editors-civil .team-container figcaption p {
   font-size: 1.125em;
 }
-/* line 205, sass/editor-board.scss */
+/* line 208, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons {
   display: inline-block;
   margin: auto;
   text-align: center;
   width: 100%;
 }
-/* line 212, sass/editor-board.scss */
+/* line 215, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container,
 .editors-civil .team-member .social-btn-container .social-btn-box {
   -webkit-transition: all .25s;
@@ -8083,69 +8111,69 @@ div.DTFC_LeftFootWrapper table {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 221, sass/editor-board.scss */
+/* line 224, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container {
   position: absolute;
   top: 0px;
   margin: 0 auto;
   left: 0;
 }
-/* line 227, sass/editor-board.scss */
+/* line 230, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 230, sass/editor-board.scss */
+/* line 233, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .team-socail-btn {
   overflow: hidden;
   position: relative;
   width: 245px;
   height: 230px;
 }
-/* line 236, sass/editor-board.scss */
+/* line 239, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .social-btn-box {
   position: absolute;
 }
-/* line 240, sass/editor-board.scss */
+/* line 243, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .facebook-btn-container {
   bottom: 220px;
   right: 230px;
 }
-/* line 244, sass/editor-board.scss */
+/* line 247, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .twitter-btn-container {
   bottom: 220px;
   left: 230px;
 }
-/* line 248, sass/editor-board.scss */
+/* line 251, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .linkedin-btn-container {
   top: 220px;
   right: 230px;
 }
-/* line 252, sass/editor-board.scss */
+/* line 255, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .github-btn-container {
   top: 220px;
   left: 230px;
 }
-/* line 257, sass/editor-board.scss */
+/* line 260, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .facebook-btn-container {
   bottom: 115px;
   right: 122px;
 }
-/* line 261, sass/editor-board.scss */
+/* line 264, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .twitter-btn-container {
   bottom: 115px;
   left: 122px;
 }
-/* line 265, sass/editor-board.scss */
+/* line 268, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .linkedin-btn-container {
   top: 115px;
   right: 122px;
 }
-/* line 269, sass/editor-board.scss */
+/* line 272, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .github-btn-container {
   top: 115px;
   left: 122px;
 }
-/* line 273, sass/editor-board.scss */
+/* line 276, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons a {
   color: #fff;
   width: 24px;
@@ -8154,7 +8182,7 @@ div.DTFC_LeftFootWrapper table {
   font-size: 24px;
   text-align: center;
 }
-/* line 281, sass/editor-board.scss */
+/* line 284, sass/editor-board.scss */
 .editors-civil .team-container .team-member figure,
 .editors-civil .team-container .team-member figcaption,
 .editors-civil .team-container .team-member img,
@@ -8165,30 +8193,30 @@ div.DTFC_LeftFootWrapper table {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 292, sass/editor-board.scss */
+/* line 295, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figure {
   background-color: #3498db;
   color: #fff;
 }
-/* line 296, sass/editor-board.scss */
+/* line 299, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figcaption {
   border-color: #3498db;
   color: #fff;
 }
-/* line 301, sass/editor-board.scss */
+/* line 304, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover .social-buttons {
   top: 90px;
 }
 
 /* 2.2 - Social Button
 ------------------------------------------ */
-/* line 307, sass/editor-board.scss */
+/* line 310, sass/editor-board.scss */
 .social-btn-container {
   text-align: center;
   margin: 50px auto 0 auto;
 }
 
-/* line 311, sass/editor-board.scss */
+/* line 314, sass/editor-board.scss */
 .social-btn-container .social-btn-box {
   display: inline-block;
   width: 60px;
@@ -8209,7 +8237,7 @@ div.DTFC_LeftFootWrapper table {
   overflow: hidden;
 }
 
-/* line 334, sass/editor-board.scss */
+/* line 337, sass/editor-board.scss */
 .social-btn-container .social-btn-box a {
   color: #fff;
   font-size: 26px;
@@ -8227,7 +8255,7 @@ div.DTFC_LeftFootWrapper table {
   transform: rotate(-45deg);
 }
 
-/* line 351, sass/editor-board.scss */
+/* line 354, sass/editor-board.scss */
 .social-btn-box,
 .social-btn-box a {
   -webkit-transition: all .25s;
@@ -8237,48 +8265,48 @@ div.DTFC_LeftFootWrapper table {
   transition: all .25s;
 }
 
-/* line 360, sass/editor-board.scss */
+/* line 363, sass/editor-board.scss */
 .social-btn-box:hover {
   border-color: transparent;
 }
 
-/* line 363, sass/editor-board.scss */
+/* line 366, sass/editor-board.scss */
 .social-btn-box .facebook-btn:hover {
   background: #3B5998;
   color: #fff;
 }
 
-/* line 367, sass/editor-board.scss */
+/* line 370, sass/editor-board.scss */
 .social-btn-box .twitter-btn:hover {
   background: #55ACEE;
   color: #fff;
 }
 
-/* line 371, sass/editor-board.scss */
+/* line 374, sass/editor-board.scss */
 .social-btn-box .linkedin-btn:hover {
   background: #0077b5;
   color: #fff;
 }
 
-/* line 375, sass/editor-board.scss */
+/* line 378, sass/editor-board.scss */
 .social-btn-box .google-plus-btn:hover {
   background: #db514f;
   color: #fff;
 }
 
-/* line 379, sass/editor-board.scss */
+/* line 382, sass/editor-board.scss */
 .social-btn-box .youtube-btn:hover {
   background: #cc181e;
   color: #fff;
 }
 
-/* line 383, sass/editor-board.scss */
+/* line 386, sass/editor-board.scss */
 .social-btn-box .github-btn:hover {
   background: #2b2e30;
   color: #fff;
 }
 
-/* line 387, sass/editor-board.scss */
+/* line 390, sass/editor-board.scss */
 .social-btn-box .a:hover {
   background: #3498db;
   color: #fff;
@@ -10335,6 +10363,131 @@ textarea {
   resize: none;
   width: 300px;
   height: 150px;
+}
+
+/* line 1, sass/certificate.scss */
+.certificate-header {
+  background: url(../img/certificate.png) no-repeat;
+  margin: 25px 60px 0;
+  background-size: cover;
+  height: 821px;
+}
+/* line 6, sass/certificate.scss */
+.certificate-header .certificate-block {
+  margin: 126px 64px;
+}
+/* line 9, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img {
+  text-align: center;
+}
+/* line 11, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .img-block {
+  display: inline-block;
+}
+/* line 13, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .img-block img {
+  width: 100px;
+  height: 100px;
+}
+/* line 18, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .issn-no {
+  display: inline-block;
+  float: right;
+  transform: translate(10px, 29px);
+}
+/* line 24, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title {
+  text-align: center;
+}
+/* line 26, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title .sub-title {
+  font-family: cursive;
+  font-size: 22px;
+  color: #ffa500;
+  font-weight: bold;
+  padding: 0 !important;
+}
+/* line 33, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title h2 {
+  margin: 0;
+  font-family: fantasy !important;
+  color: #333;
+}
+/* line 40, sass/certificate.scss */
+.certificate-header .certificate-block .header .certificate-title h2 {
+  text-align: center;
+  color: #a94442;
+}
+/* line 46, sass/certificate.scss */
+.certificate-header .certificate-block .header .certificate-content .contents {
+  line-height: 40px;
+  font-family: monospace !important;
+  font-size: 20px;
+}
+/* line 53, sass/certificate.scss */
+.certificate-header .certificate-block .header .footer-content .address {
+  float: left;
+  color: #2196F3;
+  font-family: cursive;
+}
+/* line 58, sass/certificate.scss */
+.certificate-header .certificate-block .header .footer-content .author {
+  float: right;
+}
+
+/* line 2, sass/advertise.scss */
+.advertise_page .image-preview-clear {
+  margin-left: 12px;
+  border: 1px solid #333;
+  border-radius: 0;
+  padding: 8px;
+}
+/* line 8, sass/advertise.scss */
+.advertise_page .image-preview-input {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  color: #333;
+  background-color: #fff;
+  margin-left: 12px;
+  border: 1px solid #333;
+  border-radius: 0;
+  padding: 8px;
+}
+/* line 19, sass/advertise.scss */
+.advertise_page .image-preview-input input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 30, sass/advertise.scss */
+.advertise_page .image-preview-input-title {
+  margin-left: 2px;
+}
+
+/* line 1, sass/editorpage.scss */
+.college_editorpage {
+  padding: 33px;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+/* line 6, sass/editorpage.scss */
+.college_editorpage .title {
+  margin-bottom: 30px;
+}
+/* line 10, sass/editorpage.scss */
+.college_editorpage .form-group .form-control {
+  background-color: transparent;
+  border: 1px solid #4e595f;
+  height: 38px;
+  border-radius: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

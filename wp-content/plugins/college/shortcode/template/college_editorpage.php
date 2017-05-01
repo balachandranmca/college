@@ -1,11 +1,14 @@
-<div class="container slider-creator">
+<div class="container college_editorpage">
 	<div class="row">
-         <div class="col-md-4">
+         <!--<div class="col-md-4">
             <img src="https://cdn1.iconfinder.com/data/icons/softwaredemo/PNG/256x256/Pencil3.png" class="img-responsive center-block" alt="">
-        </div><!--.col -->
-        <div class="col-md-6">
+        </div>-->
+        <div class="col-md-offset-3 col-md-6">
+            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                <h2>JOIN AS EDITORIAL <span class="color">BOARD MEMBER</span></h2>
+                <div class="border"></div>
+            </div>
             <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
-                <h3 class="text-center">JOIN AS EDITORIAL BOARD MEMBER</h3>
                 <div class="form-group">
                     <label class="col-md-3 control-label" for="name">Name</label>
                         <div class="col-md-9">
@@ -107,7 +110,7 @@
             jQuery('#errorMsg').removeClass('hide-error');
         }
     });
-    jQuery('body').css('background-color', '#333');
+    //jQuery('body').css('background-color', '#333');
 </script>
 <style>
 .hide-error{

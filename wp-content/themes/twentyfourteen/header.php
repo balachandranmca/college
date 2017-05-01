@@ -36,6 +36,9 @@
 </head>
 <!--<link href="<?php echo get_template_directory_uri(); ?>/css/vendor/font-awesome.min.css" rel="stylesheet">-->
 <body id="body" <?php body_class(); ?>>
+<div id="loader-overlay" style="display: none;">
+	<img id="loader-loading" src="https://www.preprod.domoum.com/wp-content/themes/domoum/img/loader.gif">
+</div>
 <header id="navigation" class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">

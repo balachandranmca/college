@@ -1,0 +1,17 @@
+.college_editorpage{
+    padding: 33px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 15px;
+    .title{
+        margin-bottom: 30px;
+    }
+    .form-group{
+        .form-control{
+            background-color: transparent;
+            border: 1px solid #4e595f;
+            height: 38px;
+            border-radius: 0;
+        }
+    }
+}
