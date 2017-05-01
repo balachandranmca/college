@@ -1,9 +1,13 @@
 .paperstatuspage{
-        span{
-            margin: 12px;
-            padding: 5px;
-            border-radius: 5px;
+    tbody{
+        td{
+            span{
+                margin: 12px;
+                padding: 5px;
+                border-radius: 5px;
+           }
         }
+    }
         span.active-status{
             background: #ff0000;
             padding: 7px;

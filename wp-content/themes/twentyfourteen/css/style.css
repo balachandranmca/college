@@ -7858,14 +7858,15 @@ div.DTFC_LeftFootWrapper table {
 /* line 25, sass/feespage.scss */
 .feespage .table-bordered .table-header th {
   text-align: center;
+  font-weight: 400;
 }
-/* line 31, sass/feespage.scss */
+/* line 32, sass/feespage.scss */
 .feespage .widget_currency_converter div {
   width: 250px !important;
   border-radius: 10px;
   font-size: 20px;
 }
-/* line 36, sass/feespage.scss */
+/* line 37, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vlabel {
   font-size: 15px !important;
   color: #000000 !important;
@@ -7873,25 +7874,25 @@ div.DTFC_LeftFootWrapper table {
   letter-spacing: 1px;
   font-family: Oswald !important;
 }
-/* line 43, sass/feespage.scss */
+/* line 44, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vtextarea {
   height: 30px;
   border-radius: 5px;
   padding-right: 10px;
   border: 1px solid #000;
 }
-/* line 49, sass/feespage.scss */
+/* line 50, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .VselectBox {
   height: 30px !important;
   border-radius: 5px;
   border: 1px solid #000;
 }
-/* line 54, sass/feespage.scss */
+/* line 55, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vtextarea {
   resize: none;
   color: #000 !important;
 }
-/* line 59, sass/feespage.scss */
+/* line 60, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vmsg_1 a {
   font-size: 15px !important;
 }
@@ -10343,49 +10344,49 @@ div.DTFC_LeftFootWrapper table {
   float: none;
 }
 
-/* line 2, sass/paper-status.scss */
-.paperstatuspage span {
+/* line 4, sass/paper-status.scss */
+.paperstatuspage tbody td span {
   margin: 12px;
   padding: 5px;
   border-radius: 5px;
 }
-/* line 7, sass/paper-status.scss */
+/* line 11, sass/paper-status.scss */
 .paperstatuspage span.active-status {
   background: #ff0000;
   padding: 7px;
   color: #fff;
   border-radius: 5px;
 }
-/* line 13, sass/paper-status.scss */
+/* line 17, sass/paper-status.scss */
 .paperstatuspage .btn-default {
   background: #e6e6e6;
 }
-/* line 16, sass/paper-status.scss */
+/* line 20, sass/paper-status.scss */
 .paperstatuspage .btn-magick {
   color: #fff;
   background-color: #bb39d7;
   border-color: #9a00cd;
 }
-/* line 21, sass/paper-status.scss */
+/* line 25, sass/paper-status.scss */
 .paperstatuspage .btn-pressure {
   color: #fff;
   background: #333;
   border: 1px solid #333;
 }
-/* line 26, sass/paper-status.scss */
+/* line 30, sass/paper-status.scss */
 .paperstatuspage .btn-review {
   background: #6f9810;
   color: #fff;
   border: 1px solie #6f9810;
 }
 
-/* line 33, sass/paper-status.scss */
+/* line 37, sass/paper-status.scss */
 .resize-none {
   resize: none;
 }
 
 /***********************General Css for disable resizing textarea for all pages************************/
-/* line 38, sass/paper-status.scss */
+/* line 42, sass/paper-status.scss */
 textarea {
   resize: none;
   width: 300px;
