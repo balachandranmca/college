@@ -1,3 +1,8 @@
+<!--*******************************************Boostrap Selectpicker*********************************-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+<!--*******************************************Boostrap Selectpicker*********************************-->
+
 <input type="hidden" id="journal_color" value="<?php echo $journal['color'];?>">
 <section class="journal-viewpage-header">
     <div class="container">
@@ -64,6 +69,13 @@
 <section class="journal-view-table">
     <div class="container">
         <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <select name='type' id='type' class="selectpicker" data-style="btn-primary">
+                <option value='suggestions' >Suggestions</option>
+                <option value='inquiries' >Inquiries</option>
+                <option value='donations' >Donations</option>
+            </select>
+        </div>
             <!--<div class="col-md-10 table-content">            
                 <table class="table table-bordered">
                     <tbody>
@@ -143,3 +155,14 @@
         </div>
     </div>
 </section>
+<script>
+    jQuery("#type").on("change", function () {        
+        $modal = jQuery('.modal');
+        if(jQuery(this).val() === 'donations'){
+            $modal.modal('show');
+        }
+    });
+    jQuery(document).ready(function() {
+        jQuery('.selectpicker').selectpicker();
+    });
+</script>

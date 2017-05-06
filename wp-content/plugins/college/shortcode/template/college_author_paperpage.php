@@ -1,7 +1,7 @@
 <div class="container slider-creator author-paperpage">
 	<div class="row">
       <div class="col-md-3">
-        <img src="https://www.macupdate.com/images/icons256/8382.png" class="img-responsive center-block" alt="">
+        <img src="https://quovadisblog.com/wp-content/uploads/2009/02/checklist-icon.jpg" class="img-responsive center-block" alt="">
       </div>
       <div class="col-md-9 creator-content">
         <div>
