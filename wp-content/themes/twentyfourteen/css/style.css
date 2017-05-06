@@ -7772,6 +7772,16 @@ div.DTFC_LeftFootWrapper table {
   width: 150px;
 }
 
+/* line 244, sass/journal-list.scss */
+.author_issue_paperlistpage .table-responsive .dataTables_wrapper .datatable img {
+  width: 150px;
+}
+/* line 247, sass/journal-list.scss */
+.author_issue_paperlistpage .table-responsive .dataTables_wrapper .datatable .viewdetails-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 /* line 8, sass/journal-creator.scss */
 .journal-creator .creator-content .slider_image img,
 .volume-creator .creator-content .slider_image img,
@@ -10349,44 +10359,45 @@ div.DTFC_LeftFootWrapper table {
   margin: 12px;
   padding: 5px;
   border-radius: 5px;
+  display: inline-block;
 }
-/* line 11, sass/paper-status.scss */
+/* line 12, sass/paper-status.scss */
 .paperstatuspage span.active-status {
   background: #ff0000;
   padding: 7px;
   color: #fff;
   border-radius: 5px;
 }
-/* line 17, sass/paper-status.scss */
+/* line 18, sass/paper-status.scss */
 .paperstatuspage .btn-default {
   background: #e6e6e6;
 }
-/* line 20, sass/paper-status.scss */
+/* line 21, sass/paper-status.scss */
 .paperstatuspage .btn-magick {
   color: #fff;
   background-color: #bb39d7;
   border-color: #9a00cd;
 }
-/* line 25, sass/paper-status.scss */
+/* line 26, sass/paper-status.scss */
 .paperstatuspage .btn-pressure {
   color: #fff;
   background: #333;
   border: 1px solid #333;
 }
-/* line 30, sass/paper-status.scss */
+/* line 31, sass/paper-status.scss */
 .paperstatuspage .btn-review {
   background: #6f9810;
   color: #fff;
   border: 1px solie #6f9810;
 }
 
-/* line 37, sass/paper-status.scss */
+/* line 38, sass/paper-status.scss */
 .resize-none {
   resize: none;
 }
 
 /***********************General Css for disable resizing textarea for all pages************************/
-/* line 42, sass/paper-status.scss */
+/* line 43, sass/paper-status.scss */
 textarea {
   resize: none;
   width: 300px;

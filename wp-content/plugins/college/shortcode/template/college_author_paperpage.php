@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Issue Details </label>
                          <div class="col-md-9">
-                            <label class="col-md-9 control-label" for="name"><?php echo $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date']?></label>
+                            <label class="control-label" for="name"><?php echo $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date']?></label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -32,7 +32,7 @@
                         <div class="form-group">
                         <label class="col-md-3 control-label" for="name">User Details </label>
                          <div class="col-md-9">
-                            <p class="col-md-9" for="name"><?php echo $author_user[$author_paper['user_id']];?></p>
+                            <p class="" for="name"><?php echo $author_user[$author_paper['user_id']];?></p>
                         </div>
                     </div>
                     <?php } ?>

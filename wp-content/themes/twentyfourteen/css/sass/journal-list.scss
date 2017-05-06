@@ -236,4 +236,20 @@ div.DTFC_LeftFootWrapper table {
     }
   }
 }
+
+.author_issue_paperlistpage{
+  .table-responsive{
+    .dataTables_wrapper{
+        .datatable{
+            img{
+                width: 150px;
+            }
+            .viewdetails-btn{
+              padding: 5px 10px;
+              border-radius: 5px;
+            }
+        }
+    }
+  }
+}
  
