@@ -1,13 +1,13 @@
-<div class="container slider-creator">
+<div class="container college-docspage slider-creator">
 	<div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 page-icon">
         <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/settings1.png" class="hidden-xs img-responsive center-block" alt="">
       </div><!--.col -->
-      <div class="col-md-6 creator-content">
+      <div class="col-md-9 creator-content">
         <div class="">
             <form class="form-horizontal" enctype="multipart/form-data" name='imageform' id="imageform" method="post">
                 <fieldset>
-                    <h3 class="text-center">GENERAL DOCUMENT SETTING</h3>
+                    <h3 class="text-center page-title">GENERAL DOCUMENT SETTING</h3>
 
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Copyright Form</label>
@@ -18,7 +18,7 @@
                         $copyright = get_option('copyright');
                         if($copyright){
                             $copy_right = json_decode($copyright, 1); ?>
-                            <a href="<?php echo $copy_right['url'];?>" download> Download </a>
+                            <a class="download" href="<?php echo $copy_right['url'];?>" download> Download </a>
                         <?php } ?>
                     </div>
 
@@ -31,7 +31,7 @@
                         $withdraw = get_option('withdraw');
                         if($withdraw){
                             $with_draw = json_decode($withdraw, 1); ?>
-                            <a href="<?php echo $with_draw['url'];?>" download> Download </a>
+                            <a class="download" href="<?php echo $with_draw['url'];?>" download> Download </a>
                         <?php } ?>
                     </div>
 
@@ -44,7 +44,7 @@
                         $samplepaper = get_option('samplepaper');
                         if($samplepaper){
                             $sample_paper = json_decode($samplepaper, 1); ?>
-                            <a href="<?php echo $sample_paper['url'];?>" download> Download </a>
+                            <a class="download" href="<?php echo $sample_paper['url'];?>" download> Download </a>
                         <?php } ?>
                     </div>
 
@@ -57,11 +57,11 @@
                         $papertemplates = get_option('papertemplates');
                         if($papertemplates){
                             $paper_templates = json_decode($papertemplates, 1); ?>
-                            <a href="<?php echo $paper_templates['url'];?>" download> Download </a>
+                            <a class="download" href="<?php echo $paper_templates['url'];?>" download> Download </a>
                         <?php } ?>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group aboutusimg">
                         <label class="col-md-3 control-label" for="name">About Us Image </label>
                         <div class="col-md-9 slider_image">
                             <input class='photo-upload' type="file" name="papertemplates" id="papertemplates">
@@ -71,6 +71,7 @@
                         if($about_us_image){
                             $about_us_image = json_decode($about_us_image, 1); ?>
                             <img src="<?php echo $about_us_image['url'];?>"/>
+                            <span>(550*320)</span>
                         <?php } ?>
                     </div>
                     

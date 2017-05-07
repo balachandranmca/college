@@ -10529,4 +10529,24 @@ textarea {
   border-radius: 0;
 }
 
+/* line 3, sass/college-docspage.scss */
+.college-docspage .page-icon img {
+  margin: 30px;
+}
+/* line 7, sass/college-docspage.scss */
+.college-docspage .page-title {
+  margin: 30px;
+}
+/* line 11, sass/college-docspage.scss */
+.college-docspage .aboutusimg img {
+  width: 200px;
+  margin: 15px;
+  border: 1px solid #333;
+  padding: 2px;
+}
+/* line 19, sass/college-docspage.scss */
+.college-docspage .form-group .download {
+  margin: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
