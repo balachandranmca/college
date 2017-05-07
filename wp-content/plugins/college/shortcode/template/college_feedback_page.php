@@ -45,3 +45,39 @@
         </div> <!-- end row -->
     </div> <!-- end container -->
 </section> <!-- end section -->
+
+<script>
+    jQuery(document).on('click', '#cf-submit', function(e){
+        e.preventDefault();
+        jQuery('#errorMsg').addClass('hide-error');
+        var noerrorFlag = 1;
+
+        if(jQuery('#name').val()==""){
+            noerrorFlag=0;
+        }
+        if(jQuery('#email').val()==""){
+            noerrorFlag=0;
+        }
+        if(jQuery('#comment').val()==""){
+            noerrorFlag=0;
+        }
+        if(noerrorFlag){
+            var fd = new FormData();
+            fd.append("name", jQuery('#name').val()); 
+            fd.append("email", jQuery('#email').val());
+            fd.append("comment", jQuery('#comment').val());
+            fd.append('action', 'college_feedbacks');
+            jQuery.ajax({
+                type: 'POST',
+                url: "<?php echo admin_url('admin-ajax.php'); ?>",
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response){
+                    alert("Your feedback is recieved");
+                    window.location = "<?php echo site_url();?>";
+                }
+            });
+        }
+    });
+</script>
