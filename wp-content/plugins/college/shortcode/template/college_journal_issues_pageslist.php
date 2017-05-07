@@ -70,7 +70,7 @@
                         
                         ?>
                         <div class="panel-footer">
-                            <a href="<?php echo $pdf_file['url'];?>" class="btn btn-danger" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp;FULL PDF</a>
+                            <a data-id="<?php echo $value['id'];?>" href="<?php echo $pdf_file['url'];?>" class="btn btn-danger download_pdf" download><i class="fa fa-file-pdf-o" aria-hidden="true" ></i> &nbsp;FULL PDF</a>
                         </div>
                     </div>
                 </div>
@@ -78,3 +78,28 @@
         </div>
     </div>
 </section>
+<script>
+jQuery(document).on('click', '.download_pdf', function(e){
+   var user_id=<?php echo get_current_user_id();?>;
+   if( user_id == 0 ){
+        alert("please login");
+        e.preventDefault();
+   }
+   else{
+       var journalid = jQuery(this).attr('data-id');
+        var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+        jQuery.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: {
+                'action':'college_issue_download',
+                'user_id' : user_id,
+                'paper_id' : jQuery(this).attr("data-id"),
+            },
+            success:function(response) {
+               
+            }
+        });
+   }
+});
+</script>

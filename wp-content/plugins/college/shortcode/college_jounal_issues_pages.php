@@ -7,6 +7,7 @@
 use App\JournalIssuePublish;
 use App\Issue;
 use App\Journal;
+use App\PublishPaperDownload;
 
 add_shortcode('COLLEGE_JOURNAL_ISSUES_PAGES', 'college_journal_issues_pages_shortcode');
 function college_journal_issues_pages_shortcode($atts) {	
@@ -20,4 +21,14 @@ function college_journal_issues_pages_shortcode($atts) {
 	$template_content = ob_get_contents();
 	ob_end_clean();
 	return $template_content;
+}
+
+
+add_action('wp_ajax_college_issue_download', 'college_issue_download');
+
+function college_issue_download()
+{
+	$download_info['user_id'] = $_POST['user_id'];
+	$download_info['paper_id'] = $_POST['paper_id'];
+	$data = PublishPaperDownload::create($download_info);
 }

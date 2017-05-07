@@ -85,3 +85,7 @@ include_once 'college_certificate.php';
 include_once 'college_feedback.php';
 
 include_once 'college_advertise_us.php';
+
+include_once 'college_publish_download.php';
+
+include_once 'college_feedback_list.php';
