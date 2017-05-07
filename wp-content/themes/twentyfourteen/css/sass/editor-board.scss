@@ -76,6 +76,7 @@ $font_family_1: 'FontAwesome';
             display: block;
             border-radius: 50%;
             width: 180px;
+            height: 180px;
         }
         ul {
             display: block;
@@ -159,11 +160,15 @@ $font_family_1: 'FontAwesome';
         text-align: center;
         .Profile-details{
             text-align: left;
-            transform: translate(30px,40px);
+            -ms-transform: translate(30px,40px); /* IE 9 */
+            -webkit-transform: translate(30px,40px); /* Safari */
+            transform: translate(30px,40px);/* Chrome */
             width: 44%;
             display: inline-block;
             vertical-align: top;
-            font-size: 17px;
+            font-size: 15px;
+            font-weight: bold;
+            word-break: break-word;
         }
     }
 }

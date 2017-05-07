@@ -1,4 +1,4 @@
-<div class="container issues_listpage demo">
+<div class="container author_issue_paperlistpage issues_listpage demo">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="panel panel-default panel-table">
@@ -38,7 +38,7 @@
                                 <td><?php echo $value['status'];?></td>
                                 <?php $issue_ids = $value['id']; ?>
                             <?php } ?>
-                            <td><a href="<?php echo get_buzz_url('college_author_paper');?>?id=<?php echo $issue_ids;?>">View Details</a></td>
+                            <td><a class="btn-primary viewdetails-btn" href="<?php echo get_buzz_url('college_author_paper');?>?id=<?php echo $issue_ids;?>">View Details</a></td>
                             </tr>
                         <?php } ?>  
                     </tbody>

@@ -65,8 +65,7 @@
         line-height: 34px;
     }
     .slider-list-img{
-        width: 100px;
-        height: 80px;
+        width: 150px;
         margin: 0 auto;
         display: block;
     }
@@ -224,3 +223,33 @@ div.DTFC_LeftBodyWrapper tbody tr:first-child td {
 div.DTFC_LeftFootWrapper table {
   border-top: none;
 }
+
+/******************************Editors List Page Datatable Css Elements******************************/
+.editors-listpagetable{
+  .table-responsive{
+    .dataTables_wrapper{
+        .datatable{
+            img{
+                width: 150px;
+            }
+        }
+    }
+  }
+}
+
+.author_issue_paperlistpage{
+  .table-responsive{
+    .dataTables_wrapper{
+        .datatable{
+            img{
+                width: 150px;
+            }
+            .viewdetails-btn{
+              padding: 5px 10px;
+              border-radius: 5px;
+            }
+        }
+    }
+  }
+}
+ 

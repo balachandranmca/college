@@ -11,6 +11,22 @@
     }
     .payment-details{
         padding-top: 30px;
+        .table-bordered{
+            tr td:first-child{
+                background: #a52a2a;
+                color: white;
+            }
+        }
+    }
+    .table-bordered{
+        .table-header{
+            background: #a52a2a;
+            color: white;
+            th{
+                text-align: center;
+                font-weight: 400;
+            }
+        }
     }
     .widget_currency_converter{
         div{

@@ -7560,50 +7560,49 @@ body.slide-active {
 /* line 67, sass/journal-list.scss */
 .slider-listpagetable .slider-list-img, .journal-listpagetable .slider-list-img, .volume-listpagetable .slider-list-img, .issue-listpagetable .slider-list-img, .editors-listpagetable .slider-list-img,
 .journalpublish-listpagetable .slider-list-img, .caroselslider-listpage .slider-list-img, .journal-editors-listpage .slider-list-img, .user-listpagetable .slider-list-img {
-  width: 100px;
-  height: 80px;
+  width: 150px;
   margin: 0 auto;
   display: block;
 }
 
-/* line 75, sass/journal-list.scss */
+/* line 74, sass/journal-list.scss */
 .demo {
   margin: 4em auto;
 }
 
-/* line 82, sass/journal-list.scss */
+/* line 81, sass/journal-list.scss */
 .dataTables_length label {
   float: left;
   text-align: left;
 }
-/* line 83, sass/journal-list.scss */
+/* line 82, sass/journal-list.scss */
 .dataTables_length select {
   width: 75px;
 }
 
-/* line 86, sass/journal-list.scss */
+/* line 85, sass/journal-list.scss */
 .dataTables_filter label {
   float: right;
 }
 
-/* line 88, sass/journal-list.scss */
+/* line 87, sass/journal-list.scss */
 .dataTables_info {
   padding-top: 26px;
 }
 
-/* line 89, sass/journal-list.scss */
+/* line 88, sass/journal-list.scss */
 .dataTables_paginate {
   float: right;
   margin: 0;
 }
 
-/* line 92, sass/journal-list.scss */
+/* line 91, sass/journal-list.scss */
 table.table {
   clear: both;
   margin-bottom: 6px !important;
   max-width: none !important;
 }
-/* line 97, sass/journal-list.scss */
+/* line 96, sass/journal-list.scss */
 table.table thead .sorting,
 table.table thead .sorting_asc,
 table.table thead .sorting_desc,
@@ -7612,55 +7611,55 @@ table.table thead .sorting_desc_disabled {
   cursor: pointer;
   *cursor: hand;
 }
-/* line 102, sass/journal-list.scss */
+/* line 101, sass/journal-list.scss */
 table.table thead .sorting {
   background: url("../images/sort_both.png") no-repeat center right;
 }
-/* line 103, sass/journal-list.scss */
+/* line 102, sass/journal-list.scss */
 table.table thead .sorting_asc {
   background: url("../images/sort_asc.png") no-repeat center right;
 }
-/* line 104, sass/journal-list.scss */
+/* line 103, sass/journal-list.scss */
 table.table thead .sorting_desc {
   background: url("../images/sort_desc.png") no-repeat center right;
 }
-/* line 105, sass/journal-list.scss */
+/* line 104, sass/journal-list.scss */
 table.table thead .sorting_asc_disabled {
   background: url("../images/sort_asc_disabled.png") no-repeat center right;
 }
-/* line 106, sass/journal-list.scss */
+/* line 105, sass/journal-list.scss */
 table.table thead .sorting_desc_disabled {
   background: url("../images/sort_desc_disabled.png") no-repeat center right;
 }
-/* line 110, sass/journal-list.scss */
+/* line 109, sass/journal-list.scss */
 table.dataTable th:active {
   outline: none;
 }
 
 /* Scrolling */
-/* line 115, sass/journal-list.scss */
+/* line 114, sass/journal-list.scss */
 .dataTables_scrollHead table {
   margin-bottom: 0 !important;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 121, sass/journal-list.scss */
+/* line 120, sass/journal-list.scss */
 .dataTables_scrollHead table thead tr:last-child th:first-child, .dataTables_scrollHead table thead tr:last-child td:first-child {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 
-/* line 129, sass/journal-list.scss */
+/* line 128, sass/journal-list.scss */
 .dataTables_scrollBody table {
   border-top: none;
   margin-bottom: 0 !important;
 }
-/* line 133, sass/journal-list.scss */
+/* line 132, sass/journal-list.scss */
 .dataTables_scrollBody table tbody tr:first-child th, .dataTables_scrollBody table tbody tr:first-child td {
   border-top: none;
 }
 
-/* line 137, sass/journal-list.scss */
+/* line 136, sass/journal-list.scss */
 .dataTables_scrollFoot table {
   border-top: none;
 }
@@ -7668,58 +7667,58 @@ table.dataTable th:active {
 /*
  * TableTools styles
  */
-/* line 148, sass/journal-list.scss */
+/* line 147, sass/journal-list.scss */
 .table tbody tr.active td, .table tbody tr.active th {
   background-color: #08C;
   color: white;
 }
-/* line 150, sass/journal-list.scss */
+/* line 149, sass/journal-list.scss */
 .table tbody tr.active:hover td, .table tbody tr.active:hover th {
   background-color: #0075b0 !important;
 }
 
-/* line 156, sass/journal-list.scss */
+/* line 155, sass/journal-list.scss */
 .table-striped tbody tr.active:nth-child(odd) td, .table-striped tbody tr.active:nth-child(odd) th {
   background-color: #017ebc;
 }
 
-/* line 160, sass/journal-list.scss */
+/* line 159, sass/journal-list.scss */
 table.DTTT_selectable tbody tr {
   cursor: pointer;
   *cursor: hand;
 }
 
-/* line 163, sass/journal-list.scss */
+/* line 162, sass/journal-list.scss */
 .DTTT .btn {
   color: #333 !important;
   font-size: 12px;
 }
-/* line 166, sass/journal-list.scss */
+/* line 165, sass/journal-list.scss */
 .DTTT .btn:hover {
   text-decoration: none !important;
 }
 
-/* line 170, sass/journal-list.scss */
+/* line 169, sass/journal-list.scss */
 ul.DTTT_dropdown.dropdown-menu li:hover a {
   background-color: #0088cc;
   color: white !important;
 }
 
 /* TableTools information display */
-/* line 178, sass/journal-list.scss */
+/* line 177, sass/journal-list.scss */
 .DTTT_print_info.modal {
   height: 150px;
   margin-top: -75px;
   text-align: center;
 }
-/* line 183, sass/journal-list.scss */
+/* line 182, sass/journal-list.scss */
 .DTTT_print_info h6 {
   font-weight: normal;
   font-size: 28px;
   line-height: 28px;
   margin: 1em;
 }
-/* line 189, sass/journal-list.scss */
+/* line 188, sass/journal-list.scss */
 .DTTT_print_info p {
   font-size: 14px;
   line-height: 20px;
@@ -7728,14 +7727,14 @@ ul.DTTT_dropdown.dropdown-menu li:hover a {
 /*
  * FixedColumns styles
  */
-/* line 195, sass/journal-list.scss */
+/* line 194, sass/journal-list.scss */
 div.DTFC_LeftHeadWrapper table,
 div.DTFC_LeftFootWrapper table,
 table.DTFC_Cloned tr.even {
   background-color: white;
 }
 
-/* line 201, sass/journal-list.scss */
+/* line 200, sass/journal-list.scss */
 div.DTFC_LeftHeadWrapper table {
   margin-bottom: 0 !important;
   border-top-right-radius: 0 !important;
@@ -7743,28 +7742,44 @@ div.DTFC_LeftHeadWrapper table {
   border-bottom-right-radius: 0 !important;
 }
 
-/* line 208, sass/journal-list.scss */
+/* line 207, sass/journal-list.scss */
 div.DTFC_LeftHeadWrapper table thead tr:last-child th:first-child,
 div.DTFC_LeftHeadWrapper table thead tr:last-child td:first-child {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 
-/* line 214, sass/journal-list.scss */
+/* line 213, sass/journal-list.scss */
 div.DTFC_LeftBodyWrapper table {
   border-top: none;
   margin-bottom: 0 !important;
 }
 
-/* line 219, sass/journal-list.scss */
+/* line 218, sass/journal-list.scss */
 div.DTFC_LeftBodyWrapper tbody tr:first-child th,
 div.DTFC_LeftBodyWrapper tbody tr:first-child td {
   border-top: none;
 }
 
-/* line 224, sass/journal-list.scss */
+/* line 223, sass/journal-list.scss */
 div.DTFC_LeftFootWrapper table {
   border-top: none;
+}
+
+/******************************Editors List Page Datatable Css Elements******************************/
+/* line 232, sass/journal-list.scss */
+.editors-listpagetable .table-responsive .dataTables_wrapper .datatable img {
+  width: 150px;
+}
+
+/* line 244, sass/journal-list.scss */
+.author_issue_paperlistpage .table-responsive .dataTables_wrapper .datatable img {
+  width: 150px;
+}
+/* line 247, sass/journal-list.scss */
+.author_issue_paperlistpage .table-responsive .dataTables_wrapper .datatable .viewdetails-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* line 8, sass/journal-creator.scss */
@@ -7840,13 +7855,28 @@ div.DTFC_LeftFootWrapper table {
 .feespage .payment-details {
   padding-top: 30px;
 }
-/* line 16, sass/feespage.scss */
+/* line 15, sass/feespage.scss */
+.feespage .payment-details .table-bordered tr td:first-child {
+  background: #a52a2a;
+  color: white;
+}
+/* line 22, sass/feespage.scss */
+.feespage .table-bordered .table-header {
+  background: #a52a2a;
+  color: white;
+}
+/* line 25, sass/feespage.scss */
+.feespage .table-bordered .table-header th {
+  text-align: center;
+  font-weight: 400;
+}
+/* line 32, sass/feespage.scss */
 .feespage .widget_currency_converter div {
   width: 250px !important;
   border-radius: 10px;
   font-size: 20px;
 }
-/* line 21, sass/feespage.scss */
+/* line 37, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vlabel {
   font-size: 15px !important;
   color: #000000 !important;
@@ -7854,25 +7884,25 @@ div.DTFC_LeftFootWrapper table {
   letter-spacing: 1px;
   font-family: Oswald !important;
 }
-/* line 28, sass/feespage.scss */
+/* line 44, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vtextarea {
   height: 30px;
   border-radius: 5px;
   padding-right: 10px;
   border: 1px solid #000;
 }
-/* line 34, sass/feespage.scss */
+/* line 50, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .VselectBox {
   height: 30px !important;
   border-radius: 5px;
   border: 1px solid #000;
 }
-/* line 39, sass/feespage.scss */
+/* line 55, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vtextarea {
   resize: none;
   color: #000 !important;
 }
-/* line 44, sass/feespage.scss */
+/* line 60, sass/feespage.scss */
 .feespage .widget_currency_converter div .VmainContainer .Vmsg_1 a {
   font-size: 15px !important;
 }
@@ -7958,8 +7988,9 @@ div.DTFC_LeftFootWrapper table {
   display: block;
   border-radius: 50%;
   width: 180px;
+  height: 180px;
 }
-/* line 80, sass/editor-board.scss */
+/* line 81, sass/editor-board.scss */
 .editorial-board .team-leader ul {
   display: block;
   opacity: 0;
@@ -7977,12 +8008,12 @@ div.DTFC_LeftFootWrapper table {
   -moz-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
 }
-/* line 96, sass/editor-board.scss */
+/* line 97, sass/editor-board.scss */
 .editorial-board .team-leader ul li {
   display: inline;
   margin: 0 11px;
 }
-/* line 99, sass/editor-board.scss */
+/* line 100, sass/editor-board.scss */
 .editorial-board .team-leader ul li a {
   font-family: "FontAwesome";
   display: inline-block;
@@ -7992,31 +8023,31 @@ div.DTFC_LeftFootWrapper table {
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 107, sass/editor-board.scss */
+/* line 108, sass/editor-board.scss */
 .editorial-board .team-leader ul li a:hover {
   text-decoration: none;
 }
-/* line 110, sass/editor-board.scss */
+/* line 111, sass/editor-board.scss */
 .editorial-board .team-leader ul li a:focus {
   text-decoration: none;
 }
-/* line 115, sass/editor-board.scss */
+/* line 116, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-twitter:hover {
   color: #55acee;
 }
-/* line 120, sass/editor-board.scss */
+/* line 121, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-facebook:hover {
   color: #3b5998;
 }
-/* line 125, sass/editor-board.scss */
+/* line 126, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-pinterest:hover {
   color: #cb2026;
 }
-/* line 130, sass/editor-board.scss */
+/* line 131, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-google-plus:hover {
   color: #dd4b39;
 }
-/* line 137, sass/editor-board.scss */
+/* line 138, sass/editor-board.scss */
 .editorial-board .team-leader-shadow {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -8028,37 +8059,44 @@ div.DTFC_LeftFootWrapper table {
   z-index: 10;
   border-radius: 50%;
 }
-/* line 147, sass/editor-board.scss */
+/* line 148, sass/editor-board.scss */
 .editorial-board .team-leader-shadow a {
   display: block;
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 156, sass/editor-board.scss */
+  /* line 157, sass/editor-board.scss */
   .editorial-board .team-leader-box:nth-of-type(3n) {
     margin: 0 auto;
   }
 }
-/* line 158, sass/editor-board.scss */
+/* line 159, sass/editor-board.scss */
 .editorial-board .cheif-editor {
   text-align: center;
 }
-/* line 160, sass/editor-board.scss */
+/* line 161, sass/editor-board.scss */
 .editorial-board .cheif-editor .Profile-details {
   text-align: left;
+  -ms-transform: translate(30px, 40px);
+  /* IE 9 */
+  -webkit-transform: translate(30px, 40px);
+  /* Safari */
   transform: translate(30px, 40px);
+  /* Chrome */
   width: 44%;
   display: inline-block;
   vertical-align: top;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: bold;
+  word-break: break-word;
 }
 
-/* line 171, sass/editor-board.scss */
+/* line 176, sass/editor-board.scss */
 .editors-civil .team-container .col-sm-4 {
   padding: 60px 15px 0 15px;
 }
-/* line 174, sass/editor-board.scss */
+/* line 179, sass/editor-board.scss */
 .editors-civil .team-container .team-member {
   max-width: 245px;
   margin: auto;
@@ -8066,7 +8104,7 @@ div.DTFC_LeftFootWrapper table {
   overflow: hidden;
   border: 1px solid #333;
 }
-/* line 183, sass/editor-board.scss */
+/* line 188, sass/editor-board.scss */
 .editors-civil .team-container figcaption {
   padding: 10px;
   text-align: left;
@@ -8079,30 +8117,30 @@ div.DTFC_LeftFootWrapper table {
   overflow: auto;
   word-wrap: break-word;
 }
-/* line 195, sass/editor-board.scss */
+/* line 200, sass/editor-board.scss */
 .editors-civil .team-container figcaption h4 {
   font-size: 22px;
   font-weight: 700;
   padding-top: 20px;
 }
-/* line 200, sass/editor-board.scss */
+/* line 205, sass/editor-board.scss */
 .editors-civil .team-container .member-name {
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
 }
-/* line 205, sass/editor-board.scss */
+/* line 210, sass/editor-board.scss */
 .editors-civil .team-container figcaption p {
   font-size: 1.125em;
 }
-/* line 208, sass/editor-board.scss */
+/* line 213, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons {
   display: inline-block;
   margin: auto;
   text-align: center;
   width: 100%;
 }
-/* line 215, sass/editor-board.scss */
+/* line 220, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container,
 .editors-civil .team-member .social-btn-container .social-btn-box {
   -webkit-transition: all .25s;
@@ -8111,69 +8149,69 @@ div.DTFC_LeftFootWrapper table {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 224, sass/editor-board.scss */
+/* line 229, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container {
   position: absolute;
   top: 0px;
   margin: 0 auto;
   left: 0;
 }
-/* line 230, sass/editor-board.scss */
+/* line 235, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 233, sass/editor-board.scss */
+/* line 238, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .team-socail-btn {
   overflow: hidden;
   position: relative;
   width: 245px;
   height: 230px;
 }
-/* line 239, sass/editor-board.scss */
+/* line 244, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .social-btn-box {
   position: absolute;
 }
-/* line 243, sass/editor-board.scss */
+/* line 248, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .facebook-btn-container {
   bottom: 220px;
   right: 230px;
 }
-/* line 247, sass/editor-board.scss */
+/* line 252, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .twitter-btn-container {
   bottom: 220px;
   left: 230px;
 }
-/* line 251, sass/editor-board.scss */
+/* line 256, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .linkedin-btn-container {
   top: 220px;
   right: 230px;
 }
-/* line 255, sass/editor-board.scss */
+/* line 260, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .github-btn-container {
   top: 220px;
   left: 230px;
 }
-/* line 260, sass/editor-board.scss */
+/* line 265, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .facebook-btn-container {
   bottom: 115px;
   right: 122px;
 }
-/* line 264, sass/editor-board.scss */
+/* line 269, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .twitter-btn-container {
   bottom: 115px;
   left: 122px;
 }
-/* line 268, sass/editor-board.scss */
+/* line 273, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .linkedin-btn-container {
   top: 115px;
   right: 122px;
 }
-/* line 272, sass/editor-board.scss */
+/* line 277, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .github-btn-container {
   top: 115px;
   left: 122px;
 }
-/* line 276, sass/editor-board.scss */
+/* line 281, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons a {
   color: #fff;
   width: 24px;
@@ -8182,7 +8220,7 @@ div.DTFC_LeftFootWrapper table {
   font-size: 24px;
   text-align: center;
 }
-/* line 284, sass/editor-board.scss */
+/* line 289, sass/editor-board.scss */
 .editors-civil .team-container .team-member figure,
 .editors-civil .team-container .team-member figcaption,
 .editors-civil .team-container .team-member img,
@@ -8193,30 +8231,30 @@ div.DTFC_LeftFootWrapper table {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 295, sass/editor-board.scss */
+/* line 300, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figure {
   background-color: #3498db;
   color: #fff;
 }
-/* line 299, sass/editor-board.scss */
+/* line 304, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figcaption {
   border-color: #3498db;
   color: #fff;
 }
-/* line 304, sass/editor-board.scss */
+/* line 309, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover .social-buttons {
   top: 90px;
 }
 
 /* 2.2 - Social Button
 ------------------------------------------ */
-/* line 310, sass/editor-board.scss */
+/* line 315, sass/editor-board.scss */
 .social-btn-container {
   text-align: center;
   margin: 50px auto 0 auto;
 }
 
-/* line 314, sass/editor-board.scss */
+/* line 319, sass/editor-board.scss */
 .social-btn-container .social-btn-box {
   display: inline-block;
   width: 60px;
@@ -8237,7 +8275,7 @@ div.DTFC_LeftFootWrapper table {
   overflow: hidden;
 }
 
-/* line 337, sass/editor-board.scss */
+/* line 342, sass/editor-board.scss */
 .social-btn-container .social-btn-box a {
   color: #fff;
   font-size: 26px;
@@ -8255,7 +8293,7 @@ div.DTFC_LeftFootWrapper table {
   transform: rotate(-45deg);
 }
 
-/* line 354, sass/editor-board.scss */
+/* line 359, sass/editor-board.scss */
 .social-btn-box,
 .social-btn-box a {
   -webkit-transition: all .25s;
@@ -8265,48 +8303,48 @@ div.DTFC_LeftFootWrapper table {
   transition: all .25s;
 }
 
-/* line 363, sass/editor-board.scss */
+/* line 368, sass/editor-board.scss */
 .social-btn-box:hover {
   border-color: transparent;
 }
 
-/* line 366, sass/editor-board.scss */
+/* line 371, sass/editor-board.scss */
 .social-btn-box .facebook-btn:hover {
   background: #3B5998;
   color: #fff;
 }
 
-/* line 370, sass/editor-board.scss */
+/* line 375, sass/editor-board.scss */
 .social-btn-box .twitter-btn:hover {
   background: #55ACEE;
   color: #fff;
 }
 
-/* line 374, sass/editor-board.scss */
+/* line 379, sass/editor-board.scss */
 .social-btn-box .linkedin-btn:hover {
   background: #0077b5;
   color: #fff;
 }
 
-/* line 378, sass/editor-board.scss */
+/* line 383, sass/editor-board.scss */
 .social-btn-box .google-plus-btn:hover {
   background: #db514f;
   color: #fff;
 }
 
-/* line 382, sass/editor-board.scss */
+/* line 387, sass/editor-board.scss */
 .social-btn-box .youtube-btn:hover {
   background: #cc181e;
   color: #fff;
 }
 
-/* line 386, sass/editor-board.scss */
+/* line 391, sass/editor-board.scss */
 .social-btn-box .github-btn:hover {
   background: #2b2e30;
   color: #fff;
 }
 
-/* line 390, sass/editor-board.scss */
+/* line 395, sass/editor-board.scss */
 .social-btn-box .a:hover {
   background: #3498db;
   color: #fff;
@@ -10316,49 +10354,50 @@ div.DTFC_LeftFootWrapper table {
   float: none;
 }
 
-/* line 2, sass/paper-status.scss */
-.paperstatuspage span {
+/* line 4, sass/paper-status.scss */
+.paperstatuspage tbody td span {
   margin: 12px;
   padding: 5px;
   border-radius: 5px;
+  display: inline-block;
 }
-/* line 7, sass/paper-status.scss */
+/* line 12, sass/paper-status.scss */
 .paperstatuspage span.active-status {
   background: #ff0000;
   padding: 7px;
   color: #fff;
   border-radius: 5px;
 }
-/* line 13, sass/paper-status.scss */
+/* line 18, sass/paper-status.scss */
 .paperstatuspage .btn-default {
   background: #e6e6e6;
 }
-/* line 16, sass/paper-status.scss */
+/* line 21, sass/paper-status.scss */
 .paperstatuspage .btn-magick {
   color: #fff;
   background-color: #bb39d7;
   border-color: #9a00cd;
 }
-/* line 21, sass/paper-status.scss */
+/* line 26, sass/paper-status.scss */
 .paperstatuspage .btn-pressure {
   color: #fff;
   background: #333;
   border: 1px solid #333;
 }
-/* line 26, sass/paper-status.scss */
+/* line 31, sass/paper-status.scss */
 .paperstatuspage .btn-review {
   background: #6f9810;
   color: #fff;
   border: 1px solie #6f9810;
 }
 
-/* line 33, sass/paper-status.scss */
+/* line 38, sass/paper-status.scss */
 .resize-none {
   resize: none;
 }
 
 /***********************General Css for disable resizing textarea for all pages************************/
-/* line 38, sass/paper-status.scss */
+/* line 43, sass/paper-status.scss */
 textarea {
   resize: none;
   width: 300px;

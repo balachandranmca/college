@@ -11,10 +11,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <table class="table">
+                <table class="table table-bordered">
                     <thead>
-                        <tr>
-                            <th></th>
+                        <tr class="table-header">
+                            <th>Author</th>
                             <th>Standard Author</th>
                             <th>Editorial Board Member</th>
                             <th>Student / Research Scholar</th>

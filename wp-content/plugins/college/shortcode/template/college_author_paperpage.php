@@ -1,7 +1,7 @@
 <div class="container slider-creator author-paperpage">
 	<div class="row">
       <div class="col-md-3">
-        <img src="https://www.macupdate.com/images/icons256/8382.png" class="img-responsive center-block" alt="">
+        <img src="https://quovadisblog.com/wp-content/uploads/2009/02/checklist-icon.jpg" class="img-responsive center-block" alt="">
       </div>
       <div class="col-md-9 creator-content">
         <div>
@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Issue Details </label>
                          <div class="col-md-9">
-                            <label class="col-md-9 control-label" for="name"><?php echo $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date']?></label>
+                            <label class="control-label" for="name"><?php echo $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date']?></label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -32,7 +32,7 @@
                         <div class="form-group">
                         <label class="col-md-3 control-label" for="name">User Details </label>
                          <div class="col-md-9">
-                            <p class="col-md-9" for="name"><?php echo $author_user[$author_paper['user_id']];?></p>
+                            <p class="" for="name"><?php echo $author_user[$author_paper['user_id']];?></p>
                         </div>
                     </div>
                     <?php } ?>

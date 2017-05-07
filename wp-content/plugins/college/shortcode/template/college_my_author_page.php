@@ -1,19 +1,21 @@
 <div class="form-group">
     <label class="col-md-3 control-label" for="name">Current Status</label>
     <div class="col-md-9 slider_image">
-         <label class="col-md-3 control-label" for="name"><?php echo $author_paper['status'];?></label>
+         <label class="control-label" for="name"><?php echo $author_paper['status'];?></label>
     </div>
 </div>
 <div class="form-group">
     <label class="col-md-3 control-label" for="name">History</label>
-    <?php $statusDate = ['reviewDate', 'recievedDate', 'acceptDate', 'rejectDate', 'modifyDate', 'resubmittedDate', 'transactionSubmittedDate', 'paidDate', 'publishedDate'];
-    foreach ($statusDate as $key => $value) { ?>
-        <div class="col-md-9 slider_image">
-            <?php if($author_paper[$value]) { ?>
-                <label class="col-md-3 control-label" for="name"><?php echo $value.' - '.$author_paper[$value];?></label>
-            <?php } ?>
-        </div>
-    <?php } ?>
+    <div class="col-md-9">
+        <?php $statusDate = ['reviewDate', 'recievedDate', 'acceptDate', 'rejectDate', 'modifyDate', 'resubmittedDate', 'transactionSubmittedDate', 'paidDate', 'publishedDate'];
+        foreach ($statusDate as $key => $value) { ?>
+            <div class="slider_image">
+                <?php if($author_paper[$value]) { ?>
+                    <label class="control-label" for="name"><?php echo $value.' - '.$author_paper[$value];?></label>
+                <?php } ?>
+            </div>
+        <?php } ?>
+    </div>
 </div>
 <?php 
 if($author_paper['status'] == 'accept') { ?>
