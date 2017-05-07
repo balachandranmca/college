@@ -208,7 +208,7 @@
                   <div class="panel panel-primary">
                     <div class="panel-heading">
                       <span class=""></span>
-                      <h3> Conference/Seminar</h3>
+                      <h3>Conference/Seminar</h3>
                     </div>
                     <div class="panel-body">
                       <div class="row">
@@ -217,8 +217,12 @@
                             <li style="" class="news-item">
                               <table cellpadding="4">
                                 <tbody>
-                                  <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                  <tr data-toggle="modal" data-target="#conference_modal" value="View" name="" id="" style="cursor: pointer;">
+                                  <td>
+                                      <img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" />
+                                  </td>
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -227,8 +231,12 @@
                             <li style="" class="news-item">
                               <table cellpadding="4">
                                 <tbody>
-                                  <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                  <tr data-toggle="modal" data-target="#conference_modal" value="View" name="" id="" style="cursor: pointer;">
+                                  <td>
+                                      <img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" />
+                                  </td>
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -237,8 +245,12 @@
                             <li style="" class="news-item">
                               <table cellpadding="4">
                                 <tbody>
-                                  <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                  <tr data-toggle="modal" data-target="#conference_modal" value="View" name="" id="" style="cursor: pointer;">
+                                  <td>
+                                      <img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" />
+                                  </td>
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -248,7 +260,8 @@
                               <table cellpadding="4">
                                 <tbody>
                                   <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -258,7 +271,8 @@
                               <table cellpadding="4">
                                 <tbody>
                                   <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -268,7 +282,8 @@
                               <table cellpadding="4">
                                 <tbody>
                                   <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -278,7 +293,8 @@
                               <table cellpadding="4">
                                 <tbody>
                                   <tr>
-                                    <td class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                    <td class="news-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
                                     </td>
                                   </tr>
                                 </tbody>
@@ -308,6 +324,38 @@
                  </div>
                 </div>
               </div>
+               <div class="modal fade" id="conference_modal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Conference/Seminar</h4>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Image</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" /></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
             </div>
             <!-- End row -->
           </div>
