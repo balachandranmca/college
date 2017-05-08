@@ -12,6 +12,7 @@ function college_journal_shortcode($atts) {
 		$journal = Journal::where('id', $_GET['id'])->get()->toArray();
 		$journal = $journal[0];
 		$journal['images'] = json_decode($journal['images'], 1);
+		$journal['header_img'] = json_decode($journal['header_img'], 1);
 	}
 	ob_start();
 	include_once 'template/college_journalpage.php';
@@ -33,20 +34,34 @@ function college_journal()
 			$upload_overrides = array( 'test_form' => false );
 			$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
 			$journals['images'] = json_encode($movefile);
-			$journals['name'] =  $_POST['name'];
-			$journals['issn_no'] = $_POST['issn_no'];
-			$journals['color'] = $_POST['color'];
-			$journals['impact_no'] = $_POST['impact_no'];
-			$journals['des'] = stripslashes($_POST['desc']);
-			$journal->update($journals);
 		}
+		if($_FILES['header_img']){
+			$image_old = json_decode($journal->header_img,1);
+			unlink( $image_old['file'] );
+			$uploadedfile = $_FILES['header_img'];
+			$upload_overrides = array( 'test_form' => false );
+			$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
+			$journals['header_img'] = json_encode($movefile);
+		}
+		$journals['name'] =  $_POST['name'];
+		$journals['issn_no'] = $_POST['issn_no'];
+		$journals['color'] = $_POST['color'];
+		$journals['impact_no'] = $_POST['impact_no'];
+		$journals['des'] = stripslashes($_POST['desc']);
+		$journal->update($journals);
 	}
 	else {
 		$uploadedfile = $_FILES['images'];
 		$upload_overrides = array( 'test_form' => false );
 		$movefile = wp_handle_upload( $uploadedfile, $upload_overrides );
 		$journal['images'] = json_encode($movefile);
-		if ( $movefile && ! isset( $movefile['error'] ) ) {
+
+		$uploadedfile = $_FILES['header_img'];
+		$upload_overrides = array( 'test_form' => false );
+		$movefiles = wp_handle_upload( $uploadedfile, $upload_overrides );
+		$journal['header_img'] = json_encode($movefiles);
+
+		if ( $movefile && ! isset( $movefile['error'] ) && $movefiles && ! isset( $movefiles['error'] ) ) {
 			$journal['name'] = $_POST['name'];
 			$journal['issn_no'] = $_POST['issn_no'];
 			$journal['color'] = $_POST['color'];

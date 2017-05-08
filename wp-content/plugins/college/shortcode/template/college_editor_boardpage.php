@@ -132,28 +132,31 @@
                             <div class="social-btn-container">
                                 <div class="team-socail-btn">
                                     <span class="social-btn-box facebook-btn-container">
-                                                        <a href="#" class="facebook-btn">
-                                                            <i class="fa fa-facebook"></i>
-                                                        </a><!-- /.facebook-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        <!-- /.facebook-btn -->
+                                    </span>
+                                <!-- /.social-btn-box -->
                                     <span class="social-btn-box twitter-btn-container">
-                                                        <a href="#" class="twitter-btn">
-                                                            <i class="fa fa-twitter"></i>
-                                                        </a><!-- /.twitter-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn">
+                                                <i class="fa fa-twitter"></i>
+                                            </a><!-- /.twitter-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                     <span class="social-btn-box linkedin-btn-container">
-                                                        <a href="#" class="linkedin-btn">
-                                                            <i class="fa fa-linkedin"></i>
-                                                        </a><!-- /.linkedin-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+
+                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a><!-- /.linkedin-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
-                                                        <a href="#" class="github-btn">
-                                                            <i class="fa fa-google-plus"></i>
-                                                        </a><!-- /.github-btn -->
-                                                    </span>
+                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        <!-- /.github-btn -->
+                                    </span>
                                     <!-- /.social-btn-box -->
                                 </div>
                                 <!-- /.team-socail-btn -->
@@ -220,29 +223,32 @@
                             <div class="social-btn-container">
                                 <div class="team-socail-btn">
                                     <span class="social-btn-box facebook-btn-container">
-                                                        <a href="#" class="facebook-btn">
-                                                            <i class="fa fa-facebook"></i>
-                                                        </a><!-- /.facebook-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        <!-- /.facebook-btn -->
+                                    </span>
+                                <!-- /.social-btn-box -->
                                     <span class="social-btn-box twitter-btn-container">
-                                                        <a href="#" class="twitter-btn">
-                                                            <i class="fa fa-twitter"></i>
-                                                        </a><!-- /.twitter-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn">
+                                                <i class="fa fa-twitter"></i>
+                                            </a><!-- /.twitter-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                     <span class="social-btn-box linkedin-btn-container">
-                                                        <a href="#" class="linkedin-btn">
-                                                            <i class="fa fa-linkedin"></i>
-                                                        </a><!-- /.linkedin-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+
+                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a><!-- /.linkedin-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
-                                                        <a href="#" class="github-btn">
-                                                            <i class="fa fa-github-alt"></i>
-                                                        </a><!-- /.github-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        <!-- /.github-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                 </div>
                                 <!-- /.team-socail-btn -->
                             </div>
@@ -308,28 +314,31 @@
                             <div class="social-btn-container">
                                 <div class="team-socail-btn">
                                     <span class="social-btn-box facebook-btn-container">
-                                                        <a href="#" class="facebook-btn">
-                                                            <i class="fa fa-facebook"></i>
-                                                        </a><!-- /.facebook-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        <!-- /.facebook-btn -->
+                                    </span>
+                                <!-- /.social-btn-box -->
                                     <span class="social-btn-box twitter-btn-container">
-                                                        <a href="#" class="twitter-btn">
-                                                            <i class="fa fa-twitter"></i>
-                                                        </a><!-- /.twitter-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn">
+                                                <i class="fa fa-twitter"></i>
+                                            </a><!-- /.twitter-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                     <span class="social-btn-box linkedin-btn-container">
-                                                        <a href="#" class="linkedin-btn">
-                                                            <i class="fa fa-linkedin"></i>
-                                                        </a><!-- /.linkedin-btn -->
-                                                    </span>
-                                    <!-- /.social-btn-box -->
+
+                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a><!-- /.linkedin-btn -->
+                                    </span>
+                            <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
-                                                        <a href="#" class="github-btn">
-                                                            <i class="fa fa-github-alt"></i>
-                                                        </a><!-- /.github-btn -->
-                                                    </span>
+                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        <!-- /.github-btn -->
+                                    </span>
                                     <!-- /.social-btn-box -->
                                 </div>
                                 <!-- /.team-socail-btn -->
