@@ -12,7 +12,7 @@ use App\PublishPaperDownload;
 add_shortcode('COLLEGE_JOURNAL_ISSUES_PAGES', 'college_journal_issues_pages_shortcode');
 function college_journal_issues_pages_shortcode($atts) {	
 	ob_start();
-	$journal_issue_publish = JournalIssuePublish::where('issue_id', $_GET["issue_id"])->get()->toArray();
+	$journal_issue_publish = JournalIssuePublish::where('issue_id', $_GET["issue_id"])->where('status', 1)->get()->toArray();
 	$issue = Issue::where('id', $_GET['issue_id'])->get()->toArray();
 	$issue = $issue[0];
 	$journal = Journal::where('id', $issue['journal_id'])->get()->toArray();

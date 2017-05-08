@@ -96,25 +96,29 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="personal_details">Facebook Url</label>
                         <div class="col-md-9">
-                            <input type="text" id="fb_url" value="<?php echo $journal_editor['fb_url'];?>">
+                            <input class="weburl" type="text" id="fb_url" value="<?php echo $journal_editor['fb_url'];?>">
+                            <span style="color: red;" class="weburl_msg hide">Please enter Proper Url( include http or https )</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="personal_details">Twitter Url</label>
                         <div class="col-md-9">
-                            <input type="text" id="tw_url" value="<?php echo $journal_editor['tw_url'];?>">
+                            <input class="weburl" type="text" id="tw_url" value="<?php echo $journal_editor['tw_url'];?>">
+                            <span style="color: red;" class="weburl_msg hide">Please enter Proper Url( include http or https )</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="personal_details">Google Plus Url</label>
                         <div class="col-md-9">
-                            <input type="text" id="gp_url" value="<?php echo $journal_editor['gp_url'];?>">
+                            <input class="weburl" type="text" id="gp_url" value="<?php echo $journal_editor['gp_url'];?>">
+                            <span style="color: red;" class="weburl_msg hide">Please enter Proper Url( include http or https )</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="personal_details">LinkedIn Url</label>
                         <div class="col-md-9">
-                            <input type="text" id="ln_url" value="<?php echo $journal_editor['ln_url'];?>">
+                            <input class="weburl" type="text" id="ln_url" value="<?php echo $journal_editor['ln_url'];?>">
+                            <span style="color: red;" class="weburl_msg hide">Please enter Proper Url( include http or https )</span>
                         </div>
                     </div>
                 <div id="errorMsg" class='hide-error'>Please fill all fields</div>
@@ -182,9 +186,17 @@
             };
 
         }
+    function isValidUrl(url){
+        if(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test(url)){
+            return true;
+        } else {
+            return false;
+        }
+    }
     jQuery(document).on('click', '#image_upload', function(e){
         e.preventDefault();
         jQuery('#errorMsg').addClass('hide-error');
+        jQuery('.weburl_msg').addClass('hide');
         var noerrorFlag = 1;
 
         if(jQuery('.file-upload').val()=="" && jQuery('#journal_editorid').val()==""){
@@ -196,6 +208,13 @@
         if(jQuery('#name').val()==""){
             noerrorFlag=0;
         }
+        jQuery('.weburl').each(function(){
+            if(jQuery(this).val() != "" && !isValidUrl(jQuery(this).val())){
+                noerrorFlag=0;
+                jQuery(this).next().removeClass('hide');
+            }
+        });
+        
         
         if(noerrorFlag){
             var fd = new FormData();

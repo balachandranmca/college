@@ -13,6 +13,7 @@ function college_journal_issue_publish_shortcode($atts) {
 	if(isset($_GET['id'])){
 		$journal_issue_publish = JournalIssuePublish::where('id', $_GET['id'])->get()->toArray();
 		$journal_issue_publish = $journal_issue_publish[0];
+		$journal_issue_publish['pdf_file'] = json_decode($journal_issue_publish['pdf_file'],1);
 	}
 	ob_start();
 	include_once 'template/college_journal_issue_publishpage.php';
@@ -40,6 +41,7 @@ function college_journal_issue_publish()
 		$journal_issue_publishes['paper_title'] = $_POST['paper_title'];
 		$journal_issue_publishes['author'] = $_POST['author'];
 		$journal_issue_publishes['page_no'] = $_POST['page_no'];
+		$journal_issue_publishes['status'] = $_POST['status'];
 		$journal_issue_publish->update($journal_issue_publishes);
 		echo json_encode(array('success'=>'true'));
 		exit;
@@ -56,6 +58,7 @@ function college_journal_issue_publish()
 		$journal_issue_publish['author'] = $_POST['author'];
 		$journal_issue_publish['page_no'] = $_POST['page_no'];
 		$journal_issue_publish['sno'] = $_POST['sno'];
+		$journal_issue_publish['status'] = $_POST['status'];
 		if ( $movefile && ! isset( $movefile['error'] ) ) {
 			$data = JournalIssuePublish::create($journal_issue_publish);
 			echo json_encode(array('success'=>'true'));

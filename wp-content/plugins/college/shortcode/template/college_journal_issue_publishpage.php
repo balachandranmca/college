@@ -30,9 +30,20 @@
                         </div>
                     </div>
                     <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Status</label>
+                    <div class="col-md-9">
+                        <input type="radio" name="status" value="1"<?php if($journal_issue_publish['status']){echo ' checked';}?>> Yes<br>
+                        <input type="radio" name="status" value="0"<?php if(!$journal_issue_publish['status']){echo ' checked';}?>> No<br>
+                    </div>
+                    </div>
+                    
+                    <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Please Select PDF FILE</label>
                         <div class="col-md-9 slider_image">
                             <input type="file" name="pdf_file" id="pdf_file" accept=".pdf">
+                            <?php if($journal_issue_publish['pdf_file']['url'] != "") { ?>
+                                <a href="<?php echo $journal_issue_publish['pdf_file']['url'];?>" download> Download </a>
+                            <?php } ?>
                             <input type="hidden" id="journal_issue_publishid" value="<?php echo $journal_issue_publish['id'];?>">
                             <input type="hidden" id="issue_id" value="<?php echo $_GET['issue_id'];?>">
                         </div>
@@ -74,6 +85,7 @@
             fd.append("paper_title", jQuery('#paper_title').val());
             fd.append("author", jQuery('#author').val());
             fd.append("page_no", jQuery('#page_no').val());
+            fd.append("status", jQuery('input[name=status]:checked').val());
             fd.append("file", individual_file);
             fd.append('action', 'college_journal_issue_publish');  
             
