@@ -69,13 +69,6 @@
 <section class="journal-view-table">
     <div class="container">
         <div class="row">
-        <div class="col-md-12" style="text-align: center;">
-            <select name='type' id='type' class="selectpicker" data-style="btn-primary">
-                <option value='suggestions' >Suggestions</option>
-                <option value='inquiries' >Inquiries</option>
-                <option value='donations' >Donations</option>
-            </select>
-        </div>
             <!--<div class="col-md-10 table-content">            
                 <table class="table table-bordered">
                     <tbody>
@@ -100,7 +93,7 @@
             </div>-->
             <?php $i=1; ?>
             <?php foreach ($issue as $key => $value) { ?>
-                <div class="col-md-3 col-sm-4 col-xs-6 wow fadeInUp box" data-wow-duration="500ms">
+                <div class="col-md-12 col-sm-12 col-xs-12 wow fadeInUp box" data-wow-duration="500ms">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="Current-Issues">
@@ -116,7 +109,14 @@
                                 </div>
                                 <div class="Current-Issues-btn text-center">
                                     <!--<a href="<?php echo get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];?>"></a>-->
-                                    <input type="button" class="text-center btn btn-success btn-lg" data-toggle="modal" data-target="#issuemodal<?php echo $value['volume_id'];?>" value="View" name="" id=""/>
+                                    <div class="" style="text-align: center;">
+                                        <select name='type' id='type' class="selectpicker" data-style="btn-primary">
+                                            <option value='suggestions' >Suggestions</option>
+                                            <option value='inquiries' >Inquiries</option>
+                                            <option value='donations' >Donations</option>
+                                        </select>
+                                        <input type="button" class="text-center btn btn-success" data-toggle="modal" data-target="#issuemodal<?php echo $value['volume_id'];?>" value="View" name="" id=""/>
+                                    </div>
                                 </div>
                             </div>
                         </div>

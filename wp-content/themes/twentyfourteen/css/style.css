@@ -8600,7 +8600,19 @@ div.DTFC_LeftFootWrapper table {
 .journal-view-table .box .Current-Issues .Current-Issues-btn {
   padding: 15px;
 }
-/* line 208, sass/journal-view.scss */
+/* line 205, sass/journal-view.scss */
+.journal-view-table .box .Current-Issues .Current-Issues-btn .bootstrap-select .btn-primary {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+/* line 211, sass/journal-view.scss */
+.journal-view-table .box .Current-Issues .Current-Issues-btn input.btn-success {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+/* line 220, sass/journal-view.scss */
 .journal-view-table .issues-listmodal .list-block {
   border: 1px solid #333;
   padding: 5px;
@@ -8608,7 +8620,7 @@ div.DTFC_LeftFootWrapper table {
   border-radius: 5px;
 }
 
-/* line 217, sass/journal-view.scss */
+/* line 229, sass/journal-view.scss */
 .newsticker #tick {
   position: relative;
   display: block;
@@ -8618,7 +8630,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 218, sass/journal-view.scss */
+/* line 230, sass/journal-view.scss */
 .newsticker #tick li {
   list-style-type: none;
   float: right;
@@ -8626,7 +8638,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 233, sass/journal-view.scss */
+/* line 245, sass/journal-view.scss */
 .newsticker #tick2 {
   position: relative;
   display: block;
@@ -8636,7 +8648,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 234, sass/journal-view.scss */
+/* line 246, sass/journal-view.scss */
 .newsticker #tick2 li {
   list-style-type: none;
   float: right;
@@ -8644,7 +8656,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 249, sass/journal-view.scss */
+/* line 261, sass/journal-view.scss */
 .newsticker #outer {
   width: 600px;
   height: 25px;
@@ -8653,14 +8665,14 @@ div.DTFC_LeftFootWrapper table {
   margin: 0 auto;
   float: none;
 }
-/* line 256, sass/journal-view.scss */
+/* line 268, sass/journal-view.scss */
 .newsticker #outer a {
   text-decoration: none;
   color: #ff0000;
   font-family: Calibri;
   font-size: 18px;
 }
-/* line 261, sass/journal-view.scss */
+/* line 273, sass/journal-view.scss */
 .newsticker #outer a:hover {
   border-bottom: 2px solid #777;
 }
