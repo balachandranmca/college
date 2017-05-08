@@ -7999,21 +7999,20 @@ div.DTFC_LeftFootWrapper table {
   list-style: none;
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 40%;
   width: 100%;
   text-align: center;
-  margin-top: -14px;
   z-index: 15;
   transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
 }
-/* line 97, sass/editor-board.scss */
+/* line 96, sass/editor-board.scss */
 .editorial-board .team-leader ul li {
   display: inline;
-  margin: 0 11px;
+  margin: 0 7px;
 }
-/* line 100, sass/editor-board.scss */
+/* line 99, sass/editor-board.scss */
 .editorial-board .team-leader ul li a {
   font-family: "FontAwesome";
   display: inline-block;
@@ -8023,31 +8022,31 @@ div.DTFC_LeftFootWrapper table {
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 108, sass/editor-board.scss */
+/* line 107, sass/editor-board.scss */
 .editorial-board .team-leader ul li a:hover {
   text-decoration: none;
 }
-/* line 111, sass/editor-board.scss */
+/* line 110, sass/editor-board.scss */
 .editorial-board .team-leader ul li a:focus {
   text-decoration: none;
 }
-/* line 116, sass/editor-board.scss */
+/* line 115, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-twitter:hover {
   color: #55acee;
 }
-/* line 121, sass/editor-board.scss */
+/* line 120, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-facebook:hover {
   color: #3b5998;
 }
-/* line 126, sass/editor-board.scss */
-.editorial-board .team-leader ul li a.fa-pinterest:hover {
+/* line 125, sass/editor-board.scss */
+.editorial-board .team-leader ul li a.fa-linkedin:hover {
   color: #cb2026;
 }
-/* line 131, sass/editor-board.scss */
+/* line 130, sass/editor-board.scss */
 .editorial-board .team-leader ul li a.fa-google-plus:hover {
   color: #dd4b39;
 }
-/* line 138, sass/editor-board.scss */
+/* line 137, sass/editor-board.scss */
 .editorial-board .team-leader-shadow {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -8059,23 +8058,23 @@ div.DTFC_LeftFootWrapper table {
   z-index: 10;
   border-radius: 50%;
 }
-/* line 148, sass/editor-board.scss */
+/* line 147, sass/editor-board.scss */
 .editorial-board .team-leader-shadow a {
   display: block;
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 157, sass/editor-board.scss */
+  /* line 156, sass/editor-board.scss */
   .editorial-board .team-leader-box:nth-of-type(3n) {
     margin: 0 auto;
   }
 }
-/* line 159, sass/editor-board.scss */
+/* line 158, sass/editor-board.scss */
 .editorial-board .cheif-editor {
   text-align: center;
 }
-/* line 161, sass/editor-board.scss */
+/* line 160, sass/editor-board.scss */
 .editorial-board .cheif-editor .Profile-details {
   text-align: left;
   -ms-transform: translate(30px, 40px);
@@ -8084,19 +8083,30 @@ div.DTFC_LeftFootWrapper table {
   /* Safari */
   transform: translate(30px, 40px);
   /* Chrome */
-  width: 44%;
   display: inline-block;
   vertical-align: top;
   font-size: 15px;
   font-weight: bold;
   word-break: break-word;
 }
+@media (max-width: 767px) {
+  /* line 160, sass/editor-board.scss */
+  .editorial-board .cheif-editor .Profile-details {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 160, sass/editor-board.scss */
+  .editorial-board .cheif-editor .Profile-details {
+    width: 44%;
+  }
+}
 
-/* line 176, sass/editor-board.scss */
+/* line 180, sass/editor-board.scss */
 .editors-civil .team-container .col-sm-4 {
   padding: 60px 15px 0 15px;
 }
-/* line 179, sass/editor-board.scss */
+/* line 183, sass/editor-board.scss */
 .editors-civil .team-container .team-member {
   max-width: 245px;
   margin: auto;
@@ -8104,7 +8114,7 @@ div.DTFC_LeftFootWrapper table {
   overflow: hidden;
   border: 1px solid #333;
 }
-/* line 188, sass/editor-board.scss */
+/* line 192, sass/editor-board.scss */
 .editors-civil .team-container figcaption {
   padding: 10px;
   text-align: left;
@@ -8117,30 +8127,30 @@ div.DTFC_LeftFootWrapper table {
   overflow: auto;
   word-wrap: break-word;
 }
-/* line 200, sass/editor-board.scss */
+/* line 204, sass/editor-board.scss */
 .editors-civil .team-container figcaption h4 {
   font-size: 22px;
   font-weight: 700;
   padding-top: 20px;
 }
-/* line 205, sass/editor-board.scss */
+/* line 209, sass/editor-board.scss */
 .editors-civil .team-container .member-name {
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
 }
-/* line 210, sass/editor-board.scss */
+/* line 214, sass/editor-board.scss */
 .editors-civil .team-container figcaption p {
   font-size: 1.125em;
 }
-/* line 213, sass/editor-board.scss */
+/* line 217, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons {
   display: inline-block;
   margin: auto;
   text-align: center;
   width: 100%;
 }
-/* line 220, sass/editor-board.scss */
+/* line 224, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container,
 .editors-civil .team-member .social-btn-container .social-btn-box {
   -webkit-transition: all .25s;
@@ -8149,69 +8159,69 @@ div.DTFC_LeftFootWrapper table {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 229, sass/editor-board.scss */
+/* line 233, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container {
   position: absolute;
   top: 0px;
   margin: 0 auto;
   left: 0;
 }
-/* line 235, sass/editor-board.scss */
+/* line 239, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 238, sass/editor-board.scss */
+/* line 242, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .team-socail-btn {
   overflow: hidden;
   position: relative;
   width: 245px;
   height: 230px;
 }
-/* line 244, sass/editor-board.scss */
+/* line 248, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .social-btn-box {
   position: absolute;
 }
-/* line 248, sass/editor-board.scss */
+/* line 252, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .facebook-btn-container {
   bottom: 220px;
   right: 230px;
 }
-/* line 252, sass/editor-board.scss */
+/* line 256, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .twitter-btn-container {
   bottom: 220px;
   left: 230px;
 }
-/* line 256, sass/editor-board.scss */
+/* line 260, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .linkedin-btn-container {
   top: 220px;
   right: 230px;
 }
-/* line 260, sass/editor-board.scss */
+/* line 264, sass/editor-board.scss */
 .editors-civil .team-member .social-btn-container .github-btn-container {
   top: 220px;
   left: 230px;
 }
-/* line 265, sass/editor-board.scss */
+/* line 269, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .facebook-btn-container {
   bottom: 115px;
   right: 122px;
 }
-/* line 269, sass/editor-board.scss */
+/* line 273, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .twitter-btn-container {
   bottom: 115px;
   left: 122px;
 }
-/* line 273, sass/editor-board.scss */
+/* line 277, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .linkedin-btn-container {
   top: 115px;
   right: 122px;
 }
-/* line 277, sass/editor-board.scss */
+/* line 281, sass/editor-board.scss */
 .editors-civil .team-member:hover .social-btn-container .github-btn-container {
   top: 115px;
   left: 122px;
 }
-/* line 281, sass/editor-board.scss */
+/* line 285, sass/editor-board.scss */
 .editors-civil .team-container .social-buttons a {
   color: #fff;
   width: 24px;
@@ -8220,7 +8230,7 @@ div.DTFC_LeftFootWrapper table {
   font-size: 24px;
   text-align: center;
 }
-/* line 289, sass/editor-board.scss */
+/* line 293, sass/editor-board.scss */
 .editors-civil .team-container .team-member figure,
 .editors-civil .team-container .team-member figcaption,
 .editors-civil .team-container .team-member img,
@@ -8231,30 +8241,30 @@ div.DTFC_LeftFootWrapper table {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 300, sass/editor-board.scss */
+/* line 304, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figure {
   background-color: #3498db;
   color: #fff;
 }
-/* line 304, sass/editor-board.scss */
+/* line 308, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover figcaption {
   border-color: #3498db;
   color: #fff;
 }
-/* line 309, sass/editor-board.scss */
+/* line 313, sass/editor-board.scss */
 .editors-civil .team-container .team-member:hover .social-buttons {
   top: 90px;
 }
 
 /* 2.2 - Social Button
 ------------------------------------------ */
-/* line 315, sass/editor-board.scss */
+/* line 319, sass/editor-board.scss */
 .social-btn-container {
   text-align: center;
   margin: 50px auto 0 auto;
 }
 
-/* line 319, sass/editor-board.scss */
+/* line 323, sass/editor-board.scss */
 .social-btn-container .social-btn-box {
   display: inline-block;
   width: 60px;
@@ -8275,7 +8285,7 @@ div.DTFC_LeftFootWrapper table {
   overflow: hidden;
 }
 
-/* line 342, sass/editor-board.scss */
+/* line 346, sass/editor-board.scss */
 .social-btn-container .social-btn-box a {
   color: #fff;
   font-size: 26px;
@@ -8293,7 +8303,7 @@ div.DTFC_LeftFootWrapper table {
   transform: rotate(-45deg);
 }
 
-/* line 359, sass/editor-board.scss */
+/* line 363, sass/editor-board.scss */
 .social-btn-box,
 .social-btn-box a {
   -webkit-transition: all .25s;
@@ -8303,48 +8313,48 @@ div.DTFC_LeftFootWrapper table {
   transition: all .25s;
 }
 
-/* line 368, sass/editor-board.scss */
+/* line 372, sass/editor-board.scss */
 .social-btn-box:hover {
   border-color: transparent;
 }
 
-/* line 371, sass/editor-board.scss */
+/* line 375, sass/editor-board.scss */
 .social-btn-box .facebook-btn:hover {
   background: #3B5998;
   color: #fff;
 }
 
-/* line 375, sass/editor-board.scss */
+/* line 379, sass/editor-board.scss */
 .social-btn-box .twitter-btn:hover {
   background: #55ACEE;
   color: #fff;
 }
 
-/* line 379, sass/editor-board.scss */
+/* line 383, sass/editor-board.scss */
 .social-btn-box .linkedin-btn:hover {
   background: #0077b5;
   color: #fff;
 }
 
-/* line 383, sass/editor-board.scss */
+/* line 387, sass/editor-board.scss */
 .social-btn-box .google-plus-btn:hover {
   background: #db514f;
   color: #fff;
 }
 
-/* line 387, sass/editor-board.scss */
+/* line 391, sass/editor-board.scss */
 .social-btn-box .youtube-btn:hover {
   background: #cc181e;
   color: #fff;
 }
 
-/* line 391, sass/editor-board.scss */
+/* line 395, sass/editor-board.scss */
 .social-btn-box .github-btn:hover {
   background: #2b2e30;
   color: #fff;
 }
 
-/* line 395, sass/editor-board.scss */
+/* line 399, sass/editor-board.scss */
 .social-btn-box .a:hover {
   background: #3498db;
   color: #fff;
@@ -8590,7 +8600,19 @@ div.DTFC_LeftFootWrapper table {
 .journal-view-table .box .Current-Issues .Current-Issues-btn {
   padding: 15px;
 }
-/* line 208, sass/journal-view.scss */
+/* line 205, sass/journal-view.scss */
+.journal-view-table .box .Current-Issues .Current-Issues-btn .bootstrap-select .btn-primary {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+/* line 211, sass/journal-view.scss */
+.journal-view-table .box .Current-Issues .Current-Issues-btn input.btn-success {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+/* line 220, sass/journal-view.scss */
 .journal-view-table .issues-listmodal .list-block {
   border: 1px solid #333;
   padding: 5px;
@@ -8598,7 +8620,7 @@ div.DTFC_LeftFootWrapper table {
   border-radius: 5px;
 }
 
-/* line 217, sass/journal-view.scss */
+/* line 229, sass/journal-view.scss */
 .newsticker #tick {
   position: relative;
   display: block;
@@ -8608,7 +8630,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 218, sass/journal-view.scss */
+/* line 230, sass/journal-view.scss */
 .newsticker #tick li {
   list-style-type: none;
   float: right;
@@ -8616,7 +8638,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 233, sass/journal-view.scss */
+/* line 245, sass/journal-view.scss */
 .newsticker #tick2 {
   position: relative;
   display: block;
@@ -8626,7 +8648,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 234, sass/journal-view.scss */
+/* line 246, sass/journal-view.scss */
 .newsticker #tick2 li {
   list-style-type: none;
   float: right;
@@ -8634,7 +8656,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 249, sass/journal-view.scss */
+/* line 261, sass/journal-view.scss */
 .newsticker #outer {
   width: 600px;
   height: 25px;
@@ -8643,14 +8665,14 @@ div.DTFC_LeftFootWrapper table {
   margin: 0 auto;
   float: none;
 }
-/* line 256, sass/journal-view.scss */
+/* line 268, sass/journal-view.scss */
 .newsticker #outer a {
   text-decoration: none;
   color: #ff0000;
   font-family: Calibri;
   font-size: 18px;
 }
-/* line 261, sass/journal-view.scss */
+/* line 273, sass/journal-view.scss */
 .newsticker #outer a:hover {
   border-bottom: 2px solid #777;
 }
@@ -10527,6 +10549,26 @@ textarea {
   border: 1px solid #4e595f;
   height: 38px;
   border-radius: 0;
+}
+
+/* line 3, sass/college-docspage.scss */
+.college-docspage .page-icon img {
+  margin: 30px;
+}
+/* line 7, sass/college-docspage.scss */
+.college-docspage .page-title {
+  margin: 30px;
+}
+/* line 11, sass/college-docspage.scss */
+.college-docspage .aboutusimg img {
+  width: 200px;
+  margin: 15px;
+  border: 1px solid #333;
+  padding: 2px;
+}
+/* line 19, sass/college-docspage.scss */
+.college-docspage .form-group .download {
+  margin: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

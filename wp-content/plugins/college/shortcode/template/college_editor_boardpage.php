@@ -28,7 +28,7 @@
                                     <a href="#"></a>
                                 </div>
                                 <img src="<?php echo $value['image']['url']?>" alt="">
-                                <!--<ul>
+                                <ul>
                                     <li>
                                         <a href="#" class="fa-twitter"></a>
                                     </li>
@@ -36,12 +36,12 @@
                                         <a href="#" class="fa-facebook"></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="fa-pinterest"></a>
+                                        <a href="#" class="fa-linkedin"></a>
                                     </li>
                                     <li>
                                         <a href="#" class="fa-google-plus"></a>
                                     </li>
-                                </ul>-->
+                                </ul>
                             </div>
                             <div>
                             </div>
