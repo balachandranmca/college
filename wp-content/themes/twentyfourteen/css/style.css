@@ -8370,36 +8370,40 @@ div.DTFC_LeftFootWrapper table {
 .journal-viewpage-header .issueno {
   margin-top: 10px;
 }
-/* line 4, sass/journal-view.scss */
+/* line 5, sass/journal-view.scss */
+.journal-viewpage-header .headerbanner-img img {
+  width: 100%;
+}
+/* line 9, sass/journal-view.scss */
 .journal-viewpage-header .header {
   padding: 5px;
 }
-/* line 7, sass/journal-view.scss */
+/* line 12, sass/journal-view.scss */
 .journal-viewpage-header .header-img {
   text-align: center;
   background: #faf7a0;
 }
-/* line 10, sass/journal-view.scss */
+/* line 15, sass/journal-view.scss */
 .journal-viewpage-header .header-img img {
   width: 100px;
 }
-/* line 14, sass/journal-view.scss */
+/* line 19, sass/journal-view.scss */
 .journal-viewpage-header .title, .journal-viewpage-header .issn-no {
   vertical-align: middle;
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 20, sass/journal-view.scss */
+  /* line 25, sass/journal-view.scss */
   .journal-viewpage-header .row {
     margin: 0;
   }
-  /* line 21, sass/journal-view.scss */
+  /* line 26, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     padding: 24px;
     margin: 0 auto;
     display: block;
   }
-  /* line 27, sass/journal-view.scss */
+  /* line 32, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 25px;
@@ -8407,7 +8411,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 34, sass/journal-view.scss */
+  /* line 39, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 14px;
     font-weight: 700 !important;
@@ -8417,20 +8421,20 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 44, sass/journal-view.scss */
+  /* line 49, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 15px;
     margin: 0px;
   }
-  /* line 48, sass/journal-view.scss */
+  /* line 53, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 19px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 54, sass/journal-view.scss */
+  /* line 59, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 28px;
     text-align: center;
@@ -8439,16 +8443,16 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 64, sass/journal-view.scss */
+  /* line 69, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     background: #faf7a0;
     padding: 14px;
   }
-  /* line 68, sass/journal-view.scss */
+  /* line 73, sass/journal-view.scss */
   .journal-viewpage-header .title {
     padding: 12px;
   }
-  /* line 70, sass/journal-view.scss */
+  /* line 75, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 25px;
@@ -8456,7 +8460,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 77, sass/journal-view.scss */
+  /* line 82, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 14px;
     font-weight: 700 !important;
@@ -8466,19 +8470,19 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 87, sass/journal-view.scss */
+  /* line 92, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 0;
   }
-  /* line 90, sass/journal-view.scss */
+  /* line 95, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 19px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 96, sass/journal-view.scss */
+  /* line 101, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 28px;
     text-align: center;
@@ -8487,11 +8491,11 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 106, sass/journal-view.scss */
+  /* line 111, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     padding: 37px;
   }
-  /* line 110, sass/journal-view.scss */
+  /* line 115, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 30px;
@@ -8499,7 +8503,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 117, sass/journal-view.scss */
+  /* line 122, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 28px;
     font-weight: 700 !important;
@@ -8509,19 +8513,19 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 127, sass/journal-view.scss */
+  /* line 132, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 22px;
   }
-  /* line 130, sass/journal-view.scss */
+  /* line 135, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 20px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 136, sass/journal-view.scss */
+  /* line 141, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 40px;
     text-align: center;
@@ -8530,11 +8534,11 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 @media (min-width: 1200px) {
-  /* line 145, sass/journal-view.scss */
+  /* line 150, sass/journal-view.scss */
   .journal-viewpage-header .header-img {
     padding: 30px;
   }
-  /* line 149, sass/journal-view.scss */
+  /* line 154, sass/journal-view.scss */
   .journal-viewpage-header .title p {
     text-align: center;
     font-size: 30px;
@@ -8542,7 +8546,7 @@ div.DTFC_LeftFootWrapper table {
     font-family: cursive;
     color: #fff;
   }
-  /* line 156, sass/journal-view.scss */
+  /* line 161, sass/journal-view.scss */
   .journal-viewpage-header .title h2 {
     font-size: 28px;
     font-weight: 700 !important;
@@ -8552,19 +8556,19 @@ div.DTFC_LeftFootWrapper table {
     margin: 0;
     font-family: initial !important;
   }
-  /* line 166, sass/journal-view.scss */
+  /* line 171, sass/journal-view.scss */
   .journal-viewpage-header .issn-no {
     background: #fff;
     padding: 15px;
   }
-  /* line 169, sass/journal-view.scss */
+  /* line 174, sass/journal-view.scss */
   .journal-viewpage-header .issn-no p {
     text-align: center;
     font-size: 20px;
     font-family: fantasy;
     margin: 0;
   }
-  /* line 175, sass/journal-view.scss */
+  /* line 180, sass/journal-view.scss */
   .journal-viewpage-header .issn-no h1 {
     font-size: 40px;
     text-align: center;
@@ -8573,20 +8577,20 @@ div.DTFC_LeftFootWrapper table {
   }
 }
 
-/* line 185, sass/journal-view.scss */
+/* line 190, sass/journal-view.scss */
 .journal-view-table .table-content {
   margin: 0 auto;
   float: none;
 }
-/* line 189, sass/journal-view.scss */
+/* line 194, sass/journal-view.scss */
 .journal-view-table .box {
   padding: 20px;
 }
-/* line 191, sass/journal-view.scss */
+/* line 196, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues {
   border: 1px solid #333;
 }
-/* line 193, sass/journal-view.scss */
+/* line 198, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues .service-icon {
   background-color: #333439;
   color: #fff;
@@ -8596,23 +8600,23 @@ div.DTFC_LeftFootWrapper table {
   transition: background-color 0.2s ease;
   text-align: center;
 }
-/* line 202, sass/journal-view.scss */
+/* line 207, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues .Current-Issues-btn {
   padding: 15px;
 }
-/* line 205, sass/journal-view.scss */
+/* line 210, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues .Current-Issues-btn .bootstrap-select .btn-primary {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 16px;
 }
-/* line 211, sass/journal-view.scss */
+/* line 216, sass/journal-view.scss */
 .journal-view-table .box .Current-Issues .Current-Issues-btn input.btn-success {
   font-size: 16px;
   padding: 8px 16px;
   border-radius: 6px;
 }
-/* line 220, sass/journal-view.scss */
+/* line 225, sass/journal-view.scss */
 .journal-view-table .issues-listmodal .list-block {
   border: 1px solid #333;
   padding: 5px;
@@ -8620,7 +8624,7 @@ div.DTFC_LeftFootWrapper table {
   border-radius: 5px;
 }
 
-/* line 229, sass/journal-view.scss */
+/* line 234, sass/journal-view.scss */
 .newsticker #tick {
   position: relative;
   display: block;
@@ -8630,7 +8634,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 230, sass/journal-view.scss */
+/* line 235, sass/journal-view.scss */
 .newsticker #tick li {
   list-style-type: none;
   float: right;
@@ -8638,7 +8642,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 245, sass/journal-view.scss */
+/* line 250, sass/journal-view.scss */
 .newsticker #tick2 {
   position: relative;
   display: block;
@@ -8648,7 +8652,7 @@ div.DTFC_LeftFootWrapper table {
   display: table;
   height: 0px;
 }
-/* line 246, sass/journal-view.scss */
+/* line 251, sass/journal-view.scss */
 .newsticker #tick2 li {
   list-style-type: none;
   float: right;
@@ -8656,7 +8660,7 @@ div.DTFC_LeftFootWrapper table {
   position: absolute;
   left: 0px;
 }
-/* line 261, sass/journal-view.scss */
+/* line 266, sass/journal-view.scss */
 .newsticker #outer {
   width: 600px;
   height: 25px;
@@ -8665,14 +8669,14 @@ div.DTFC_LeftFootWrapper table {
   margin: 0 auto;
   float: none;
 }
-/* line 268, sass/journal-view.scss */
+/* line 273, sass/journal-view.scss */
 .newsticker #outer a {
   text-decoration: none;
   color: #ff0000;
   font-family: Calibri;
   font-size: 18px;
 }
-/* line 273, sass/journal-view.scss */
+/* line 278, sass/journal-view.scss */
 .newsticker #outer a:hover {
   border-bottom: 2px solid #777;
 }
