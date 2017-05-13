@@ -233,7 +233,7 @@ $settings =   array(
           fd.append("desc", jQuery('#journal_frontend_editor').val());
           fd.append("journalid", jQuery('#journalid').val());
           fd.append('action', 'college_journal');             
-
+          jQuery('#loader-overlay').show();
           jQuery.ajax({
               type: 'POST',
               url: "<?php echo admin_url('admin-ajax.php'); ?>",

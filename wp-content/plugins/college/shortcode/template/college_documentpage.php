@@ -122,6 +122,7 @@
             fd.append("papertemplates", papertemplates);
             fd.append("about_us_image", about_us_image);
             fd.append('action', 'college_document'); 
+            jQuery('#loader-overlay').show();
             jQuery.ajax({
                 type: 'POST',
                 url: "<?php echo admin_url('admin-ajax.php'); ?>",

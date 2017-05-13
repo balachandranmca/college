@@ -78,7 +78,7 @@ if($author_paper['status'] == 'modify') { ?>
             fd.append("paper_id", <?php echo $_GET['id'];?>); 
             fd.append("paper_template", paper_template);       
             fd.append('action', 'college_author_paper_resubmitted'); 
-
+            jQuery('#loader-overlay').show();
             jQuery.ajax({
                 type: 'POST',
                 url: "<?php echo admin_url('admin-ajax.php'); ?>",
@@ -108,6 +108,7 @@ if($author_paper['status'] == 'accept') { ?>
         }
         
         if(noerrorFlag){
+            jQuery('#loader-overlay').show();
             var fd = new FormData();
             var file = jQuery(document).find('input[type="file"]');
 

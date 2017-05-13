@@ -70,7 +70,7 @@
                         
                         ?>
                         <div class="panel-footer">
-                            <a data-id="<?php echo $value['id'];?>" href="<?php echo $pdf_file['url'];?>" class="btn btn-danger download_pdf" download><i class="fa fa-file-pdf-o" aria-hidden="true" ></i> &nbsp;FULL PDF</a>
+                            <a data-id="<?php echo $value['id'];?>" href="<?php echo $pdf_file['url'];?>" class="btn btn-danger download_pdf" download><i class="fa fa-file-pdf-o" aria-hidden="true" ></i> &nbsp;Download PDF</a>
                         </div>
                     </div>
                 </div>

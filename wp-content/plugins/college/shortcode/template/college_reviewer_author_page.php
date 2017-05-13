@@ -41,6 +41,7 @@
         }
         
         if(noerrorFlag){
+            jQuery('#loader-overlay').show();
             var fd = new FormData();
         
             fd.append("paper_id", <?php echo $_GET['id'];?>); 

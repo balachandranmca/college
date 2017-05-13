@@ -58,6 +58,7 @@
         }
         
         if(noerrorFlag){
+          jQuery('#loader-overlay').show();
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
           var arr = jQuery('select.actives').map(function(){return this.value}).get();
           jQuery.ajax({
