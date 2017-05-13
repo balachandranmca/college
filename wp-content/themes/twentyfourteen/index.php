@@ -20,9 +20,11 @@
     use App\Issue;
     use App\Journal;
     use App\CaroselSlider;
+    use App\Conference;
     
     $sliderList = Slider::all()->sortBy('id')->toArray();
     $journalList = Journal::all()->sortBy('id')->toArray();
+    $conferenceList = Conference::all()->sortBy('id')->toArray();
     $issueActiveList = Issue::where('active', '=', 1)->where('status', '=', 0)->get()->toArray();
     $carosel_sliderList = CaroselSlider::all()->sortBy('id')->toArray();
     $withdraw = get_option('withdraw');
@@ -214,92 +216,23 @@
                       <div class="row">
                         <div class="col-xs-12">
                           <ul class="demo2" style="overflow-y: hidden; height: 460px;margin: 0;">
-                            <li style="" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr data-toggle="modal" data-target="#conference_modal" value="View" name="" id="" style="cursor: pointer;">
-                                  <td>
-                                      <img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" />
-                                  </td>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                          <?php foreach ($conferenceList as $key => $value) { ?>
+                              <?php $image =  json_decode($value['image'],1);?>
+                              <li style="" class="news-item">
+                                <table cellpadding="4">
+                                  <tbody>
+                                    <tr data-toggle="modal" data-target="#conference_modal<?php echo $value['id'];?>" value="View" name="" id="" style="cursor: pointer;">
+                                    <td>
+                                        <img alt="" width="60" class="img-circle" src="<?php echo $image['url'];?>" />
                                     </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
-                            <li style="" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr data-toggle="modal" data-target="#conference_modal" value="View" name="" id="" style="cursor: pointer;">
-                                  <td>
-                                      <img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" />
-                                  </td>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
-                            <li style="" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr data-toggle="modal" data-target="#conference_modal" value="View" name="" id="" style="cursor: pointer;">
-                                  <td>
-                                      <img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" />
-                                  </td>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
-                            <li style="display:none;" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
-                            <li style="display:none;" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
-                            <li style="display:none;" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
-                            <li style="display:none;" class="news-item">
-                              <table cellpadding="4">
-                                <tbody>
-                                  <tr>
-                                    <td class="news-content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </li>
+                                      <td class="news-content">
+                                          <?php echo $value['description'];?>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </li>
+                          <?php  } ?>
                           </ul>
                         </div>
                       </div>
@@ -324,7 +257,9 @@
                  </div>
                 </div>
               </div>
-               <div class="modal fade" id="conference_modal" role="dialog">
+              <?php foreach ($conferenceList as $key => $value) { ?>
+                    <?php $image =  json_decode($value['image'],1);?>
+               <div class="modal fade" id="conference_modal<?php echo $value['id'];?>" role="dialog">
                     <div class="modal-dialog">
                     
                         <!-- Modal content-->
@@ -343,8 +278,8 @@
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td><img alt="" width="60" class="img-circle" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/reviewer1.png" /></td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim</td>
+                                    <td><img alt="" width="60" class="img-circle" src="<?php echo $image['url'];?>" /></td>
+                                    <td><?php echo $value['description'];?></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -356,6 +291,7 @@
                     
                     </div>
                 </div>
+              <?php } ?>
             </div>
             <!-- End row -->
           </div>
