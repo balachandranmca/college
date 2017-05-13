@@ -7,7 +7,7 @@
 <section class="journal-viewpage-header">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 header" style="background: #<?php echo $journal['color'];?>;">
+            <!--<div class="col-xs-12 col-sm-12 col-md-12 header" style="background: #<?php //echo $journal['color'];?>;">
                     <div class="col-xs-12 col-sm-2 col-md-2 header-img">
                         <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/header-logo.png"/>
                     </div>
@@ -21,8 +21,11 @@
                         <h1 style="color: #<?php echo $journal['color'];?>;"><?php echo $journal['name']?></h1>
                     </div>
                 </div>
+            </div>-->
+            <div class="col-xs-12 col-sm-12 col-md-12 headerbanner-img">
+                    <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/banner_Mechanical.png"/>
+                <p data-toggle="modal" data-target="#issue_no_modal" id="" class="issueno btn btn-primary pull-right">Impact No - <span><?php echo $journal['impact_no'];?></span></p>
             </div>
-            <p data-toggle="modal" data-target="#issue_no_modal" id="" class="issueno btn btn-primary pull-right">Impact No - <span><?php echo $journal['impact_no'];?></span></p>
             <div class="modal fade" id="issue_no_modal" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
