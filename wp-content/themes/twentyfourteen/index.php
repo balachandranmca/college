@@ -107,7 +107,17 @@
                   <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="heading animated fadeInRight">
                     <?php echo $value['description'];?>
                   </h2>
-                  <a class="btn btn-primary animated fadeInUp navigation" href="#navigation">Go To Site</a>
+                  <a class="animated fadeInUp navigation" href="#navigation">
+                    <div class="wrap-scrolldownhoney">
+                      <div class="scrolldownhoney">
+                        <svg height="30" width="10">
+                          <circle class="scrolldownhoney-c1" cx="5" cy="15" r="2" />
+                          <circle class="scrolldownhoney-c2" cx="5" cy="15" r="2" />
+                        </svg>
+                      </div>
+                      <strong class="link-text">Go To Site</strong>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
