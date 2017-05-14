@@ -89,3 +89,5 @@ include_once 'college_advertise_us.php';
 include_once 'college_publish_download.php';
 
 include_once 'college_feedback_list.php';
+
+include_once 'college_conference_list.php';

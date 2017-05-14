@@ -107,6 +107,7 @@
         }
         
         if(noerrorFlag){
+            jQuery('#loader-overlay').show();
             var fd = new FormData();
             var file = jQuery(document).find('input[type="file"]');
 

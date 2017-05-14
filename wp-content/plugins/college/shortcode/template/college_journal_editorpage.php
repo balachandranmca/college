@@ -246,7 +246,7 @@
             fd.append('action', 'college_journal_editor');  
             
             
-
+            jQuery('#loader-overlay').show();
             jQuery.ajax({
                 type: 'POST',
                 url: "<?php echo admin_url('admin-ajax.php'); ?>",

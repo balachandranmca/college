@@ -55,8 +55,9 @@ function Page_Settings() {
 		"college_admin_paper_status" => "College Admin Paper Status",
 		"college_certificate" => "College_Certificate",
 		"college_feedback" => "College_Feedback",
-		"college_advertise-us" => "College Advertise us page",
-		"college_publish_download" => "College Publish Paper Download"
+		"college_conference" => "College Advertise us page",
+		"college_publish_download" => "College Publish Paper Download",
+		"college_conference_list" => "College Advertise us List page"
 	);
 
 	if (isset($_POST['pagesubmit'])) {

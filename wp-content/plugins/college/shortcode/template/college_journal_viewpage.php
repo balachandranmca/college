@@ -95,37 +95,37 @@
                 </table>
             </div>-->
             <?php $i=1; ?>
-            <?php foreach ($issue as $key => $value) { ?>
+            
                 <div class="col-md-12 col-sm-12 col-xs-12 wow fadeInUp box" data-wow-duration="500ms">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="Current-Issues">
-                                <div class="service-icon">
-                                    <!--<i class="fa fa-flask"></i>-->
-                                    <p><?php echo $volume[$value['volume_id']]?></p>
-                                    <?php 
-                                    $volumeids[$i] = $value['volume_id'];
-                                    $volumeIssues[$value['volume_id']][$i]['issue_no'] = $value['issue_no'];
-                                    $volumeIssues[$value['volume_id']][$i]['start_date'] = $value['start_date'];
-                                    $volumeIssues[$value['volume_id']][$i]['url'] = get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];
-                                    ?>
-                                </div>
+                                <div class="service-icon"><p>Volumes</p></div>
+                                
+                                
                                 <div class="Current-Issues-btn text-center">
-                                    <!--<a href="<?php echo get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];?>"></a>-->
                                     <div class="" style="text-align: center;">
-                                        <select name='type' id='type' class="selectpicker" data-style="btn-primary">
-                                            <option value='suggestions' >Suggestions</option>
-                                            <option value='inquiries' >Inquiries</option>
-                                            <option value='donations' >Donations</option>
+                                        <select name='type' id='volume_types' class="selectpicker" data-style="btn-primary">
+                                            <option value="0">Please Select</option>
+                                            <?php foreach ($issue as $key => $value) { ?>
+                                            <?php 
+                                            $volumeids[$i] = $value['volume_id'];
+                                            $volumeIssues[$value['volume_id']][$i]['issue_no'] = $value['issue_no'];
+                                            $volumeIssues[$value['volume_id']][$i]['start_date'] = $value['start_date'];
+                                            $volumeIssues[$value['volume_id']][$i]['url'] = get_buzz_url('college_jounal_issues_pages').'?issue_id='.$value['id'];
+                                            ?>
+                                            <option value="<?php echo $value['volume_id'];?>" ><?php echo $volume[$value['volume_id']]?></option>
+                                            <?php $i++; } ?>
                                         </select>
-                                        <input type="button" class="text-center btn btn-success" data-toggle="modal" data-target="#issuemodal<?php echo $value['volume_id'];?>" value="View" name="" id=""/>
-                                    </div>
+                                        <input type="button" class="text-center btn btn-success" data-toggle="modal" data-target="" value="View" name="" id="targeted_volume"/>
+                                    </div>  
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php $i++; } ?>
+                
                 <!-- Modal -->          
                 <?php foreach ($volumeIssues as $key => $issues) { ?>
                     <div class="modal fade" id="issuemodal<?php echo $key;?>" role="dialog">
@@ -167,5 +167,13 @@
     });
     jQuery(document).ready(function() {
         jQuery('.selectpicker').selectpicker();
+    });
+    jQuery(document).on('change', '#volume_types', function(e){
+        e.preventDefault();
+        data = "#issuemodal"+jQuery(this).val();
+        if(!jQuery(this).val()){
+            data = '';
+        }
+        jQuery('#targeted_volume').attr('data-target', data);
     });
 </script>

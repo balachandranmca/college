@@ -189,6 +189,7 @@ $home_settings =   array(
         jQuery('#errorMsg').addClass('hide-error');
         var noerrorFlag = 1;
         if(noerrorFlag){
+          jQuery('#loader-overlay').show();
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
           jQuery.ajax({
               url: ajaxurl,

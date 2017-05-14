@@ -48,6 +48,7 @@
   jQuery( "#reviewer-form" ).submit(function( event ) {
         event.preventDefault();
         var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+        jQuery('#loader-overlay').show();
         jQuery.ajax({
             url: ajaxurl,
             type: 'POST',

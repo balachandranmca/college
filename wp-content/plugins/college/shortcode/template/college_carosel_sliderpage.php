@@ -105,7 +105,7 @@
             fd.append('action', 'college_carosel_slider');  
             
             
-
+            jQuery('#loader-overlay').show();
             jQuery.ajax({
                 type: 'POST',
                 url: "<?php echo admin_url('admin-ajax.php'); ?>",

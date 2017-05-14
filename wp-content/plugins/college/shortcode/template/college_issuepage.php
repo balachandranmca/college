@@ -106,6 +106,7 @@
         }
         
         if(noerrorFlag){
+          jQuery('#loader-overlay').show();
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
           jQuery.ajax({
               url: ajaxurl,

@@ -147,6 +147,7 @@ if($author_paper['status'] == 'recieved') { ?>
         }
         
         if(noerrorFlag){
+            jQuery('#loader-overlay').show();
             var fd = new FormData();
             if(jQuery('#reviewer1').length) {
                 fd.append("reviewer1", jQuery('#reviewer1').val());
