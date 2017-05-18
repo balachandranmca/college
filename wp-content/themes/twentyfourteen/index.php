@@ -288,7 +288,7 @@
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td><img alt="" width="60" class="img-circle" src="<?php echo $image['url'];?>" /></td>
+                                    <td><img alt="" width="200" height="200" class="img-circle" src="<?php echo $image['url'];?>" /></td>
                                     <td><?php echo $value['description'];?></td>
                                   </tr>
                                 </tbody>
