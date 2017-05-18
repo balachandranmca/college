@@ -125,6 +125,20 @@
     <?php } ?>
     <li<?php if($page_id == get_buzz_id('college_contact_us')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_contact_us');?>">Contact</a></li>
 <?php } ?>
+   <?php if($is_admin) { ?>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li<?php if($page_id == get_buzz_id('college_feedback') || $page_id == get_buzz_id('college_feedback_list')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_feedback_list') ?>">Feedback</a></li>
+           <li<?php if($page_id == get_buzz_id('college_conference_list') || $page_id == get_buzz_id('college_conference')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_conference_list') ?>">Conference</a></li>
+           <li<?php if($page_id == get_buzz_id('college_publish_download')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_publish_download') ?>">User Paper Downloader List</a></li>
+           <li<?php if($page_id == get_buzz_id('college_certificate')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_certificate') ?>">Certificate</a></li>
+        </ul>
+    </li>
+   <?php } ?>
+   <?php if(!$is_admin) { ?>
+       <li<?php if($page_id == get_buzz_id('college_feedback')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_feedback') ?>">Feedback</a></li>
+   <?php } ?>
 <?php if($is_user_logged_in) { ?>
     <li><a href="<?php echo wp_logout_url( site_url() ); ?>">Logout</a></li>
 <?php } else { ?>
