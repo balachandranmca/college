@@ -120,6 +120,12 @@ if($author_paper['status'] == 'recieved') { ?>
                         <td><textarea id="comment"><?php echo $author_paper['comment'];?></textarea></td>
                 </div>
             </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="name">Published Date</label>
+                <div class="col-md-9">
+                        <td><input id= 'publishedDate' type="text" value="<?php echo $author_paper['published_date'];?>" ></td>
+                </div>
+            </div>
 <?php } ?>
     <div class="form-group">
                         <div class="col-md-12 text-right">
@@ -145,6 +151,10 @@ if($author_paper['status'] == 'recieved') { ?>
         if(jQuery('#status').length && jQuery('#status').val()==0){
             noerrorFlag=0;
         }
+        var publishedDate = '';
+        if(jQuery('#publishedDate').val()!=''){
+            publishedDate = jQuery('#publishedDate').val()
+        }
         
         if(noerrorFlag){
             jQuery('#loader-overlay').show();
@@ -154,6 +164,7 @@ if($author_paper['status'] == 'recieved') { ?>
                 fd.append("reviewer2", jQuery('#reviewer2').val());
                 fd.append("reviewer3", jQuery('#reviewer3').val());
                 fd.append("status", 'recieved');
+                
             }
             fd.append("paper_id", <?php echo $_GET['id'];?>);
             if(jQuery('#status').length) {           
@@ -162,6 +173,7 @@ if($author_paper['status'] == 'recieved') { ?>
 
             }          
             fd.append('action', 'college_author_paper');  
+            fd.append("publishedDate", publishedDate);
 
             jQuery.ajax({
                 type: 'POST',

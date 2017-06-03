@@ -16,7 +16,6 @@ function college_author_paper_shortcode($atts) {
 	$user_role = get_current_user_role(get_current_user_id());
 	$user_role = $user_role[0];
 	$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
-	$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
 	$author_paper = $author_paper[0];
 	$issue = Issue::where('id', '=', $author_paper['issue_id'])->get()->toArray();
 	$journalName = Journal::where('id', '=', $issue[0]['journal_id'])->value('name');
@@ -112,6 +111,7 @@ function college_author_paper()
 			$statusDate = $_POST['status'].'Date';
 			$authorIssuePapers[$statusDate] = $date;
 			$authorIssuePapers['comment'] = $_POST['comment'];
+			$authorIssuePapers['published_date'] = $_POST['publishedDate'];
 			$data = $authorIssuePaper->update($authorIssuePapers);
 			echo json_encode(array('success'=>'true'));
 			exit;
