@@ -95,6 +95,18 @@ function college_author_paper()
 			exit;
 		} else {
 			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
+			$user_id = AuthorIssuePaper::where('id', $_POST['paper_id'])->value('user_id');
+			$user_info = get_userdata($user_id);
+			$to = $user_info->user_email;
+			$user_name = $user_info->user_nicename;
+			$url = get_buzz_url('college_author_paper')."?id=".$_POST['paper_id'];
+			$subject = 'Paper status changed to '.$_POST['status'];
+			$headers = array('Content-Type: text/html; charset=UTF-8');
+			ob_start();
+			include_once 'template/mail/college_paper_status.php';
+			$template_content = ob_get_contents();
+			ob_end_clean();
+			wp_mail( $to, $subject, $template_content, $headers );
 			$authorIssuePapers['status'] = $_POST['status'];
 			$date = date('Y-m-d H:i:s');
 			$statusDate = $_POST['status'].'Date';

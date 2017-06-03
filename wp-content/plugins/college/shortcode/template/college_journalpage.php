@@ -64,7 +64,7 @@ $settings =   array(
               </div>
             </div>
             <div class="form-group">
-                <label class="col-md-3 control-label" for="name">Header Image (600*600)</label>
+                <label class="col-md-3 control-label" for="name">Header Image (1200*300)</label>
                 <div class="col-md-9 slider_image">
                     <img alt="Profile image" src="<?php echo $journal['header_img']['url'];?>" class="imageups" id="uploaded-images">
                     <input class='file-uploads' type="file" name="images" id="header_images" placeholder="Impact image">
@@ -196,6 +196,7 @@ $settings =   array(
         }
 
     jQuery( "#journal-form" ).submit(function( event ) {
+        
         tinyMCE.triggerSave();
         event.preventDefault();
         jQuery('#errorMsg').addClass('hide-error');
@@ -218,6 +219,7 @@ $settings =   array(
         if((jQuery('#header_images').val()=="") && (jQuery('#journalid').val()=="")){
             noerrorFlag=0;
         }
+        alert(noerrorFlag);
         if(noerrorFlag){
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
           var fd = new FormData();
