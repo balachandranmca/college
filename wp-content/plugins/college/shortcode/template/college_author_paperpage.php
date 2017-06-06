@@ -8,10 +8,21 @@
             <form class="form-horizontal" enctype="multipart/form-data" name='authorform' id="authorform" method="post">
                 <fieldset>
                     <h3 class="text-center">AUTHOR PAPER</h3>
+                    <?php if($user_role == "author" && $author_paper['status']=="published") { ?>
+                        <div class="text-right">
+                            <a target="_blank" class="btn btn-primary" href="<?php echo get_buzz_url('college_certificate_pdf').'?id='.$_GET['id'];?>">Certificate Generate</a>
+                        </div>
+                    <?php } ?>
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Issue Details </label>
                          <div class="col-md-9">
                             <label class="control-label" for="name"><?php echo $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date']?></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Paper Referrer No </label>
+                         <div class="col-md-9">
+                            <label class="control-label" for="name"><?php echo $author_paper['paper_referrer_no']?></label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -53,4 +64,21 @@
 </style>
 <script>
 jQuery('body').css('background-color', '#333');
+jQuery(document).on('click', '#certificate_pdf', function(e){
+        e.preventDefault();
+        jQuery('#errorMsg').addClass('hide-error');
+        var fd = new FormData();
+        fd.append("paper_id", "<?php echo $_GET['id'];?>"); 
+        fd.append('action', 'college_author_certificate_generate'); 
+        jQuery.ajax({
+                type: 'POST',
+                url: "<?php echo admin_url('admin-ajax.php'); ?>",
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response){
+                    location.reload();
+                }
+            });
+    });
 </script>

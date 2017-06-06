@@ -12,8 +12,7 @@ use App\Volume;
 
 add_shortcode('COLLEGE_CERTIFICATE', 'college_certificate_shortcode');
 function college_certificate_shortcode($atts) {	
-	// $author_paper_id = $atts['id'];
-	$author_paper_id = 9;
+	$author_paper_id = $atts['id'];
 	$author_paper = AuthorIssuePaper::where('id', '=', $author_paper_id)->get()->toArray();
 	$author_paper = $author_paper[0];
 	$issue = Issue::where('id', '=', $author_paper['issue_id'])->get()->toArray();
@@ -24,26 +23,10 @@ function college_certificate_shortcode($atts) {
 	$issue_name = $issue[0]['name'];
 	$volumeName = Volume::where('id', '=', $issue[0]['volume_id'])->value('name');
 	$issue_no = $issue[0]['issue_no'];
-	$published_date = $author_paper['published_date']
-	?>
-	<!--<?php echo $issn; ?>
-	
-	<?php echo $user_name; ?>
-	
-	<?php echo $issue_name; ?>
-	
-	<?php echo $volumeName; ?>
-	
-	<?php echo $issue_no; ?>
-	
-	<?php echo $published_date; ?>-->
-	
-	<?php
-
+	$published_date = $author_paper['published_date'];
 	ob_start();
 	include_once 'template/college_certificate_page.php';
 	$template_content = ob_get_contents();
 	ob_end_clean();
 	return $template_content;
-	// issn author_name paper_title volume_no issue_no newdatemonth
 }

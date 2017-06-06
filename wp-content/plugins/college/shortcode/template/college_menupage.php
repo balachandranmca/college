@@ -133,6 +133,7 @@
            <li<?php if($page_id == get_buzz_id('college_conference_list') || $page_id == get_buzz_id('college_conference')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_conference_list') ?>">Conference</a></li>
            <li<?php if($page_id == get_buzz_id('college_publish_download')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_publish_download') ?>">User Paper Downloader List</a></li>
            <li<?php if($page_id == get_buzz_id('college_certificate')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_certificate') ?>">Certificate</a></li>
+           <li<?php if($page_id == get_buzz_id('college_mail')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_mail') ?>">Mail</a></li>
         </ul>
     </li>
    <?php } ?>

@@ -132,6 +132,3 @@ function college_author_paper_reviewer()
 	echo json_encode(array('success'=>'true'));
 	exit;
 }
-
-
-
