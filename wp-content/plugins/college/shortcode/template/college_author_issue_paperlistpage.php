@@ -17,6 +17,7 @@
                         <?php } ?>
                         <th>Issue</th>
                         <th>Status</th>
+                        <th>Paper Reference No</th>
                         <th>Details</th>
                     </thead>
                     <tbody>
@@ -32,12 +33,14 @@
                             <?php if($user_role=="reviewer") { ?>
                                 <td><?php $issue_ids = $authorIssuePaper[$value['author_issue_paper_id']];echo $issue[$issue_ids];?></td>
                                 <td><?php echo $value['status']==''?'---':$value['status'];?></td>
+                                <td><?php echo $authorIssuePaper['paper_ref_no'][$value['author_issue_paper_id']]?></td>
                                 <?php $issue_ids = $value['author_issue_paper_id']; ?>
                             <?php } else { ?>
                                 <td><?php echo $issue[$value['issue_id']];?></td>
                                 <td><?php echo $value['status'];?></td>
                                 <?php $issue_ids = $value['id']; ?>
                             <?php } ?>
+                            <td><?php echo $value['paper_referrer_no'];?></td>
                             <td><a class="btn-primary viewdetails-btn" href="<?php echo get_buzz_url('college_author_paper');?>?id=<?php echo $issue_ids;?>">View Details</a></td>
                             </tr>
                         <?php } ?>  

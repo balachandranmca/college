@@ -123,11 +123,17 @@ function college_author_paper_reviewer()
 {
 	$reviewer_id 	= get_current_user_id();
 	$comment 		= $_POST['comment'];
+	$strength 		= $_POST['strength'];
+	$weekness 		= $_POST['weekness'];
+	$radiovalues 	= $_POST['values'];
 	$status 		= $_POST['status'];
 	$paper_id 		= $_POST['paper_id'];
 	$authorIssuePaperReviewer = AuthorIssuePaperReviewer::where('author_issue_paper_id', $paper_id)->where('user_id', $reviewer_id);
-	$authorIssuePaperReviewers['status'] 	= $status;
-	$authorIssuePaperReviewers['comment'] 	= $comment;
+	$authorIssuePaperReviewers['status'] 		= $status;
+	$authorIssuePaperReviewers['comment'] 		= $comment;
+	$authorIssuePaperReviewers['strength'] 		= $strength;
+	$authorIssuePaperReviewers['weekness'] 		= $weekness;
+	$authorIssuePaperReviewers['radiovalues'] 	= $radiovalues;
 	$data = $authorIssuePaperReviewer->update($authorIssuePaperReviewers);
 	echo json_encode(array('success'=>'true'));
 	exit;
