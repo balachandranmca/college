@@ -57,7 +57,10 @@ function Page_Settings() {
 		"college_feedback" => "College_Feedback",
 		"college_conference" => "College Advertise us page",
 		"college_publish_download" => "College Publish Paper Download",
-		"college_conference_list" => "College Advertise us List page"
+		"college_conference_list" => "College Advertise us List page",
+        "college_feedback_list" => "College Feedback List",
+        "college_certificate_pdf" => "College Certificate Pdf",
+        "college_mail" => "College Mail",
 	);
 
 	if (isset($_POST['pagesubmit'])) {

@@ -64,11 +64,17 @@ $settings =   array(
               </div>
             </div>
             <div class="form-group">
-                <label class="col-md-3 control-label" for="name">Header Image (600*600)</label>
+                <label class="col-md-3 control-label" for="name">Header Image (1200*300)</label>
                 <div class="col-md-9 slider_image">
                     <img alt="Profile image" src="<?php echo $journal['header_img']['url'];?>" class="imageups" id="uploaded-images">
                     <input class='file-uploads' type="file" name="images" id="header_images" placeholder="Impact image">
                 </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Referrer Number</label>
+              <div class="col-md-9">
+                <input id="referrer_no" name="referrer_no" type="text" placeholder="Referrer Number" class="form-control" value="<?php echo $journal['referrer_no'];?>">
+              </div>
             </div>
             <!-- Form actions -->
             <div class="form-group">
@@ -196,6 +202,7 @@ $settings =   array(
         }
 
     jQuery( "#journal-form" ).submit(function( event ) {
+        
         tinyMCE.triggerSave();
         event.preventDefault();
         jQuery('#errorMsg').addClass('hide-error');
@@ -218,6 +225,10 @@ $settings =   array(
         if((jQuery('#header_images').val()=="") && (jQuery('#journalid').val()=="")){
             noerrorFlag=0;
         }
+
+        if(jQuery('#referrer_no').val()==""){
+            noerrorFlag=0;
+        }
         if(noerrorFlag){
           var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
           var fd = new FormData();
@@ -232,6 +243,7 @@ $settings =   array(
           fd.append("color", jQuery('.jscolor').val());
           fd.append("desc", jQuery('#journal_frontend_editor').val());
           fd.append("journalid", jQuery('#journalid').val());
+          fd.append("referrer_no", jQuery('#referrer_no').val());
           fd.append('action', 'college_journal');             
           jQuery('#loader-overlay').show();
           jQuery.ajax({
@@ -246,6 +258,7 @@ $settings =   array(
           });
         }
         else{
+          alert('Please fill all fields');
           jQuery('#errorMsg').removeClass('hide-error');
           
         }

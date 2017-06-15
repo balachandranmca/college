@@ -33,6 +33,7 @@ function college_author_issue_paper_list_shortcode($atts) {
 		$fullList = AuthorIssuePaper::latest()->get()->toArray();
 		foreach ($fullList as $key => $value) {
 			$authorIssuePaper[$value['id']] = $value['issue_id'];
+			$authorIssuePaper['paper_ref_no'][$value['id']] = $value['paper_referrer_no'];
 			
 		}
 		$authorPaperList = AuthorIssuePaperReviewer::where('user_id', $user_id)->get()->toArray();

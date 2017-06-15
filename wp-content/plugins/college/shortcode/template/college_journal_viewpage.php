@@ -23,7 +23,7 @@
                 </div>
             </div>-->
             <div class="col-xs-12 col-sm-12 col-md-12 headerbanner-img">
-                    <img src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/banner_Mechanical.png"/>
+                    <img src="<?php echo $journal['header_img']['url']?>"/>
                 <p data-toggle="modal" data-target="#issue_no_modal" id="" class="issueno btn btn-primary pull-right">Impact No - <span><?php echo $journal['impact_no'];?></span></p>
             </div>
             <div class="modal fade" id="issue_no_modal" role="dialog">

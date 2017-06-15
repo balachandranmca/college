@@ -17,6 +17,7 @@ class AuthorIssuePaper extends Eloquent
                             'copyright', 
                             'reviewer_new', 
                             'reviewer_id', 
-                            'status'];
+                            'status',
+                            'paper_referrer_no'];
 
 }

@@ -14,6 +14,7 @@ function college_journal_view_shortcode($atts) {
 		$journal = Journal::where('id', $_GET['id'])->get()->toArray();
 		$journal = $journal[0];
 		$journal['images'] = json_decode($journal['images'], 1);
+		$journal['header_img'] = json_decode($journal['header_img'], 1);
 		$issue = Issue::where('status', '=', 1)->where('published', '=', 1)->where('journal_id', $_GET['id'])->get()->toArray();
 		$volumeList = Volume::all()->sortBy('id')->toArray();
 		foreach ($volumeList as $key => $value) {

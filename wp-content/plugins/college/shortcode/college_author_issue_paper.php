@@ -6,6 +6,7 @@
 
 use App\AuthorIssuePaper;
 use App\Issue;
+use App\Journal;
 
 
 add_shortcode('COLLEGE_AUTHOR_ISSUE_PAPER', 'college_author_issue_paper_shortcode');
@@ -41,6 +42,9 @@ function college_author_issue_paper()
 		$author_issue_paper['reviewer_id'] = '';
 		$author_issue_paper['user_id'] = get_current_user_id();
 		$author_issue_paper['issue_id'] = $_POST['issue_id'];
+		$journal_id = Issue::where('id', '=', $_POST['issue_id'])->value('journal_id');
+		$journal_referer_no = Journal::where('id', '=', $journal_id)->value('referrer_no');
+		$author_issue_paper['paper_referrer_no'] = $journal_referer_no.date("Y-m-d H:i:s");
 		if($_POST['reviewer1'] !=0 || $_POST['reviewer2'] !=0 || $_POST['reviewer3'] !=0 ){
 			$author_issue_paper['reviewer_id'] = $_POST['reviewer1'].','.$_POST['reviewer2'].','.$_POST['reviewer3'];
 		}

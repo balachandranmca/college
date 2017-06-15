@@ -48,6 +48,7 @@ function college_journal()
 		$journals['color'] = $_POST['color'];
 		$journals['impact_no'] = $_POST['impact_no'];
 		$journals['des'] = stripslashes($_POST['desc']);
+		$journals['referrer_no'] = $_POST['referrer_no'];
 		$journal->update($journals);
 	}
 	else {
@@ -67,6 +68,7 @@ function college_journal()
 			$journal['color'] = $_POST['color'];
 			$journal['des'] = stripslashes($_POST['desc']);
 			$journal['impact_no'] = $_POST['impact_no'];
+			$journal['referrer_no'] = $_POST['referrer_no'];
 			$data = Journal::create($journal);
 		}
 	}
