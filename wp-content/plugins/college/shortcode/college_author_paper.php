@@ -83,6 +83,19 @@ function college_author_paper()
 				$authorIssuePaperReviewer['author_issue_paper_id'] = $_POST['paper_id'];
 				$authorIssuePaperReviewer['user_id'] = $value;
 				AuthorIssuePaperReviewer::create($authorIssuePaperReviewer);
+				$user_info = get_userdata($value);
+				$to = $user_info->user_email;
+				$user_name = $user_info->user_nicename;
+				
+				$paper_referer_no = AuthorIssuePaper::where('id', '=', $_POST['paper_id'])->value('paper_referrer_no');
+				$subject = 'Thanks for Acceptance to Review Manuscript ID # '.$paper_referer_no;
+				$headers = array('Content-Type: text/html; charset=UTF-8');
+				ob_start();
+				include 'template/mail/PaperAssignToReviewer.php';
+				$template_content = ob_get_contents();
+				ob_end_clean();
+				wp_mail( $to, $subject, $template_content, $headers );
+				sleep(2);
 			}
 			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
 			$authorIssuePapers['status'] = 'review';
@@ -95,17 +108,7 @@ function college_author_paper()
 		} else {
 			$authorIssuePaper = AuthorIssuePaper::where('id', $_POST['paper_id']);
 			$user_id = AuthorIssuePaper::where('id', $_POST['paper_id'])->value('user_id');
-			$user_info = get_userdata($user_id);
-			$to = $user_info->user_email;
-			$user_name = $user_info->user_nicename;
-			$url = get_buzz_url('college_author_paper')."?id=".$_POST['paper_id'];
-			$subject = 'Paper status changed to '.$_POST['status'];
-			$headers = array('Content-Type: text/html; charset=UTF-8');
-			ob_start();
-			include_once 'template/mail/college_paper_status.php';
-			$template_content = ob_get_contents();
-			ob_end_clean();
-			wp_mail( $to, $subject, $template_content, $headers );
+			
 			$authorIssuePapers['status'] = $_POST['status'];
 			$date = date('Y-m-d H:i:s');
 			$statusDate = $_POST['status'].'Date';
@@ -113,6 +116,22 @@ function college_author_paper()
 			$authorIssuePapers['comment'] = $_POST['comment'];
 			$authorIssuePapers['published_date'] = $_POST['publishedDate'];
 			$data = $authorIssuePaper->update($authorIssuePapers);
+			if($_POST['status'] == 'published'){
+				$user_info = get_userdata($user_id);
+				$to = $user_info->user_email;
+				$user_name = $user_info->user_nicename;
+				
+				$paper_referer_no = AuthorIssuePaper::where('id', '=', $_POST['paper_id'])->value('paper_referrer_no');
+				$issue_id = AuthorIssuePaper::where('id', '=', $_POST['paper_id'])->value('issue_id');
+				$paper_title = Issue::where('id', '=', $issue_id)->value('name');
+				$subject = 'Congratulations to Author/s';
+				$headers = array('Content-Type: text/html; charset=UTF-8');
+				ob_start();
+				include_once 'template/mail/PaperStatusPublish.php';
+				$template_content = ob_get_contents();
+				ob_end_clean();
+				wp_mail( $to, $subject, $template_content, $headers );
+			}
 			echo json_encode(array('success'=>'true'));
 			exit;
 		}
@@ -135,6 +154,20 @@ function college_author_paper_reviewer()
 	$authorIssuePaperReviewers['weekness'] 		= $weekness;
 	$authorIssuePaperReviewers['radiovalues'] 	= $radiovalues;
 	$data = $authorIssuePaperReviewer->update($authorIssuePaperReviewers);
+	$user_info = get_userdata($reviewer_id);
+	$to = $user_info->user_email;
+	$user_name = $user_info->user_nicename;
+	
+	$paper_referer_no = AuthorIssuePaper::where('id', '=', $_POST['paper_id'])->value('paper_referrer_no');
+	$issue_id = AuthorIssuePaper::where('id', '=', $_POST['paper_id'])->value('issue_id');
+	$paper_title = Issue::where('id', '=', $issue_id)->value('name');
+	$subject = 'Thanks for Review';
+	$headers = array('Content-Type: text/html; charset=UTF-8');
+	ob_start();
+	include_once 'template/mail/ReviewerStatusChange.php';
+	$template_content = ob_get_contents();
+	ob_end_clean();
+	wp_mail( $to, $subject, $template_content, $headers );
 	echo json_encode(array('success'=>'true'));
 	exit;
 }

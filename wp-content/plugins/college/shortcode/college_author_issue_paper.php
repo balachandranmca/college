@@ -44,7 +44,8 @@ function college_author_issue_paper()
 		$author_issue_paper['issue_id'] = $_POST['issue_id'];
 		$journal_id = Issue::where('id', '=', $_POST['issue_id'])->value('journal_id');
 		$journal_referer_no = Journal::where('id', '=', $journal_id)->value('referrer_no');
-		$author_issue_paper['paper_referrer_no'] = $journal_referer_no.date("Y-m-d H:i:s");
+		$paper_referer_no = $journal_referer_no.date("Y-m-d H:i:s");
+		$author_issue_paper['paper_referrer_no'] = $paper_referer_no;
 		if($_POST['reviewer1'] !=0 || $_POST['reviewer2'] !=0 || $_POST['reviewer3'] !=0 ){
 			$author_issue_paper['reviewer_id'] = $_POST['reviewer1'].','.$_POST['reviewer2'].','.$_POST['reviewer3'];
 		}
@@ -66,10 +67,22 @@ function college_author_issue_paper()
 		$author_issue_paper[$statusDate] = $date;
 		if ( $movefile && ! isset( $movefile['error'] ) && $move_copyright_file && ! isset( $move_copyright_file['error'] ) ) {
 			$data = AuthorIssuePaper::create($author_issue_paper);
+			$user_info = get_userdata(get_current_user_id());
+			$to = $user_info->user_email;
+			$user_name = $user_info->user_nicename;
+			$paper_title = Issue::where('id', '=', $_POST['issue_id'])->value('name');
+			$url = get_buzz_url('college_author_paper')."?id=".$data->id;
+			$subject = 'Thanks for Submission of Manuscript';
+			$headers = array('Content-Type: text/html; charset=UTF-8');
+			ob_start();
+			include_once 'template/mail/SubmissionOfManuscript.php';
+			$template_content = ob_get_contents();
+			ob_end_clean();
+			wp_mail( $to, $subject, $template_content, $headers );
 			echo json_encode(array('success'=>'true'));
 			exit;
 		}
-		echo json_encode(array('success'=>'false'));
+		echo json_encode(array('success'=>$author_issue_paper));
 		exit;
 }
 
@@ -123,5 +136,3 @@ function college_author_paper_tn_submitted()
 	echo json_encode(array('success'=>'true'));
 	exit;
 }
-
-
