@@ -16,6 +16,8 @@ function college_certificate_pdf_shortcode($atts) {
 		$mpdf = new mPDF('c', 'A4');
 		$mpdf->debug = true;
 		$html = do_shortcode("[COLLEGE_CERTIFICATE id=$id]");
+		$mpdf->SetWatermarkImage('http://localhost/college/wp-content/plugins/college/images/header-logo.png', 0.15, '', array(80,70));
+		$mpdf->showWatermarkImage = true;
 		$mpdf->WriteHTML($html);
 		$today = date('Y-m-d');
 		$pdfName = 'certificate-'.$today;
