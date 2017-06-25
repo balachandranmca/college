@@ -35,7 +35,7 @@
       <div style="margin-top:20pt;text-align:center; width: 100%; margin-bottom: 0pt; ">
         <div style="text-align:center; width: 100%; margin-bottom: 0pt; ">
           <img src="<?php echo WP_BAG_PL_IMAGE;?>header-logo.png" style="vertical-align: middle;text-align:center" width="90" height="82"/>
-          <p style="float: right;vertical-align: top;margin-top: 0pt;font-weight:bold;">ISSN <?php echo $issn; ?> (Online)</p>
+          <p style="float: right;vertical-align: top;margin-top: 0pt;font-weight:bold;"><?php echo $issn; ?> (Online)</p>
         </div>
       </div>
       <div style="text-align:center;margin-top:15pt;">
