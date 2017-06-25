@@ -252,4 +252,15 @@ div.DTFC_LeftFootWrapper table {
     }
   }
 }
+.editors-listpagetable{
+  .table-responsive{
+    .dataTables_wrapper{
+        .datatable{
+            img{
+                width: auto;
+            }
+        }
+    }
+  }
+}
  

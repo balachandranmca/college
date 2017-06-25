@@ -101,8 +101,6 @@
                         <div class="col-md-12">
                             <div class="Current-Issues">
                                 <div class="service-icon"><p>Volumes</p></div>
-                                
-                                
                                 <div class="Current-Issues-btn text-center">
                                     <div class="" style="text-align: center;">
                                         <select name='type' id='volume_types' class="selectpicker" data-style="btn-primary">
@@ -120,7 +118,6 @@
                                         <input type="button" class="text-center btn btn-success" data-toggle="modal" data-target="" value="View" name="" id="targeted_volume"/>
                                     </div>  
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -138,11 +135,11 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Issues List</h4>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body" style="text-align:center;">
                             <?php foreach ($issues as $key) { ?>
-                                <div class="row list-block">
-                                    <div class="col-xs-1 col-sm-1 col-md-3"><?php echo $key['issue_no'];?></div>
-                                    <div class="col-xs-1 col-sm-1 col-md-3"><?php echo $key['start_date'];?></div>
+                                <div class="row list-block" style="display: block;margin: 15px;">
+                                    <div class="col-xs-1 col-sm-1 col-md-3" style="margin-top: 10px;"><?php echo $key['issue_no'];?></div>
+                                    <div class="col-xs-1 col-sm-1 col-md-3" style="margin-top: 10px;"><?php echo $key['start_date'];?></div>
                                     <div class="col-xs-1 col-sm-1 col-md-6"><a href="<?php echo $key['url'];?>" class="btn btn-primary btn-large">Go To Issue</a></div>
                                 </div>
                             <?php } ?>

@@ -7883,6 +7883,11 @@ div.DTFC_LeftFootWrapper table {
   border-radius: 5px;
 }
 
+/* line 259, sass/journal-list.scss */
+.editors-listpagetable .table-responsive .dataTables_wrapper .datatable img {
+  width: auto;
+}
+
 /* line 8, sass/journal-creator.scss */
 .journal-creator .creator-content .slider_image img,
 .volume-creator .creator-content .slider_image img,
@@ -10529,6 +10534,71 @@ textarea {
   resize: none;
   width: 300px;
   height: 150px;
+}
+
+/* line 6, sass/certificate.scss */
+.certificate-header .certificate-block {
+  margin: 126px 64px;
+}
+/* line 9, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img {
+  text-align: center;
+}
+/* line 11, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .img-block {
+  display: inline-block;
+}
+/* line 13, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .img-block img {
+  width: 100px;
+  height: 100px;
+}
+/* line 18, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-img .issn-no {
+  display: inline-block;
+  float: right;
+  -ms-transform: translate(10px, 29px);
+  -webkit-transform: translate(10px, 29px);
+  transform: translate(10px, 29px);
+}
+/* line 26, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title {
+  text-align: center;
+}
+/* line 28, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title .sub-title {
+  font-family: cursive;
+  font-size: 22px;
+  color: #ffa500;
+  font-weight: bold;
+  padding: 0 !important;
+}
+/* line 35, sass/certificate.scss */
+.certificate-header .certificate-block .header .header-title h2 {
+  margin: 0;
+  font-family: fantasy !important;
+  color: #333;
+}
+/* line 42, sass/certificate.scss */
+.certificate-header .certificate-block .header .certificate-title h2 {
+  text-align: center;
+  color: #a94442;
+}
+/* line 48, sass/certificate.scss */
+.certificate-header .certificate-block .header .certificate-content .contents {
+  line-height: 40px;
+  font-family: monospace !important;
+  font-size: 20px;
+}
+/* line 55, sass/certificate.scss */
+.certificate-header .certificate-block .header .footer-content .address {
+  float: left;
+  color: #2196F3;
+  font-family: cursive;
+}
+/* line 60, sass/certificate.scss */
+.certificate-header .certificate-block .header .footer-content .author {
+  float: right;
 }
 
 /* line 2, sass/advertise.scss */
