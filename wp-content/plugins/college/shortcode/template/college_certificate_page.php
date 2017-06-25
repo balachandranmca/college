@@ -17,6 +17,13 @@
 			    margin-left: 3.175cm;
 			    margin-right: 3.175cm;
 			}
+      .dotted_elemetns{
+        font-family: serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: #494293;
+      }
     </style>
   </head>
   <body>
@@ -28,36 +35,32 @@
       <div style="margin-top:20pt;text-align:center; width: 100%; margin-bottom: 0pt; ">
         <div style="text-align:center; width: 100%; margin-bottom: 0pt; ">
           <img src="<?php echo WP_BAG_PL_IMAGE;?>header-logo.png" style="vertical-align: middle;text-align:center" width="90" height="82"/>
-          <p style="vertical-align: top;margin-top: 0pt;font-weight:bold;"><?php echo $issn; ?>ISSN 2454-664X(Online)</p>
+          <p style="float: right;vertical-align: top;margin-top: 0pt;font-weight:bold;">ISSN <?php echo $issn; ?> (Online)</p>
         </div>
-        <!--<div style="vertical-align: top;float: right;text-align:right; width: 25%;margin-top: 0pt; ">
-          <p style="vertical-align: top;margin-top: 0pt;font-weight:bold;"><?php echo $issn; ?>ISSN 2454-664X(Online)</p>
-        </div>-->
       </div>
       <div style="text-align:center;margin-top:15pt;">
-        <h2 style="margin: 0;font-family: serif;color: #494293;text-align: center;font-size: 22px;font-weight: bold;">International Jounernal of Research in Engineering,
+        <h2 style="margin: 0;font-family: serif;color: #494293;text-align: center;font-size: 22px;font-weight: bold;">International Journal of Research in Engineering,
                         Science and </br>Technologies (IJRESTs)</h2>
         <h2 style="text-align: center;color: #a94442;font-size: 20px;font-family: cursive; margin-bottom: 0;">
                 Certificate of Publication</h2>
       </div>
-      <div style="font-family: monospace;font-size: 14px;margin-top: 25px;text-align: left;">
-        <p> This is to certify that Dr./Mr./Mrs<dottab /> authored </p>
-        <p>a paper entitled<dottab /></p>
-        <p>been published in<dottab /> of International </p>
-        <p style="margin-top: 15pt;line-height: 15px;">Journal of Research in Engineering, Science and Technologies(IJRESTs).</p>
+      <div style="font-family: monospace;font-size: 14px;margin-top: 17pt;text-align: justify;">
+       <p style="line-height: 30pt;text-align: justify">
+         This is to certify that Dr./Mr./Mrs. <span class="dotted_elemetns"> <?php echo $user_name; ?></span> authored a paper entitled <span class="dotted_elemetns"><?php echo $issue_name; ?></span>
+         been published in <span class="dotted_elemetns"><?php echo $volumeName; ?>, <?php echo $published_date; ?></span> of International Journal of Research in Engineering, Science and Technologies(IJREST's).</p>
       </div>
       <div style="width:100%;">
-          <table width="100%" style="margin-top:35pt;" cellspacing="0" cellpadding="0" border="0" align="left">
+          <table width="100%" style="margin-top:25pt;" cellspacing="0" cellpadding="0" border="0" align="left">
             <tr>
-              <td style="text-align: left;">
+              <td style="text-align: left;width:57%;">
                 <p style="color: #a94442;line-height: 28px;font-size: 14px;font-weight: bold;"
                   >Website: www.ijrests.org<br>E-mail: editor@ijrests.org
                 </p>
               </td>
-              <td style="text-align: center;float: right">
-                <p style="color: #a94442;line-height: 28px;font-size: 14px;font-weight: bold;width: 100%;text-align: center;">
+              <td align="center" style="text-align: center;float: right">
+                <p style="color: #a94442;line-height: 28px;font-size: 14px;font-weight: bold;width: 100%;text-align: center !important;">
                   Dr. Y R M Rao, B.E(Civil), M.E, Ph.D.,<br>
-                  <span style="color: #474696;text-align: center;">Editor-in-Chief</span></p>
+                  <span style="color: #474696;">Editor-in-Chief</span></p>
               </td>
             </tr>
           </table>
