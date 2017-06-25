@@ -30,16 +30,16 @@
                                 <img src="<?php echo $value['image']['url']?>" alt="">
                                 <ul>
                                     <li>
-                                        <a href="#" class="fa-twitter"></a>
+                                        <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="fa-twitter" target="_blank"></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="fa-facebook"></a>
+                                        <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="fa-facebook"     target="_blank"></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="fa-linkedin"></a>
+                                        <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="fa-linkedin" target="_blank"></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="fa-google-plus"></a>
+                                        <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="fa-google-plus" target="_blank"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,6 +56,9 @@
                             <?php } ?>
                             <?php if($value['experience']) { ?>
                                 <span class="wow fadeInDown delay-03s"><?php echo $value['experience'];?></span><br>
+                            <?php } ?>
+                            <?php if($value['specialization']) { ?>
+                                <span class="wow fadeInDown delay-03s"><?php echo $value['specialization'];?></span><br>
                             <?php } ?>
                             <?php if($value['department']) { ?>
                                 <span class="wow fadeInDown delay-03s"><?php echo $value['department'];?></span><br>
@@ -111,6 +114,9 @@
                                     <?php if($value['experience']) { ?>
                                         <span class="wow fadeInDown delay-03s"><?php echo $value['experience'];?></span><br>
                                     <?php } ?>
+                                    <?php if($value['specialization']) { ?>
+                                        <span class="wow fadeInDown delay-03s"><?php echo $value['specialization'];?></span><br>
+                                    <?php } ?>
                                     <?php if($value['department']) { ?>
                                         <span class="wow fadeInDown delay-03s"><?php echo $value['department'];?></span><br>
                                     <?php } ?>
@@ -132,27 +138,27 @@
                             <div class="social-btn-container">
                                 <div class="team-socail-btn">
                                     <span class="social-btn-box facebook-btn-container">
-                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn">
+                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn" target="_blank">
                                                 <i class="fa fa-facebook"></i>
                                             </a>
                                         <!-- /.facebook-btn -->
                                     </span>
                                 <!-- /.social-btn-box -->
                                     <span class="social-btn-box twitter-btn-container">
-                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn">
+                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn" target="_blank">
                                                 <i class="fa fa-twitter"></i>
                                             </a><!-- /.twitter-btn -->
                                     </span>
                             <!-- /.social-btn-box -->
                                     <span class="social-btn-box linkedin-btn-container">
 
-                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn">
+                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn" target="_blank">
                                                 <i class="fa fa-linkedin"></i>
                                             </a><!-- /.linkedin-btn -->
                                     </span>
                             <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
-                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn">
+                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn" target="_blank">
                                                 <i class="fa fa-google-plus"></i>
                                             </a>
                                         <!-- /.github-btn -->
@@ -202,6 +208,9 @@
                                     <?php if($value['experience']) { ?>
                                         <span class="wow fadeInDown delay-03s"><?php echo $value['experience'];?></span><br>
                                     <?php } ?>
+                                    <?php if($value['specialization']) { ?>
+                                        <span class="wow fadeInDown delay-03s"><?php echo $value['specialization'];?></span><br>
+                                    <?php } ?>
                                     <?php if($value['department']) { ?>
                                         <span class="wow fadeInDown delay-03s"><?php echo $value['department'];?></span><br>
                                     <?php } ?>
@@ -223,27 +232,27 @@
                             <div class="social-btn-container">
                                 <div class="team-socail-btn">
                                     <span class="social-btn-box facebook-btn-container">
-                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn">
+                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn" target="_blank">
                                                 <i class="fa fa-facebook"></i>
                                             </a>
                                         <!-- /.facebook-btn -->
                                     </span>
                                 <!-- /.social-btn-box -->
                                     <span class="social-btn-box twitter-btn-container">
-                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn">
+                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn" target="_blank">
                                                 <i class="fa fa-twitter"></i>
                                             </a><!-- /.twitter-btn -->
                                     </span>
                             <!-- /.social-btn-box -->
                                     <span class="social-btn-box linkedin-btn-container">
 
-                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn">
+                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn" target="_blank">
                                                 <i class="fa fa-linkedin"></i>
                                             </a><!-- /.linkedin-btn -->
                                     </span>
                             <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
-                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn">
+                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn" target="_blank">
                                                 <i class="fa fa-google-plus"></i>
                                             </a>
                                         <!-- /.github-btn -->
@@ -293,6 +302,9 @@
                                     <?php if($value['experience']) { ?>
                                         <span class="wow fadeInDown delay-03s"><?php echo $value['experience'];?></span><br>
                                     <?php } ?>
+                                    <?php if($value['specialization']) { ?>
+                                        <span class="wow fadeInDown delay-03s"><?php echo $value['specialization'];?></span><br>
+                                    <?php } ?>
                                     <?php if($value['department']) { ?>
                                         <span class="wow fadeInDown delay-03s"><?php echo $value['department'];?></span><br>
                                     <?php } ?>
@@ -314,27 +326,27 @@
                             <div class="social-btn-container">
                                 <div class="team-socail-btn">
                                     <span class="social-btn-box facebook-btn-container">
-                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn">
+                                            <a href="<?php if($value['fb_url'] != "") {?> <?php echo $value['fb_url'];?><?php }else {echo '#';} ?>" class="facebook-btn" target="_blank">
                                                 <i class="fa fa-facebook"></i>
                                             </a>
                                         <!-- /.facebook-btn -->
                                     </span>
                                 <!-- /.social-btn-box -->
                                     <span class="social-btn-box twitter-btn-container">
-                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn">
+                                            <a href="<?php if($value['tw_url'] != "") {?> <?php echo $value['tw_url'];?><?php }else {echo '#';} ?>" class="twitter-btn" target="_blank">
                                                 <i class="fa fa-twitter"></i>
                                             </a><!-- /.twitter-btn -->
                                     </span>
                             <!-- /.social-btn-box -->
                                     <span class="social-btn-box linkedin-btn-container">
 
-                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn">
+                                            <a href="<?php if($value['ln_url'] != "") {?> <?php echo $value['ln_url'];?><?php }else {echo '#';} ?>" class="linkedin-btn" target="_blank">
                                                 <i class="fa fa-linkedin"></i>
                                             </a><!-- /.linkedin-btn -->
                                     </span>
                             <!-- /.social-btn-box -->
                                     <span class="social-btn-box github-btn-container">
-                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn">
+                                            <a href="<?php if($value['gp_url'] != "") {?> <?php echo $value['gp_url'];?><?php }else {echo '#';} ?>" class="github-btn" target="_blank">
                                                 <i class="fa fa-google-plus"></i>
                                             </a>
                                         <!-- /.github-btn -->

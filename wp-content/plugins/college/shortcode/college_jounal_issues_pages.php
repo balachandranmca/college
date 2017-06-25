@@ -17,6 +17,7 @@ function college_journal_issues_pages_shortcode($atts) {
 	$issue = $issue[0];
 	$journal = Journal::where('id', $issue['journal_id'])->get()->toArray();
 	$journal = $journal[0];
+	$journal['header_img'] = json_decode($journal['header_img'], 1);
 	include_once 'template/college_journal_issues_pageslist.php';
 	$template_content = ob_get_contents();
 	ob_end_clean();

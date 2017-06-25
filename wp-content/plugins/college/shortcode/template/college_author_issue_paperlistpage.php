@@ -21,7 +21,7 @@
                         <th>Details</th>
                     </thead>
                     <tbody>
-                        <?php if(!count($authorPaperList)) {?> 
+                        <?php if(!count((int)$authorPaperList)) {?> 
                             <tr><td colspan="4" align="center"> No rows found</td></tr>
                         <?php } ?>
                         

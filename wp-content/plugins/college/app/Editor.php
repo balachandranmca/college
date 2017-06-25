@@ -11,6 +11,6 @@ class Editor extends Eloquent
 
     protected $primaryId = 'id';
 
-    protected $fillable = ['name', 'phone_no', 'email_id', 'files', 'photo'];
+    protected $fillable = ['name', 'phone_no', 'email_id', 'files', 'photo', 'specialization'];
 
 }

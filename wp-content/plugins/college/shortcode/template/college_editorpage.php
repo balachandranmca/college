@@ -16,6 +16,12 @@
                         </div>
                 </div>
                 <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Specialization</label>
+                        <div class="col-md-9">
+                            <input type="text" name="specialization" id="specialization" tabindex="1" class="form-control" placeholder="Specialization" required>
+                        </div>
+                </div>
+                <div class="form-group">
                     <label class="col-md-3 control-label" for="name">Phone No</label>
                         <div class="col-md-9">
                           <input type="text" name="phone_no" id="phone_no" tabindex="1" class="form-control" placeholder="Phone No"  required>
@@ -71,17 +77,22 @@
         if(jQuery('#email_id').val()==""){
             noerrorFlag=0;
         }
+        if(jQuery('#specialization').val()==""){
+            noerrorFlag=0;
+        }
 
         if(jQuery('#photo').val()==""){
             noerrorFlag=0;
         }
         
         if(noerrorFlag){
+            jQuery('#loader-overlay').show();
             var fd = new FormData();
             var file = jQuery(document).find('input[type="file"]');
             
             var editorname = jQuery('#editorname').val();
             var phone_no = jQuery('#phone_no').val();
+            var specialization = jQuery('#specialization').val();
             var email_id = jQuery('#email_id').val();
 
             var individual_file = file[0].files[0];
@@ -89,6 +100,7 @@
             fd.append("file", individual_file); 
             fd.append("editorname", editorname); 
             fd.append("phone_no", phone_no);
+            fd.append("specialization", specialization);
             fd.append("email_id", email_id);
             fd.append("photo", photo);
             fd.append('action', 'college_editor');  
@@ -102,6 +114,7 @@
                 contentType: false,
                 processData: false,
                 success: function(response){
+                    alert('Editor Register Successfully');
                     window.location = "<?php echo site_url();?>";
                 }
             });
