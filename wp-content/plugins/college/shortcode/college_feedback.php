@@ -16,6 +16,7 @@ function college_feeback_shortcode($atts) {
 }
 
 add_action('wp_ajax_college_feedbacks', 'college_feedbacks');
+add_action('wp_ajax_nopriv_college_feedbacks', 'college_feedbacks');
 
 function college_feedbacks()
 {

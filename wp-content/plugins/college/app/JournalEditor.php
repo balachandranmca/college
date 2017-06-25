@@ -19,6 +19,7 @@ class JournalEditor extends Eloquent
                             'job_nature',
                             'experience',
                             'department',
+                            'specialization',
                             'place',
                             'city_country',
                             'emailid',

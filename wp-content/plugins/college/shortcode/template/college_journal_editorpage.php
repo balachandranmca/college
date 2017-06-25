@@ -70,6 +70,12 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-md-3 control-label" for="personal_details">Specialization</label>
+                        <div class="col-md-9">
+                            <input type="text" id="specialization" value="<?php echo $journal_editor['specialization'];?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-md-3 control-label" for="personal_details">Place</label>
                         <div class="col-md-9">
                             <input type="text" id="place" value="<?php echo $journal_editor['place'];?>">
@@ -230,7 +236,8 @@
             fd.append("name", jQuery('#name').val());            
             fd.append("qualification", jQuery('#qualification').val());            
             fd.append("job_nature", jQuery('#job_nature').val());            
-            fd.append("experience", jQuery('#experience').val());            
+            fd.append("experience", jQuery('#experience').val());
+            fd.append("specialization", jQuery('#specialization').val());
             fd.append("department", jQuery('#department').val());            
             fd.append("place", jQuery('#place').val());            
             fd.append("city_country", jQuery('#city_country').val());            

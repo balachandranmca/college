@@ -332,7 +332,6 @@
         -moz-box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 #<?php echo $value['color'];?>;
         box-shadow: inset 0px 0px 12px 6px rgba(44, 44, 44, 0.3), 13px 13px 0 #<?php echo $value['color'];?>;">
                     <div class="service-icon text-center">
-                      <i class="fa fa-wordpress fa-5x"></i>
                     </div>
                     <h3 style="color: #<?php echo $value['color'];?>;">
                       <?php echo $value['name'];?>

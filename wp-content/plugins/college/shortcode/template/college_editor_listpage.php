@@ -17,6 +17,7 @@
                         <th>Photo</th>
                         <th>Phone No</th>
                         <th>Email Id</th>
+                        <th>Specialization</th>
                         <th>File</th>
                         <th>Verify</th>   
                     </tr> 
@@ -29,6 +30,7 @@
                                 <td><img src="<?php echo $photo['url'];?>"></td>
                                 <td><?php echo $value['phone_no'];?></td>
                                 <td><?php echo $value['email_id'];?></td>
+                                <td><?php echo $value['specialization'];?></td>
                                 
                                 <?php $files =  json_decode($value['files'],1); ?>
                                 <td><a href="<?php echo $files['url'];?>" download>Download the File</a></td>

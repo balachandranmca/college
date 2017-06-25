@@ -39,6 +39,7 @@ function college_journal_editor()
 		$journal_editors['qualification'] = $_POST['qualification'];
 		$journal_editors['job_nature'] = $_POST['job_nature'];
 		$journal_editors['experience'] = $_POST['experience'];
+		$journal_editors['specialization'] = $_POST['specialization'];
 		$journal_editors['department'] = $_POST['department'];
 		$journal_editors['place'] = $_POST['place'];
 		$journal_editors['city_country'] = $_POST['city_country'];
@@ -76,6 +77,7 @@ function college_journal_editor()
 			$journal_editor['qualification'] = $_POST['qualification'];
 			$journal_editor['job_nature'] = $_POST['job_nature'];
 			$journal_editor['experience'] = $_POST['experience'];
+			$journal_editor['specialization'] = $_POST['specialization'];
 			$journal_editor['department'] = $_POST['department'];
 			$journal_editor['place'] = $_POST['place'];
 			$journal_editor['city_country'] = $_POST['city_country'];

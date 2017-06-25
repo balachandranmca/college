@@ -34,6 +34,7 @@ function college_editor()
 		$editor['name'] = $_POST['editorname'];
 		$editor['phone_no'] = $_POST['phone_no'];
 		$editor['email_id'] = $_POST['email_id'];
+		$editor['specialization'] = $_POST['specialization'];
 		$data = Editor::create($editor);
 		echo json_encode(array('success'=>'true'));
 		exit;

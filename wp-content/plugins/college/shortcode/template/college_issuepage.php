@@ -9,11 +9,41 @@
           <fieldset>
             <h3 class="text-center">ISSUE</h3>
             
+             <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Journal Id</label>
+              <div class="col-md-9">
+                <select id="journal_id" class="volume_dropdown">
+                  <option value="0">Select Journal...</option>
+                  <?php foreach ($journalList as $key => $journalValue) { ?>
+                    <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
+                  <?php } ?>
+                </select>
+              </div>
+            </div>
+
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Volume Id</label>
+              <div class="col-md-9">
+                <select id="volume_id" class="volume_dropdown">
+                  <option value="0">Select Volume...</option>
+                  <?php foreach ($volumeList as $key => $volumeValue) { ?>
+                    <option value="<?php echo $volumeValue['id'];?>"<?php if($issue['volume_id']==$volumeValue['id']){echo ' selected';}?>><?php echo $volumeValue['name'];?></option>
+                  <?php } ?>
+                </select>
+              </div>
+            </div>
             <!-- Name input-->
             <div class="form-group">
               <label class="col-md-3 control-label" for="name">Issue No</label>
               <div class="col-md-9">
-                <input id="issue_no" name="issue_no" type="text" placeholder="Issue No" class="form-control" value="<?php echo $issue['issue_no'];?>">
+                <select id="issue_no">
+                  <option value="0">Select Issue No...</option>
+                  <?php for($i=1;$i<=12;$i++){ ?>
+                    <option value="<?php echo $i; ?>" <?php if($issue['issue_no'] == $i) echo 'selected';?>><?php echo $i; ?></option>
+                  <?php } ?>
+                </select>
               </div>
             </div>
 
@@ -33,31 +63,6 @@
               </div>
             </div>
 
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Volume Id</label>
-              <div class="col-md-9">
-                <select id="volume_id" class="volume_dropdown">
-                  <option value="0">Select Volume...</option>
-                  <?php foreach ($volumeList as $key => $volumeValue) { ?>
-                    <option value="<?php echo $volumeValue['id'];?>"<?php if($issue['volume_id']==$volumeValue['id']){echo ' selected';}?>><?php echo $volumeValue['name'];?></option>
-                  <?php } ?>
-                </select>
-              </div>
-            </div>
-
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Journal Id</label>
-              <div class="col-md-9">
-                <select id="journal_id" class="volume_dropdown">
-                  <option value="0">Select Journal...</option>
-                  <?php foreach ($journalList as $key => $journalValue) { ?>
-                    <option value="<?php echo $journalValue['id'];?>"<?php if($issue['journal_id']==$journalValue['id']){echo ' selected';}?>><?php echo $journalValue['name'];?></option>
-                  <?php } ?>
-                </select>
-              </div>
-            </div>
 
             <div class="form-group">
               <label class="col-md-3 control-label" for="name">Closed</label>
@@ -89,7 +94,7 @@
         event.preventDefault();
         jQuery('#errorMsg').addClass('hide-error');
         var noerrorFlag = 1;
-        if(jQuery('#issue_no').val()==""){
+        if(jQuery('#issue_no').val()=="0"){
             noerrorFlag=0;
         }
         if(jQuery('#name').val()==""){
