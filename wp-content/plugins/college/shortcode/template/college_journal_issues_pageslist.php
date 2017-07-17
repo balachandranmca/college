@@ -9,8 +9,9 @@
 
 <section class="journal-issuespages">
     <div class="container">
-        <div class="row">
+            <?php $x = 0; ?>
             <?php foreach ($journal_issue_publish as $key => $value) { ?>
+                <?php if($x % 4 == 0) echo '<div class="row">'; ?>
                 <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
                     <div class="panel panel-primary">
                         <div class="cnrflash">
@@ -63,8 +64,8 @@
                         </div>
                     </div>
                 </div>
+                <?php $x++; if($x % 4 == 0) echo '</div>'; ?>
             <?php } ?>
-        </div>
     </div>
 </section>
 <script>
