@@ -52,12 +52,13 @@
       <div style="width:100%;">
           <table width="100%" style="margin-top:25pt;" cellspacing="0" cellpadding="0" border="0" align="left">
             <tr>
-              <td style="text-align: left;width:57%;">
+              <td style="text-align: left;width:57%;padding-top:60px;">
                 <p style="color: #a94442;line-height: 28px;font-size: 14px;font-weight: bold;"
                   >Website: www.ijrests.org<br>E-mail: editor@ijrests.org
                 </p>
               </td>
               <td align="center" style="text-align: center;float: right">
+                <img src="<?php echo WP_BAG_PL_IMAGE;?>principal-sign.jpg" style="width:110px;height:50px"/>
                 <p style="color: #a94442;line-height: 28px;font-size: 14px;font-weight: bold;width: 100%;text-align: center !important;">
                   Dr. Y R M Rao, B.E(Civil), M.E, Ph.D.,<br>
                   <span style="color: #474696;">Editor-in-Chief</span></p>

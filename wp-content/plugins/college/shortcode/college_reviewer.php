@@ -54,7 +54,7 @@ function college_reviewer()
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 	$msgs = wp_mail( $to, $subject, $message, $headers );
 	$aft_register = get_buzz_url('college_user_list');
-	echo json_encode(array('success'=>true, 'url'=>$aft_register));
+	echo json_encode(array('success'=>true, 'url'=>$aft_register, 'msgs'=>$msgs));
 	die;
 }
 

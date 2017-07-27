@@ -61,6 +61,9 @@ function Page_Settings() {
         "college_feedback_list" => "College Feedback List",
         "college_certificate_pdf" => "College Certificate Pdf",
         "college_mail" => "College Mail",
+        "college_admin_report" => "College Admin Report",
+        "college_pdf_generation" => "College PDF Generation",
+        "college_pdf_generation_list" => "College PDF Generation List",
 	);
 
 	if (isset($_POST['pagesubmit'])) {

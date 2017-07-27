@@ -17,7 +17,7 @@ function college_admin_dashboard_shortcode($atts) {
 	$resubmitted = AuthorIssuePaper::where('status', 'resubmitted')->count();
 	$transactionSubmitted = AuthorIssuePaper::where('status', 'transactionSubmitted')->count();
 	$paid = AuthorIssuePaper::where('status', 'paid')->count();
-	$published = AuthorIssuePaper::where('status', 'accept')->count();
+	$published = AuthorIssuePaper::where('status', 'published')->count();
 
 	$users_list = get_users();
 	foreach ($users_list as $key => $value) {

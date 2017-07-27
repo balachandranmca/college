@@ -198,13 +198,13 @@
                           <div href="#" class="list-group-item active">
                               <h4 class="list-group-item-heading">Sub Pages</h5>
                           </div>  
-                          <a href="#" class="list-group-item">
+                          <a href="<?php echo get_buzz_url('college_guidelines_author') ?>" class="list-group-item">
                               <h5 class="list-group-item-heading">Guidelines To Author</h5>
                           </a>
-                          <a href="#" class="list-group-item" data-for=".step-2">
+                          <a href="<?php echo get_buzz_url('college_author_issue_paper');?>" class="list-group-item" data-for=".step-2">
                               <h5 class="list-group-item-heading">Online Submission</h5>
                           </a>
-                          <a href="#" class="list-group-item" data-for=".step-3">
+                          <a href="<?php echo get_buzz_url('college_withdrawal_procedure') ?>" class="list-group-item" data-for=".step-3">
                               <h5 class="list-group-item-heading">Withdrawal Procedure</h5>
                           </a>
                     </div>

@@ -134,6 +134,8 @@
            <li<?php if($page_id == get_buzz_id('college_publish_download')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_publish_download') ?>">User Paper Downloader List</a></li>
            <li<?php if($page_id == get_buzz_id('college_certificate')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_certificate') ?>">Certificate</a></li>
            <li<?php if($page_id == get_buzz_id('college_mail')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_mail') ?>">Mail</a></li>
+           <li<?php if($page_id == get_buzz_id('college_admin_report')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_admin_report') ?>">Report</a></li>
+           <li<?php if($page_id == get_buzz_id('college_pdf_generation_list')) { echo ' class="active"';}?>><a href="<?php echo get_buzz_url('college_pdf_generation_list') ?>"> Certificate List</a></li>
         </ul>
     </li>
    <?php } ?>

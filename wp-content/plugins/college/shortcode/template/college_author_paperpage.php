@@ -9,9 +9,12 @@
                 <fieldset>
                     <h3 class="text-center">AUTHOR PAPER</h3>
                     <?php if($user_role == "author" && $author_paper['status']=="published") { ?>
-                        <div class="text-right">
-                            <a target="_blank" class="btn btn-primary" href="<?php echo get_buzz_url('college_certificate_pdf').'?id='.$_GET['id'];?>">Certificate Generate</a>
-                        </div>
+                        <?php foreach ($pdfGeneration as $key => $value) { ?>
+                            <div class="text-right">
+                                <a target="_blank" class="btn btn-primary" href="<?php echo get_buzz_url('college_certificate_pdf').'?id='.$value['author_issue_paper_id'].'&username='.$value['name'];?>"><?php echo $value['name'];?> Certificate Generate</a>
+                            </div>
+                            <br>
+                        <?php } ?>
                     <?php } ?>
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Issue Details </label>

@@ -55,7 +55,7 @@
 <script>
      jQuery(document).on('click', '.editPublish', function(e){
         e.preventDefault();
-        var result = confirm("Are you sure to Publish?");
+        var result = confirm("Are you sure to Publish? Its not editable once you submit.Please confirm");
         if(result) {
             var issueid = jQuery(this).attr('data-id');
             var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
