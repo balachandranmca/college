@@ -47,7 +47,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" placeholder="Country" class="form-control" name="subject" id="subject">
+                        <input type="text" placeholder="subject" class="form-control" name="subject" id="subject">
                     </div>
                     
                     <div class="form-group">
@@ -64,8 +64,11 @@
                     
                     <div id="cf-submit">
                         <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-                    </div>						
-                    
+                    </div>
+                    <div id="mail-fail" class="error">
+                        Please fill all the fields
+                    </div>					
+                    <div id="errorMsg" class='hide'>Please fill all fields</div>
                 </form>
             </div>
             <!-- ./End Contact Form -->
@@ -73,3 +76,40 @@
         </div> <!-- end row -->
     </div> <!-- end container -->
 </section> <!-- end section -->
+<script>
+    jQuery(document).on('click', '#cf-submit', function(e){
+        e.preventDefault();
+        jQuery('#errorMsg').addClass('hide');
+        var noerrorFlag = 1;
+
+        if(jQuery('#name').val()=="" && jQuery('#email').val()=="" && jQuery('#subject').val()=="" && jQuery('#message').val()==""){
+            noerrorFlag=0;
+        }
+        
+        if(noerrorFlag){           
+            jQuery('#loader-overlay').show();
+            var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+            jQuery.ajax({
+              url: ajaxurl,
+              type: 'POST',
+              data: {
+                  'action':'college_contact_forms',
+                  'body' : jQuery('#message').val(),                  
+                  'to' : jQuery('#email').val(),
+                  'subject' : jQuery('#subject').val(),
+                  'name' : jQuery('#name').val(),
+              },
+              success:function(data) {
+                  alert(' Mail Send Successfully ');
+                  location.reload();
+              },
+              error: function(errorThrown){
+                  console.log(errorThrown);
+              }
+          });
+        }
+        else{
+            jQuery('#errorMsg').removeClass('hide');
+        }
+    });
+</script>

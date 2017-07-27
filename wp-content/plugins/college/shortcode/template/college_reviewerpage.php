@@ -64,6 +64,7 @@
                     alert("Successfully Registered. New Password sent to Reviewer Registerd Email");
                     window.location.replace(response.url);
                 }else if(response){
+                    jQuery('#loader-overlay').hide();
                     alert("Already UserEmail Exist !!!");
                 }
             },

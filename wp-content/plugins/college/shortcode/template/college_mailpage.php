@@ -1,4 +1,4 @@
-<?php $content = stripslashes(get_option('about_us'));
+<?php 
 $editor_id = 'body_frontend_editor';
 $settings =   array(
     'wpautop' => true, // use wpautop?
@@ -36,7 +36,7 @@ $settings =   array(
             <div class="form-group">
               <label class="col-md-3 control-label">Message</label>
               <div class="col-md-9">
-                <?php wp_editor( '', $editor_id, $settings = array() ); ?>
+                <?php wp_editor( $message, $editor_id, $settings = array() ); ?>
               </div>
             </div>
             <div class="form-group">

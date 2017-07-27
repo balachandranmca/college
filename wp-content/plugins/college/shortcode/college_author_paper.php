@@ -6,6 +6,7 @@
 
 use App\AuthorIssuePaper;
 use App\AuthorIssuePaperReviewer;
+use App\PdfGeneration;
 use App\Issue;
 use App\Journal;
 use App\Volume;
@@ -16,6 +17,7 @@ function college_author_paper_shortcode($atts) {
 	$user_role = get_current_user_role(get_current_user_id());
 	$user_role = $user_role[0];
 	$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
+	$pdfGeneration = PdfGeneration::where('author_issue_paper_id', '=', $_GET['id'])->get()->toArray();
 	$author_paper = $author_paper[0];
 	$issue = Issue::where('id', '=', $author_paper['issue_id'])->get()->toArray();
 	$journalName = Journal::where('id', '=', $issue[0]['journal_id'])->value('name');

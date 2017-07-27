@@ -138,7 +138,7 @@
                 contentType: false,
                 processData: false,
                 success: function(response){
-                    window.location = "<?php echo get_buzz_url('college_author_paper_list');?>";
+                    window.location = "<?php echo get_buzz_url('college_certificate_pdf');?>";
                 }
             });
         }

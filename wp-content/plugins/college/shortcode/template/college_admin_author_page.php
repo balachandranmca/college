@@ -189,7 +189,7 @@ if($author_paper['status'] == 'recieved') { ?>
                         <option value="accept"<?php if($author_paper['status']=="accept"){echo " selected";}?>>Accept</option>
                         <option value="reject"<?php if($author_paper['status']=="reject"){echo " selected";}?>>Reject</option>
                         
-                        <option value="modify"<?php  if($author_paper['status']=="modify"){echo " selected";}?>>Modify Suggest</option>
+                        <option value="modify"<?php  if($author_paper['status']=="modify"){echo " selected";}?>>Modification</option>
                         <option value="resubmitted"<?php if($author_paper['status']=="resubmitted"){echo " selected";}?>>Author Resubmitted</option>
                         <option value="transactionSubmitted"<?php if($author_paper['status']=="transactionSubmitted"){echo " selected";}?>>Author Transaction Submitted</option>
                         <option value="paid"<?php  if($author_paper['status']=="paid"){echo " selected";}?>>Payment Paid</option>

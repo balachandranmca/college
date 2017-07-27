@@ -95,3 +95,9 @@ include_once 'college_conference_list.php';
 include_once 'college_certificate_pdf.php';
 
 include_once 'college_mail.php';
+
+include_once 'college_admin_report.php';
+
+include_once 'college_pdf_generation.php';
+
+include_once 'college_pdf_generation_list.php';

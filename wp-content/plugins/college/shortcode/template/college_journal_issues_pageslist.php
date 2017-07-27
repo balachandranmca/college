@@ -13,16 +13,16 @@
             <?php foreach ($journal_issue_publish as $key => $value) { ?>
                 <?php if($x % 4 == 0) echo '<div class="row">'; ?>
                 <div class="col-xs-12 col-sm-4 col-md-3 issues-details">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-primary" style="border-color:<?php echo '#'.$journal['color'];?>">
                         <div class="cnrflash">
                             <div class="cnrflash-inner">
                                 <span class="cnrflash-label">PAPER</br>
                                     DETAILS</span>
                             </div>
                         </div>
-                        <div class="panel-heading">
+                        <div class="panel-heading" style="background-color:<?php echo '#'.$journal['color'];?>;border-color:<?php echo '#'.$journal['color'];?>">
                             <h3 class="panel-title">
-                                CURRENT ISSUES</h3>
+                                <?php echo $journal['name'].' - '.$volume['name'].' - '.$issue['name'];?></h3>
                         </div>
                         <div class="panel-body">
                             <div class="the-price">
@@ -60,7 +60,7 @@
                         
                         ?>
                         <div class="panel-footer">
-                            <a data-id="<?php echo $value['id'];?>" href="<?php echo $pdf_file['url'];?>" class="btn btn-danger download_pdf" download><i class="fa fa-file-pdf-o" aria-hidden="true" ></i> &nbsp;Download PDF</a>
+                            <a data-id="<?php echo $value['id'];?>" href="<?php echo $pdf_file['url'];?>" class="btn  download_pdf" style="background-color:<?php echo '#'.$journal['color'];?>;border-color:<?php echo '#'.$journal['color'];?>;color: white;" download><i class="fa fa-file-pdf-o" aria-hidden="true" ></i> &nbsp;Download PDF</a>
                         </div>
                     </div>
                 </div>
