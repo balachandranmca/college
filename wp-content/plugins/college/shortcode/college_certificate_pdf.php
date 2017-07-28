@@ -27,6 +27,7 @@ function college_certificate_pdf_shortcode($atts) {
 			$mpdf->WriteHTML($html);
 			$today = date('Y-m-d');
 			$pdfName = 'certificate-'.$today;
+			ob_clean();
 			$mpdf->Output($pdfName.'.pdf', 'D');
 			exit;
 	}
@@ -47,6 +48,7 @@ function college_certificate_pdf_shortcode($atts) {
 			$mpdf->WriteHTML($html);
 			$today = date('Y-m-d');
 			$pdfName = 'certificate-'.$today;
+			ob_clean();
 			$mpdf->Output($pdfName.'.pdf', 'D');
 			exit;
 		}
