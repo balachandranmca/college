@@ -29,7 +29,7 @@ $settings =   array(
             <div class="form-group">
               <label class="col-md-3 control-label">Subject</label>
               <div class="col-md-9">
-                <input id='subject'  class="form-control" value="">
+                <input id='subject'  class="form-control" value="<?php echo $subject;?>">
               </div>
             </div>
 
