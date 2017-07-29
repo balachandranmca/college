@@ -25,7 +25,11 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Issue Details </label>
                          <div class="col-md-9">
-                            <label class="control-label" for="name"><?php echo $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date']?></label>
+                         <?php $issueName =  $journalName.' - '.$volumeName.' - '.$issue[0]['name'].' - '.$issue[0]['start_date'];
+                         if($user_role == "author") {
+                              $issueName =  $journalName;
+                         }?>
+                            <label class="control-label" for="name"><?php echo $issueName;?></label>
                         </div>
                     </div>
                     <div class="form-group">

@@ -23,6 +23,7 @@ function college_certificate_shortcode($atts) {
 		$user_id = $author_paper['user_id'];
 		$user = get_userdata($user_id);
 		$issn = Journal::where('id', '=', $issue[0]['journal_id'])->value('issn_no');
+		$color = Journal::where('id', '=', $issue[0]['journal_id'])->value('color');
 		$user_name = $username;
 		$volumeName = Volume::where('id', '=', $volume_id)->value('name');
 		$issue_no = $issue[0]['issue_no'];
@@ -33,8 +34,9 @@ function college_certificate_shortcode($atts) {
 		ob_end_clean();
 		return $template_content;
 	}
-	else if(isset($atts['issn'])) {
-			$issn = urldecode($atts['issn']);
+	else if(isset($atts['paper_title'])) {
+			$issn = Journal::where('id', '=', $atts['journal_id'])->value('issn_no');
+			$color = Journal::where('id', '=', $atts['journal_id'])->value('color');
 			$user_name = urldecode($atts['username']);
 			$issue_name = urldecode($atts['paper_title']);
 			$volumeName = urldecode($atts['volume']);

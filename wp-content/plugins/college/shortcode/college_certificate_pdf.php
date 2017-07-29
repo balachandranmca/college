@@ -17,10 +17,11 @@ function college_certificate_pdf_shortcode($atts) {
 			$paper_title = urlencode($_GET['paper_title']);
 			$volume = urlencode($_GET['volume']);
 			$published_date = urlencode($_GET['published_date']);
+			$journal_id = urlencode($_GET['journal_id']);
 			// include_once WP_PLUGIN_DIR.'/wp-mpdf/mpdf/mpdf.php';
 			// $mpdf = new mPDF('c', 'A4');
 			// $mpdf->debug = true;
-			$html = do_shortcode("[COLLEGE_CERTIFICATE issn=$issn username=$username paper_title=$paper_title volume=$volume published_date=$published_date]");
+			$html = do_shortcode("[COLLEGE_CERTIFICATE issn=$issn username=$username paper_title=$paper_title volume=$volume published_date=$published_date journal_id=$journal_id]");
 			echo $html;
 			// $mpdf->SetWatermarkImage(site_url().'/wp-content/plugins/college/images/header-logo.png', 0.15, '', array(80,70));
 			// $mpdf->showWatermarkImage = true;
