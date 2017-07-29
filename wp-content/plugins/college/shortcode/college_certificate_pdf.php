@@ -18,18 +18,19 @@ function college_certificate_pdf_shortcode($atts) {
 			$volume = urlencode($_GET['volume']);
 			$published_date = urlencode($_GET['published_date']);
 			$journal_id = urlencode($_GET['journal_id']);
-			// include_once WP_PLUGIN_DIR.'/wp-mpdf/mpdf/mpdf.php';
-			// $mpdf = new mPDF('c', 'A4');
-			// $mpdf->debug = true;
-			$html = do_shortcode("[COLLEGE_CERTIFICATE issn=$issn username=$username paper_title=$paper_title volume=$volume published_date=$published_date journal_id=$journal_id]");
-			echo $html;
-			// $mpdf->SetWatermarkImage(site_url().'/wp-content/plugins/college/images/header-logo.png', 0.15, '', array(80,70));
-			// $mpdf->showWatermarkImage = true;
-			// $mpdf->WriteHTML($html);
-			// $today = date('Y-m-d');
-			// $pdfName = 'certificate-'.$today;
-			// ob_clean();
-			// $mpdf->Output($pdfName.'.pdf', 'D');
+
+			include_once WP_PLUGIN_DIR.'/wp-mpdf/mpdf/mpdf.php';
+			$mpdf = new mPDF('c', 'A4');
+			$mpdf->debug = true;
+			$html = do_shortcode("[COLLEGE_CERTIFICATE username=$username paper_title=$paper_title volume=$volume published_date=$published_date journal_id=$journal_id]");
+			
+			$mpdf->SetWatermarkImage(site_url().'/wp-content/plugins/college/images/header-logo.png', 0.15, '', array(80,70));
+			$mpdf->showWatermarkImage = true;
+			$mpdf->WriteHTML($html);
+			$today = time();
+			$pdfName = 'certificate-'.$today;
+			ob_clean();
+			$mpdf->Output($pdfName.'.pdf', 'D');
 			exit;
 	}
 	else if(isset($_GET['id'])){
