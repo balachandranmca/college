@@ -7,11 +7,11 @@
                   <div class="col col-xs-6">
                     <h3 class="panel-title">Journal Issues Publist List</h3>
                   </div>
-                  <?php if(!$publish_status) { ?>
+                  <?php //if(!$publish_status) { ?>
                   <div class="col col-xs-6 text-right">
                       <a href="<?php echo get_buzz_url('college_jounal_issues_publish').'?issue_id='.$_GET['issue_id'];?>"><button type="button" class="btn btn-primary">Create New</button></a>
                   </div>
-                  <?php } ?>
+                  <?php //} ?>
                 </div>
               </div>
               <div class="panel-body table-responsive">

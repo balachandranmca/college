@@ -30,7 +30,7 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="name">Copyright Form</label>
                         <div class="col-md-9 slider_image">
-                            <input class='file-upload' type="file" name="copyright" id="copyright" required>
+                            <input class='file-upload pdfups' type="file" name="copyright" id="copyright" required>
                         </div>
                     </div>
                     <br/>
@@ -90,7 +90,13 @@
     jQuery('.file-upload').on( 'change', function() {
         myfile= jQuery( this ).val();
         var ext = myfile.split('.').pop();
-        if(ext!="docx" && ext!="doc"){
+        if(jQuery( this ).hasClass('pdfups')){
+            if(ext!="docx" && ext!="doc" && ext!="pdf"){
+                alert("Invalid File Format");
+                jQuery( this ).val('');
+            }
+        }
+        else if(ext!="docx" && ext!="doc"){
             alert("Invalid File Format");
             jQuery( this ).val('');
         } 

@@ -34,8 +34,8 @@
   </head>
   <body>
     <!-- Begin wrapper table -->
-    <div class="leftside" style="float: left; width: 10%; margin-bottom: 0pt; background: #000;">
-      <div style="background: #000;">
+    <div class="leftside" style="float: left; width: 10%; margin-bottom: 0pt; background: #<?php echo $color;?>;">
+      <div style="background: #<?php echo $color;?>;">
         <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar1.png" style="margin-left:15px;margin-top:200px;float:left;width: 40px;height:170px;"/>
       </div>
     </div>

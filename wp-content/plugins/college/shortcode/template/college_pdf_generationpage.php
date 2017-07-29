@@ -30,8 +30,12 @@
                             <input id="name" name="name" type="text" placeholder="Author name" class="form-control" value="">
                         </div>
                     </div>
+                    <br>
                     <div class="form-group">
-                        <div class="col-md-12 text-right">
+                        <div class="col-md-6 text-right">
+                            <button type="submit" name="image_upload" id="preview" class="btn btn-primary btn-lg">Preview</button>
+                        </div>
+                        <div class="col-md-6 text-right">
                             <button type="submit" name="image_upload" id="image_upload" class="btn btn-primary btn-lg">Submit</button>
                         </div>
                      </div>
@@ -44,12 +48,16 @@
             </div>
             <div class="hidden" id="general-pdf">
                 <div class="form-group row">
-                    <label class="col-md-3 control-label" for="name">ISSN</label>
+                    <label class="col-md-3 control-label" for="name">Journal Id</label>
                     <div class="col-md-9">
-                        <input id="issn" name="issn" type="text" placeholder="ISSN" class="form-control" value="">
+                        <select id="journal_id" class="volume_dropdown">
+                        <option value="0">Select Journal...</option>
+                        <?php foreach ($journal as $key => $journalValue) { ?>
+                            <option style="background-color: #<?php echo $journalValue['color'];?>" value="<?php echo $journalValue['id'];?>"><?php echo $journalValue['name'];?></option>
+                        <?php } ?>
+                        </select>
                     </div>
                 </div>
-                
                 <div class="form-group row">
                     <label class="col-md-3 control-label" for="name">Author name</label>
                     <div class="col-md-9">
@@ -92,16 +100,32 @@
         jQuery('#errorMsg').addClass('hide-error');
         var noerrorFlag = 1;
         
-        if(jQuery('#issn').val()=="" || jQuery('#username').val()=="" || jQuery('#paper_title').val()=="" || jQuery('#volume').val()=="" || jQuery('#published_date').val()==""){
+        if(jQuery('#journal_id').val()=="0" || jQuery('#username').val()=="" || jQuery('#paper_title').val()=="" || jQuery('#volume').val()=="" || jQuery('#published_date').val()==""){
             alert('Please fill all the fields');
         }
         else{
-            var issn        = jQuery('#issn').val();
+            var journal_id        = jQuery('#journal_id').val();
             var username    = jQuery('#username').val();
             var paper_title = jQuery('#paper_title').val();
             var volume      = jQuery('#volume').val();
             var published_date = jQuery('#published_date').val();
-            var uri = "<?php echo get_buzz_url(college_certificate_pdf);?>?issn="+issn+"&username="+username+"&paper_title="+paper_title+"&volume="+volume+"&published_date="+published_date;
+            var uri = "<?php echo get_buzz_url(college_certificate_pdf);?>?journal_id="+journal_id+"&username="+username+"&paper_title="+paper_title+"&volume="+volume+"&published_date="+published_date;
+            window.open(encodeURI(uri), '_blank')
+
+        }
+    });
+    jQuery(document).on('click', '#preview', function(e){
+        e.preventDefault();
+        jQuery('#errorMsg').addClass('hide-error');
+        var noerrorFlag = 1;
+        
+        if(jQuery('#author_issue_paper_id').val()=="" || jQuery('#name').val()==""){
+            alert('Please fill all the fields');
+        }
+        else{
+            var author_issue_paper_id = jQuery('#author_issue_paper_id').val();
+            var name = jQuery('#name').val();
+            var uri = "<?php echo get_buzz_url(college_certificate_pdf);?>?id="+author_issue_paper_id+"&username="+name;
             window.open(encodeURI(uri), '_blank')
 
         }

@@ -73,6 +73,10 @@ function post_redirect(){
         get_buzz_id('college_author_issue_paper'),
         get_buzz_id('college_reviewer_list'),
         get_buzz_id('college_reviewer'),
+        get_buzz_id('college_admin_report'),
+        get_buzz_id('college_pdf_generation_list'),
+        get_buzz_id('college_pdf_generation'),
+        get_buzz_id('college_mail')
     );
     
     $is_user_logged_in = is_user_logged_in();
@@ -114,6 +118,10 @@ function post_redirect(){
         get_buzz_id('college_carosel_slider'),
         get_buzz_id('college_carosel_slider_list'),
         get_buzz_id('college_document'),
+        get_buzz_id('college_admin_report'),
+        get_buzz_id('college_pdf_generation_list'),
+        get_buzz_id('college_pdf_generation'),
+        get_buzz_id('college_mail'),
     );
     
     if ( ( in_array('author', $role) || in_array('reviewer', $role) || in_array('user', $role) || in_array('editor', $role) ) && (in_array($wp_query->queried_object_id, $admin_only))) {
