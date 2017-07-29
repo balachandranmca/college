@@ -8,7 +8,7 @@
           height: 100%;
       }
       .leftside {
-        height: 550px;
+        height: 590px;
       }
       @media print {
 				* { -webkit-print-color-adjust: exact; }
@@ -36,10 +36,10 @@
     <!-- Begin wrapper table -->
     <div class="leftside" style="float: left; width: 10%; margin-bottom: 0pt; background: #000;">
       <div style="background: #000;">
-        <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar1.png" style="margin-left:15px;margin-top:180px;float:left;width: 40px;height:170px;"/>
+        <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar1.png" style="margin-left:15px;margin-top:200px;float:left;width: 40px;height:170px;"/>
       </div>
     </div>
-    <div style="float: right; width: 87%; margin-bottom: 0pt;margin-top:20pt">
+    <div style="float: right; width: 87%; margin-bottom: 0pt;margin-top:40px">
       <div style="margin-top:20pt;text-align:center; width: 100%; margin-bottom: 0pt; ">
         <div style="text-align:center; width: 100%; margin-bottom: 0pt; ">
           <img src="<?php echo WP_BAG_PL_IMAGE;?>header-logo.png" style="vertical-align: middle;text-align:center" width="90" height="82"/>
