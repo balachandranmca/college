@@ -8,21 +8,7 @@
           height: 100%;
       }
       .leftside {
-         background: #000;
-          height: 100%;
-      }
-      .myfixed2 {   position: fixed;
-        overflow: auto;
-        right: 0;
-        bottom: 0mm;
-        width: 65mm;
-        border: 1px solid #880000;
-        background-color: #FFEEDD;
-        background-gradient: linear #dec7cd #fff0f2 0 1 0 0.5;
-        padding: 0.5em;
-        font-family:sans;
-        margin: 0;
-        rotate: 90;
+        height: 550px;
       }
       @media print {
 				* { -webkit-print-color-adjust: exact; }
@@ -31,7 +17,6 @@
 				span:empty { display: none; }
 				.add, .cut { display: none; }
 			}
-
 			@page *{
 			    margin-top: 2.54cm;
 			    margin-bottom: 2.54cm;
@@ -50,8 +35,8 @@
   <body>
     <!-- Begin wrapper table -->
     <div class="leftside" style="float: left; width: 10%; margin-bottom: 0pt; background: #000;">
-      <div style="background: #000;height: 500px !important;">
-        <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar1.png" style="margin-top:80px;float:left" width="70" height="100%"/>
+      <div style="background: #000;">
+        <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar1.png" style="margin-left:15px;margin-top:180px;float:left;width: 40px;height:170px;"/>
       </div>
     </div>
     <div style="float: right; width: 87%; margin-bottom: 0pt;margin-top:20pt">
