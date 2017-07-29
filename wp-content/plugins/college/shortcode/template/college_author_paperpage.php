@@ -8,7 +8,13 @@
             <form class="form-horizontal" enctype="multipart/form-data" name='authorform' id="authorform" method="post">
                 <fieldset>
                     <h3 class="text-center">AUTHOR PAPER</h3>
-                    <?php if($user_role == "author" && $author_paper['status']=="published") { ?>
+                    <?php if($user_role == "administrator"){ ?>
+                        <div style="text-align: right;">
+                            <a target="_blank" class="btn btn-primary" href="<?php echo get_buzz_url('college_mail').'?id='.$_GET['id']?>">Reviewer Mail</a>
+                        </div>
+                        <br>
+                    <?php } ?>
+                    <?php if(($user_role == "author" || $user_role == "administrator") && $author_paper['status']=="published") { ?>
                         <?php foreach ($pdfGeneration as $key => $value) { ?>
                             <div class="text-right">
                                 <a target="_blank" class="btn btn-primary" href="<?php echo get_buzz_url('college_certificate_pdf').'?id='.$value['author_issue_paper_id'].'&username='.$value['name'];?>"><?php echo $value['name'];?> Certificate Generate</a>
