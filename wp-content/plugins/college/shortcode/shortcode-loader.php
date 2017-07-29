@@ -101,3 +101,5 @@ include_once 'college_admin_report.php';
 include_once 'college_pdf_generation.php';
 
 include_once 'college_pdf_generation_list.php';
+
+include_once 'college_profile_page.php';

@@ -64,6 +64,7 @@ function Page_Settings() {
         "college_admin_report" => "College Admin Report",
         "college_pdf_generation" => "College PDF Generation",
         "college_pdf_generation_list" => "College PDF Generation List",
+		"college_profile_page" => "College Profile Page",
 	);
 
 	if (isset($_POST['pagesubmit'])) {
