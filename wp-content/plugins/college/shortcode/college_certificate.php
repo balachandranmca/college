@@ -37,7 +37,7 @@ function college_certificate_shortcode($atts) {
 	else if(isset($atts['paper_title'])) {
 			$issn = Journal::where('id', '=', $atts['journal_id'])->value('issn_no');
 			$color = Journal::where('id', '=', $atts['journal_id'])->value('color');
-			$user_name = urldecode($atts['username']);
+			$username = urldecode($atts['username']);
 			$issue_name = urldecode($atts['paper_title']);
 			$volumeName = urldecode($atts['volume']);
 			$published_date = urldecode($atts['published_date']);

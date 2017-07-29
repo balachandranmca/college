@@ -54,7 +54,7 @@
       </div>
       <div style="font-family: monospace;font-size: 14px;margin-top: 17pt;text-align: justify;">
        <p style="line-height: 30pt;text-align: justify">
-         This is to certify that Dr./Mr./Mrs. <span class="dotted_elemetns"> <?php echo $user_name; ?></span> authored a paper entitled <span class="dotted_elemetns"><?php echo $issue_name; ?></span>
+         This is to certify that Dr./Mr./Mrs. <span class="dotted_elemetns"> <?php echo $username; ?></span> authored a paper entitled <span class="dotted_elemetns"><?php echo $issue_name; ?></span>
          been published in <span class="dotted_elemetns"><?php echo $volumeName; ?>, <?php echo $published_date; ?></span> of International Journal of Research in Engineering, Science and Technologies(IJREST's).</p>
       </div>
       <div style="width:100%;">
