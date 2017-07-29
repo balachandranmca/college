@@ -76,7 +76,9 @@ function post_redirect(){
         get_buzz_id('college_admin_report'),
         get_buzz_id('college_pdf_generation_list'),
         get_buzz_id('college_pdf_generation'),
-        get_buzz_id('college_mail')
+        get_buzz_id('college_mail'),
+        get_buzz_id('college_profile_page'),
+        
     );
     
     $is_user_logged_in = is_user_logged_in();

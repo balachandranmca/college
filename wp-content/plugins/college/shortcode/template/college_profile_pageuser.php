@@ -1,17 +1,6 @@
 <div class="container">
     <div class="col-md-12 col-sm-12  col-xs-12">
-        <div class="card hovercard">
-            <div class="card-background">
-                <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
-                <!-- http://lorempixel.com/850/280/people/9/ -->
-            </div>
-            <div class="useravatar">
-                <img alt="" src="http://lorempixel.com/100/100/people/9/">
-            </div>
-            <div class="card-info"> <span class="card-title">Pamela Anderson</span>
-
-            </div>
-        </div>
+       <br><br>
         <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
             <div class="btn-group" role="group">
                 <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -29,19 +18,27 @@
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="tab1">
                     <div class="row">
-                        <div class="col-md-offset-5 col-md-3">
+                        <div class="col-md-offset-4 col-md-9">
                             <div class="form-login">
-                            <h4>Welcome back.</h4>
-                            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
-                            </br>
-                            <input type="text" id="email" class="form-control input-sm chat-input" placeholder="email" />
-                            </br>
-                            <input type="text" id="phone no" class="form-control input-sm chat-input" placeholder="phone no" />
-                            </br>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name"> User Name </label>
+                                <div class="col-md-9">
+                                    <label class="control-label" for="name"><?php echo $user->data->user_nicename;?></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name"> User Email </label>
+                                <div class="col-md-9">
+                                    <label class="control-label" for="name"><?php echo $user->data->user_login;?></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Phone Number </label>
+                                <div class="col-md-9">
+                                    <label class="control-label" for="name"><?php echo get_user_meta($user->data->ID, 'phone_no',true);?></label>
+                                </div>
+                            </div>
                             <div class="wrapper">
-                            <span class="group-btn">     
-                                <a href="#" class="btn btn-primary btn-md">Submit <i class="fa fa-sign-in"></i></a>
-                            </span>
                             </div>
                             </div>
                         
@@ -53,9 +50,9 @@
                         <div class="col-md-offset-5 col-md-3">
                             <div class="form-login">
                             <h4>Change Your Password</h4>
-                            <input type="text" id="oldPassword" class="form-control input-sm chat-input" placeholder="password" />
+                            <input type="text" id="oldPassword" class="form-control input-sm chat-input" placeholder="Old Password" />
                             </br>
-                            <input type="text" id="newPassword" class="form-control input-sm chat-input" placeholder="password" />
+                            <input type="text" id="newPassword" class="form-control input-sm chat-input" placeholder="New Password" />
                             </br>
                             <div class="wrapper">
                             <span class="group-btn">     
@@ -74,3 +71,38 @@
         </div>
     </div>
 </div>
+<script>
+    jQuery(document).on('click', '.group-btn', function(e){
+        e.preventDefault();
+        jQuery('#errorMsg').addClass('hide-error');
+        var noerrorFlag = 1;
+        if(jQuery('#newPassword').val()=="" || jQuery('#oldPassword').val()==""){
+            alert('Please fill password');
+            noerrorFlag=0;
+        }
+        if(noerrorFlag){
+            var fd = new FormData();
+            var oldPassword = jQuery('#oldPassword').val();
+            var newPassword = jQuery('#newPassword').val();
+            fd.append("oldPassword", oldPassword);
+            fd.append("newPassword", newPassword);
+            fd.append('action', 'college_change_password');
+            jQuery('#loader-overlay').show();
+            jQuery.ajax({
+                type: 'POST',
+                url: "<?php echo admin_url('admin-ajax.php'); ?>",
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response){
+                    jQuery('#loader-overlay').hide();
+                    alert(response);
+                    window.location="<?php echo site_url();?>";
+                }
+            });
+        }
+        else{
+            jQuery('#errorMsg').removeClass('hide-error');
+        }
+    });
+</script>
