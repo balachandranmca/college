@@ -33,7 +33,7 @@
                     <br>
                     <div class="form-group">
                         <div class="col-md-6 text-right">
-                            <button type="submit" name="image_upload" id="image_upload" class="btn btn-primary btn-lg">Preview</button>
+                            <button type="submit" name="image_upload" id="preview" class="btn btn-primary btn-lg">Preview</button>
                         </div>
                         <div class="col-md-6 text-right">
                             <button type="submit" name="image_upload" id="image_upload" class="btn btn-primary btn-lg">Submit</button>
@@ -110,6 +110,22 @@
             var volume      = jQuery('#volume').val();
             var published_date = jQuery('#published_date').val();
             var uri = "<?php echo get_buzz_url(college_certificate_pdf);?>?journal_id="+journal_id+"&username="+username+"&paper_title="+paper_title+"&volume="+volume+"&published_date="+published_date;
+            window.open(encodeURI(uri), '_blank')
+
+        }
+    });
+    jQuery(document).on('click', '#preview', function(e){
+        e.preventDefault();
+        jQuery('#errorMsg').addClass('hide-error');
+        var noerrorFlag = 1;
+        
+        if(jQuery('#author_issue_paper_id').val()=="" || jQuery('#name').val()==""){
+            alert('Please fill all the fields');
+        }
+        else{
+            var author_issue_paper_id = jQuery('#author_issue_paper_id').val();
+            var name = jQuery('#name').val();
+            var uri = "<?php echo get_buzz_url(college_certificate_pdf);?>?id="+author_issue_paper_id+"&username="+name;
             window.open(encodeURI(uri), '_blank')
 
         }

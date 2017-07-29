@@ -37,7 +37,7 @@ function college_certificate_pdf_shortcode($atts) {
 		$author_paper = AuthorIssuePaper::where('id', '=', $_GET['id'])->get()->toArray();
 		$author_paper = $author_paper[0];
 		
-		if(get_current_user_id() == $author_paper['user_id'] && $author_paper['status'] == 'published'){
+		if((get_current_user_id() == $author_paper['user_id'] || in_array('administrator',get_current_user_role(get_current_user_id()))) && $author_paper['status'] == 'published'){
 			$id = $_GET['id'];
 			$username = urlencode($_GET['username']);
 			include_once WP_PLUGIN_DIR.'/wp-mpdf/mpdf/mpdf.php';

@@ -3,10 +3,31 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style type="text/css">
+      html, body, .leftside {
+          min-height: 100% !important;
+          height: 100%;
+      }
+      .leftside {
+         background: #000;
+          height: 100%;
+      }
+      .myfixed2 {   position: fixed;
+        overflow: auto;
+        right: 0;
+        bottom: 0mm;
+        width: 65mm;
+        border: 1px solid #880000;
+        background-color: #FFEEDD;
+        background-gradient: linear #dec7cd #fff0f2 0 1 0 0.5;
+        padding: 0.5em;
+        font-family:sans;
+        margin: 0;
+        rotate: 90;
+      }
       @media print {
 				* { -webkit-print-color-adjust: exact; }
-				html { background: none; padding: 0; }
-				body { box-shadow: none; margin: 0; }
+				html { background: none; padding: 0; min-height: 50% !important;height: 50%;}
+				body { box-shadow: none; margin: 0; min-height: 50% !important;height: 50%;}
 				span:empty { display: none; }
 				.add, .cut { display: none; }
 			}
@@ -28,8 +49,10 @@
   </head>
   <body>
     <!-- Begin wrapper table -->
-    <div style="float: left; width: 10%; margin-bottom: 0pt; ">
-      <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar.png" style="float:left" width="70" height="100%"/>
+    <div class="leftside" style="float: left; width: 10%; margin-bottom: 0pt">
+      <div style="background: #<?php echo $color;?>;height: 500px !important;">
+        <img src="<?php echo WP_BAG_PL_IMAGE;?>sidebar1.png" style="margin-top:80px;float:left" width="70" height="100%"/>
+      </div>
     </div>
     <div style="float: right; width: 87%; margin-bottom: 0pt;margin-top:20pt">
       <div style="margin-top:20pt;text-align:center; width: 100%; margin-bottom: 0pt; ">
@@ -58,7 +81,7 @@
                 </p>
               </td>
               <td align="center" style="text-align: center;float: right">
-                <img src="<?php echo WP_BAG_PL_IMAGE;?>principal-sign.jpg" style="width:110px;height:50px"/>
+                <img src="<?php echo WP_BAG_PL_IMAGE;?>principal-sign.png" style="width:110px;height:50px"/>
                 <p style="color: #a94442;line-height: 28px;font-size: 14px;font-weight: bold;width: 100%;text-align: center !important;">
                   Dr. Y R M Rao, B.E(Civil), M.E, Ph.D.,<br>
                   <span style="color: #474696;">Editor-in-Chief</span></p>
