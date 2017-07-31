@@ -9,7 +9,7 @@
                 <fieldset>
                     <h3 class="text-center">Conferences</h3>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="name">Please Choose Conferences Image (600*600)</label>
+                        <label class="col-md-3 control-label" for="name">Please Choose Conferences Image (600*600 - File Format PNG, JPG only)</label>
                         <div class="col-md-9 slider_image">
                             <img alt="Profile image" src="<?php echo $conference['image']['url'];?>" class="imageup" id="uploaded-image">
                             <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">

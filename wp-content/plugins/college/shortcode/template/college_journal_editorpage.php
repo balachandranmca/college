@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="please_choose_image">Please Choose Journal Editor Image (293*293)</label>
+                        <label class="col-md-3 control-label" for="please_choose_image">Please Choose Journal Editor Image (293*293 - File Format PNG, JPG only)</label>
                         <div class="col-md-9 slider_image">
                             <img alt="Profile image" src="<?php echo $journal_editor['image']['url'];?>" class="imageup" id="uploaded-image">
                             <input class='file-upload' type="file" name="images" id="images" placeholder="Please choose your image">

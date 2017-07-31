@@ -51,7 +51,7 @@ $settings =   array(
             </div>
             
             <div class="form-group">
-                <label class="col-md-3 control-label" for="name">Impact Image (600*600)</label>
+                <label class="col-md-3 control-label" for="name">Impact Image (600*600 - File Format PNG, JPG only)</label>
                 <div class="col-md-9 slider_image">
                     <img alt="Profile image" src="<?php echo $journal['images']['url'];?>" class="imageup" id="uploaded-image">
                     <input class='file-upload' type="file" name="images" id="images" placeholder="Impact image">
@@ -64,7 +64,7 @@ $settings =   array(
               </div>
             </div>
             <div class="form-group">
-                <label class="col-md-3 control-label" for="name">Header Image (1200*300)</label>
+                <label class="col-md-3 control-label" for="name">Header Image (1200*300 - File Format PNG, JPG only)</label>
                 <div class="col-md-9 slider_image">
                     <img alt="Profile image" src="<?php echo $journal['header_img']['url'];?>" class="imageups" id="uploaded-images">
                     <input class='file-uploads' type="file" name="images" id="header_images" placeholder="Impact image">
