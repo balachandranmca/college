@@ -28,6 +28,17 @@
                       <input type="number" name="phone no" id="phoneno" tabindex="1" class="form-control" placeholder="Phone no" value="" required min="1">
                   </div>
               </div>
+
+              <div class="form-group">
+              <div class="input-group">
+                <select id="journal_id" class="volume_dropdown" required>
+                  <option value="">Select Journal...</option>
+                  <?php foreach ($journalList as $key => $journalValue) { ?>
+                    <option value="<?php echo $journalValue['id'];?>"><?php echo $journalValue['name'];?></option>
+                  <?php } ?>
+                </select>
+              </div>
+            </div>
     
             <!-- Form actions -->
             <div class="form-group">
@@ -56,7 +67,8 @@
                 'action':'college_reviewer',
                 'username' : jQuery('#uname').val(),
                 'email' : jQuery('#email').val(),
-                'phoneno' : jQuery('#phoneno').val()
+                'phoneno' : jQuery('#phoneno').val(),
+                'journal_id' : jQuery('#journal_id').val()
             },
             success:function(response) {
                 var response = jQuery.parseJSON(response);

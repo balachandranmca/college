@@ -24,8 +24,8 @@ if($author_paper['status'] == 'recieved') { ?>
             <div class="col-md-9 slider_image">
                 <select id="reviewer1">
                     <option value="0">Please Select ..</option>
-                    <?php foreach ($users as $key => $user) { ?>
-                        <option value="<?php echo $user->ID;?>"><?php echo $user->data->user_nicename."--->".$user->data->user_email;?></option>
+                    <?php foreach ($reviewer_users as $key => $user) { ?>
+                        <option value="<?php echo $key;?>"><?php echo $user?></option>
                     <?php } ?>
                 </select>
             </div>
@@ -36,8 +36,8 @@ if($author_paper['status'] == 'recieved') { ?>
             <div class="col-md-9 slider_image">
                 <select id="reviewer2">
                     <option value="0">Please Select ..</option>
-                    <?php foreach ($users as $key => $user) { ?>
-                        <option value="<?php echo $user->ID;?>"><?php echo $user->data->user_nicename."--->".$user->data->user_email;?></option>
+                    <?php foreach ($reviewer_users as $key => $user) { ?>
+                        <option value="<?php echo $key;?>"><?php echo $user?></option>
                     <?php } ?>
                 </select>
             </div>
@@ -48,8 +48,8 @@ if($author_paper['status'] == 'recieved') { ?>
             <div class="col-md-9 slider_image">
                 <select id="reviewer3">
                     <option value="0">Please Select ..</option>
-                    <?php foreach ($users as $key => $user) { ?>
-                        <option value="<?php echo $user->ID;?>"><?php echo $user->data->user_nicename."--->".$user->data->user_email;?></option>
+                    <?php foreach ($reviewer_users as $key => $user) { ?>
+                        <option value="<?php echo $key;?>"><?php echo $user?></option>
                     <?php } ?>
                 </select>
             </div>
