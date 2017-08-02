@@ -4,9 +4,9 @@ jQuery(function ($) { "use strict";
 	/*	Page Preloader
 	/* ========================================================================= */
 	
-	window.onload = function () {
-		document.getElementById('loading-mask').style.display = 'none';
-	}
+	// window.onload = function () {
+	// 	document.getElementById('loading-mask').style.display = 'none';
+	// }
 	/* =========================================================================== */
 	/*	FitVids js
 	/* =========================================================================== */
@@ -711,6 +711,18 @@ jQuery(function ($) { "use strict";
 /* ========================================================================= */
 
 jQuery(function ($) { "use strict";
+
+	$(window).load(function() {
+
+      // will first fade out the loading animation 
+    	$("#loader").fadeOut("slow", function(){
+
+        // will fade out the whole DIV that covers the website.
+        $("#preloader").delay(300).fadeOut("slow");
+
+      });       
+
+  	})
 	$(function () {
 		var jcarousel = $('.jcarousel');
 		var prev = $('.jcarousel-control-prev');

@@ -73,20 +73,19 @@
     ga('create', 'UA-54152927-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
-  <!--<script src="<?php echo get_template_directory_uri().'\js\source\jquery.min.js';?>"></script>-->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-
   <body id="body">
     <!--
 	    Start Preloader
 	    ==================================== -->
-    <section id="loading-mask">
+    <!-- <section id="loading-mask">
       <div class="loading-img">
-        <img alt="Meghna Preloader" src="<?php echo site_url();?>/wp-content/themes/twentyfourteen/img/preloader.gif" />
+            <img alt="Meghna Preloader" src="<?php /*echo site_url();*/?>/wp-content/themes/twentyfourteen/img/preloader.gif" />    
       </div>
-    </section>
+    </section> -->
+
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>  
     <!--
         End Preloader
         ==================================== -->
@@ -157,10 +156,10 @@
         <div class="container">
           <div class="row">
             <!-- section title -->
-            <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+            <!-- <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
               <h2>Welcome To <span class="color">IJRESTs</span></h2>
               <div class="border"></div>
-            </div>
+            </div> -->
             <!-- /section title -->
             <div class="newsbox">
               <div class="col-md-3">
