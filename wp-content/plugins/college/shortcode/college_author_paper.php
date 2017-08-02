@@ -46,8 +46,16 @@ function college_author_paper_shortcode($atts) {
 			$reviewer3 = $user_info->user_login;
 		}
 	}
-	$args = array('role__in' => array('reviewer'));
-	$users = get_users( $args );
+	$users = get_users(array(
+		'role__in' => array('reviewer'),
+		'meta_key'     => 'journal_id',
+		'meta_value'   => $issue[0]['journal_id'],
+		'meta_compare' => '=',
+	));
+	foreach ($users as $key => $user) {
+		$user_ids = $user->ID;
+		$reviewer_users[$user_ids] = $user->data->user_nicename."--->".$user->data->user_email." ( ".AuthorIssuePaperReviewer::where('user_id', $user_ids)->whereNull('status')->count()." )";
+	}
 	$args = array('role__in' => array('author'));
 	$author_users = get_users( $args );
 	foreach ($author_users as $key) {

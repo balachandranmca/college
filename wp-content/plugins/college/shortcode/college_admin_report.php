@@ -22,7 +22,7 @@ add_action('wp_ajax_college_report', 'college_report');
 function college_report(){
 	global $wpdb;
 	$startDate = $_POST['from'];
-	$toDate = $_POST['to'];
+	$toDate = $_POST['to'].' 23:59:59';
 	$sql = "SELECT aip.status,j.name FROM `author_issue_papers` aip INNER JOIN issues i on aip.issue_id = i.id INNER JOIN journals j on i.journal_id = j.id where aip.created_at between '$startDate' and '$toDate'";
 	$result = $wpdb->get_results($sql, ARRAY_A);	
 	

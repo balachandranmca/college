@@ -4,10 +4,14 @@
  * eg: [COLLEGE_REVIEWER]
  */
 
-// use App\Journal;
+use App\Journal;
 
 add_shortcode('COLLEGE_REVIEWER', 'college_reviewer_shortcode');
 function college_reviewer_shortcode($atts) {	
+	$journalList = Journal::all()->sortBy('id')->toArray();
+	foreach ($journalList as $key => $value) {
+		$journal[$value['id']] = $value['name'];
+	}
 	ob_start();
 	include_once 'template/college_reviewerpage.php';
 	$template_content = ob_get_contents();
@@ -36,6 +40,8 @@ function college_reviewer()
 	
 	update_user_meta( $user_id, 'phone_no', $_POST['phoneno'] );
 	update_user_meta( $user_id, 'is_disable', "0" );
+	update_user_meta( $user_id, 'journal_id', $_POST['journal_id'] );
+	
     
 	$to = $_POST['email'];
 
