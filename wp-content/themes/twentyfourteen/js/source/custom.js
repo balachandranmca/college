@@ -712,13 +712,16 @@ jQuery(function ($) { "use strict";
 
 jQuery(function ($) { "use strict";
 
+	$("select, input[type=text]").addClass("form-control");
+	$(".VselectBox").removeClass("form-control");
+
 	$(window).load(function() {
 
       // will first fade out the loading animation 
     	$("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+        $("#preloader").delay(700).fadeOut("slow");
 
       });       
 

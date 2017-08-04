@@ -30,14 +30,12 @@
               </div>
 
               <div class="form-group">
-              <div class="input-group">
                 <select id="journal_id" class="volume_dropdown" required>
                   <option value="">Select Journal...</option>
                   <?php foreach ($journalList as $key => $journalValue) { ?>
                     <option value="<?php echo $journalValue['id'];?>"><?php echo $journalValue['name'];?></option>
                   <?php } ?>
                 </select>
-              </div>
             </div>
     
             <!-- Form actions -->
