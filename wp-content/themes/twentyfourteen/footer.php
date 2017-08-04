@@ -108,7 +108,7 @@
 							<p>&copy; 2017 IJRESTs.</p>
 						</div>
 						<div class="col-sm-6">
-							<p class="pull-right">Designed by <a href="#">IJRESTs</a></p>
+							<p class="pull-right">Developed by <a href="http://www.azhagisoft.com" target="_blank">AzhagiSoft</a></p>
 						</div>
 					</div>
      			</div>
